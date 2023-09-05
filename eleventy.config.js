@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
         dir: {
             // Use layouts from the plugin
             layouts: 'node_modules/@x-govuk/govuk-eleventy-plugin/layouts'
-        }
+        },
+        pathPrefix: '/data-engineering-handbook/'
     }
 };
