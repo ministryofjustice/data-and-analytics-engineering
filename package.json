@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --watch",
-    "build": "npx @11ty/eleventy & npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --minify"
+    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --minify"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
