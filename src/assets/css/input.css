@@ -1,0 +1,9 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .grid-card {
+        @apply bg-govuk-light-grey border-l-4 border-l-govuk-blue p-4;
+        border-left-style: solid;
+    }
+}
