@@ -33,6 +33,6 @@ module.exports = function (eleventyConfig) {
             input: './src/content',
             layouts: '../../node_modules/@x-govuk/govuk-eleventy-plugin/layouts',
         },
-        pathPrefix: '/data-and-analytics-engineering-handbook/',
+        pathPrefix: '/data-and-analytics-engineering/',
     }
 };
