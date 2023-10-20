@@ -25,9 +25,10 @@ By the end of day 1, each of the teams had at least some level of function to th
 Day 2 began with the teams giving quick updates before launching back into bringing their projects together ahead of the final presentations at 5pm. Lunch in the venue’s cafeteria saw the teams swapping stories about how their projects were coming together in the shadow of a life-size statue of Po from Kung Fu Panda.
 
 As each of the teams congregated before our panel of judges for the event, there was a great feeling of achievement amongst all in attendance. This event had allowed each of us to stretch ourselves and develop new technical skills, and the teams had been great fun to work in, bringing together groups of engineers who would otherwise not often meet.
+Although logistics proved an issue, as the dates had to be rescheduled multiple times due to train strikes, but the organising team were able to overcome this with a great deal of hard work. 
 
-The event ran on the 8th and 9th of December 2022, but the ideas and experience developed here will go on to shape future products we make for the better.
+The teams were able to make a huge amount of progress on their ideas in a very short amount of time, with each team able to have a working product ready for demo by the end of the second day. The event ran on the 8th and 9th of December 2022, but the ideas and experience developed here have since gone on to shape many projects and products picked up since. 
 
-The teams were able to make a huge amount of progress on their ideas in a very short amount of time, with each team able to have a working product ready for demo by the end of the second day. All the teams were able to make great proofs of concept, and the skills and knowledge they’ve built can be applied to their other work.
+For example, the components built in this hackathon were able to kickstart and scaffold some ongoing work on Data Ingestion APIs, as well as work on Observability and Dashboarding for our compute. We've really seen the evolution from idea, to hackathon project, and through to what real productionised delivery looks like for some of these projects.
 
-Logistics proved an issue, as the dates had to be rescheduled multiple times due to train strikes, but the organising team were able to overcome this with a great deal of hard work.
+Hopefully reading this shows the value that hackathons can add, and will encourage anyone who's interested to try running an event like this yourselves!
