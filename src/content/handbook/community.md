@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## MoJ Data and Analytics Community Forum
 
-Every fortnight, on a Thursday afternoon, the Data and Analytics profession at the Ministry of Justice meet for a **Community Forum**. The Community Forum allows members to discuss or present topics, as well as celebrate work done by members. Topics and talks are submitted and voted for by the community in advance of the event (🔒 [private Trello board](https://trello.com/b/EA20dYCk/data-and-analytics-engineering-community-forum)). Previously discussed topics include:
+Every fortnight, on a Thursday afternoon, the data and analytics profession meet for a **Community Forum**. The Community Forum allows members to discuss or present topics, as well as celebrate work done by members. Topics and talks are submitted and voted for by the community in advance of the event (🔒 [private Trello board](https://trello.com/b/EA20dYCk/data-and-analytics-engineering-community-forum)). Previously discussed topics include:
 - Storing secrets (when to choose between [AWS Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) or [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html))
 - Enabling Slack notifications on Airflow DAGs
 - Introducing [MKdocs](https://www.mkdocs.org/) for Python libraries
@@ -23,4 +23,4 @@ If you are a Ministry of Justice employee and would like to attend our Community
 
 ## X-Gov ETL & Espresso
 
-Members of the MoJ Data and Analytics Engineering community are also involved in the wider X-Gov ETL & Espresso (Data Engineering) events. These are usually held every month, with a different organisation hosting each time. In November 2023, the Ministry of Justice will be hosting their first event. There are also plans for an in-person event in 2024.  
+Members of the data and analytics engineering profession are also involved in the wider X-Gov ETL & Espresso (Data Engineering) events. These are usually held every month, with a different organisation hosting each time. In November 2023, the Ministry of Justice will be hosting their first event. There are also plans for an in-person event in 2024.  
