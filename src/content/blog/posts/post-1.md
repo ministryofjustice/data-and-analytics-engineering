@@ -1,18 +1,159 @@
 ---
-title: Test Post 1
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-date: 2023-09-20
-modified: 2023-09-25
+title: GitHub as a one-stop-shop
+description: Store all your project artefacts in a single, searchable location in GitHub
+date: 2024-02-05
+modified: 2024-02-05
 author:
-  name: Calum Barnett
+  name: Soumaya Mauthoot
 permalink: "/blog/posts/{{ title | slugify }}/"
 tags:
-  - Tag 1
-  - Tag 2
+  - GitHub
+  - Best Practice
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id ornare arcu odio ut sem. At erat pellentesque adipiscing commodo elit at. Quam id leo in vitae turpis massa sed elementum. Donec ultrices tincidunt arcu non sodales neque sodales ut. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Sem viverra aliquet eget sit amet tellus cras adipiscing. Nisi scelerisque eu ultrices vitae auctor eu augue. Nulla at volutpat diam ut venenatis tellus in. Adipiscing bibendum est ultricies integer quis auctor elit sed. Pharetra sit amet aliquam id.
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    This blog is under development.
+  </strong>
+</div>
 
-Interdum consectetur libero id faucibus nisl tincidunt. Aliquet sagittis id consectetur purus ut faucibus. Scelerisque mauris pellentesque pulvinar pellentesque. Adipiscing bibendum est ultricies integer quis auctor. Lectus proin nibh nisl condimentum id venenatis a. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Adipiscing enim eu turpis egestas pretium aenean pharetra magna ac. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Eget nulla facilisi etiam dignissim diam. Odio pellentesque diam volutpat commodo sed egestas egestas. Est ullamcorper eget nulla facilisi etiam dignissim diam. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Ut tellus elementum sagittis vitae. Volutpat blandit aliquam etiam erat.
+This scenario may seem familiar:
 
-Ultrices neque ornare aenean euismod elementum nisi. Lectus magna fringilla urna porttitor rhoncus dolor. Netus et malesuada fames ac turpis egestas sed tempus. Pretium fusce id velit ut tortor pretium viverra. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Dolor sed viverra ipsum nunc aliquet bibendum. Massa sed elementum tempus egestas sed sed risus. Lacus vel facilisis volutpat est velit egestas dui. Ultrices neque ornare aenean euismod elementum nisi. Adipiscing bibendum est ultricies integer. At erat pellentesque adipiscing commodo elit at imperdiet dui. Curabitur vitae nunc sed velit dignissim sodales ut. Duis convallis convallis tellus id interdum velit. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Mattis ullamcorper velit sed ullamcorper morbi tincidunt.
+- You use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage your code
+- You use [Jira] to plan, track and prioritise work
+- You store and manage technical documentation on [Confluence](https://www.atlassian.com/software/confluence)
+- You create presentations using Powerpoint and store on Sharepoint / Google Drive
+- You use Excel to track communications during user approval testing (UAT) and store on Sharepoint / Google Drive
+
+This article summarises how you can use GitHub as a one-stop-shop by making use of various (relatively) recent GitHub releases and open-source tools: 
+
+- [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) for planning and tracking work and UAT
+- [GitHub Discussions](https://docs.github.com/en/discussions) for documenting discovery work and communicating with your users
+- `/docs` folder for documenting guidance and technical concepts
+- [mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) for creating simple diagrams in markdown
+- [excalidraw](https://excalidraw.com/) (and [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor)) for more complicated diagrams
+- [marp](https://marp.app/) for creating presentations in markdown
+
+This article lists some recommendations on how to use these tools as of February 2024. For more detailed and/or up-to-date instructions please refer to the individual guidance. If you have any comments and/or suggestions please post on the [GitHub discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
+
+# Why store everything in GitHub?
+
+But first, why store everything in GitHub? To be honest, all the solutions I discuss in the articles can have less features and may require a steeper learning curve than your existing setup. In addition, there aren't clear migration paths which means that unless you're starting from scratch it can be painful to move accross.
+
+However, there are various advantages which I feel makes it worthwhile:
+
+### Searching 
+
+GitHub search used to be [notoriously painful](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/). However GitHub released a new [code search engine and code browsing](https://github.blog/changelog/2022-11-09-introducing-an-all-new-code-search-and-code-browsing-experience/) in November 2022 which allows you to find relevant results with incredible speed. Having all your artefacts in one place means you don't have to switch between different products to find what you're looking for.
+
+### Interoperability 
+
+By using GitHub services, you can more easily link and automate across your various project artefacts. This makes it easier to track and deploy changes as well as collaborate with your team and users.
+
+### Cost 
+
+Somewhat obvious but spend less on buying licences for multiple products!
+
+# Project Management
+
+In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/) Github released the new version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) which allows you to summarise GitHub repository issues through a more intuitive GUI. Whilst Projects Classic were tied to a repository, Projects V2 are created at the GitHub organization level. This means they can be linked to a repository, but are independent of them. You can also add issues from [different GitHub organisations](https://github.blog/changelog/2023-02-23-github-issues-projects-february-23rd-update/#add-cross-organization-issues-and-pull-requests-to-projects), but there won't be a backwards-link on the issue to the project.
+
+There are various ways to [automate](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project) your projects. The simplest are the [built-in automations](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations), for example to update the status to "Done" when an issue is closed.
+
+### Epics
+
+One missing feature is the ability to group issues into epics. There are two work-arounds:
+
+1. Assign an "Epic" label to issues, and use [task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) to associate the epic with child tickets:
+
+```
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
+```
+
+![](https://docs.github.com/assets/cb-127417/mw-1440/images/help/writing/task-list-rendered.webp)
+
+You can link to within-repo issues using the more simple "#number" pattern. For linking to cross-repo issues you'll have to specify the full url. You can draft tasks until you're ready to convert them to issues.
+
+Note: Task list are not to be confused with [tasklists](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists) which is still in private beta and subject to change.
+
+You can navigate back to the Epic in the "Tracked by: section next to the child issue status:
+
+![](https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp)
+
+You can display the "Epic" label in GitHub Projects, and filter and/or search by the "Epic" label. You cannot view relationships (yet) on GitHub Project(s) directly but it's relatively easy to link across by opening the issue screen:
+
+![](images/epics-github-projects.png)
+
+2. Use [GitHub Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) which you can associate with issues and pull requests. You can display linked Milestones on GitHub Projects as an additional column, or add them to the Github Project [Roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.)
+
+Unfortunately you can't assign issues from different repositories to the same [milestone](https://github.com/orgs/community/discussions/6296).
+
+3. Don't use GitHub labels! This may seem an obvious option at first, but like GitHub milestones you can't create org-wide labels, and unlike Milestones you can't set dates and track completion status.
+
+### Roadmaps
+
+The Github Project [Roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-roadmap-layout) allows you to view your project's items on a timeline.
+
+I personally prefer using the [view layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout), and grouping issues by a "Quarter" field. This encourages product owners to come up with epics which are shorter than a quarter, and makes it easier (and more accurate!) when esitmating start and completion dates.
+
+You can modify the "status" field to store the quarter, as used in the [GitHub Public Roadmap](https://github.com/orgs/github/projects/4247) which simplifies tracking. Alternatively you can use a separate "Quarter" field which makes it easier to flag at-risk epics.
+
+### User Approval Testing (UAT)
+
+User Approval Testing can take many forms. A common scenario is migrating a large group of users to a new solution, and making sure that existing functionality is replicated. A common way of tracking progress is through an excel spreadsheet with a row per user and columns for recording completion of different actions.
+
+We have successfully used GitHub Projects for tracking user migration to a new database. Those internal to MOJ can access this private [project](https://github.com/orgs/moj-analytical-services/projects/72/views/1). For those external, the concept is simple; 
+
+1) Create a ticket per artefact that needs to be migrated
+2) Replace the "status" field with different actions
+3) Use the "view layout" to track progress
+
+The advantages are many:
+
+- Create [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) to summarise guidance and actions
+- Assign tickets to GitHub user accounts, instead of named individuals
+- Use a single issue to track user progress and communication
+
+# Project Documentation
+
+Documentation about your project can take many forms, which need to be recorded/managed differently depending on the audience and use case.
+
+
+### Documentation about your code
+
+This is obvious, and should reside in your code. Good code documentation practice is outside the scope of this article, but [swim](https://swimm.io/learn/code-documentation/documentation-in-python-methods-and-best-practices) has some great pointers if you're interested.
+
+### Documentation about your project  
+
+This includes architecture, dependencies, setup instructions, usage guide, etc... You can keep this information in GitHub as markdown files in a `/doc` folder in your GitHub repository. It's also possible to use [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved [here](https://github.com/AstroBookings/.github/wiki). However I would not recommend for reasons which are summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/). 
+
+You can chose to html-ify your docs using a tool such as mkdocs ...
+
+A few things to note:
+
+- If your team/application a monorepo layout, you can split off into multiple `/doc` folders, but this can make it more complex to manage and navigate.
+- If your team/application uses a multi-repo approach, you can create a seperate repository for documenting team/application level documentation. Whilst, you will not be able to link code and documentation changes in a single PR, you can still link the changes as child-tickets to the same Epic.
+
+### Documenting about your approach
+
+This refers to transient documentation that is generated whilst you are considering different options, completing performance analysis etc... This documentation should not reside in your code because it will clause clutter and cause confusion. The `/docs` folder should replicate the "as-is" status of your project. Instead, I recommend using [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions). This feature is not enabled by default (which I think is a pity) so you'll have to update your [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository).
+
+GitHub Discussions support [advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting) so you can make your documentation visually appealling. You can also easily migrate to markdown if you decide to incorporate into your `/docs/` folder.
+
+GitHub Discussions allow your users to [participate](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion) with the idea-generation process, via comments, reactions and polls. You can also choose how to [sort](https://docs.github.com/en/enterprise-server@3.10/discussions/collaborating-with-your-community-using-discussions/collaborating-with-maintainers-using-discussions#sorting-top-level-comments-in-discussions) top-level comments in your discussion.
+
+Note that using GitHub Discussions as a communication channel requires your team and your users to check their GitHub notifications. It can also cause confusion if you use another communication channel e.g. slack. A good recommendation is to consider whether you will want to refer to this information in one year's time when trying to understand why you made a certain decision. If yes, use GitHub discussion.
+
+### Presentations
+
+TBC
+
+### Diagrams
+
+GitHub released support for [Mermaid diagrams] in Feb 2022. [Mermaid](https://github.com/mermaid-js/mermaid#readme) is a "JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams". I personally like to draft my diagram in the [Merrmaid Live Editor](https://mermaid.live/) and then paste to my markdown file / GitHub Discussion. I've used them in the past to create simple or one-off diagrams, but there is a bit of a learning curve.
+
+For more complicated diagrams, I prefer using a dedicated diagramming tool and storing the image in a `/docs/images` folder. This also has the advantage of being referencable in multiple places. 
