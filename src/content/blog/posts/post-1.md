@@ -1,8 +1,8 @@
 ---
 title: GitHub as a one-stop-shop
 description: Store all your project artefacts in a single, searchable location in GitHub
-date: 2024-02-05
-modified: 2024-02-05
+date: 2024-02-09
+modified: 2024-02-09
 author:
   name: Soumaya Mauthoot
 permalink: "/blog/posts/{{ title | slugify }}/"
@@ -18,6 +18,7 @@ tags:
     This blog is under development.
   </strong>
 </div>
+</p>
 
 This scenario may seem familiar:
 
@@ -54,7 +55,7 @@ By using GitHub services, you can more easily link and automate across your vari
 
 ### Cost 
 
-Somewhat obvious but spend less on buying licences for multiple products!
+This could be less of a benefit if you still need a license to access JIRA boards from the rest of your enterprise.
 
 # Project Management
 
@@ -74,19 +75,19 @@ One missing feature is the ability to group issues into epics. There are two wor
 - [ ] Add delight to the experience when all tasks are complete :tada:
 ```
 
-![](https://docs.github.com/assets/cb-127417/mw-1440/images/help/writing/task-list-rendered.webp)
+<img src="https://docs.github.com/assets/cb-127417/mw-1440/images/help/writing/task-list-rendered.webp" width="40%" height="40%">
 
-You can link to within-repo issues using the more simple "#number" pattern. For linking to cross-repo issues you'll have to specify the full url. You can draft tasks until you're ready to convert them to issues.
+You can link to within-repo issues using the more simple "#number" pattern. For linking to cross-repo issues you'll have to specify the full url. You can also draft tasks until you're ready to convert them to issues.
 
 Note: Task list are not to be confused with [tasklists](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists) which is still in private beta and subject to change.
 
 You can navigate back to the Epic in the "Tracked by: section next to the child issue status:
 
-![](https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp)
+<img src="https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp" width="40%" height="40%">
 
 You can display the "Epic" label in GitHub Projects, and filter and/or search by the "Epic" label. You cannot view relationships (yet) on GitHub Project(s) directly but it's relatively easy to link across by opening the issue screen:
 
-![](images/epics-github-projects.png)
+<img src="images/epics-github-projects.png" width="40%" height="40%">
 
 2. Use [GitHub Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) which you can associate with issues and pull requests. You can display linked Milestones on GitHub Projects as an additional column, or add them to the Github Project [Roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.)
 
@@ -131,22 +132,28 @@ This is obvious, and should reside in your code. Good code documentation practic
 
 This includes architecture, dependencies, setup instructions, usage guide, etc... You can keep this information in GitHub as markdown files in a `/doc` folder in your GitHub repository. It's also possible to use [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved [here](https://github.com/AstroBookings/.github/wiki). However I would not recommend for reasons which are summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/). 
 
-You can chose to html-ify your docs using a tool such as mkdocs ...
+You can convert your docs into a static website using static site generators such as [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) and host on [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
 
-A few things to note:
+If the PR-review process is too onerous, you can modify your [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the `/docs` folder. You can also modify your [github actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow if changes have been made to your `/docs` only, which is useful when you have long running tests.  
+
+A few things to note about structuring your `/docs` folder:
 
 - If your team/application a monorepo layout, you can split off into multiple `/doc` folders, but this can make it more complex to manage and navigate.
-- If your team/application uses a multi-repo approach, you can create a seperate repository for documenting team/application level documentation. Whilst, you will not be able to link code and documentation changes in a single PR, you can still link the changes as child-tickets to the same Epic.
+- If your team/application uses a multi-repo approach, you can create a seperate repository for documenting team/application level documentation. Whilst you will not be able to link code and documentation changes in a single PR, you can still link the changes as child-tickets to the same Epic.
 
 ### Documenting about your approach
 
-This refers to transient documentation that is generated whilst you are considering different options, completing performance analysis etc... This documentation should not reside in your code because it will clause clutter and cause confusion. The `/docs` folder should replicate the "as-is" status of your project. Instead, I recommend using [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions). This feature is not enabled by default (which I think is a pity) so you'll have to update your [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository).
+This refers to transient documentation that is generated whilst you are considering different options, completing performance analysis etc... This documentation should not reside in your code because it will clause clutter and cause confusion. The `/docs` folder should replicate the "as-is" status of your project.
 
-GitHub Discussions support [advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting) so you can make your documentation visually appealling. You can also easily migrate to markdown if you decide to incorporate into your `/docs/` folder.
+Instead, you can use [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions) which was released in [Aug 2021](https://github.blog/2021-08-17-github-discussions-out-of-beta/). This feature is not enabled by default so you'll have to update your [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository). 
+
+Unlike the `/docs` folder, you don't need to worry about getting someone to approve, which can sometimes put people off when writing documentation. Howver it does mean that Discussions can become a swamp of useful and less useful information. Hence you need a process for migrating condensed information to the `/docs` folder. This is faciliated by the fact that GitHub Discussions support the same [advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting) as your markdown pages.
 
 GitHub Discussions allow your users to [participate](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion) with the idea-generation process, via comments, reactions and polls. You can also choose how to [sort](https://docs.github.com/en/enterprise-server@3.10/discussions/collaborating-with-your-community-using-discussions/collaborating-with-maintainers-using-discussions#sorting-top-level-comments-in-discussions) top-level comments in your discussion.
 
-Note that using GitHub Discussions as a communication channel requires your team and your users to check their GitHub notifications. It can also cause confusion if you use another communication channel e.g. slack. A good recommendation is to consider whether you will want to refer to this information in one year's time when trying to understand why you made a certain decision. If yes, use GitHub discussion.
+Note that using GitHub Discussions as a communication channel requires your team and your users to check their GitHub notifications. There might be a culture change/reticence to posting on GitHub Discussions. It can also cause confusion if you use another communication channel e.g. slack. A good recommendation is to consider whether you will want to refer to this information in one year's time when trying to understand why you made a certain decision. If yes, use a GitHub discussion!
+
+If your team/application uses a multi-repo approach, you could limit the GitHub Discussions to the primary or doc-specific repo to make it easier to track/search.
 
 ### Presentations
 
@@ -154,6 +161,6 @@ TBC
 
 ### Diagrams
 
-GitHub released support for [Mermaid diagrams] in Feb 2022. [Mermaid](https://github.com/mermaid-js/mermaid#readme) is a "JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams". I personally like to draft my diagram in the [Merrmaid Live Editor](https://mermaid.live/) and then paste to my markdown file / GitHub Discussion. I've used them in the past to create simple or one-off diagrams, but there is a bit of a learning curve.
+GitHub released support for [Mermaid diagrams] in Feb 2022. [Mermaid](https://github.com/mermaid-js/mermaid#readme) is a "JavaScript-based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams". I personally like to draft my diagram in the [Mermaid Live Editor](https://mermaid.live/) and then paste to my markdown file / GitHub Discussion. I've used them in the past to create simple or one-off diagrams, but there is a bit of a learning curve.
 
 For more complicated diagrams, I prefer using a dedicated diagramming tool and storing the image in a `/docs/images` folder. This also has the advantage of being referencable in multiple places. 
