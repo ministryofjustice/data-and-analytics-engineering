@@ -1,8 +1,8 @@
 ---
 title: GitHub as a one-stop-shop
 description: Store all your project artefacts in a single, searchable location in GitHub
-date: 2024-02-09
-modified: 2024-02-09
+date: 2024-02-13
+modified: 2024-02-13
 author:
   name: Soumaya Mauthoot
 permalink: "/blog/posts/{{ title | slugify }}/"
@@ -20,29 +20,28 @@ tags:
 </div>
 </p>
 
-This scenario may seem familiar:
+The following Development Environment Setup will be familiar to many developers:
 
-- You use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage your code
-- You use [Jira] to plan, track and prioritise work
-- You store and manage technical documentation on [Confluence](https://www.atlassian.com/software/confluence)
-- You create presentations using Powerpoint and store on Sharepoint / Google Drive
-- You use Excel to record user approval testing (UAT) and store on Sharepoint / Google Drive
+- [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage your code
+- [Jira](https://www.atlassian.com/software/jira) to plan, track and prioritise work
+- [Confluence](https://www.atlassian.com/software/confluence) to store and manage technical documentation
+- Powerpoint to create presentations and stored on Sharepoint / Google Drive
+- Excel to record user approval testing (UAT) and stored on Sharepoint / Google Drive
 
-This article summarises how to consolidate all these artefacts in GitHub using various GitHub and open-source tools: 
+This article summarises how to consolidate all your project artefacts in GitHub using various GitHub and open-source tools: 
 
 - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) for planning and tracking work and completing UAT
 - [GitHub Discussions](https://docs.github.com/en/discussions) for documenting discovery work and communicating with your users
 - `/docs` folder for documenting user guidance and technical concepts
-- [mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) for creating simple diagrams in markdown as code
-- [excalidraw](https://excalidraw.com/) (and [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor)) for creating more complicated diagrams and storing with code
+- [mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) for creating simple diagrams as code in markdown
+- [excalidraw](https://excalidraw.com/) (and [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor)) for creating more complicated diagrams
 - [marp](https://marp.app/) for creating presentations in markdown
 
+Those internal to MOJ can access the various use cases linked in the Excalidraw whiteboard below:
 
-Those internal to MOJ can access the various use cases linked in the diagram below:
+<a href="https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/add-github-blog/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png"><img src="images/github-one-stop-shop.excalidraw.png" width="100%" height="100%">
 
-<a href="https://excalidraw.com#url=$(https://github.com/ministryofjustice/data-and-analytics-engineering/blob/add-github-blog/src/content/blog/posts/images/github-one-stop-shop.png)"><img src="images/github-one-stop-shop.excalidraw.png" width="100%" height="100%">
-
-This article lists some recommendations on how to use these tools as of February 2024. For more detailed and/or up-to-date instructions please refer to the individual guidance. If you have any comments and/or suggestions please post on the [GitHub discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
+This article lists some recommendations on how to use these tools as of February 2024. For more detailed and/or up-to-date instructions please refer to the individual guidance. If you have any comments and/or suggestions please post on the [GitHub Discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
 # Why store everything in GitHub?
 
@@ -52,15 +51,15 @@ However, there are various advantages which makes it worthwhile:
 
 ### Searching 
 
-GitHub Search used to be [notoriously unpleasant](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/). However GitHub released a new [code search engine and code browsing](https://github.blog/changelog/2022-11-09-introducing-an-all-new-code-search-and-code-browsing-experience/) in November 2022 which allows you to find relevant results with incredible speed. Having all your artefacts in one place means you can easily search across code, documentation, comments and presentations for relevant information.
+Gathering all your code, tickets, documentation, and presentations in one place makes it super easy to search through everything, *if you can find it*. GitHub Search was once infamous for its [unpleasantness](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/), discouraging any usage beyond code management. At long last GitHub rolled out a new [code search engine and browser](https://github.blog/changelog/2022-11-09-introducing-an-all-new-code-search-and-code-browsing-experience/) in November 2022, enabling users to find relevant results with incredible speed and turning GitHub into a viable developer hub.
 
 ### Interoperability 
 
-By using GitHub services, you can more easily link and automate across your various project artefacts. This makes it easier to track, review and deploy changes as well as collaborate with your team and users.
+Using GitHub tools exclusively makes it easier to link and automate across your project artefacts. Hence it makes it easier to track, review and deploy changes as well as collaborate with your team and users.
 
 ### Cost 
 
-This could be a consideration if your company decides to ditch other tools such as JIRA and Atlassian wholesale.
+This could be a consideration if your company decides to ditch now-redundant tools such as JIRA and Atlassian.
 
 # Project Management
 
