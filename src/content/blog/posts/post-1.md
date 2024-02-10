@@ -40,7 +40,7 @@ This article summarises how to consolidate all these artefacts in GitHub using v
 
 Those internal to MOJ can access the various use cases linked in the diagram below:
 
-<img src="images/github-one-stop-shop.excalidraw.png" width="100%" height="100%">
+<a href="https://excalidraw.com#url=$(https://github.com/ministryofjustice/data-and-analytics-engineering/blob/add-github-blog/src/content/blog/posts/images/github-one-stop-shop.png)"><img src="images/github-one-stop-shop.excalidraw.png" width="100%" height="100%">
 
 This article lists some recommendations on how to use these tools as of February 2024. For more detailed and/or up-to-date instructions please refer to the individual guidance. If you have any comments and/or suggestions please post on the [GitHub discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
@@ -64,7 +64,7 @@ This could be a consideration if your company decides to ditch other tools such 
 
 # Project Management
 
-In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/) Github released the new version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) which summarises GitHub repository issues and PRs through a more intuitive GUI. Whilst Projects Classic were tied to a repository, Projects V2 are created at the GitHub organization level. This means they can be linked to a repository, but are independent of them. You can also add issues from [different GitHub organisations](https://github.blog/changelog/2023-02-23-github-issues-projects-february-23rd-update/#add-cross-organization-issues-and-pull-requests-to-projects), but there won't be a backwards-link on the issue to the project.
+In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/) Github released the new version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) which summarises GitHub repository issues and PRs through a more intuitive GUI. Whilst [Projects Classic](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards) were tied to a repository, Projects V2 are created at the GitHub organization level. This means they can be linked to a repository, but are independent of them. You can also add issues from [different GitHub organisations](https://github.blog/changelog/2023-02-23-github-issues-projects-february-23rd-update/#add-cross-organization-issues-and-pull-requests-to-projects), but there won't be a backwards-link on the issue to the project.
 
 There are various ways to [automate](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project) your projects. The simplest are the [built-in automations](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations), for example to update the status to "Done" when an issue is closed.
 
@@ -98,7 +98,7 @@ You can display the "Epic" label in GitHub Projects, and filter and/or search by
 
 Whilst cross-repo milestones [are not yet supported](https://github.com/orgs/community/discussions/6296), you could consider recording all your issues in your "core" repo, even if the code is split amongst multiple repos. This makes it easier to manage work.
 
-3. Don't use GitHub labels for epics! This may seem an obvious option at first, but like GitHub milestones you can't create org-wide labels, and unlike Milestones you can't set dates and track completion status.
+3. Don't use [GitHub Labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels) for epics! This may seem an obvious option at first, but like GitHub milestones you can't create org-wide labels, and unlike Milestones you can't set dates and track completion status.
 
 ### Roadmaps
 
