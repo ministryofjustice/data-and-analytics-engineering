@@ -25,7 +25,7 @@ The following Development Environment Setup will be familiar to many developers:
 - [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage your code
 - [Jira](https://www.atlassian.com/software/jira) to plan, track and prioritise work
 - [Confluence](https://www.atlassian.com/software/confluence) to store and manage technical documentation
-- [Miro] for whiteboarding
+- [Miro](https://miro.com/) for whiteboarding
 - Powerpoint to create slide decks and stored on Sharepoint / Google Drive
 - Excel to record user approval testing (UAT) and stored on Sharepoint / Google Drive
 
@@ -102,9 +102,9 @@ I recommend assigning an "Epic" label to parent issues to make them easier to id
 
 #### 2. Milestones
 
-[GitHub Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and PRs, but not discussions. You can display milestones on GitHub Projects as an additional column, or add them to the Github Project [Roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.)
+[GitHub Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and PRs, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the Github Project [Roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.) For more complicated projects which requires a more nested hierarchy, you can also group issue "Epics" into milestones.
 
-Whilst cross-repo milestones [are not yet supported](https://github.com/orgs/community/discussions/6296), you could consider recording all your issues in your "core" repo, even if the code is split amongst multiple repos. This is general good practice and makes it easier to manage work.
+Note that cross-repo milestones [are not yet supported](https://github.com/orgs/community/discussions/6296), an alternative is to record all issues in a "core" repo, even if the code is split amongst multiple repos. This makes it easier to manage work.
 
 #### 3. Labels
 
@@ -155,7 +155,7 @@ This is obvious, and should reside in your code. Good code documentation practic
 
 This includes architecture, dependencies, setup instructions, usage guide, etc... You can keep this information in GitHub as markdown files in a `/doc` folder in your GitHub repository. It's also possible to use [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved [here](https://github.com/AstroBookings/.github/wiki). However I would not recommend for reasons which are best summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/). 
 
-You have the option to convert your docs into a static website using static site generators such as [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) and host on [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+You have the option to convert your docs into a static website using static site generators such as [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) and host on [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages). This is more relevant for external-facing documentation.
 
 Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long running tests.  
 
@@ -170,7 +170,7 @@ This refers to transient documentation that is generated whilst you are consider
 
 Instead, you can use [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions) which was released in [Aug 2021](https://github.blog/2021-08-17-github-discussions-out-of-beta/). This feature is not enabled by default so you'll have to update the [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository). If your team/application uses a multi-repo approach, you could limit the GitHub Discussions to the "core" or "docs" repo to make it easier to track/search.
 
-Unlike the `/docs` folder, approvals are not required. Whilst it makes the workflow simpler, it does mean that Discussions can become an "information swamp". Hence you need a process for migrating condensed information to the `/docs` folder. Thankfully GitHub Discussions support the same [advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting) as markdown pages which makes it easy to copy and paste. I recommend closing a Discussion once the summary has been migrated to the `/docs` folder.
+Unlike the `/docs` folder, approvals are not required. Whilst it makes the workflow simpler, it does mean that Discussions can become an "information swamp". Hence you need a process for migrating sanitised information to the `/docs` folder. Thankfully GitHub Discussions support the same [advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting) as markdown pages which makes it easy to copy and paste. I recommend closing a Discussion once the information has been migrated to the `/docs` folder.
 
 GitHub Discussions allows your users to [participate](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/participating-in-a-discussion) with the idea-generation process, via comments, reactions and polls. However this means your team and your users will need to check their GitHub notifications regularly. It can also cause confusion if you already use another communication medium e.g. Slack. A good rule of thumb is whether you might want to refer to this information in one year's time. If yes, use a GitHub discussion!
 
@@ -188,6 +188,6 @@ Instead, I recommend using [Excalidraw](https://excalidraw.com/), an open-source
 
 I would like to thank the following people:
 
-- The managed pipelines team for being so open-minded about trying out new things
+- The managed pipelines crew for being so open to trying out new things!
 - @bagg3rs for introducing me to Excalidraw
 - @julialawrence for encouraging me to give GitHub Projects another try
