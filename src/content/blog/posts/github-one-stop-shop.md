@@ -95,7 +95,7 @@ I recommend assigning an `Epic` label to parent issues to make them easier to id
 
 #### 2. Milestones
 
-[GitHub milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and pull requests, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.) For more complicated projects which require a more nested hierarchy, you can group issue epics into milestones:
+[GitHub milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and pull requests, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.). For more complicated projects which require a more nested hierarchy, you can group issue epics into milestones:
 
 ```mermaid
 flowchart 
@@ -128,9 +128,7 @@ The [MoSCoW method](https://www.techtarget.com/searchsoftwarequality/definition/
 
 ### User Acceptance Testing (UAT)
 
-A typical UAT scenario involves migrating a large group of users to a new solution, and making sure that existing functionality is replicated. A simple way of tracking progress is through a spreadsheet with a row per user and columns for recording completion of different actions.
-
-We have successfully used GitHub Projects for tracking user migration to a new database. Those internal to MoJ can access this private [project](https://github.com/orgs/moj-analytical-services/projects/72/views/1) as an example. For external users, the concept is straightforward: 
+A typical UAT scenario involves migrating a large group of users to a new solution, and making sure that existing functionality is replicated. A simple way of tracking progress is through a spreadsheet with a row per user and columns for recording completion of different actions. Instead, we have successfully used GitHub Projects to track UAT progress. Those internal to MoJ can access this private [project](https://github.com/orgs/moj-analytical-services/projects/72/views/1) for tracking user migration to a new database as an example. For external users, the concept is straightforward: 
 
 1. Create an [issue template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) to outline the different actions
 1. Generate a ticket for each artefact that needs to be migrated
