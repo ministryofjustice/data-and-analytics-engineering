@@ -52,12 +52,12 @@ Using fewer tools can lead to cost savings. However, this reason may be less sig
 
 ![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXBreDNwZWtlZzdhNWRkbWZ3aGl6dGhlbTJ2ZTczZTV0dnh6cWEwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N63fPtiPhkBdS/giphy.gif)
 
-Well not actually everything, for example:
+Well not actually everything:
 
-- Large files, which can be stored in [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
-- Keys and credentials, which should be stored in a secret management system
+- GitHub limits the size of files allowed in repositories so you should store large files in a separate large file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
+- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool. Instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
-Which still leaves tracking and documentation.
+Which still leaves many features that can be effectively incorporated into GitHub.
 
 # Project Management
 
@@ -184,7 +184,7 @@ Instead, I recommend using [Excalidraw](https://excalidraw.com/), an open-source
 
 # Conclusion
 
-Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate tracking, code, and documentation within one platform. While there may be initial challenges, the long-term benefits include increased efficiency, consistency, and transparency.
+Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, tracking, and documentation within one platform. While there may be initial challenges, the long-term benefits include increased efficiency, consistency, and transparency.
 
 If you have any comments or suggestions please post on the [discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
