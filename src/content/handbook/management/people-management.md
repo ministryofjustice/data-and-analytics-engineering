@@ -46,3 +46,9 @@ You may want to meet more frequently if:
 You may want to meet less frequently or on an ad hoc basis if that better suits the needs of the person you are managing.
 
 In general, the approach should reflect the needs of the person you are managing and they should guide you.
+
+You should also meet quarterly with the person you manage and their work manager in a 'management triad'. These conversations can be used to:
+
+- review performance, goals and objectives
+- ensure that the individual's role is supporting their development
+- share and reflect on feedback
