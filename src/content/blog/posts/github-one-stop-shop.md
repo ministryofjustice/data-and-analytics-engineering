@@ -13,6 +13,7 @@ tags:
 
 Many developers will be familiar with the following development environment setup: You use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage code, but rely on a plethora of tools for creating and managing all other project outputs. While each tool can be very effective in its own right, this often leads to scattered deliverables, causing confusion and an increased risk of inconsistencies. In this article, I outline how to consolidate all your project artefacts on GitHub by leveraging recent GitHub and open-source tools:
 
+- [GitHub Actions](https://docs.github.com/en/actions) for automating software workflows
 - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) for planning and tracking work
 - [GitHub Discussions](https://docs.github.com/en/discussions) for documenting discovery work and communicating with users
 - A `/docs` folder for documenting user guidance and technical concepts in Markdown
@@ -57,7 +58,11 @@ Well not actually everything:
 - GitHub limits the size of files allowed in repositories so you should store large files in a separate large file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
 - Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool. Instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
-Which still leaves many features that can be effectively incorporated into GitHub.
+Which still leaves many other features that can be effectively incorporated into GitHub.
+
+# Automation
+
+[GitHub Actions](https://docs.github.com/en/actions) automates software workflows, allowing users to build, test, and deploy code directly from their GitHub repositories. It has has quickly become the [most popular CI tool](https://blog.jetbrains.com/teamcity/2023/07/best-ci-tools/) since it was released in 2019 and is a great example of how GitHub integration can simplify tasks. See [Why GitHub Actions?](https://chuniversiteit.nl/papers/rise-and-fall-of-ci-services-in-github#why-github-actions) for more reasons to adopt GitHub Actions.
 
 # Project Management
 
