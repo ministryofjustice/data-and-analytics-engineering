@@ -21,7 +21,7 @@ We also contribute to the development of the Analytical Platform and other found
 
 ### What value do we provide?
 
-We enable access to data in a way that is more reliable, secure, auditable, reproducible and timely than was ever previously possible.
+We enable access to data in a way that is more reliable, secure, auditable and timely than was ever previously possible. Where possible, we provide historical data to support reproducible and longitudinal analysis. 
 
 Analysts and data scientists can access complete data from a range of sources in a single location and in a standardised format, reducing preparation time.
 
