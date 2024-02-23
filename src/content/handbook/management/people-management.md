@@ -22,7 +22,7 @@ As a people manager, you would be expected to:
 - support the people you manage to access the right training, including apprenticeships and certifications
 - act as the primary contact for people you manage for all [people queries and issues](https://intranet.justice.gov.uk/guidance/hr/), including pay and expenses,leave, conduct and behaviour, absence management, and performance management
 - hold regular conversations with the people you manage
-- help the people you manage with their Government Digital and Data assessments, and ensure that they are getting the right opportunities to meet the criteria
+- help the people you manage with their [Government Digital and Data assessments](https://justiceuk.sharepoint.com/:u:/r/sites/knowthething/SitePages/GDD-Capability%20Assessment.aspx?csf=1&web=1&e=4nsCvB), and ensure that they are getting the right opportunities to meet the criteria
 - support loans, secondments, and managed moves to meet development needs
 - support the people you manage to access [health and wellbeing resources](https://intranet.justice.gov.uk/guidance/hr/support-and-wellbeing/), including disability support and workplace adjustments, staff networks, and mental wellbeing resources
 - provide technical support, advice and coaching as needed
