@@ -66,7 +66,7 @@ This still leaves many other features that can be effectively incorporated into 
 
 Due to limited support for complex workflows, industry adoption has been more gradual. Uptake will accelerate as more capabilities are added, such as [Job Summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/) and [GitHub Actions Importer](https://github.blog/2023-03-01-github-actions-importer-is-now-generally-available/). As validation, in 2023 Thoughtworks upgraded the GitHub Actions rating from [`Trial` to `Adopt`](https://www.thoughtworks.com/en-gb/radar/platforms/github-actions).
 
-# Project Management
+# Project management
 
 The classic version of GitHub Projects, launched in [2016](https://github.blog/2016-09-14-a-whole-new-github-universe-announcing-new-tools-forums-and-features/), is an infamous example of releasing a product too early. It consisted primarily of a Kanban board and lacked basic features such as a [backlog view](https://medium.com/momenton/jira-vs-github-issue-tracking-4cdf3bdd1437), deterring most enterprise users. In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/) GitHub released a revamped version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects), which offers a more intuitive, flexible, and customisable user interface. 
 
@@ -131,7 +131,7 @@ Using quarters instead of dates encourages product owners and delivery managers 
 - limiting the number of epics undertaken per quarter
 - giving less precise but more accurate start and completion dates
 
-### Requirement Analysis
+### Requirement analysis
 
 The [MoSCoW method](https://www.techtarget.com/searchsoftwarequality/definition/MoSCoW-method) is used to prioritise project requirements by splitting them into must-haves, should-haves, could-haves and won't-haves. This can be done within GitHub Projects by creating a new 'priority' field with the relevant labels. The items can start as drafts and later be converted into issues once more fleshed out.
 
@@ -150,7 +150,7 @@ There are many advantages. You can:
 - use a single issue to track progress and communication
 - take advantage of [GitHub automation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project)
 
-# Project Documentation
+# Project documentation
 
 Documentation about your project can take many forms, which needs to be recorded and managed differently depending on the audience and use case.
 
