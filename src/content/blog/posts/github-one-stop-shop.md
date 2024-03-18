@@ -88,17 +88,17 @@ You can link to issues, pull requests and discussions within the same repository
 - [ ] Add delight to the experience when all tasks are complete :tada:
 ```
 
-<img src="https://docs.github.com/assets/cb-127417/mw-1440/images/help/writing/task-list-rendered.webp" width="40%" height="40%">
+<img src="https://docs.github.com/assets/cb-127417/mw-1440/images/help/writing/task-list-rendered.webp" alt="task-list" width="40%" height="40%">
 
 For cross-repository linking, you'll need to specify the full URL. You can also draft tasks until you're ready to convert them into issues or leave them as-is for smaller tasks.
 
 I recommend assigning an 'Epic' label to parent issues to make them easier to identify. You can display the 'Epic' label in GitHub Projects, and filter and search by the 'Epic' label. Although GitHub Projects does not [yet](https://docs.github.com/en/issues/planning-and-tracking-with-projects/understanding-fields/about-tracks-and-tracked-by-fields) display relationships, it's easy to view by opening the issue screen.
 
-<img src="images/epics-github-projects.png" width="40%" height="40%">
+<img src="images/epics-github-projects.png" alt="epics" width="40%" height="40%">
 
 You can navigate back to the epic in the 'Tracked by' section next to the child issue's status.
 
-<img src="https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp" width="40%" height="40%">
+<img src="https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp" alt="traked-by" width="40%" height="40%">
 
 Navigating back to the epic from discussions and pull requests isn't as straightforward. As a workaround, you can add the epic to the pull request or discussion description using the format: `- Epic: #number`. Using a bullet list forces GitHub to render the epic title, improving clarity.
 
@@ -197,7 +197,7 @@ While there's a bit of a learning curve, once you've decided on a format, it's v
 
 # Conclusion
 
-Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. Whilst it may not work in all circumstances, we've found this set-up beneficial and leads to increased efficiency, consistency, and transparency.
+Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. Whilst it may not work in all circumstances, we've found this set-up beneficial, leading to increased efficiency, consistency, and transparency.
 
 If you have any comments or suggestions please post on the [discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
