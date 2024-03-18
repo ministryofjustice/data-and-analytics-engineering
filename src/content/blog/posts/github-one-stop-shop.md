@@ -33,7 +33,7 @@ The article includes recommendations on how to use these tools as of February 20
 
 Compared to your existing setup, the tools discussed in this article may offer fewer features and require a steeper learning curve. Additionally, clear migration paths may be lacking, making it challenging to switch platforms.
 
-However, there are several advantages which I feel make it worthwhile, especially if you're starting from scratch:
+However, there are several advantages which I feel make it worthwhile, especially if you're starting from scratch.
 
 ### Searchability
 
