@@ -53,12 +53,10 @@ Using fewer tools can lead to cost savings. However, this reason may be less sig
 
 ### Everything?!
 
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXBreDNwZWtlZzdhNWRkbWZ3aGl6dGhlbTJ2ZTczZTV0dnh6cWEwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N63fPtiPhkBdS/giphy.gif)
-
 Well not actually everything:
 
 - GitHub [limits the size of files](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) allowed in repositories. Moreover, Git isn't great for storing binary files which [are not diffable](https://opensource.com/life/16/8/how-manage-binary-blobs-git-part-7). Instead, you should store large and binary files in a dedicated file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
-- lthough [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
+- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
 This still leaves many other features that can be effectively incorporated into GitHub.
 
