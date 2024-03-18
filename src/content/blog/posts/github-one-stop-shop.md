@@ -58,9 +58,9 @@ Using fewer tools can lead to cost savings. However, this reason may be less sig
 Well not actually everything:
 
 - GitHub [limits the size of files](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) allowed in repositories. Moreover, Git isn't great for storing binary files which [are not diffable](https://opensource.com/life/16/8/how-manage-binary-blobs-git-part-7). Instead, you should store large and binary files in a dedicated file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
-- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool. Instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
+- lthough [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
-Which still leaves many other features that can be effectively incorporated into GitHub.
+This still leaves many other features that can be effectively incorporated into GitHub.
 
 # Automation
 
@@ -76,11 +76,11 @@ Users can now plan and track work using either a [table or board view](https://d
 
 ### Epics
 
-[Epics](https://theproductmanager.com/topics/agile-epic/) are often used to structure agile backlogs and to break down large issues into more manageable work. GitHub offers three options for managing epics:
+[Epics](https://theproductmanager.com/topics/agile-epic/) are often used to structure agile backlogs and to break down large issues into more manageable work. GitHub offers three options for managing epics.
 
 #### 1. Task lists
 
-[Task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) have been around since [2014](https://github.blog/2013-01-09-task-lists-in-gfm-issues-pulls-comments/). GitHub is currently working on [a significant upgrade](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists) which is still in private beta, so stay tuned for updates!
+[Task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) have been around since [2014](https://github.blog/2013-01-09-task-lists-in-gfm-issues-pulls-comments/). GitHub is currently working on [a significant upgrade](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists), which is still in private beta, so stay tuned for updates!
 
 You can link to issues, pull requests and discussions within the same repository using the simple `#number` pattern: 
 
@@ -92,13 +92,13 @@ You can link to issues, pull requests and discussions within the same repository
 
 <img src="https://docs.github.com/assets/cb-127417/mw-1440/images/help/writing/task-list-rendered.webp" width="40%" height="40%">
 
-For cross-repository linking you'll need to specify the full url. You can also draft tasks until you're ready to convert them into issues, or leave them as-is for smaller tasks.
+For cross-repository linking, you'll need to specify the full URL. You can also draft tasks until you're ready to convert them into issues or leave them as-is for smaller tasks.
 
-I recommend assigning an `Epic` label to parent issues to make them easier to identify. You can display the `Epic` label in GitHub Projects, and filter and search by the `Epic` label. Although GitHub Projects does not [yet](https://docs.github.com/en/issues/planning-and-tracking-with-projects/understanding-fields/about-tracks-and-tracked-by-fields) display relationships, it's easy to view by opening the issue screen:
+I recommend assigning an 'Epic' label to parent issues to make them easier to identify. You can display the 'Epic' label in GitHub Projects, and filter and search by the 'Epic' label. Although GitHub Projects does not [yet](https://docs.github.com/en/issues/planning-and-tracking-with-projects/understanding-fields/about-tracks-and-tracked-by-fields) display relationships, it's easy to view by opening the issue screen.
 
 <img src="images/epics-github-projects.png" width="40%" height="40%">
 
-You can navigate back to the epic in the "Tracked by" section next to the child issue's status:
+You can navigate back to the epic in the 'Tracked by' section next to the child issue's status.
 
 <img src="https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp" width="40%" height="40%">
 
@@ -106,7 +106,7 @@ Navigating back to the epic from discussions and pull requests isn't as straight
 
 #### 2. Milestones
 
-[GitHub milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and pull requests, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.). For more complicated projects which require a more nested hierarchy, you can group issue epics into milestones, as explained in this mermaid diagram:
+[Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and pull requests, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.). For more complicated projects that require a more nested hierarchy, you can group issue epics into milestones, as explained in this mermaid diagram.
 
 ```mermaid
 flowchart 
@@ -117,40 +117,40 @@ flowchart
     Epic --> Milestone
 ```
 
-Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repo, even if the code is split amongst multiple repos. This also makes it easier to manage work.
+Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work.
 
 #### 3. Labels
 
-Don't use [GitHub labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels) for epics! This may seem an obvious option at first, but unlike milestones you can't set dates, track completion status or close labels.
+Don't use [labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels) for epics! This may seem an obvious option at first, but unlike milestones, you can't set dates, track completion status or close labels.
 
 ### Roadmaps
 
-The GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-roadmap-layout) displays the project items on a timeline. However, I prefer using the [board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout), and grouping issues by quarter. You can modify the `status` field to store the quarter, as used in the [GitHub public roadmap](https://github.com/orgs/github/projects/4247). Alternatively you can create a separate `Quarter` field.
+The GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-roadmap-layout) displays the project items on a timeline. However, I prefer using the [board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout) and grouping issues by quarter. You can modify the 'status' field to store the quarter, as used in the [GitHub public roadmap](https://github.com/orgs/github/projects/4247). Alternatively, you can create a separate 'quarter' field.
 
 Using quarters instead of dates encourages product owners and delivery managers to follow good practice such as:
 
-- Create epics which are shorter than a quarter
-- Limit the number of epics undertaken per quarter
-- Give less precise but more accurate start and completion dates
+- creating epics that are shorter than a quarter
+- limiting the number of epics undertaken per quarter
+- giving less precise but more accurate start and completion dates
 
 ### Requirement Analysis
 
-The [MoSCoW method](https://www.techtarget.com/searchsoftwarequality/definition/MoSCoW-method) prioritises project requirements by splitting them into *must haves*, *should haves*, *could haves* and *will not haves*. This can be done within GitHub Projects by creating a new `MoSCoW` field with the relevant labels. The items can start off as drafts, and can be later converted into issues once more fleshed out.
+The [MoSCoW method](https://www.techtarget.com/searchsoftwarequality/definition/MoSCoW-method) is used to prioritise project requirements by splitting them into must-haves, should-haves, could-haves and won't-haves. This can be done within GitHub Projects by creating a new 'priority' field with the relevant labels. The items can start as drafts and later be converted into issues once more fleshed out.
 
 ### User Acceptance Testing (UAT)
 
-A typical UAT scenario involves migrating a large group of users to a new solution, and making sure that existing functionality is replicated. A simple way of tracking progress is through a spreadsheet with a row per user and columns for recording completion of different actions. Instead, we have successfully used GitHub Projects to track UAT progress. Those internal to MoJ can access this private [project](https://github.com/orgs/moj-analytical-services/projects/72/views/1) for tracking user migration to a new database as an example. For external users, the concept is straightforward: 
+A typical UAT scenario involves migrating a large group of users to a new solution and making sure that existing functionality is replicated. A simple way of tracking progress is through a spreadsheet with a row per user and columns for recording the completion of different actions. Instead, we have successfully used GitHub Projects to track UAT progress. Those internal to MoJ can access this private [project](https://github.com/orgs/moj-analytical-services/projects/72/views/1) for tracking user migration to a new database as an example. For external users, the concept is straightforward:
 
-1. Create an [issue template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) to outline the different actions
-1. Generate a ticket for each artefact that needs to be migrated
-1. Replace the `status` field with the different actions
-1. Use the project board layout to track progress
+1. Create an [issue template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) to outline the different actions.
+2. Generate a ticket for each artefact that needs to be migrated.
+3. Replace the 'status' field with the different actions.
+4. Use the project board layout to track progress.
 
-The advantages are many:
+There are many advantages. You can:
 
-- Assign tickets to GitHub user accounts, instead of named individuals
-- Use a single issue to track progress and communication
-- Take advantage of [GitHub automation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project)
+- assign tickets to GitHub user accounts, instead of named individuals
+- use a single issue to track progress and communication
+- take advantage of [GitHub automation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project)
 
 # Project Documentation
 
@@ -158,28 +158,28 @@ Documentation about your project can take many forms, which needs to be recorded
 
 ### Documentation about your code
 
-This is obvious and should reside in your code. Good code documentation practice is outside the scope of this article. You can refer to [this article](https://swimm.io/learn/code-documentation/documentation-in-python-methods-and-best-practices) for some great pointers on documenting python code.
+The best place for documentation about your code to reside is in your code. Good code documentation practice is outside the scope of this article. You can refer to [this article](https://swimm.io/learn/code-documentation/documentation-in-python-methods-and-best-practices) for some great pointers on documenting Python code.
 
 ### Documentation about your project  
 
-This includes architecture, dependencies, setup instructions and user guidance. You should keep this information in GitHub as Markdown files in a `/docs` folder in your GitHub repository. An alternative is [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved [here](https://github.com/AstroBookings/.github/wiki). However I would not recommend for reasons which are best summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/). 
+This includes architecture, dependencies, setup instructions and user guidance. You can keep this information in GitHub as Markdown files in your GitHub repository's `/docs` folder. An alternative is to use [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved [here](https://github.com/AstroBookings/.github/wiki). However, I would not recommend them for reasons best summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/). 
 
-GitHub uses a variant of Markdown called [GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). It also uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) syntax to expand the functionality for example to provide accessible tables and chunks of reusable content. However the [basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) should suffice for most needs. 
+GitHub uses a variant of Markdown called [GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). It also uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) syntax to expand the functionality, for example, to provide accessible tables and chunks of reusable content. However, the [basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) should suffice for most needs. 
 
-You can convert your documentation into a website using static site generators such as [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) and host on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. Documentation websites are probably more relevant for external-facing documentation. It's advisable to stick with basic markdown formatting syntax to ensure compatibility.
+You can convert your documentation into a website, using static site generators such as [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. Documentation websites are probably more relevant for external-facing documentation. It's advisable to stick with basic markdown formatting syntax to ensure compatibility.
 
-Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long running tests.  
+Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long-running tests.  
 
 A few things to note about structuring the `/docs` folder:
 
-- With a monorepo layout, you can split off into multiple `/docs` folders at the root of each sub-folder, but this can make it more complex to manage and navigate
-- With a multi-repo approach, you can use the 'core' repository or create a 'docs' repository for documenting team or application level documentation. You can't combine code and documentation changes made against different repositories in a single pull request, but you can still link them via a task list
+1. With a monorepo layout, you can split off into multiple `/docs` folders at the root of each sub-folder, but this can make it more complex to manage and navigate.
+2. With a multi-repo approach, you can use the core repository or create a specific documentation repository for storing team or application-level documentation. You can't combine code and documentation changes made against different repositories in a single pull request but you can still link them via a task list.
 
 ### Documentation about your approach
 
 When you're evaluating options or completing some analysis you often create transient documentation. This type of documentation should be kept separate from your code to avoid clutter and confusion, especially for new team members. Your `/docs` folder should reflect the current state of your project, just like your code.
 
-Instead, you can use [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions) which was released in [August 2021](https://github.blog/2021-08-17-github-discussions-out-of-beta/). Discussions are not enabled by default so you'll have to update the [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository). If you use a multi-repo approach, you can limit discussions to the core or docs repository to make it easier to track and search.
+Instead, you can use [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions), which was released in [August 2021](https://github.blog/2021-08-17-github-discussions-out-of-beta/). Discussions are not enabled by default so you'll have to update the [repository settings](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository). If you use a multi-repo approach, you can limit discussions to the core or documentation repository to make it easier to track and search.
 
 Unlike the `/docs` folder, discussions don't require approvals. Whilst it simplifies the workflow, it does mean that discussions can become an information swamp. Hence you need a process for transferring sanitised information to the `/docs` folder. Luckily GitHub Discussions support the same [advanced formatting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting) as Markdown pages, which makes it easy to copy and paste. I recommend closing a discussion once the information has been migrated to the `/docs` folder.
 
