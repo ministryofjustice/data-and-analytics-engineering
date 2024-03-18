@@ -13,7 +13,7 @@ tags:
   - Project Management
 ---
 
-Many developers will be familiar with the following development environment setup: You use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage code, but rely on a plethora of tools for creating and managing all other project outputs. While each tool can be very effective in its own right, this often leads to scattered deliverables, causing confusion and an increased risk of inconsistencies. In this article, I outline how to consolidate all your project artefacts on GitHub by leveraging recent GitHub and open-source tools:
+Many people will be familiar with a development environment setup where they use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage code, but rely on a plethora of tools for creating and managing all other project outputs. While each tool can be very effective in its own right, this often leads to scattered deliverables, causing confusion and an increased risk of inconsistency. In this post, I outline how to consolidate all your project artefacts on GitHub by leveraging recent GitHub and open-source tools:
 
 - [GitHub Actions](https://docs.github.com/en/actions) for automating software workflows
 - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) for planning and tracking work
