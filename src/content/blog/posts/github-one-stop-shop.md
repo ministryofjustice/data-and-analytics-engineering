@@ -37,7 +37,7 @@ However, there are several advantages which I feel make it worthwhile, especiall
 
 ### Searchability
 
-Having all your code, tickets, documentation, and presentations in one place makes it super easy to search through everything, *if you can find it*. Unfortunately GitHub search used to [suck](https://github.com/isaacs/github/issues/908) (you can read why in the [history of code search at GitHub](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/)). Thankfully, GitHub rolled out a new search engine and browser in [May 2023](https://github.blog/2023-05-08-github-code-search-is-generally-available/), making it possible to find relevant results at reasonable speed. Knowing the [GitHub search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) helps.
+Having all your code, tickets, documentation, and presentations in one place makes it super easy to search through everything, *if you can find it*. Unfortunately, GitHub search used to be [very limited](https://github.com/isaacs/github/issues/908) (you can read why in the [history of code search at GitHub](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/)). Thankfully, GitHub rolled out a new search engine and browser in [May 2023](https://github.blog/2023-05-08-github-code-search-is-generally-available/), making it possible to find relevant results at reasonable speed. Knowing the [GitHub search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) helps.
 
 ### Interoperability
 
