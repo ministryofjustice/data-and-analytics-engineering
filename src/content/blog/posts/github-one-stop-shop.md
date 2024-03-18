@@ -23,7 +23,7 @@ Many people will be familiar with a development environment setup where they use
 - [Excalidraw](https://excalidraw.com/) for creating editable diagrams and whiteboard sketches, which can be saved as code in a `/docs/images` folder
 - [Marp](https://marp.app/) for creating slide decks in Markdown, which can be saved as code in a `/docs/presentation` folder
 
-I've linked some examples from the [MoJ](https://mojdigital.blog.gov.uk/) in the Excalidraw whiteboard below:
+I've linked some examples from the [MoJ](https://mojdigital.blog.gov.uk/) in the Excalidraw whiteboard below.
 
 [![Excalidraw Examples](images/github-one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/add-github-blog/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)
 
