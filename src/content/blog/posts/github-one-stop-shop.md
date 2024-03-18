@@ -23,11 +23,11 @@ Many people will be familiar with a development environment setup where they use
 - [Excalidraw](https://excalidraw.com/) for creating editable diagrams and whiteboard sketches, which can be saved as code in a `/docs/images` folder
 - [Marp](https://marp.app/) for creating slide decks in Markdown, which can be saved as code in a `/docs/presentation` folder
 
-I've linked some examples from the [MoJ](https://mojdigital.blog.gov.uk/) in the Excalidraw whiteboard below.
+These suggestions are summarised in the Excalidraw whiteboard below. Clicking on the diagram will import it into the Excalidraw web editor, where you can access links to examples from the [MoJ](https://mojdigital.blog.gov.uk/).
 
 [![Excalidraw Examples](images/github-one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/add-github-blog/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)
 
-The post includes recommendations on how to use these tools as of February 2024. For more detailed and up-to-date instructions, please refer to the links provided.
+Note that the post includes recommendations on how to use these tools as of February 2024. For more detailed and up-to-date instructions, please refer to the links provided.
 
 # But first, why store everything in GitHub?
 
@@ -199,7 +199,7 @@ While there's a bit of a learning curve, once you've decided on a format, it's v
 
 # Conclusion
 
-Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. While there may be initial challenges, the long-term benefits include increased efficiency, consistency, and transparency.
+Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. Whilst it may not work in all circumstances, we've found this set-up beneficial and leads to increased efficiency, consistency, and transparency.
 
 If you have any comments or suggestions please post on the [discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
