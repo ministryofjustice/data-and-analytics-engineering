@@ -197,7 +197,7 @@ While there's a bit of a learning curve, once you've decided on a format, it's v
 
 # Conclusion
 
-Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. Whilst it may not work in all circumstances, we've found this set-up beneficial, leading to increased efficiency, consistency, and transparency.
+Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. Whilst it may not work in all circumstances, we've found this setup beneficial, leading to increased efficiency, consistency, and transparency.
 
 If you have any comments or suggestions please post on the [discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
