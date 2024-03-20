@@ -25,7 +25,7 @@ Many people will be familiar with a development environment setup where they use
 
 These suggestions are summarised in the Excalidraw whiteboard below. Clicking on the diagram will import it into the Excalidraw web editor, where you can access links to examples from the [MoJ](https://mojdigital.blog.gov.uk/).
 
-[![Excalidraw Examples](images/github-one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/add-github-blog/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)
+[![Excalidraw Examples](https://github.com/ministryofjustice/data-and-analytics-engineering/blob/main/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)
 
 Note that the post includes recommendations on how to use these tools as of February 2024. For more detailed and up-to-date instructions, please refer to the links provided.
 
