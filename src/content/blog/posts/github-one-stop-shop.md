@@ -25,7 +25,7 @@ Many people will be familiar with a development environment setup where they use
 
 These suggestions are summarised in the Excalidraw whiteboard below. Clicking on the diagram will import it into the Excalidraw web editor, where you can access links to examples from the [MoJ](https://mojdigital.blog.gov.uk/).
 
-[![Excalidraw Examples](https://github.com/ministryofjustice/data-and-analytics-engineering/blob/main/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop.excalidraw.png)
+[![Excalidraw Examples](/assets/images/github-one-stop-shop/one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/assets/images/github-one-stop-shop/one-stop-shop.excalidraw.png)
 
 Note that the post includes recommendations on how to use these tools as of February 2024. For more detailed and up-to-date instructions, please refer to the links provided.
 
@@ -94,11 +94,11 @@ For cross-repository linking, you'll need to specify the full URL. You can also 
 
 I recommend assigning an 'Epic' label to parent issues to make them easier to identify. You can display the 'Epic' label in GitHub Projects, and filter and search by the 'Epic' label. Although GitHub Projects does not [yet](https://docs.github.com/en/issues/planning-and-tracking-with-projects/understanding-fields/about-tracks-and-tracked-by-fields) display relationships, it's easy to view by opening the issue screen.
 
-<img src="images/epics-github-projects.png" alt="epics" width="40%" height="40%">
+<img src="/assets/images/github-one-stop-shop/epics-projects.png" alt="epics" width="40%" height="40%">
 
 You can navigate back to the epic in the 'Tracked by' section next to the child issue's status.
 
-<img src="https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp" alt="traked-by" width="40%" height="40%">
+<img src="https://docs.github.com/assets/cb-111881/mw-1440/images/help/writing/task-list-tracked.webp" alt="tracked-by" width="40%" height="40%">
 
 Navigating back to the epic from discussions and pull requests isn't as straightforward. As a workaround, you can add the epic to the pull request or discussion description using the format: `- Epic: #number`. Using a bullet list forces GitHub to render the epic title, improving clarity.
 
@@ -106,6 +106,7 @@ Navigating back to the epic from discussions and pull requests isn't as straight
 
 [Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and pull requests, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.). For more complicated projects that require a more nested hierarchy, you can group issue epics into milestones, as explained in this mermaid diagram.
 
+```
 ```mermaid
 flowchart 
     Epic[Issue with Epic label]
@@ -114,6 +115,8 @@ flowchart
     Discussion --> |Task list|Epic 
     Epic --> Milestone
 ```
+
+![Nested epics](/assets/images/github-one-stop-shop/mermaid.png)
 
 Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work.
 
@@ -185,7 +188,7 @@ GitHub Discussions allow your users to [participate](https://docs.github.com/en/
 
 ### Diagrams
 
-[Mermaid](https://github.com/mermaid-js/mermaid#readme) is a JavaScript-based tool that lets you create diagrams using a Markdown-like syntax. GitHub released support for Mermaid in [February 2022](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). It's particularly handy for adding editable diagrams to places like issues and discussions, as you don't have to save it to the `/docs` folder. However, I found that Mermaid has a steep learning curve and limited options available so I would only suggest it for simple diagrams. 
+[Mermaid](https://github.com/mermaid-js/mermaid#readme) is a JavaScript-based tool that lets you create diagrams using a Markdown-like syntax. GitHub released support for Mermaid in [February 2022](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/). It's particularly handy for adding editable diagrams to places like issues and discussions, as you don't have to save it to the `/docs` folder. However, I found that Mermaid has a steep learning curve and limited options available so I would only suggest it for simple diagrams. Moreover, it's not natively supported by many static site generators.
 
 Instead, I recommend using [Excalidraw](https://excalidraw.com/), an open-source diagramming and whiteboarding tool. GitHub doesn't provide native support for Excalidraw, but you can export the diagram to SVG or PNG and [embed the Excalidraw scene data](https://kevinjalbert.com/using-excalidraws-embedded-scene-feature-for-collaborative-diagramming/) to make it editable. Whilst SVG is preferable because it is smaller in size and is text-based (and hence diffable), unfortunately, it doesn't [render as nicely in GitHub](https://github.com/excalidraw/excalidraw/issues/4855) so I would stick with PNG for now. You can then upload the image file directly to issues and discussions, or save it to a `/docs/images` folder for version control. GitHub has a nifty [image view mode](https://github.blog/2011-03-21-behold-image-view-modes/) for reviewing changes to images. You can edit diagrams on the Excalidraw web editor or download the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor) to edit locally. You can also import diagrams directly from GitHub into the web editor by passing in the raw image URL (see my Excalidraw diagram hyperlink as an example). Lastly, Excalidraw plus GitHub Discussions is great for recording the outcome of collaborative whiteboard sessions, which tend to get lost.
 
