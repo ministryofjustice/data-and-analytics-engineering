@@ -25,7 +25,7 @@ Many people will be familiar with a development environment setup where they use
 
 These suggestions are summarised in the Excalidraw whiteboard below. Clicking on the diagram will import it into the Excalidraw web editor, where you can access links to examples from the [MoJ](https://mojdigital.blog.gov.uk/).
 
-[![Excalidraw Examples](/assets/images/github-one-stop-shop/one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/assets/images/github-one-stop-shop/one-stop-shop.excalidraw.png)
+[![Excalidraw Examples](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/one-stop-shop.excalidraw.png)](https://excalidraw.com/#url=https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/one-stop-shop.excalidraw.png)
 
 Note that the post includes recommendations on how to use these tools as of February 2024. For more detailed and up-to-date instructions, please refer to the links provided.
 
@@ -94,7 +94,7 @@ For cross-repository linking, you'll need to specify the full URL. You can also 
 
 I recommend assigning an 'Epic' label to parent issues to make them easier to identify. You can display the 'Epic' label in GitHub Projects, and filter and search by the 'Epic' label. Although GitHub Projects does not [yet](https://docs.github.com/en/issues/planning-and-tracking-with-projects/understanding-fields/about-tracks-and-tracked-by-fields) display relationships, it's easy to view by opening the issue screen.
 
-<img src="/assets/images/github-one-stop-shop/epics-projects.png" alt="epics" width="40%" height="40%">
+<img src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/epics-projects.png" alt="epics" width="40%" height="40%">
 
 You can navigate back to the epic in the 'Tracked by' section next to the child issue's status.
 
@@ -116,7 +116,7 @@ flowchart
     Epic --> Milestone
 ```
 
-![Nested epics](/assets/images/github-one-stop-shop/mermaid.png)
+![Nested epics](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/mermaid.png)
 
 Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work.
 
