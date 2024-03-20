@@ -29,7 +29,7 @@ These suggestions are summarised in the Excalidraw whiteboard below. Clicking on
 
 Note that the post includes recommendations on how to use these tools as of February 2024. For more detailed and up-to-date instructions, please refer to the links provided.
 
-# But first, why store everything in GitHub?
+## But first, why store everything in GitHub?
 
 Compared to your existing setup, the tools discussed in this post may offer fewer features and require a steeper learning curve. Additionally, clear migration paths may be lacking, making it challenging to switch platforms.
 
@@ -60,13 +60,13 @@ Well not actually everything:
 
 This still leaves many other features that can be effectively incorporated into GitHub.
 
-# Automation
+## Automation
 
 [GitHub Actions](https://docs.github.com/en/actions) automates software workflows, allowing users to build, test, and deploy code directly from their GitHub repositories. Since its release in 2019, it has become the preferred CI tool for [personal projects](https://blog.jetbrains.com/teamcity/2023/07/best-ci-tools/). The popularity of GitHub Actions is great vindication for the one-stop shop approach this post is promoting. It also helps that the YAML configuration is user-friendly, and that the [GitHub Marketplace](https://github.com/marketplace?type=) offers a vibrant and growing ecosystem with a wide range of pre-built actions.
 
 Due to limited support for complex workflows, industry adoption has been more gradual. Uptake will accelerate as more capabilities are added, such as [Job Summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/) and [GitHub Actions Importer](https://github.blog/2023-03-01-github-actions-importer-is-now-generally-available/). As validation, in 2023 Thoughtworks upgraded the GitHub Actions rating from [`Trial` to `Adopt`](https://www.thoughtworks.com/en-gb/radar/platforms/github-actions).
 
-# Project management
+## Project management
 
 The classic version of GitHub Projects, launched in [2016](https://github.blog/2016-09-14-a-whole-new-github-universe-announcing-new-tools-forums-and-features/), is an infamous example of releasing a product too early. It consisted primarily of a Kanban board and lacked basic features such as a [backlog view](https://medium.com/momenton/jira-vs-github-issue-tracking-4cdf3bdd1437), deterring most enterprise users. In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/), GitHub released a revamped version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects), which offers a more intuitive, flexible, and customisable user interface. 
 
@@ -153,7 +153,7 @@ There are many advantages. You can:
 - use a single issue to track progress and communication
 - take advantage of [GitHub automation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project)
 
-# Project documentation
+## Project documentation
 
 Documentation about your project can take many forms, which needs to be recorded and managed differently depending on the audience and use case.
 
@@ -198,13 +198,13 @@ Instead, I recommend using [Excalidraw](https://excalidraw.com/), an open-source
 
 While there's a bit of a learning curve, once you've decided on a format, it's very intuitive. We've successfully used Marp to create slide decks when [evaluating Iceberg](https://github.com/moj-analytical-services/iceberg-evaluation/tree/main/docs/presentations). Additionally, I've exported the `README.md` to HTML and hosted it on [GitHub Pages](https://moj-analytical-services.github.io/iceberg-evaluation/) for better visibility. Note that you shouldn't commit [generated files](https://homes.cs.washington.edu/~mernst/advice/version-control.html), but it's fine for exploratory projects. For production code, you should use something like the [marp-to-pages](https://github.com/ralexander-phi/marp-to-pages/blob/main/.github/workflows/marp-to-pages.yml) GitHub action, which generates PDF and HTML files as part of a pull request or merge.
 
-# Conclusion
+## Conclusion
 
 Historically, GitHub has been mainly valued for source code management. Recent enhancements to the GitHub ecosystem, coupled with various open-source tools, make it possible to integrate code, automation, tracking, and documentation within one platform. Whilst it may not work in all circumstances, we've found this setup beneficial, leading to increased efficiency, consistency, and transparency.
 
 If you have any comments or suggestions please post on the [discussion](https://github.com/ministryofjustice/data-and-analytics-engineering/discussions/10).
 
-# Acknowledgements
+## Acknowledgements
 
 I would like to thank the following people and resources:
 
