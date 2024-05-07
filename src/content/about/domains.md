@@ -21,3 +21,5 @@ To find out more about each domain please access the links below. Please note th
 - [Corporate](https://github.com/moj-analytical-services/DMET-corporate/blob/main/README.md) supports providing data for a number of core MoJ business areas including people, commercial and finance.
 
 - Counter-terrorism works across domains to manage national security risk from terrorism-connected offenders.  We communicate via our Slack [channel](https://moj.enterprise.slack.com/archives/C03K0CU637U) or [Confluence site](https://dsdmoj.atlassian.net/wiki/spaces/JCH/overview): please message [#ask-data-engineering](https://moj.enterprise.slack.com/archives/C8X3PP1TN) for more information.
+
+- [Better Outcomes through Linked Data (BOLD)](https://github.com/moj-analytical-services/dmet-bold) is a data linking programme which aims to improve the connectedness of government data in England and Wales. For detailed information please visit our [Confluence site](https://dsdmoj.atlassian.net/wiki/spaces/CDE1/pages/4317806783/BOLD+-+Data+Engineering).
