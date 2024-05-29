@@ -57,7 +57,7 @@ Using fewer tools can lead to cost savings. However, this reason may be less sig
 Well not actually everything:
 
 - GitHub [limits the size of files](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) allowed in repositories. Moreover, Git isn't great for storing binary files which [are not diffable](https://opensource.com/life/16/8/how-manage-binary-blobs-git-part-7). Instead, you should store large and binary files in a dedicated file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
-- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials and is great for personal projects, but it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
+- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store credentials and is great for personal projects, it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
 This still leaves many other features that can be effectively incorporated into GitHub.
 
