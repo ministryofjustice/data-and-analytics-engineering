@@ -119,7 +119,7 @@ flowchart
 
 ![Nested epics](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/mermaid.png)
 
-Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work. You can [disable issues](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues) in the non-core repos to enfoce this rule.
+Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work. You can [disable issues](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues) in the non-core repositories to enfoce this rule.
 
 #### 3. Labels
 
