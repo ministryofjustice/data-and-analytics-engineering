@@ -2,7 +2,7 @@
 title: GitHub as a one-stop shop
 description: Store all your project artefacts in a single, searchable location on GitHub
 date: 2024-02-19
-modified: 2024-02-19
+modified: 2024-05-29
 author:
   name: Soumaya Mauthoor
 permalink: "/blog/posts/{{ title | slugify }}/"
@@ -13,15 +13,16 @@ tags:
   - Project Management
 ---
 
-Many people will be familiar with a development environment setup where they use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage code, but rely on a plethora of tools for creating and managing all other project outputs. While each tool can be very effective in its own right, this often leads to scattered deliverables, causing confusion and an increased risk of inconsistency. In this post, I outline how to consolidate all your project artefacts on GitHub by leveraging recent GitHub and open-source tools:
+Many people will be familiar with a development environment setup where they use [GitHub repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to store and manage code, but rely on a plethora of tools for creating and managing all other project outputs. While each tool can be very effective in its own right, this often leads to scattered deliverables, causing confusion and an increased risk of inconsistency. In this post, I outline how to consolidate all your project artefacts on GitHub by leveraging GitHub and open-source tools:
 
 - [GitHub Actions](https://docs.github.com/en/actions) for automating software workflows
 - [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) for planning and tracking work
 - [GitHub Discussions](https://docs.github.com/en/discussions) for documenting discovery work and communicating with users
+- [GitHub Pages](https://docs.github.com/en/pages) for hosting static websites
 - A `/docs` folder for documenting user guidance and technical concepts in Markdown
 - [Mermaid](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) for creating simple diagrams using Markdown-like syntax
 - [Excalidraw](https://excalidraw.com/) for creating editable diagrams and whiteboard sketches, which can be saved as code in a `/docs/images` folder
-- [Marp](https://marp.app/) for creating slide decks in Markdown, which can be saved as code in a `/docs/presentation` folder
+- [Marp](https://marp.app/) for creating slide decks in Markdown, which can be saved as code in a `/docs/slides` folder
 
 These suggestions are summarised in the Excalidraw whiteboard below. Clicking on the diagram will import it into the Excalidraw web editor, where you can access links to examples from the [MoJ](https://mojdigital.blog.gov.uk/).
 
@@ -37,7 +38,7 @@ However, there are several advantages which I feel make it worthwhile, especiall
 
 ### Searchability
 
-Having all your code, tickets, documentation, and presentations in one place makes it super easy to search through everything, *if you can find it*. Unfortunately, GitHub search used to be [very limited](https://github.com/isaacs/github/issues/908) (you can read why in the [history of code search at GitHub](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/)). Thankfully, GitHub rolled out a new search engine and browser in [May 2023](https://github.blog/2023-05-08-github-code-search-is-generally-available/), making it possible to find relevant results at reasonable speed. Knowing the [GitHub search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) helps.
+Having all your code, tickets, documentation, and slides in one place makes it super easy to search through everything, *if you can find it*. Unfortunately, GitHub search used to be [very limited](https://github.com/isaacs/github/issues/908) (you can read why in the [history of code search at GitHub](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/)). Thankfully, GitHub rolled out a new search engine and browser in [May 2023](https://github.blog/2023-05-08-github-code-search-is-generally-available/), making it possible to find relevant results at reasonable speed. Knowing the [GitHub search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) helps.
 
 ### Interoperability
 
@@ -56,13 +57,13 @@ Using fewer tools can lead to cost savings. However, this reason may be less sig
 Well not actually everything:
 
 - GitHub [limits the size of files](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) allowed in repositories. Moreover, Git isn't great for storing binary files which [are not diffable](https://opensource.com/life/16/8/how-manage-binary-blobs-git-part-7). Instead, you should store large and binary files in a dedicated file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
-- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials, it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
+- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store keys and credentials and is great for personal projects, but it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
 This still leaves many other features that can be effectively incorporated into GitHub.
 
 ## Automation
 
-[GitHub Actions](https://docs.github.com/en/actions) automates software workflows, allowing users to build, test, and deploy code directly from their GitHub repositories. Since its release in 2019, it has become the preferred CI tool for [personal projects](https://blog.jetbrains.com/teamcity/2023/07/best-ci-tools/). The popularity of GitHub Actions is great vindication for the one-stop shop approach this post is promoting. It also helps that the YAML configuration is user-friendly, and that the [GitHub Marketplace](https://github.com/marketplace?type=) offers a vibrant and growing ecosystem with a wide range of pre-built actions.
+[GitHub Actions](https://docs.github.com/en/actions) automates software workflows, allowing users to build, test, and deploy code directly from their GitHub repositories. Since its release in 2019, it has become the preferred CI tool for [personal projects](https://blog.jetbrains.com/teamcity/2023/07/best-ci-tools/). GitHub Actions' popularity corroborates the integrated approach advocated in this post. It also helps that the YAML configuration is user-friendly, and that the [GitHub Marketplace](https://github.com/marketplace?type=) offers a vibrant and growing ecosystem with a wide range of pre-built actions.
 
 Due to limited support for complex workflows, industry adoption has been more gradual. Uptake will accelerate as more capabilities are added, such as [Job Summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/) and [GitHub Actions Importer](https://github.blog/2023-03-01-github-actions-importer-is-now-generally-available/). As validation, in 2023 Thoughtworks upgraded the GitHub Actions rating from [`Trial` to `Adopt`](https://www.thoughtworks.com/en-gb/radar/platforms/github-actions).
 
@@ -118,7 +119,7 @@ flowchart
 
 ![Nested epics](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/mermaid.png)
 
-Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work.
+Note that cross-repository milestones [are not yet supported](https://github.com/orgs/community/discussions/6296). A workaround is to record all issues in a core repository, even if the code is split amongst multiple repositories. This also makes it easier to manage work. You can [disable issues](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/disabling-issues) in the non-core repos to enfoce this rule.
 
 #### 3. Labels
 
@@ -167,7 +168,7 @@ This includes architecture, dependencies, setup instructions and user guidance. 
 
 GitHub uses a variant of Markdown called [GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). It also uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) syntax to expand the functionality, for example, to provide accessible tables and chunks of reusable content. However, the [basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) should suffice for most needs. 
 
-You can convert your documentation into a website, using static site generators such as [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. Documentation websites are probably more relevant for external-facing documentation. It's advisable to stick with basic markdown formatting syntax to ensure compatibility.
+You can convert your documentation into a website, using static site generators such as [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. Documentation websites are probably more relevant for external-facing documentation. This blog and our [tech radar](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/) are both hosted on GitHub pages.
 
 Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long-running tests.  
 
@@ -192,9 +193,9 @@ GitHub Discussions allow your users to [participate](https://docs.github.com/en/
 
 Instead, I recommend using [Excalidraw](https://excalidraw.com/), an open-source diagramming and whiteboarding tool. GitHub doesn't provide native support for Excalidraw, but you can export the diagram to SVG or PNG and [embed the Excalidraw scene data](https://kevinjalbert.com/using-excalidraws-embedded-scene-feature-for-collaborative-diagramming/) to make it editable. Whilst SVG is preferable because it is smaller in size and is text-based (and hence diffable), unfortunately, it doesn't [render as nicely in GitHub](https://github.com/excalidraw/excalidraw/issues/4855) so I would stick with PNG for now. You can then upload the image file directly to issues and discussions, or save it to a `/docs/images` folder for version control. GitHub has a nifty [image view mode](https://github.blog/2011-03-21-behold-image-view-modes/) for reviewing changes to images. You can edit diagrams on the Excalidraw web editor or download the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor) to edit locally. You can also import diagrams directly from GitHub into the web editor by passing in the raw image URL (see my Excalidraw diagram hyperlink as an example). Lastly, Excalidraw plus GitHub Discussions is great for recording the outcome of collaborative whiteboard sessions, which tend to get lost.
 
-### Presentations
+### Slides
 
-[Marp](https://marp.app/) is an open-source ecosystem for creating slide decks in Markdown, which can be exported to various formats, including PDF and HTML. Similar to Excalidraw, GitHub does not provide native support, but you can save the Markdown files in a `/docs/presentation` folder. The [marp-to-pages](https://github.com/ralexander-phi/marp-to-pages) GitHub template repository is great for starting out and includes a GitHub action for exporting to HTML and publishing to GitHub Pages. The [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor) makes it easier to edit and preview Markdown files locally.
+[Marp](https://marp.app/) is an open-source ecosystem for creating slide decks in Markdown, which can be exported to various formats, including PDF and HTML. Similar to Excalidraw, GitHub does not provide native support, but you can save the Markdown files in a `/docs/slides` folder. The [marp-to-pages](https://github.com/ralexander-phi/marp-to-pages) GitHub template repository is great for starting out and includes a GitHub action for exporting to HTML and publishing to GitHub Pages. The [VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor) makes it easier to edit and preview Markdown files locally.
 
 While there's a bit of a learning curve, once you've decided on a format, it's very intuitive. We've successfully used Marp to create slide decks when [evaluating Iceberg](https://github.com/moj-analytical-services/iceberg-evaluation/tree/main/docs/presentations). Additionally, I've exported the `README.md` to HTML and hosted it on [GitHub Pages](https://moj-analytical-services.github.io/iceberg-evaluation/) for better visibility. Note that you shouldn't commit [generated files](https://homes.cs.washington.edu/~mernst/advice/version-control.html), but it's fine for exploratory projects. For production code, you should use something like the [marp-to-pages](https://github.com/ralexander-phi/marp-to-pages/blob/main/.github/workflows/marp-to-pages.yml) GitHub action, which generates PDF and HTML files as part of a pull request or merge.
 
