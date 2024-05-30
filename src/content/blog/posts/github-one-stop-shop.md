@@ -57,7 +57,7 @@ Using fewer tools can lead to cost savings. However, this reason may be less sig
 Well not actually everything:
 
 - GitHub [limits the size of files](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) allowed in repositories. Moreover, Git isn't great for storing binary files which [are not diffable](https://opensource.com/life/16/8/how-manage-binary-blobs-git-part-7). Instead, you should store large and binary files in a dedicated file store like [Git LFS](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)
-- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store credentials and is great for personal projects, it's not designed to be a comprehensive secret management tool – instead, consider an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
+- Although [GitHub Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions) can securely store credentials and is great for personal projects, it's not designed to be a comprehensive secret management tool – instead, consider using an infrastructure-based solution such as [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [Microsoft Azure Key Vault](https://azure.microsoft.com/en-gb/products/key-vault/)
 
 This still leaves many other features that can be effectively incorporated into GitHub.
 
@@ -168,14 +168,16 @@ This includes architecture, dependencies, setup instructions and user guidance. 
 
 GitHub uses a variant of Markdown called [GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). It also uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) syntax to expand the functionality, for example, to provide accessible tables and chunks of reusable content. However, the [basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) should suffice for most needs. 
 
-You can convert your documentation into a website, using static site generators such as [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. Documentation websites are probably more relevant for external-facing documentation. This blog and our [tech radar](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/) are both hosted on GitHub pages.
-
 Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long-running tests.  
 
 A few things to note about structuring the `/docs` folder:
 
 1. With a monorepo layout, you can split off into multiple `/docs` folders at the root of each sub-folder, but this can make it more complex to manage and navigate.
-2. With a multi-repo approach, you can use the core repository or create a specific documentation repository for storing team or application-level documentation. You can't combine code and documentation changes made against different repositories in a single pull request but you can still link them via a task list.
+2. With a multi-repo approach, you can use the core repository or create a specific documentation repository for storing team or application-level documentation. You can't combine code and documentation changes made against different repositories in a single pull request, but you can still link them via a task list.
+
+### Publishing your documentation
+
+You can convert your documentation into a website using [static site generators](https://en.wikipedia.org/wiki/Static_site_generator) and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. For instance, this blog is hosted on GitHub Pages and generated using an [Eleventy plugin](https://x-govuk.github.io/govuk-eleventy-plugin/).  GitHub Pages isn't limited to hosting documentation; we also use it to publish our [tech radar](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/).
 
 ### Documentation about your approach
 
