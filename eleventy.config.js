@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('./tailwind.config.js')
     eleventyConfig.addWatchTarget('./src/assets/css/input.css')
     eleventyConfig.addPassthroughCopy({ './_tmp/output.css': './assets/output.css' })
+    eleventyConfig.addPassthroughCopy({ './src/assets/images': './assets/images' })
     eleventyConfig.addShortcode('version', function () {
         return now
     })
