@@ -15,7 +15,7 @@ Data engineers bridge the gap between data producers and data users.
 
 We work with digital teams to help them make data from their services available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk/index.html).
 
-We do this by building and running data pipelines ourselves, and by supporting digital teams to use self-service tools and infrastructure on the Analytical Platform. We use a data lake centric approach, which is summarised in the [data solution architecture](./data-architecture.md).
+We do this by building and running data pipelines ourselves, and by supporting digital teams to use self-service tools and infrastructure on the Analytical Platform. We use a data lake-centric approach, which is summarised in the [data solution architecture](./data-architecture.md).
 
 We also contribute to the development of the Analytical Platform and other foundational data infrastructure, including the [data uploader](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/data-uploader/index.html), [Airflow](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/airflow/index.html), [Create a Derived Table](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/index.html), [Register my Data](https://github.com/ministryofjustice/register-my-data) (internal only), the [data extractor](https://github.com/ministryofjustice/data-engineering-data-extractor) (internal only), and various packages.
 
