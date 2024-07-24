@@ -1,9 +1,9 @@
 ---
 layout: sub-navigation
-title: Data and Analytics Engineering Architecture
+title: Architecture
 description: Find out about our architecture, key tools and services
 eleventyNavigation:
-  key: Data and Analytics Engineering Architecture
+  key: Architecture
   parent: About
 ---
 
@@ -13,7 +13,7 @@ As explained in the [About](./index.md) page, our data and analytics engineers d
 
 The data and analytics engineering context diagram summarises these steps and data storage layers:
 
-![logical data architecture](./images/context-diagram.excalidraw.png)
+![logical data architecture](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/about/images/context-diagram.excalidraw.png)
 
 ## Key Tools and Services
 
@@ -21,7 +21,7 @@ We use various tools to extract and transform our data, depending on the data so
 
 The data and analytics engineering container diagram summarises some of these tools and services:
 
-![data architecture](./images/container-diagram.drawio.svg)
+![data architecture](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/about/images/container-diagram.excalidraw.png)
 
 1. Data and metadata is collected from multiple data sources across the MoJ and external to the MoJ, including [Amazon S3](https://aws.amazon.com/s3/), file shares, relational databases, APIs, and [Azure Blob Storage](https://azure.microsoft.com/en-gb/products/storage/blobs).
 
