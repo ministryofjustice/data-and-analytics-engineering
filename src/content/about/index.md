@@ -7,7 +7,7 @@ eleventyNavigation:
   parent: Home
 ---
 
-Data and analytics engineers bridge the gap between data producers and data users, developing analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk). We use a layered data lake-centric approach, which is summarised in the [data and analytics engineering architecture](./data-architecture.md).
+Data and analytics engineers bridge the gap between data producers and data users, developing analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk). We use a layered data lake-centric approach, which is summarised in the [data and analytics engineering architecture](./architecture).
 
 ## Data Engineering
 
