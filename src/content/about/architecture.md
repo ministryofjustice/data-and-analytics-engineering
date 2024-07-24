@@ -1,7 +1,7 @@
 ---
 layout: sub-navigation
 title: Architecture
-description: Find out about our architecture, key tools and services
+description: Find out about the data and analytics engineering architecture, key tools and services
 eleventyNavigation:
   key: Architecture
   parent: About
@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## Context
 
-As explained in the [About](./index.md) page, our data and analytics engineers develop analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk). We implement a [data lake](https://aws.amazon.com/what-is/data-lake/)-centric approach to manage our data, using a cloud-based [object store](https://aws.amazon.com/what-is/object-storage/). The pipelines follow a typical ['ELT' process](https://en.wikipedia.org/wiki/Extract,_load,_transform) (Extract, Load, Transform), producing cleaner, more standardized data in the format that downstream analysts expect, ensuring reliability. Data engineers are responsible for extracting and standardising the source data, whilst analytics engineers are responsible for converting the data into a more user-friendly format. This allows experienced MoJ data users, such as Data Analysts and Data Scientists, to derive valuable insights with less time spent on data pre-processing. Data users can then disseminate the analysed data through reports or dashboards. 
+As explained in the [About](../about) page, our data and analytics engineers develop analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk). We implement a [data lake](https://aws.amazon.com/what-is/data-lake/)-centric approach to manage our data, using a cloud-based [object store](https://aws.amazon.com/what-is/object-storage/). The pipelines follow a typical ['ELT' process](https://en.wikipedia.org/wiki/Extract,_load,_transform) (Extract, Load, Transform), producing cleaner, more standardized data in the format that downstream analysts expect, ensuring reliability. Data engineers are responsible for extracting and standardising the source data, whilst analytics engineers are responsible for converting the data into a more user-friendly format. This allows experienced MoJ data users, such as Data Analysts and Data Scientists, to derive valuable insights with less time spent on data pre-processing. Data users can then disseminate the analysed data through reports or dashboards. 
 
 The data and analytics engineering context diagram summarises these steps and data storage layers:
 
