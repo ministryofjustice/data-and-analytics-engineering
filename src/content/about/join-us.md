@@ -24,7 +24,7 @@ We're hosting a webinar event for these roles on Monday 2nd September 2024, 6-7P
 
 This will also be an opportunity to ask questions about the roles.
 
-You can see the [About](../) page for more information about what data and analytics engineers do and the [Architecture](../architecture/) page to find out more about technology stack, tools and services.
+You can also see the [About](../) page for more information about what data and analytics engineers do and the [Architecture](../architecture/) page to find out more about technology stack, tools and services.
 
 ---------
 
