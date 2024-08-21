@@ -9,7 +9,7 @@ eleventyNavigation:
 
 > Last updated: 23rd August 2024
 
-We have the current roles open at the moment:
+We currently have the following roles open:
 
 - Lead Data Engineer (Grade 7)
 - Lead Analytics Engineer (Grade 7)
@@ -17,14 +17,14 @@ We have the current roles open at the moment:
 - Senior Analytics Engineer (SEO)
 - Analytics Engineer (HEO)
 
-We're hosting a webinar event for these roles on Monday 2nd September 2024, 6-7PM ([sign up link here](https://events.teams.microsoft.com/event/a1df44e8-cf15-438e-acea-d3834f0de585@c6874728-71e6-41fe-a9e1-2e8c36776ad8)), at which we'll share information on:
+For more information about the roles of data and analytics engineers, please visit our [About](../) page. To learn more about our technology stack, tools, and services, check out the [Architecture](../architecture/) page.
 
-- The context of Data and Analytics Engineering within the MoJ, our philosophy of data provision and the analytical teams we support
-- Applying for positions in the Civil Service, with hints and tips for a successful application
+Additionally, we are hosting a webinar for these positions on Monday, September 2nd, 6-7PM ([sign up link here](https://events.teams.microsoft.com/event/a1df44e8-cf15-438e-acea-d3834f0de585@c6874728-71e6-41fe-a9e1-2e8c36776ad8)). During this event, we'll cover:
 
-This will also be an opportunity to ask questions about the roles.
+- The role of Data and Analytics Engineering within the MoJ, our philosophy on data provision, and the analytical teams we support
+- How to apply for positions within the Civil Service, including tips for a successful application
 
-You can also see the [About](../) page for more information about what data and analytics engineers do and the [Architecture](../architecture/) page to find out more about technology stack, tools and services.
+This webinar will also provide an opportunity to ask questions about the roles. In the meantime, we've posted answers to frequently asked questions below.
 
 ---------
 
