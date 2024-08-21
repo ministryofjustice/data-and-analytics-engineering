@@ -2,7 +2,6 @@
 layout: sub-navigation
 title: Join Us
 description: Find out about our latest recruitment drive
-date: 2023-09-21
 eleventyNavigation:
   key: Join Us
   parent: About
