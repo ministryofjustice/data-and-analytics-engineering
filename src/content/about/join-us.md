@@ -17,7 +17,9 @@ We currently have the following roles open:
 - Senior Analytics Engineer (SEO)
 - Analytics Engineer (HEO)
 
-For more information about the roles of data and analytics engineers, please visit our [About](../) page. To learn more about our technology stack, tools, and services, check out the [Architecture](../architecture/) page.
+Successful candidates will join the Data Modelling and Engineering Team (DMET), but will also collaborate closely with the Data Platform team. To learn more about our team structure, please visit our [Team Structure](../structure/) page.
+
+For more details about the roles of data and analytics engineers, please visit our [About](../) page. To find out more about our technology stack, tools, and services, check out the [Architecture](../architecture/) page.
 
 Additionally, we are hosting a webinar for these positions on Monday, September 2nd, 6-7PM ([sign up link here](https://events.teams.microsoft.com/event/a1df44e8-cf15-438e-acea-d3834f0de585@c6874728-71e6-41fe-a9e1-2e8c36776ad8)). During this event, we'll cover:
 
