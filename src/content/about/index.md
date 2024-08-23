@@ -7,11 +7,13 @@ eleventyNavigation:
   parent: Home
 ---
 
-Data and analytics engineers enable data-driven decision making and the personalisation of services across the department by delivering innovative solutions and building technical excellence.
+Data and analytics engineers enable data-driven decision making and the personalisation of services across the department by delivering innovative solutions and promoting technical excellence.
 
 We bridge the gap between data producers and data users, developing analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk).
 
-We use a layered data lake-centric approach, which is summarised in the [data and analytics engineering architecture](./architecture).
+This diagram helps to summarise some of these different roles:
+
+![roles](./images/roles.excalidraw.png)
 
 ## Data Engineering
 
