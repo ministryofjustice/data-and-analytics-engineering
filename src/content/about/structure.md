@@ -22,3 +22,11 @@ Data and analytics engineers belong to the same Data directorate, as summarised 
 DMET is divided into multiple portfolio teams, each with a specific focus. The domain-led teams work closely with data providers and consumers from specific domains to understand their requirements and ensure their needs are met. Meanwhile, the cross-functional teams collaborate across team boundaries to promote best practices and maintain alignment.
 
 ![dmet teams](./images/dmet-teams.excalidraw.png)
+
+To find out more about each portfolio teams, please follow these links:
+
+- [Centre for Excellence](https://moj-analytical-services.github.io/dmet-cfe/)
+- HMPPS - Under construction
+- HMCTS - Under construction
+- Corporate and Programmes - Under construction
+- Centre for Enablement
