@@ -25,7 +25,7 @@ We validate, deduplicate and standardise the extracted data to produce curated d
 
 We do this by building and running data pipelines ourselves, and by supporting digital teams to use self-service tools and infrastructure on the Analytical Platform. 
 
-We also contribute to the development of the Analytical Platform and other foundational data infrastructure, including the [data uploader](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/data-uploader/index.html), [Airflow](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/airflow/index.html), [Create a Derived Table](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/index.html), [Register my Data](https://github.com/ministryofjustice/register-my-data) (internal only), the [data extractor](https://github.com/ministryofjustice/data-engineering-data-extractor) (internal only), and various packages.
+We also collaborate with platform teams, contributing to the development of the Analytical Platform and other foundational data infrastructure, including the [data uploader](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/data-uploader/index.html), [Airflow](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/airflow/index.html), [Create a Derived Table](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/index.html), [Register my Data](https://github.com/ministryofjustice/register-my-data) (internal only) and the [data extractor](https://github.com/ministryofjustice/data-engineering-data-extractor) (internal only).
 
 ### What value do we provide?
 
