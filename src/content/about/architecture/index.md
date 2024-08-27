@@ -9,16 +9,17 @@ eleventyNavigation:
 
 ## Context
 
-As explained in the [About](../) page, our data and analytics engineers develop analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk). We implement a [data lake](https://aws.amazon.com/what-is/data-lake/)-centric approach to manage our data, using a cloud-based [object store](https://aws.amazon.com/what-is/object-storage/). The pipelines follow a typical ['ELT' process](https://en.wikipedia.org/wiki/Extract,_load,_transform) (Extract, Load, Transform), producing cleaner, more standardized data in the format that downstream analysts expect, ensuring reliability. 
+As explained in the [About](../) page, our data and analytics engineers develop analytical pipelines and self-service tools to acquire and transform data, making it available into the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk). We implement a [data lake](https://aws.amazon.com/what-is/data-lake/)-centric approach to manage our data, using a cloud-based [object store](https://aws.amazon.com/what-is/object-storage/). The pipelines follow a typical ['ELT' process](https://en.wikipedia.org/wiki/Extract,_load,_transform) (Extract, Load, Transform), producing cleaner, more standardized data in the format that downstream analysts expect, ensuring reliability.
 
-Data engineers are responsible for extracting and standardising the source data, whilst analytics engineers are responsible for converting the data into a more user-friendly format. This allows experienced MoJ data users, such as data analysts and data scientists, to derive valuable insights with less time spent on data pre-processing. Data users can then disseminate the analysed data through reports or dashboards.
+Data engineers are responsible for extracting, standardising and loading the source data to the Analytical Platform. Analytics engineers then use [data modelling](https://en.wikipedia.org/wiki/Data_modeling) to convert the data into a more conformed, accessible format. Data users can then consume this data, apply further processing or machine learning, and disseminate the analyzed information through reports or dashboards.
+
 The data and analytics engineering context diagram summarises these steps and data storage layers:
 
 ![logical data architecture](./images/context-diagram.excalidraw.png)
 
 ## Key Tools and Services
 
-We use various tools to extract and transform our data, depending on the data source, volume, frequency and various other characteristics. To support this infrastructure, we rely on various [AWS serverless and managed services](https://aws.amazon.com/blogs/big-data/aws-serverless-data-analytics-pipeline-reference-architecture/) to ensure scalability, resilience, security, and cost-effectiveness.
+We use various tools to extract and transform our data, depending on the data source, volume, frequency and various other characteristics. To support this infrastructure, we rely on different open source tools and [AWS services](https://aws.amazon.com/blogs/big-data/aws-serverless-data-analytics-pipeline-reference-architecture/) to ensure scalability, resilience, security, and cost-effectiveness.
 
 The data and analytics engineering container diagram summarises some of these tools and services:
 
@@ -31,3 +32,5 @@ The data and analytics engineering container diagram summarises some of these to
 3. The Data Lake consists of Amazon S3 for data storage, [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html) as a metadata repository, [Apache Hive and Iceberg](https://aws.amazon.com/what-is/apache-iceberg/) to provide a SQL-like interface, and [AWS IAM](https://aws.amazon.com/iam/) to secure access to the data.
 
 4. We use [Amazon Athena](https://aws.amazon.com/athena/) along with [dbt](https://www.getdbt.com/) for SQL-based transformations. Data can be pre-processed using Python scheduled with [Amazon Managed Workflows for Apache Airflow](https://aws.amazon.com/managed-workflows-for-apache-airflow/). We also make these transformation tools available to data users to run their own analytical workflows, including machine learning workflows. The transformed data is then saved to the data lake.
+
+For more details about our technology stack, please visit our [Technology Radar](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/).

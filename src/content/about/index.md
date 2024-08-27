@@ -34,13 +34,13 @@ Data can now be received daily, instead of weekly, monthly or quarterly, generat
 
 Analytics engineers start with the curated data provided by data engineers.
 
-We work with analytical users (usually analysts, data scientists and statisticians) to understand how they use data, so that we can design and build derived tables to meet their needs.
+We work with analytical users (usually analysts, data scientists and statisticians) to understand how they use data, so that we can design and build conformed tables to meet their needs.
 
-To build derived tables we clean, join and transform the curated tables produced by data engineers, using dimensional modelling and implementing tests and documentation to ensure that the output is reliable and understandable.
+To build conformed tables we clean, join and transform the curated tables produced by data engineers, using dimensional modelling and implementing tests and documentation to ensure that the output is reliable and understandable.
 
 ### What value do we provide?
 
-The derived tables that we produce accelerate the production of statistics, management information (MI), analysis, and data science products.
+The conformed tables that we produce accelerate the production of statistics, management information (MI), analysis, and data science products.
 
 Analysts and data scientists need to spend less time transforming and understanding complex and messy data sets, so they can start deriving insights faster and make better use of their technical skills to solve new problems.
 
