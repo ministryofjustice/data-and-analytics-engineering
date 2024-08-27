@@ -23,7 +23,7 @@ For more details about the roles of data and analytics engineers, please visit o
 
 Additionally, we are hosting a webinar for these positions on Monday, September 2nd, 6-7PM ([sign up link here](https://events.teams.microsoft.com/event/a1df44e8-cf15-438e-acea-d3834f0de585@c6874728-71e6-41fe-a9e1-2e8c36776ad8)). During this event, we'll cover:
 
-- The role of Data and Analytics Engineering within the MoJ, our philosophy on data provision, and the analytical teams we support
+- The role of data and analytics engineering within the MoJ, our philosophy on data provision, and the analytical teams we support
 - How to apply for positions within the Civil Service, including tips for a successful application
 
 This webinar will also provide an opportunity to ask questions about the roles. In the meantime, we've posted answers to frequently asked questions below.
@@ -40,7 +40,7 @@ We're open to flexible and hybrid working arrangements that include regular home
 
 ### What kind of people are you looking for for these roles?
 
-We are really keen to break away from the archetypal views of a Data Engineer and Analytics Engineer. We really encourage anyone with the relevant skills and willingness to learn to apply. We will support you to learn skills you may not yet had the opportunity to learn, but show an eagerness to. 
+We are really keen to break away from the archetypal views of a data engineer and analytics engineer. We really encourage anyone with the relevant skills and willingness to learn to apply. We will support you to learn skills you may not yet had the opportunity to learn, but show an eagerness to. 
 
 ### Sounds good, but I still have some questions. Where can I ask them?
 

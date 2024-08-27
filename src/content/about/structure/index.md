@@ -25,8 +25,8 @@ DMET is divided into multiple portfolio teams, each with a specific focus. The d
 
 To find out more about each portfolio teams, please follow these links:
 
-- [Centre for Excellence](https://moj-analytical-services.github.io/dmet-cfe/)
+- [Centre for Excellence (CfE)](https://moj-analytical-services.github.io/dmet-cfe/)
 - HMPPS - Under construction
 - HMCTS - Under construction
 - Corporate and Programmes - Under construction
-- Centre for Enablement
+- Centre for Enablement - Under construction
