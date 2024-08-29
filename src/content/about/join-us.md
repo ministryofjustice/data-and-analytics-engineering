@@ -11,11 +11,11 @@ eleventyNavigation:
 
 We currently have the following roles open:
 
-- Lead Data Engineer (Grade 7)
-- Lead Analytics Engineer (Grade 7)
-- Senior Data Engineer (SEO)
-- Senior Analytics Engineer (SEO)
-- Analytics Engineer (HEO)
+- [Lead Data Engineer](https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=am9ibGlzdF92aWV3X3ZhYz0xOTIwOTEzJnNlYXJjaHNvcnQ9c2NvcmUmdXNlcnNlYXJjaGNvbnRleHQ9OTM5MTUxMjgmb3duZXI9NTA3MDAwMCZvd25lcnR5cGU9ZmFpciZzZWFyY2hwYWdlPTEmcGFnZWFjdGlvbj12aWV3dmFjYnlqb2JsaXN0JnBhZ2VjbGFzcz1Kb2JzJnJlcXNpZz0xNzI0OTM2MDUzLWFmMTY4NjExNmI4YWFmMzhmMmYwNWJjZTVkOGUzZTU2MmQyMDZjNTU=) (Grade 7)
+- [Lead Analytics Engineer](https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=c2VhcmNocGFnZT0xJm93bmVydHlwZT1mYWlyJnVzZXJzZWFyY2hjb250ZXh0PTkzOTE1MTI4Jm93bmVyPTUwNzAwMDAmam9ibGlzdF92aWV3X3ZhYz0xOTIwOTAzJnNlYXJjaHNvcnQ9c2NvcmUmcGFnZWNsYXNzPUpvYnMmcGFnZWFjdGlvbj12aWV3dmFjYnlqb2JsaXN0JnJlcXNpZz0xNzI0OTM2MDUzLWFmMTY4NjExNmI4YWFmMzhmMmYwNWJjZTVkOGUzZTU2MmQyMDZjNTU=) (Grade 7)
+- [Senior Data Engineer](https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=b3duZXJ0eXBlPWZhaXImc2VhcmNocGFnZT0xJmpvYmxpc3Rfdmlld192YWM9MTkyMDkzMSZzZWFyY2hzb3J0PXNjb3JlJnVzZXJzZWFyY2hjb250ZXh0PTkzOTE1MTI4Jm93bmVyPTUwNzAwMDAmcGFnZWNsYXNzPUpvYnMmcGFnZWFjdGlvbj12aWV3dmFjYnlqb2JsaXN0JnJlcXNpZz0xNzI0OTM2MDUzLWFmMTY4NjExNmI4YWFmMzhmMmYwNWJjZTVkOGUzZTU2MmQyMDZjNTU=) (SEO)
+- [Senior Analytics Engineer](https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=c2VhcmNocGFnZT0xJm93bmVydHlwZT1mYWlyJnVzZXJzZWFyY2hjb250ZXh0PTkzOTE1MTI4Jm93bmVyPTUwNzAwMDAmam9ibGlzdF92aWV3X3ZhYz0xOTIwOTAzJnNlYXJjaHNvcnQ9c2NvcmUmcGFnZWNsYXNzPUpvYnMmcGFnZWFjdGlvbj12aWV3dmFjYnlqb2JsaXN0JnJlcXNpZz0xNzI0OTM2MDUzLWFmMTY4NjExNmI4YWFmMzhmMmYwNWJjZTVkOGUzZTU2MmQyMDZjNTU=) (SEO)
+- [Analytics Engineer](https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=cGFnZWNsYXNzPUpvYnMmcGFnZWFjdGlvbj12aWV3dmFjYnlqb2JsaXN0JnNlYXJjaHBhZ2U9MSZvd25lcnR5cGU9ZmFpciZvd25lcj01MDcwMDAwJnVzZXJzZWFyY2hjb250ZXh0PTkzOTE1MTI4JmpvYmxpc3Rfdmlld192YWM9MTkyMDkwOSZzZWFyY2hzb3J0PXNjb3JlJnJlcXNpZz0xNzI0OTM2MDUzLWFmMTY4NjExNmI4YWFmMzhmMmYwNWJjZTVkOGUzZTU2MmQyMDZjNTU=) (HEO)
 
 Successful candidates will join the Data Modelling and Engineering Team (DMET), but will also collaborate closely with the Data Platform team. To learn more about our team structure, please visit our [Team Structure](../structure/) page.
 
