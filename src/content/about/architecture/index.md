@@ -15,7 +15,7 @@ Data engineers are responsible for extracting, standardising and loading source 
 
 We can summarise this workflow using the [Medallion architecture](https://medium.com/@junshan0/medallion-architecture-what-why-and-how-ce07421ef06f), in which data transitions through Bronze, Silver, and Gold layers, increasing in structure and quality at each stage:
 
-![logical data architecture](./images/context-diagram.excalidraw.png)
+![Using the medallion architecture to explain how data is ingested, standardised and modelled in different layers on the analytical platform](./images/context-diagram.excalidraw.png)
 
 ## Key Tools and Services
 
@@ -23,7 +23,7 @@ We use various tools to extract and transform our data, depending on the data so
 
 The data and analytics engineering container diagram summarises some of these tools and services:
 
-![data architecture](./images/container-diagram.excalidraw.png)
+![Tools and services used to ingest and transform data on the analytical platform](./images/container-diagram.excalidraw.png)
 
 1. Data and metadata is collected from multiple data sources across the MoJ and external to the MoJ, including [Amazon S3](https://aws.amazon.com/s3/), file shares, relational databases, APIs, and [Azure Blob Storage](https://azure.microsoft.com/en-gb/products/storage/blobs).
 
