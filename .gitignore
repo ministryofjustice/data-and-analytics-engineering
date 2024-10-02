@@ -131,3 +131,7 @@ dist
 
 # Build files
 _site/
+
+# python 
+venv*
+.python-version
