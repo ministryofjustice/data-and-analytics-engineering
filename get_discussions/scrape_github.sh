@@ -18,12 +18,7 @@ REPOSITORIES=(
   "moj-analytical-services/create-a-derived-table"
 )
 LABEL="RFC" # Label to filter discussions
-OUTPUT_FILE="${LABEL}_discussions.json" # Output file for all discussions
-
-# Initialize the output file
-echo "[" > "$OUTPUT_FILE" # Start the JSON array
-
-first_item=true # Flag to handle commas correctly
+OUTPUT_DIR="./src/content/handbook/rfcs/rfc_posts/" # Output directory for markdown files
 
 # Loop through each repository
 for REPO in "${REPOSITORIES[@]}"; do
@@ -38,6 +33,7 @@ for REPO in "${REPOSITORIES[@]}"; do
       discussions(first: 100) { \
         edges { \
           node { \
+            number \
             title \
             url \
             author { login } \
@@ -68,6 +64,7 @@ EOF
         .data.repository.discussions.edges[] | 
         select(.node.labels.nodes | map(.name) | index(\"$LABEL\")) | 
         {
+            id: .node.number,
             title: .node.title,
             url: .node.url,
             author: .node.author.login,
@@ -76,14 +73,39 @@ EOF
             last_updated: (.node.updatedAt | split(\"T\") | .[0]) 
         }")
 
-      # Append discussions to the output file
+      # Save each discussion as a markdown file
       while IFS= read -r discussion; do
-          if $first_item; then
-              first_item=false
-          else
-              echo "," >> "$OUTPUT_FILE" # Add a comma before each subsequent item
-          fi
-          echo "$discussion" >> "$OUTPUT_FILE" # Write the discussion to the file
+          discussion_id=$(echo "$discussion" | jq -r '.id')
+          title=$(echo "$discussion" | jq -r '.title')
+          url=$(echo "$discussion" | jq -r '.url')
+          author=$(echo "$discussion" | jq -r '.author')
+          labels=$(echo "$discussion" | jq -r '.labels | join("\n- ")')
+          repo=$(echo "$discussion" | jq -r '.repo')
+          last_updated=$(echo "$discussion" | jq -r '.last_updated')
+          file_path="$OUTPUT_DIR/${repo}_${discussion_id}.md"
+
+          # Write the discussion info to a markdown file
+          cat <<EOF > "$file_path"
+---
+title: $title
+description: $repo
+date: $last_updated
+author:
+  name: $author
+permalink: "/rfcs/rfc_posts/{{ title | slugify }}/"
+tags:
+$(if [ -n "$labels" ]; then echo "- $labels"; fi)
+eleventyNavigation:
+  key: $title
+  parent: rfcs
+---
+
+[$title]($url)
+
+EOF
+
+          echo "Saved discussion '$title' to $file_path"
+
       done <<< "$discussions" # Read discussions from the variable
   else
       echo "Error: No discussions found or invalid response for '$ORG/$REPO_NAME'."
@@ -91,10 +113,4 @@ EOF
   fi
 done
 
-# Close the JSON array
-echo "]" >> "$OUTPUT_FILE" # Close the JSON array
-
-# Prettify the JSON file
-jq . "$OUTPUT_FILE" > tmp.json && mv tmp.json "$OUTPUT_FILE"
-
-echo "All discussions saved to $OUTPUT_FILE"
+echo "All discussions saved as markdown files in '$OUTPUT_DIR'."

@@ -18,6 +18,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection("posts", function (collectionApi) {
         return collectionApi.getFilteredByGlob("./src/content/blog/posts/*.md").reverse()
     })
+    eleventyConfig.addCollection("rfc_posts", function (collectionApi) {
+        return collectionApi.getFilteredByGlob("./src/content/handbook/rfcs/rfc_posts/*.md").reverse()
+    })
     eleventyConfig.addWatchTarget('./tailwind.config.js')
     eleventyConfig.addWatchTarget('./src/assets/css/input.css')
     eleventyConfig.addPassthroughCopy({ './_tmp/output.css': './assets/output.css' })
