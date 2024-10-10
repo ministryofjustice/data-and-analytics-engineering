@@ -28,5 +28,5 @@ To find out more about each portfolio teams, please follow these links:
 - [Centre for Excellence (CfE)](https://moj-analytical-services.github.io/dmet-cfe/)
 - HMPPS - Under construction
 - HMCTS - Under construction
-- Corporate and Programmes - Under construction
+- [Corporate and Programmes](https://justiceuk.sharepoint.com/:p:/s/DMETCorporate/EWYWM-dXQtlHguKF-Dnx8jUB8MsLZXWfamZ93GLF9cdhwA?e=S7fQ7s)
 - Centre for Enablement - Under construction
