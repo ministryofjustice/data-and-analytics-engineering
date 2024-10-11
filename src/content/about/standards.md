@@ -33,6 +33,8 @@ Branching and Merging: Developers can work on separate branches without affectin
 
 ![Illustration of a branching and merging using cats via girliemac on GitHub: a picture is worth 1,000 words.](https://raw.githubusercontent.com/girliemac/a-picture-is-worth-a-1000-words/refs/heads/main/git-purr/git-meowge.webp)
 
+Image source: 'a picture is worth 1,000 words' via [girliemac] (https://github.com/girliemac)
+
 Collaboration: By enabling multiple developers to work on the same project simultaneously, Git prevents conflicts and ensures smooth collaboration through branching and merging strategies.
 
 # GitHub: Collaboration Platform
