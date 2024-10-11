@@ -32,6 +32,10 @@ eleventyNavigation:
     <h2 class="govuk-heading-m"><a href="learning/" class="govuk-link">Learning</a></h2>
     <p class="govuk-body">TBC</p>
   </div>
+    <div class="grid-card">
+    <h2 class="govuk-heading-m"><a href="innovation/" class="govuk-link">Innovation</a></h2>
+    <p class="govuk-body">TBC</p>
+  </div>
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="blog/" class="govuk-link">Blog</a></h2>
     <p class="govuk-body">Find out what we're working on across the data and analytics engineering professions.</p>
