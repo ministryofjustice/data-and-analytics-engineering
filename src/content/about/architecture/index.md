@@ -5,6 +5,7 @@ description: Find out about the data and analytics engineering architecture, key
 eleventyNavigation:
   key: Architecture
   parent: About
+  order: 1
 ---
 
 ## Context
