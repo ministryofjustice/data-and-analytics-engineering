@@ -31,7 +31,7 @@ Tracking Changes: Git keeps a record of every change made to the codebase, allow
 
 Branching and Merging: Developers can work on separate branches without affecting the main codebase, making it easy to experiment, fix bugs, or develop features in isolation. Once work is complete, branches are merged into the main repository after a thorough review.
 
-![Illustration of a branching and merging using cats via girliemac on GitHub: a picture speak 1,000 words.]https://raw.githubusercontent.com/girliemac/a-picture-is-worth-a-1000-words/refs/heads/main/git-purr/git-meowge.webp
+! [Illustration of a branching and merging using cats via girliemac on GitHub: a picture is worth 1,000 words.](https://raw.githubusercontent.com/girliemac/a-picture-is-worth-a-1000-words/refs/heads/main/git-purr/git-meowge.webp)
 
 Collaboration: By enabling multiple developers to work on the same project simultaneously, Git prevents conflicts and ensures smooth collaboration through branching and merging strategies.
 
@@ -46,6 +46,7 @@ Code Reviews: PRs are reviewed by other team members to ensure the quality of th
 
 Discussion: Developers can leave comments, ask questions, and suggest improvements directly within the PR before it is merged.
 Issue Tracking: GitHub Issues are used to manage tasks, bugs, and feature requests. This provides a transparent system for tracking progress and prioritising work across projects.
+
 Collaboration and Documentation: GitHub also supports collaboration beyond code. Documentation can be hosted in repositories (using markdown files like README.md), making it easy to maintain project documentation, guides, and best practices alongside the codebase.
 
 # Key Practices
