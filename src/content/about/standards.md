@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 
 
-# Technology
+## Technology
 
 The following .gov websites explain technology and design standards and conventions used within Ministry of Justice Digital & Technology and across government:
 
@@ -16,16 +16,16 @@ Ministry of Justice Technical Guidance
 GOV.UK Service Toolkit
 The GDS Way
 
-# Working with git and GitHub
+## Working with git and GitHub
 
 At the Ministry of Justice, Git and GitHub are key tools for version control, collaboration, and code management across the Data & Analytics Directorate. These tools enable teams to efficiently manage projects, track changes, and collaborate on code in a structured and secure environment.
 For a comprehensive guide on how to consolidate all your project artefacts on GitHub by leveraging GitHub and open-source tools, please read Soumaya Mauthoor’s article on our blog Data Analytics and Engineering Blog: GitHub as a one-stop shop.
 
-# Git: Version Control
+## Git: Version Control
 
 Git is a powerful version control system used to track changes in your codebase, allowing developers to work on projects collaboratively while maintaining a history of every modification. At the MoJ, Git forms the backbone of our version control strategy, enabling teams to manage changes without conflict, streamline the development process, and maintain a clean, organised codebase. 
 
-# Here's how Git helps:
+## Here's how Git helps:
 
 Tracking Changes: Git keeps a record of every change made to the codebase, allowing for easy rollback and comparisons between different versions of the code.
 
@@ -33,11 +33,11 @@ Branching and Merging: Developers can work on separate branches without affectin
 
 ![Illustration of a branching and merging using cats via girliemac on GitHub: a picture is worth 1,000 words.](https://raw.githubusercontent.com/girliemac/a-picture-is-worth-a-1000-words/refs/heads/main/git-purr/git-meowge.webp)
 
-Image source: 'a picture is worth 1,000 words' via [girliemac] (https://github.com/girliemac)
+>Image source: 'a picture is worth 1,000 words' via [girliemac](https://github.com/girliemac)
 
 Collaboration: By enabling multiple developers to work on the same project simultaneously, Git prevents conflicts and ensures smooth collaboration through branching and merging strategies.
 
-# GitHub: Collaboration Platform
+## GitHub: Collaboration Platform
 
 GitHub provides a web-based interface for our Git repositories, enhancing collaboration across teams. At the MoJ, GitHub serves as a central hub for managing projects and hosting repositories. Here's how GitHub is leveraged at the MoJ:
 
@@ -51,7 +51,7 @@ Issue Tracking: GitHub Issues are used to manage tasks, bugs, and feature reques
 
 Collaboration and Documentation: GitHub also supports collaboration beyond code. Documentation can be hosted in repositories (using markdown files like README.md), making it easy to maintain project documentation, guides, and best practices alongside the codebase.
 
-# Key Practices
+## Key Practices
 
 Branching Strategy: teams often follow a branching strategy where work is done in feature or bug-fix branches, and changes are reviewed through pull requests before merging into the main branch.
 
