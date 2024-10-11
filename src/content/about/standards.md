@@ -31,7 +31,7 @@ Tracking Changes: Git keeps a record of every change made to the codebase, allow
 
 Branching and Merging: Developers can work on separate branches without affecting the main codebase, making it easy to experiment, fix bugs, or develop features in isolation. Once work is complete, branches are merged into the main repository after a thorough review.
 
-! [Illustration of a branching and merging using cats via girliemac on GitHub: a picture is worth 1,000 words.](https://raw.githubusercontent.com/girliemac/a-picture-is-worth-a-1000-words/refs/heads/main/git-purr/git-meowge.webp)
+![Illustration of a branching and merging using cats via girliemac on GitHub: a picture is worth 1,000 words.](https://raw.githubusercontent.com/girliemac/a-picture-is-worth-a-1000-words/refs/heads/main/git-purr/git-meowge.webp)
 
 Collaboration: By enabling multiple developers to work on the same project simultaneously, Git prevents conflicts and ensures smooth collaboration through branching and merging strategies.
 
