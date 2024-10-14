@@ -20,9 +20,16 @@ eleventyNavigation:
       the organisation.</p>
   </div>
   <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="handbook/" class="govuk-link">Handbook</a></h2>
-    <p class="govuk-body">If you're an existing member of the data or analytics engineering professions at the Ministry
-      of Justice, use our handbook to find out more about how we work.</p>
+    <h2 class="govuk-heading-m"><a href="onboarding/" class="govuk-link">Onboarding</a></h2>
+    <p class="govuk-body">TBC</p>
+  </div>
+  <div class="grid-card">
+    <h2 class="govuk-heading-m"><a href="learning/" class="govuk-link">Learning</a></h2>
+    <p class="govuk-body">TBC</p>
+  </div>
+    <div class="grid-card">
+    <h2 class="govuk-heading-m"><a href="innovation/" class="govuk-link">Innovation</a></h2>
+    <p class="govuk-body">TBC</p>
   </div>
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="blog/" class="govuk-link">Blog</a></h2>

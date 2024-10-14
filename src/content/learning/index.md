@@ -1,8 +1,8 @@
 ---
 layout: sub-navigation
-title: Handbook
-order: 2
+title: Learning
+order: 4
 eleventyNavigation:
-  key: Handbook
+  key: Learning
   parent: Home
 ---

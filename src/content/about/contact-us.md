@@ -5,4 +5,5 @@ description: Find out how to contact us and how to get support.
 eleventyNavigation:
   key: Contact Us
   parent: About
+  order: 9
 ---

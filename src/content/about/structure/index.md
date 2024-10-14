@@ -5,6 +5,7 @@ description: How we structure our teams
 eleventyNavigation:
   key: Team Structure
   parent: About
+  order: 6
 ---
 
 Data and analytics engineers in the MoJ work across various teams:
