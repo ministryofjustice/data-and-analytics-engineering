@@ -1,6 +1,6 @@
 ---
 title: The Ministry of Justice Data Engineering Tech Radar
-description: ...
+description: An overview of our journey to creating a modern tech radar to guide our technology choices.
 date: 2024-10-31
 author:
   name: Tom Hepworth
@@ -9,6 +9,8 @@ tags:
   - Tag 2
   - Tag 3
 ---
+
+<img src="images/tech-radar/moj_tech_radar.png" alt="Tech Radar" style="width:50%;">
 
 ## Why adopt a tech radar?
 
@@ -65,7 +67,28 @@ This approach offers several benefits:
 - **Asynchronous feedback**: GitHub enables us to collect feedback at any time, facilitating hybrid working practices. Staff can contribute to discussions from any location, making it easier for everyone to engage and have their say.
 
 
-[Add section on notable Changes to our radar]
+## Notable Changes from Our Recent Tech Radar Review
+
+Our latest update saw roughly thirty Data and Analytics Engineers come together to discuss our views and perspectives on the existing blips in the radar. To achieve this, we split into groups, each headed by one of our engineers, to review the blips in each quadrant. This method allowed us to cover a lot of ground efficiently while ensuring everyone’s input was considered.
+
+The introduction of our Analytical Engineering function has also led to an increase in the number of blips, reflecting the growing diversity of tools and techniques we use. Here are some key changes from our latest radar review:
+
+### Climbers 🔼
+
+- **dbt**: `dbt` has been a key part of our Data Engineering stack for some time. It has now moved from the Assess ring to the Adopt ring, reflecting its maturity and the team’s increased confidence in its capabilities. We currently have a dedicated team overseeing our internal `dbt` implementation, and its usage is expected to grow.
+- **ruff**: Since our initial review back in 2021, `ruff` has matured and gained widespread adoption within the Python community. Due to this, we’ve moved it from the Assess ring to the Adopt ring, highlighting its reliability and growing popularity.
+
+### Fallers 🔽
+
+- **AWS Glue**: AWS Glue has fallen from the **Adopt** ring to the **Replace** ring. While it was once a key tool in our Data Engineering stack, we’ve found it to be less reliable, harder to debug, and more costly compared to other options. We have phased it out in favour of a `dbt` and `Athena` combination, which has proven to be more cost-effective and dependable.
+- **Jira/Confluence**: Previously essential to our project management, Jira and Confluence have dropped from **Adopt** to **Replace**. Though still used in parts of the organisation, we are exploring alternatives that better meet our needs and help consolidate our tools.
+- **Internal tools**: Several internal tools, such as `dataengineeringutils3` and `etl-manager`, which were developed many years ago but are no longer actively maintained or used, have been moved to the **Replace** ring. We are working to phase these tools out and replace them with more modern, open-source solutions to reduce technical debt and streamline our workflows.
+
+### New Entries ⭐
+
+- **AWS Bedrock**: [To add]
+- **dbt ecosystem and SQLMesh**: As part of our effort to improve tooling and processes around `dbt`, we’ve added several packages from the `dbt` ecosystem (including `dbt-codegen` and `dbt-audit-helper`) along with `SQLMesh`. These tools will enhance collaboration and project management within `dbt` workflows.​⬤
+
 
 ## Next steps and reflections
 
