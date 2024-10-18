@@ -4,10 +4,12 @@ title: Ways of working - One-to-one or in groups
 eleventyNavigation:
   key: Ways of working
   parent: Learning
-  order: 2
+  order: 5
 ---
 
 [Collaboration and Engagement Squad](collaboration/)
+
+[Buddy System](buddy-system/)
 
 [Mentoring Scheme](mentoring/)
 

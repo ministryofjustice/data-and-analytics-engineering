@@ -4,5 +4,5 @@ title: Show and Tell
 eleventyNavigation:
   key: Show and Tell
   parent: Ways of working
-  order: 5
+  order: 6
 ---

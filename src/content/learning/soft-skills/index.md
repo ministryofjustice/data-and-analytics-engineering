@@ -4,7 +4,7 @@ title: Soft Skills
 eleventyNavigation:
   key: Soft Skills
   parent: Learning
-  order: 3
+  order: 6
 ---
 
 [Emotional Intelligence](emotional/)

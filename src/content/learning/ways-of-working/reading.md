@@ -4,5 +4,5 @@ title: Reading Groups
 eleventyNavigation:
   key: Reading Groups
   parent: Ways of working
-  order: 6
+  order: 7
 ---

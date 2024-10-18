@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Standards and Conventions
 eleventyNavigation:
   key: Standards and Conventions
-  parent: About
+  parent: Ways of working
   order: 2
 ---
 

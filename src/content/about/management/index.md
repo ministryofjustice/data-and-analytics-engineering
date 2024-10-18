@@ -4,7 +4,7 @@ title: Management
 eleventyNavigation:
   key: Management
   parent: About
-  order: 3
+  order: 2
 ---
 
 We operate matrix management within the data and analytics engineering professions.
