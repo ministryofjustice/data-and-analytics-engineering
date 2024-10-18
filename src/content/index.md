@@ -20,10 +20,6 @@ eleventyNavigation:
       the organisation.</p>
   </div>
   <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="onboarding/" class="govuk-link">Onboarding</a></h2>
-    <p class="govuk-body">TBC</p>
-  </div>
-  <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="learning/" class="govuk-link">Learning</a></h2>
     <p class="govuk-body">TBC</p>
   </div>
