@@ -13,7 +13,7 @@ eleventyNavigation:
     This site is under development.
   </strong>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="about/" class="govuk-link">About</a></h2>
     <p class="govuk-body">Find out more about what data and analytics engineering are, what we do and where we fit in the organisation.</p>
