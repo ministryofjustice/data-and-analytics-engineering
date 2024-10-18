@@ -6,6 +6,7 @@ eleventyNavigation:
   parent: Soft Skills
   order: 2
 ---
+Resources and blog posts about how to become a more effective leader.
 
   <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">

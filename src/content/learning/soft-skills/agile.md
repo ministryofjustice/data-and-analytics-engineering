@@ -6,6 +6,7 @@ eleventyNavigation:
   parent: Soft Skills
   order: 6
 ---
+Resources and blog posts for learning about Agile Techniques and how to apply them.
 
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">

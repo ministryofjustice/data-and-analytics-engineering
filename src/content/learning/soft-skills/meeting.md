@@ -6,6 +6,7 @@ eleventyNavigation:
   parent: Soft Skills
   order: 5
 ---
+Resources and blog posts about how to get the most out of your meetings.
 
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">

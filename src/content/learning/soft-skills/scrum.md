@@ -6,6 +6,8 @@ eleventyNavigation:
   parent: Soft Skills
   order: 7
 ---
+Resources and blog posts about Scrum techniques.
+
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://scrumguides.org/" class="govuk-link">Scrum Guides</a></h2>

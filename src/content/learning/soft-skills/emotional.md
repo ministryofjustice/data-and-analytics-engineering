@@ -6,6 +6,8 @@ eleventyNavigation:
   parent: Soft Skills
   order: 1
 ---
+Resources and blog posts about ways to improve your interactions with others.
+
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://hbr.org/2001/12/primal-leadership-the-hidden-driver-of-great-performance" class="govuk-link">Primal Leadership: The Hidden Driver of Great Performance</a></h2>

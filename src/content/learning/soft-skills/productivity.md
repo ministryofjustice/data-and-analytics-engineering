@@ -6,6 +6,8 @@ eleventyNavigation:
   parent: Soft Skills
   order: 9
 ---
+Resources and blog posts about how to improve productivity.
+
     <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://hbr.org/2012/01/positive-intelligence" class="govuk-link">Positive Intelligence</a></h2>
