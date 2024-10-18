@@ -25,7 +25,7 @@ eleventyNavigation:
 <div class="grid grid-cols-1 gap-2 pt-8">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="pair/" class="govuk-link">Pair Programming</a></h2>
-    <p class="govuk-body">Pair Programming enhances knowledge transfer by collaborative development activies.</p>
+    <p class="govuk-body">Pair Programming enhances knowledge transfer by collaborative development activities.</p>
   </div>
 <div class="grid grid-cols-1 gap-2 pt-8">
   <div class="grid-card">
@@ -51,9 +51,4 @@ eleventyNavigation:
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="radar/" class="govuk-link">Tech Radar Refresh Event</a></h2>
     <p class="govuk-body">Find out about our periodic Tech Radar Refresh Events.</p>
-  </div>
-<div class="grid grid-cols-1 gap-2 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="LnD/" class="govuk-link">Professional Learning & Development (L&D)</a></h2>
-    <p class="govuk-body">Explore our Learning and Development opportunities.</p>
   </div>
