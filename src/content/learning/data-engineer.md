@@ -38,7 +38,8 @@ Blog posts by Dr Soumaya Mauthoor, Lead Data Engineer:
     <p class="govuk-body">Dive deep into advanced skills and state-of-the-art tools revolutionising data engineering roles today with our Professional Data Engineer track.</p>
 </div>
 
-  
+---
+
 ## Core technical Data Engineering skills to focus on:
 
 
