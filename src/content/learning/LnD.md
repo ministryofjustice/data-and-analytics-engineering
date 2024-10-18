@@ -43,4 +43,18 @@ Below is a list of **free** learning resources and courses from **DataCamp**, **
 
 ---
 
-These resources offer a great starting point for building your skills as a Data and Analytics Engineer, providing introductory knowledge and hands-on learning experiences that align with the needs of the MoJ’s Data & Analytics Directorate. For continuous learning and comprehensive content, employees also enjoy full access to these platforms through the MoJ’s paid subscriptions.
+## Additional resources
+
+
+* **AWS Training:**  Additional AWS courses are available as part of the MoJ's [One Government Value Agreement (OGVA)](https://aws.amazon.com/blogs/publicsector/one-government-value-agreement-accelerating-cloud-adoption-innovation-across-uk-government/) with AWS. These courses are free to attend and offered on a first-come, first-served basis for staff only (places are shared across government). 
+* **Pulumi:** AWS tutorials available from VMs to Serverless to Containers. Pulumi is an open source Infrastructure as Code tool for creating, deploying and managing cloud infrastructure.
+* **[Dataquest](https://www.dataquest.io/):** Data science training program, from beginner data analytics concepts to advanced data visualisation and machine learning. Includes Data Engineering Career Path.
+* **[MoJ Coffee & Coding sessions](https://github.com/moj-analytical-services/Coffee-and-CodingConnect your Github account):** Code training for justice analysts.
+* **MoJ Slack channels:** ASD (asdslack.slack.com): #sql, #python, #git
+**[MoJ Python Learning Pathway](https://docs.google.com/document/u/0/d/1z_Oa0EDyTjJ6E5W-eN87BFDYav1YzH0guonS0ZV0nc4/edit):** This resource aims to help technically-minded people start learning and experimenting with Python.
+* **[The Data Science Accelerator](https://www.gov.uk/government/publications/data-science-accelerator-programme/introduction-to-the-data-science-accelerator-programme):** A capability-building programme that gives analysts from across the public sector the opportunity to develop their data science skills: You will work on a data science project, proposed by you, over 3 months for one day a week.
+* **[MyLearning](https://mydevelopment.org.uk/login/index.php):** Learning platform for all MoJ staff (Shared Service Connected Limited (SSCL) should create an account for you). Includes the Apprenticeship Zone.
+* **[Civil Service Learning Platform](https://identity.learn.civilservice.gov.uk/login):** The Civil Service Learning 
+* **Data and Analytical Services Directorate (DASD)** Learning and Wellbeing training courses - instructions on how to book internal and external training courses please email: dasdlearningandwellbeing@justice.gov.uk
+
+10% working time can be focussed on learning and development (L&D) activities (equivalent to 0.5 day per week if employed full time).
