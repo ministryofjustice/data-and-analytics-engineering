@@ -7,8 +7,6 @@ eleventyNavigation:
   order: 7
 ---
 
-## Reading Groups
-
 Starting your own or joining a Data and Analytic Engineering team reading group can significantly enhance your learning experience by combining the intellectual stimulation of reading with the social benefits of group interaction. 
 
 Whether your goal is to deepen your understanding of a subject, improve your communication skills, or simply enjoy the company of fellow readers, a reading group offers a supportive and enriching environment to achieve these objectives.

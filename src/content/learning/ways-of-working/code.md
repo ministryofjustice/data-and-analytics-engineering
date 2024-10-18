@@ -7,9 +7,6 @@ eleventyNavigation:
   order: 5
 ---
 
-## Code Review
-
-
 Our [code reviews](https://gds-way.digital.cabinet-office.gov.uk/manuals/code-review-guidelines.html) ensure code quality while promoting learning and knowledge sharing amongst the team.
 
 It’s a collaborative process where we examine each other's code to ensure quality, correctness, and adherence to coding standards before it becomes part of the main codebase. 

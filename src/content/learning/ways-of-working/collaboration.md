@@ -7,8 +7,6 @@ eleventyNavigation:
   order: 1
 ---
 
-## Collaboration and Engagement Squad
-
 Our Collaboration and Engagement Squad is made of Data Analytics and Engineering team members who organise and coordinate: 
 
 * Learning and development (L&D) sessions: Workshops, Away Days, Conferences

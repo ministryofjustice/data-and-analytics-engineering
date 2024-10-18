@@ -34,7 +34,7 @@ By pairing people up, the buddy system can reinforce a collaborative culture, pr
 
 ### Benefits of a Buddy System:
 
-Faster Ramp-Up: New engineers become productive more quickly with hands-on, real-time guidance from their buddy.
-Retention: A strong buddy system can lead to better retention rates by providing support and helping the new member feel part of the team.
-Knowledge Retention: It helps distribute key technical and project knowledge across the team, reducing the impact of siloed expertise.
-Team Cohesion: It promotes stronger interpersonal relationships within the team and fosters a sense of camaraderie.
+* Faster Ramp-Up: New engineers become productive more quickly with hands-on, real-time guidance from their buddy.
+* Retention: A strong buddy system can lead to better retention rates by providing support and helping the new member feel part of the team.
+* Knowledge Retention: It helps distribute key technical and project knowledge across the team, reducing the impact of siloed expertise.
+* Team Cohesion: It promotes stronger interpersonal relationships within the team and fosters a sense of camaraderie.
