@@ -23,7 +23,7 @@ When you join you’ll be given access to our [operational onboarding Trello  fo
 
 ---
 
-### Free Recommended Online Learning Resources 
+### Recommended online learning via The Kimball Group Resources and DataCamp  
 
 Here are links to free resources to get started in Analytics Engineering by [The Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/) and [DataCamp](https://app.datacamp.com/). DataCamp can help you upskill with a range of core technical skills listed below.
 
