@@ -21,7 +21,8 @@ Blog posts by Dr Soumaya Mauthoor, Lead Data Engineer:
 * [Using GitHub as a One Stop Shop](../../blog/posts/github-as-a-one-stop-shop/) 
 * [Building a transaction data lake using Amazon Athena, Apache Iceberg and dbt](../../blog/posts/building-a-transaction-data-lake-using-amazon-athena-apache-iceberg-and-dbt/)
 
-### Recommended online courses via DataCamp
+### Recommended online courses via DataCamp 
+DataCamp can help you upskill with a range of core technical skills listed below.
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://app.datacamp.com/learn/career-tracks/data-engineer-in-python" class="govuk-link">Data Engineer in Python</a></h2>
