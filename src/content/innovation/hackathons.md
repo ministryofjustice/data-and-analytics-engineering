@@ -7,7 +7,9 @@ eleventyNavigation:
   order: 3
 ---
 
-[Data and Analytics Engineering team hackathons](https://github.com/moj-analytical-services?q=hackathons&type=all&language=&sort=) are focused, internal or external collaborative events where teams of developers, data analysts, data and analytics engineers, and other stakeholders come together to solve specific challenges in a short, intensive timeframe. Hackathons usually take place on site or at a specific guest location every othermonth or so. 
+## Hackathons
+
+[Data and Analytics Engineering team hackathons](https://github.com/moj-analytical-services?q=hackathons&type=all&language=&sort=) are focused, internal or external collaborative events where teams of developers, data analysts, data and analytics engineers, and other stakeholders come together to solve specific challenges in a short, intensive timeframe. Hackathons usually take place on-site at our MoJ offices or at offsite guest locations.
 
 Our hackathons provide an opportunity for innovation, experimentation, and cross-functional teamwork, often tackling issues related to justice reform, service delivery, or improving internal processes using data and technology.
 
@@ -25,4 +27,4 @@ Our hackathons provide an opportunity for innovation, experimentation, and cross
 
 Overall, hackathons are an integral part of fostering a culture of innovation, encouraging rapid problem-solving, and enabling teams to explore and implement technological solutions that have a real impact on public service delivery within the justice system. 
 
-Do keep any eye out for communications to join and contribue to our up and comming hackathons.
+Do keep any eye out on our internal communications channels to join and contribue to our up and comming hackathons.
