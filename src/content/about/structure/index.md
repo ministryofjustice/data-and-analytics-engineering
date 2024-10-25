@@ -7,6 +7,7 @@ eleventyNavigation:
   parent: About
   order: 3
 ---
+# Team Structure
 
 Data and analytics engineers in the MoJ work across various teams:
 
@@ -18,7 +19,7 @@ Data and analytics engineers belong to the same Data directorate, as summarised 
 
 ![team structure](./images/team-structure.excalidraw.png)
 
-## DMET
+## Data Modeling Engineering Team (DMET)
 
 DMET is divided into multiple portfolio teams, each with a specific focus. The domain-led teams work closely with data providers and consumers from specific domains to understand their requirements and ensure their needs are met. Meanwhile, the cross-functional teams collaborate across team boundaries to promote best practices and maintain alignment.
 
