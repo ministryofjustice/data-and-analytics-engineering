@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Ways of working - One-to-one or in groups
 eleventyNavigation:
   key: Ways of working
-  parent: Learning
+  parent: Home
   order: 5
 ---
 
