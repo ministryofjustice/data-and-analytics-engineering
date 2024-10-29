@@ -51,6 +51,6 @@ Effective ways of working in both group and one-to-one settings are key to foste
   </div>
 <div class="grid grid-cols-1 gap-2 pt-8">
   <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="radar/" class="govuk-link">Tech Radar Refresh Event</a></h2>
-    <p class="govuk-body">Find out about our periodic Tech Radar Refresh Events.</p>
+    <h2 class="govuk-heading-m"><a href="tech_review/" class="govuk-link">Tech Review meetings</a></h2>
+    <p class="govuk-body">Find out about our fortnightly Tech Review meetings for feedback and discussions of the technology and tools we use.</p>
   </div>
