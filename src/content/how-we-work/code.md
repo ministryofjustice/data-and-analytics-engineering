@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Code Review
 eleventyNavigation:
   key: Code Review
-  parent: Ways of working
+  parent: How we work
   order: 5
 ---
 

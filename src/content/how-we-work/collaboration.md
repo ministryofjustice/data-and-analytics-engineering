@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Collaboration and Engagement Squad
 eleventyNavigation:
   key: Collaboration and Engagement Squad
-  parent: Ways of working
+  parent: How we work
   order: 1
 ---
 

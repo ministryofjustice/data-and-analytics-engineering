@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Mentoring Scheme
 eleventyNavigation:
   key: Mentoring Scheme
-  parent: Ways of working
+  parent: How we work
   order: 2
 ---
 

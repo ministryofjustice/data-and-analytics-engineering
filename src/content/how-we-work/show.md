@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Show and Tells
 eleventyNavigation:
   key: Show and Tell
-  parent: Ways of working
+  parent: How we work
   order: 6
 ---
 

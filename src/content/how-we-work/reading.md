@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Reading Groups
 eleventyNavigation:
   key: Reading Groups
-  parent: Ways of working
+  parent: How we work
   order: 7
 ---
 

@@ -1,10 +1,10 @@
 ---
 layout: sub-navigation
-title: Ways of working - One-to-one or in groups
+title: How we work
 eleventyNavigation:
-  key: Ways of working
+  key: How we work
   parent: Home
-  order: 5
+  order: 3
 ---
 
 Effective ways of working in both group and one-to-one settings are key to fostering collaboration, learning, and innovation in the workplace. At the Ministry of Justice, we emphasize a variety of practices that promote teamwork, knowledge sharing, and professional development.

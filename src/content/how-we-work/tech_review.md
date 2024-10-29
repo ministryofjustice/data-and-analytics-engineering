@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Tech Review
 eleventyNavigation:
   key: Tech Review
-  parent: Ways of working
+  parent: How we work
   order: 9
 ---
 

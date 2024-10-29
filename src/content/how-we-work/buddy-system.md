@@ -3,7 +3,7 @@ layout: sub-navigation
 title: Buddy System
 eleventyNavigation:
   key: Buddy System
-  parent: Ways of working
+  parent: How we work
   order: 4
 ---
 
