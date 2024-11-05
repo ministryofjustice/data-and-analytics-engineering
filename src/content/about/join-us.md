@@ -5,7 +5,9 @@ description: Find out about our latest recruitment drive
 eleventyNavigation:
   key: Join Us
   parent: About
+  order: 4
 ---
+## Join Us: Careers
 
 > Last updated: 23rd August 2024
 
