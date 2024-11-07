@@ -7,11 +7,11 @@ eleventyNavigation:
   order: 9
 ---
 
-The Tech Review is a regular feedback session and valuable opportunity for data analytics and engineers to contribute to refining the tools, processes, and solutions within the Ministry of Justice’s data and analytics directorate.
+The Tech Review is a regular feedback session and valuable opportunity for data and analytics engineers to contribute to refining the tools, processes, and solutions within the Ministry of Justice’s data and analytics directorate.
 
 * **Audience:** All data and analytics engineers are welcome to attend.
 * **Attendance:** Optional, but each portfolio (team) must ensure at least one senior representative is present.
-* **Frequency: Held for 1-hour every fortnight.**
+* **Frequency:** Held for 1-hour every fortnight.
 * **Purpose:** To gather feedback on proposed changes to both technical solutions and non-technical processes, ensuring any adjustments are well-informed before implementation.
 
 ## Responsibilities:
