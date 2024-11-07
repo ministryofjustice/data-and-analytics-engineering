@@ -27,7 +27,7 @@ DMET is divided into multiple portfolio teams, each with a specific focus. The d
 
 ## Portfolio
 
-Our portfolio is our collection of work that is managed to achieve goals and deliver a strategy. To find out more about each portfolio team, please follow these links:
+We manage and maintain analytical databases and tools which enable effective and impactful analysis across the MoJ. Our portfolio includes the following areas:
 
 #### HM Prison and Probation Service (HMPPS)
 
