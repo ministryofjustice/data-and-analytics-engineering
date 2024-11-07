@@ -41,7 +41,7 @@ Similarly to the HMPPS, the HMCTS domain in Data and Analytics engineering, are 
 
 #### Corporate and Programmes
 
-The Corporate & Programmes domain in Data and Analytics engineering, are responsible for providing users on the Analytical Platform access to data covering Finance, People and Commercial, as well as the BOLD and Data First programmes, for Analytical Purposes.
+The Corporate & Programmes domain in Data and Analytics engineering, are responsible for providing users on the Analytical Platform access to data covering Finance, People and Commercial, as well as the BOLD and Data First programmes, for analytical purposes.
 
 Internal only [link](https://justiceuk.sharepoint.com/:p:/s/DMETCorporate/EWYWM-dXQtlHguKF-Dnx8jUB8MsLZXWfamZ93GLF9cdhwA?e=S7fQ7s) to Show and Tell posters.
 
