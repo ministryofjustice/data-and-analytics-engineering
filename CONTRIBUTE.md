@@ -76,7 +76,6 @@ Comment on the issue to express your interest. Wait for acknowledgment or feedba
 ## Style and Formatting Guidelines
 
 - **Concise Language**: Use clear, concise language. Avoid overly technical jargon unless necessary.
-- **Headings and Subheadings**: Organize content with headings (`#` for major headings, `##` for subheadings) to improve readability.
 - **Code Blocks and Examples**: Use code blocks for any code or command-line examples, and provide explanations as needed.
 - **Diagrams and Visual Aids**: When possible, include diagrams to illustrate complex concepts. Ensure images are clear and appropriately labeled. We use [Excalidraw](https://excalidraw.com/) for diagrams
 - **File Naming**: Use lowercase, hyphen-separated names for new files (e.g., `data-governance-best-practices.md`).
