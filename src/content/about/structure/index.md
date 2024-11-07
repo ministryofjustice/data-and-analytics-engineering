@@ -53,6 +53,3 @@ We set the technical direction, prioritising addressing immediate challenges fac
 
 You can read more about us in [these summary slides](https://moj-analytical-services.github.io/dmet-cfe/).
 
-#### Centre for Enablement
-
-Under construction!
