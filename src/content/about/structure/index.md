@@ -12,7 +12,7 @@ eleventyNavigation:
 Data and analytics engineers in the MoJ work across various teams:
 
 - The Analytical Platform team, which maintains the MoJ [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk/#content).
-- The Data Catalogue team, which maintains the MoJ [Data Catalogue](https://user-guidance.analytical-platform.service.justice.gov.uk/#content).
+- The Data Catalogue team, which maintains the MoJ [Data Catalogue](https://runbooks.find-moj-data.service.justice.gov.uk/).
 - The Data Modelling and Engineering team (DMET), which delivers solutions to internal stakeholder needs across the MoJ.
 
 Data and analytics engineers belong to the same Data directorate, as summarised in this diagram:
