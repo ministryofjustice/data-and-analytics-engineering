@@ -31,13 +31,17 @@ Our portfolio is our collection of work that is managed to achieve goals and del
 
 #### HM Prison and Probation Service (HMPPS)
 
+The HMPPS domain in Data and Analytics engineering, are responsible for providing users on the Analytical Platform access to data covering Prisons and Probation data for analytical purposes.
+
 Internal only [link](https://justiceuk.sharepoint.com/:p:/r/sites/DataEngineeringDataScience/Shared%20Documents/General/1.%20Data%20%26%20Analytics%20Engineering%20Hub/3.%20Prison,%20Probation%20%26%20EM/hmpps_posters.pptx?d=w17120a8f29f2469cbfbe85be1a7049d2&csf=1&web=1&e=jX6jC7) to Show and Tell posters.
 
 #### HM Courts and Tribunals Service (HMCTS)
 
-The HMCTS domain in Data and Analytics engineering, are responsible for providing users on the Analytic Platform access to data covering Civil, Family, Tribunals, Magistrates, and Crown court data for Analytical Purposes.
+The HMCTS domain in Data and Analytics engineering, are responsible for providing users on the Analytical Platform access to data covering Civil, Family, Tribunals, Magistrates, and Crown court data for analytical purposes.
 
 #### Corporate and Programmes
+
+The Corporate & Programmes domain in Data and Analytics engineering, are responsible for providing users on the Analytical Platform access to data covering Finance, People and Commercial, as well as the BOLD and Data First programmes, for Analytical Purposes.
 
 Internal only [link](https://justiceuk.sharepoint.com/:p:/s/DMETCorporate/EWYWM-dXQtlHguKF-Dnx8jUB8MsLZXWfamZ93GLF9cdhwA?e=S7fQ7s) to Show and Tell posters.
 
