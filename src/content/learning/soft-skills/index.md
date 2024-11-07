@@ -27,7 +27,7 @@ Soft skills are personal attributes and interpersonal abilities that enable indi
 <div class="grid grid-cols-1 gap-2 pt-8">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="requirements/" class="govuk-link">Requirements Gathering</a></h2>
-    <p class="govuk-body"></p>
+    <p class="govuk-body">Resources and blog posts on identifying and documenting stakeholder needs to guide project development.</p>
   </div>
 <div class="grid grid-cols-1 gap-2 pt-8">
   <div class="grid-card">
