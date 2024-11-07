@@ -47,7 +47,11 @@ Internal only [link](https://justiceuk.sharepoint.com/:p:/s/DMETCorporate/EWYWM-
 
 #### Centre for Excellence (CfE)
 
-[Slide deck summarising CfE](https://moj-analytical-services.github.io/dmet-cfe/).
+Our mission is to drive excellence and innovation in data and analytics engineering through continuous improvement, collaboration, and knowledge sharing.
+
+We set the technical direction, prioritising addressing immediate challenges faced by domain teams and their partners.
+
+You can read more about us in [these summary slides](https://moj-analytical-services.github.io/dmet-cfe/).
 
 #### Centre for Enablement
 
