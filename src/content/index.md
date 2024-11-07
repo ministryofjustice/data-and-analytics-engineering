@@ -23,7 +23,7 @@ eleventyNavigation:
     <p class="govuk-body">Explore the many ways we encourage and support continuous learning and development.</p>
   </div>
     <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="ways-of-working/" class="govuk-link">How we work</a></h2>
+    <h2 class="govuk-heading-m"><a href="how-we-work/" class="govuk-link">How we work</a></h2>
     <p class="govuk-body">Explore events and approaches we use to work together more effectively.</p>
   </div>
     <div class="grid-card">
