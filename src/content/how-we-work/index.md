@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-Effective ways of working in both group and one-to-one settings are key to fostering collaboration, learning, and innovation in the workplace. At the Ministry of Justice, we emphasize a variety of practices that promote teamwork, knowledge sharing, and professional development.
+Effective ways of working in both group and one-to-one settings are key to fostering collaboration, learning, and innovation in the workplace. At the Ministry of Justice, we emphasise a variety of practices that promote teamwork, knowledge sharing, and professional development.
 
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">
