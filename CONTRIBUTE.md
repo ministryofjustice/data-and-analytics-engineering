@@ -50,7 +50,7 @@ If you encounter issues in the documentation or have suggestions:
     ```bash
     npm install @11ty/eleventy
     ```
-5. **Edit Content**: Make your edits to the markdown files as needed.
+5. **Edit Content**: Make your edits to any files as needed.
 
 6. **Preview Changes locally**:
     ```bash
