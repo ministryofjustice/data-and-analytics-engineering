@@ -37,7 +37,7 @@ Internal only [link](https://justiceuk.sharepoint.com/:p:/r/sites/DataEngineerin
 
 #### HM Courts and Tribunals Service (HMCTS)
 
-The HMCTS domain in Data and Analytics engineering, are responsible for providing users on the Analytical Platform access to data covering Civil, Family, Tribunals, Magistrates, and Crown court data for analytical purposes.
+Similarly to the HMPPS, the HMCTS domain in Data and Analytics engineering, are responsible for providing Data Scientists, Analysts, and Statisticians on the Analytical Platform access to court data covering Civil, Family, Tribunals, Magistrates, and Crown courts.
 
 #### Corporate and Programmes
 
