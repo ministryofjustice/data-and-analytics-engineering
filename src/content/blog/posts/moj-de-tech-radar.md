@@ -24,7 +24,9 @@ A technology radar is a tool that maps out the key technologies your team is usi
 
 Originally pioneered by [ThoughtWorks](https://www.thoughtworks.com/radar), technology radars provides a visual framework, akin to an archery target, for mapping out our technology landscape. It helps align technology choices across teams and guides informed decisions about which technologies to continue using or discontinue.
 
-### Current Implementation
+### Our Implementation
+
+The Ministry of Justice Data Engineering technology radar is available to explore [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), with the supporting GitHub repository accessible at this [link](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar).
 
 Our implementation follows the approach outlined by ThoughtWorks, focusing on the following rings:
 
