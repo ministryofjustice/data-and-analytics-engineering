@@ -44,7 +44,7 @@ Although Athena is often used as an ad-hoc querying engine, it can also be used 
 * Using a single tool for processing and querying makes it easier to share best practice between data engineers and analysts, for example on [performance tuning](https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html), as well as build shared utilities.
 * Athena calculates the compute capacity needed to execute queries, eliminating the necessity for manual configuration and optimisation.
 * Whilst Athena [enforces various quotas](https://docs.aws.amazon.com/athena/latest/ug/service-limits.html), it is possible to request increases, up to a limit. This is particularly relevant for ELT processes which can take longer to run and involve hundreds of tables. For example, we have extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes, and raised the limit on concurrent queries from 150 to 500.
-* Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective to transform gigabyte-scale datasets like ours.
+* Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective to transform gigabyte-scale datasets like ours. For instance, we compared converting CSV files to Parquet using Athena and Glue PySpark in its default configuration. We found that, for our volume range, Athena was 99% cheaper than Glue, where costs depend on the resources utilized.
 
 Despite its advantages, the Hive table format lacks support for numerous standard database features, resulting in a pipeline that is less robust and flexible and less suitable for standardising the data. Using the Iceberg table format helps address this gap.
 
@@ -110,6 +110,14 @@ In addition, the runtime for the longest jobs has decreased by 75%, and intermit
 
 Furthermore, the unification of the data processing tools fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
 
+### Enhacing observability (Added Nov 2024)
+
+One area we intend to improve is [Athena and data usage observability](https://moj-analytical-services.github.io/dmet-cfe/athena_monitoring/). At the moment, Athena query-related metrics are published to [Amazon CloudWatch](https://docs.aws.amazon.com/athena/latest/ug/query-metrics-viewing.html), allowing us to monitor metrics such as the volume of data processed and the number of failed queries at an agregate level. Athena operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all users in the same AWS region share the same pool of resources. Monitoring allows us to receive early warnings signs that Athena is approaching resource limits, giving us more time to take corrective action. Unfortunately CloudWatch metrics and dashboards are somewhat limited, and make it difficult to track Athena and data usage at the invidual user level. Hence we are evaluating the option to publish Athena and Glue [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) events to S3, derive ou
+own custom metrics and visualize them using [Amazon Managed Grafana](https://aws.amazon.com/grafana/).
+
+---
+
+I hope this helps! Let me know if there's anything else you need.
 ### Acknowledgements
 
 I would like to thank the following individuals for their invaluable contributions to the technical solution:
@@ -118,6 +126,7 @@ I would like to thank the following individuals for their invaluable contributio
 - David Bridgwood
 - Jacob Hamblin-Pyke
 - Tom Holt
+- Matt Laverty
 - Theodore Manassis
 - William Orr
 
