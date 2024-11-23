@@ -116,9 +116,6 @@ In addition, the runtime for the longest jobs has decreased by 75%, and intermit
 
 Furthermore, the unification of the data processing tools fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
 
----
-
-I hope this helps! Let me know if there's anything else you need.
 ### Acknowledgements
 
 I would like to thank the following individuals for their invaluable contributions to the technical solution:
