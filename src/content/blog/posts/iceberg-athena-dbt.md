@@ -100,6 +100,12 @@ Note that each segment is executed sequentially, rather than concurrently, due t
 
 * Incorporating a retry mechanism into our production workflows with custom logic. This feature identifies and automatically reattempts failed models and their children, which is particularly useful for resolving errors stemming from transient issues.
 
+#### Enhacing observability (Added Nov 2024)
+
+We are always looking to improve our technology stack and one area we intend to improve is [Athena and data usage observability](https://moj-analytical-services.github.io/dmet-cfe/athena_monitoring/). At the moment, Athena query-related metrics are published to [Amazon CloudWatch](https://docs.aws.amazon.com/athena/latest/ug/query-metrics-viewing.html), allowing us to monitor metrics such as the volume of data processed and the number of failed queries at an agregate level. Athena operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all accounts in the same AWS region share the same pool of resources. Monitoring failed queries allows us to receive early warnings signs that Athena usage is approaching resource limits, giving us more time to take corrective action. 
+
+Unfortunately CloudWatch metrics and dashboards are somewhat limited, and make it difficult to monitor data/table usage. Hence we are evaluating the option to publish Athena and Glue [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) events to S3, derive custom metrics using dbt and visualize them using [Amazon Managed Grafana](https://aws.amazon.com/grafana/).
+
 ### Bringing it all together
 
 We previously utilised Athena alongside Glue PySpark for our ELT pipelines. Migrating from Glue PySpark and Hive to Athena v3, Iceberg, and dbt has resulted in an impressive 99% reduction in individual query costs. This cost efficiency has enabled us to switch from weekly to more frequent daily refreshes while also onboarding new pipelines. Notably, we have still managed to achieve substantial savings, as shown in our monthly service cost graph:
@@ -109,10 +115,6 @@ We previously utilised Athena alongside Glue PySpark for our ELT pipelines. Migr
 In addition, the runtime for the longest jobs has decreased by 75%, and intermittent failures due to insufficient resources have become extremely rare. During the migration, we took the opportunity to enhance our dbt solution by integrating features that improve both maintainability and data quality. This includes dynamically generating models and implementing a Write-Audit-Publish (WAP) pattern. These improvements ensure that our analysts have more timely access to large datasets, and to work more efficiently on a reliable and maintainable platform.
 
 Furthermore, the unification of the data processing tools fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
-
-### Enhacing observability (Added Nov 2024)
-
-One area we intend to improve is [Athena and data usage observability](https://moj-analytical-services.github.io/dmet-cfe/athena_monitoring/). At the moment, Athena query-related metrics are published to [Amazon CloudWatch](https://docs.aws.amazon.com/athena/latest/ug/query-metrics-viewing.html), allowing us to monitor metrics such as the volume of data processed and the number of failed queries at an agregate level. Athena operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all users in the same AWS region share the same pool of resources. Monitoring allows us to receive early warnings signs that Athena is approaching resource limits, giving us more time to take corrective action. Unfortunately CloudWatch metrics and dashboards are somewhat limited, and make it difficult to monitor data/table usage. Hence we are evaluating the option to publish Athena and Glue [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) events to S3, derive custom metrics and visualize them using [Amazon Managed Grafana](https://aws.amazon.com/grafana/).
 
 ---
 
