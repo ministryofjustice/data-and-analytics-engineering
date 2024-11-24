@@ -100,7 +100,7 @@ Note that each segment is executed sequentially, rather than concurrently, due t
 
 * Incorporating a retry mechanism into our production workflows with custom logic. This feature identifies and automatically reattempts failed models and their children, which is particularly useful for resolving errors stemming from transient issues.
 
-#### Enhacing observability (Added Nov 2024)
+### Enhancing observability (Added Nov 2024)
 
 As part of our ongoing efforts to enhance our technology stack, we are looking to improve [Athena and data usage observability](https://moj-analytical-services.github.io/dmet-cfe/athena_monitoring/). Currently, Athena query-related metrics are published to [Amazon CloudWatch](https://docs.aws.amazon.com/athena/latest/ug/query-metrics-viewing.html), enabling us to monitor metrics such as the volume of data processed and the number of failed queries at an aggregate level. Athena operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all accounts in the same AWS region share the same pool of resources. By monitoring failed queries, we can receive early warning signs that Athena usage is approaching resource limits, giving us more time to take corrective action.
 
