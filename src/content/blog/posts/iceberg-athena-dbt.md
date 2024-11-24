@@ -35,20 +35,19 @@ Previously, we utilised [Glue PySpark](https://aws.amazon.com/blogs/big-data/div
 
 ### Athena for scalability
 
-Amazon Athena is built on the open-source [Trino SQL Engine](https://trino.io/) and uses the [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), an [Apache Hive metastore](https://blog.jetbrains.com/big-data-tools/2022/07/01/why-we-need-hive-metastore/)-compatible catalogue, to store and retrieve table metadata for data held in S3. This allows users to interact with structured data in S3 using SQL queries. Athena is serverless and operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all accounts in the same AWS region share the same pool of resources.
+Amazon Athena is built on the open-source [Trino SQL Engine](https://trino.io/) and uses the [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), an [Apache Hive metastore](https://blog.jetbrains.com/big-data-tools/2022/07/01/why-we-need-hive-metastore/)-compatible catalogue, to manage metadata for data held in S3. This allows users to interact with structured data in S3 using SQL queries. Athena is serverless and operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all accounts in the same AWS region share the same pool of resources. It uses asynchronous processes and [quotas](https://docs.aws.amazon.com/athena/latest/ug/service-limits.html) to ensure effective and fair usage across accounts.
 
-Although Athena is often used as an ad-hoc querying engine, it can also be used for [ELT](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.html). This offers several advantages:
+Although Athena is often used as an ad-hoc querying engine, it can also be used for [ELT](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.html), offering several advantages:
 
-* Athena is serverless, which means there is no infrastructure to manage.
-* Athena is interactive and SQL-based, which makes it easy and intuitive to use, particularly for new joiners.
-* Using Athena for both processing and querying makes it easier to share best practice between data engineers and analysts, for example on [performance tuning](https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html), as well as build shared utilities.
-* Athena calculates the compute capacity needed to execute queries, eliminating the necessity for manual configuration and optimisation.
-* Athena uses asynchronous processes and quotas to distribute and ensure fair usage across accounts.
-* Whilst Athena enforces quotas, it is possible to request increases, up to a limit. This is particularly relevant for ELT processes which can take longer to run and involve hundreds of tables. For example, we have extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes, and raised the limit on concurrent queries from 150 to 500.
-* Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective to transform gigabyte-scale datasets like ours. For instance, we compared converting CSV files to Parquet using Athena and Glue PySpark in its default configuration. We found that, for our volume range, Athena was 99% cheaper than Glue, where costs depend on the resources utilized.
-* There is the option to scale through [Athena provisioned capacity](https://aws.amazon.com/blogs/aws/introducing-athena-provisioned-capacity/), which is billed based on the number of DPUs provisioned and their duration.
+* **Serverless**: No infrastructure to manage.
+* **Interactive and SQL-based**: Easy and intuitive to use, particularly for new joiners.
+* **Unified Processing and Querying**: Facilitates sharing best practices between data engineers and analysts, such as performance tuning, and building shared utilities.
+* **Automated Compute Capacity**: Athena calculates the compute capacity needed to execute queries, eliminating the need for manual configuration and optimization.
+* **Scalable Quotas**: Quotas can be increased upon request, up to a limit. This is particularly relevant for ELT processes that can take longer to run and involve hundreds of tables. For example, we extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes and raised the limit on concurrent queries from 150 to 500.
+* **Cost-Effective**: Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective for transforming gigabyte-scale datasets. For instance, converting CSV files to Parquet using Athena was found to be 99% cheaper than using Glue PySpark in its default configuration.
+* **Provisioned Capacity**: Option to scale through [Athena provisioned capacity](https://aws.amazon.com/blogs/aws/introducing-athena-provisioned-capacity/), billed based on the number of DPUs provisioned and the duration.
 
-Despite its advantages, the native Hive table format lacks support for numerous standard database features, resulting in a pipeline that can be less robust and flexible. Using the Iceberg table format helps address this gap.
+Despite its advantages, Athena with the native Hive table format lacks support for numerous standard database features, resulting in a pipeline that can be less robust and flexible. Using the Iceberg table format helps address this gap.
 
 ### Iceberg for reliability
 
