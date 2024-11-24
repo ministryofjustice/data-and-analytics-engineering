@@ -33,7 +33,7 @@ The processing layer transforms the data through a series of batch procedures be
 
 Previously, we utilised [Glue PySpark](https://aws.amazon.com/blogs/big-data/dive-deep-into-aws-glue-4-0-for-apache-spark/) to standardise the data and employed Athena for data modelling. While Glue PySpark is effective for heavy-duty data processing, it requires specialised knowledge of distributed systems for efficient use. Rising costs and recurring out-of-memory failures with the Glue jobs prompted us to reevaluate our strategy. With the release of [Athena V3](https://aws.amazon.com/blogs/big-data/upgrade-to-athena-engine-version-3-to-increase-query-performance-and-access-more-analytics-features/), it made sense to explore migrating the standardisation step to Athena as well and unify the technology stack.
 
-### Athena for scalability
+### Athena for data processing (Updated Nov 2024)
 
 Amazon Athena is built on the open-source [Trino SQL Engine](https://trino.io/) and uses the [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), an [Apache Hive metastore](https://blog.jetbrains.com/big-data-tools/2022/07/01/why-we-need-hive-metastore/)-compatible catalogue, to manage metadata for data held in S3. This allows users to interact with structured data in S3 using SQL queries. Athena is serverless and operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all accounts in the same AWS region share the same pool of resources. It uses asynchronous processes and [quotas](https://docs.aws.amazon.com/athena/latest/ug/service-limits.html) to ensure effective and fair usage across accounts.
 
@@ -115,7 +115,7 @@ We previously utilised Athena alongside Glue PySpark for our ELT pipelines. Migr
 
 In addition, the runtime for the longest jobs has decreased by 75%, and intermittent failures due to insufficient resources have become extremely rare. During the migration, we took the opportunity to enhance our dbt solution by integrating features that improve both maintainability and data quality. This includes dynamically generating models and implementing a Write-Audit-Publish (WAP) pattern. These improvements ensure that our analysts have more timely access to large datasets, and to work more efficiently on a reliable and maintainable platform.
 
-Furthermore, the unification of the data processing tools fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
+Furthermore, the unification of the data processing tools streamlines our technology stack and fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
 
 ### Acknowledgements
 
