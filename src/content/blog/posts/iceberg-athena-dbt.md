@@ -33,20 +33,21 @@ The processing layer transforms the data through a series of batch procedures be
 
 Previously, we utilised [Glue PySpark](https://aws.amazon.com/blogs/big-data/dive-deep-into-aws-glue-4-0-for-apache-spark/) to standardise the data and employed Athena for data modelling. While Glue PySpark is effective for heavy-duty data processing, it requires specialised knowledge of distributed systems for efficient use. Rising costs and recurring out-of-memory failures with the Glue jobs prompted us to reevaluate our strategy. With the release of [Athena V3](https://aws.amazon.com/blogs/big-data/upgrade-to-athena-engine-version-3-to-increase-query-performance-and-access-more-analytics-features/), it made sense to explore migrating the standardisation step to Athena as well and unify the technology stack.
 
+### Athena for data processing (Updated Nov 2024)
 
-### Athena for scalability
+Amazon Athena is built on the open-source [Trino SQL Engine](https://trino.io/) and uses the [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), an [Apache Hive metastore](https://blog.jetbrains.com/big-data-tools/2022/07/01/why-we-need-hive-metastore/)-compatible catalogue, to manage metadata for data held in S3. This allows users to interact with structured data in S3 using SQL queries. Athena is serverless and operates within a [shared regional cluster](https://repost.aws/questions/QUdX6shGHrT-GDpuc_NDkSNA/how-does-athena-prepare-a-cluster-of-compute-nodes-for-a-specific-query), meaning all accounts in the same AWS region share the same pool of resources. It uses asynchronous processes and [quotas](https://docs.aws.amazon.com/athena/latest/ug/service-limits.html) to ensure effective and fair usage across accounts.
 
-Amazon Athena is built on the open-source [Trino SQL Engine](https://trino.io/) and uses the [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), an [Apache Hive metastore](https://blog.jetbrains.com/big-data-tools/2022/07/01/why-we-need-hive-metastore/)-compatible catalogue, to store and retrieve table metadata for data held in S3. This allows users to interact with structured data in S3 using SQL queries.
+Although Athena is often used as an ad-hoc querying engine, it can also be used for [ELT](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.html), offering several advantages:
 
-Although Athena is often used as an ad-hoc querying engine, it can also be used for ELT. Data modelling on the Analytical Platform is implemented using Athena with the default Hive table format and the Create Table As Select ([CTAS](https://docs.aws.amazon.com/athena/latest/ug/ctas.html)) and [INSERT INTO](https://docs.aws.amazon.com/athena/latest/ug/insert-into.html) statements. This offers several advantages:
+* **Serverless**: No infrastructure to manage.
+* **Interactive and SQL-based**: Easy and intuitive to use, particularly for new joiners.
+* **Unified Processing and Querying**: Facilitates sharing best practices between data engineers and analysts, such as performance tuning, and building shared utilities.
+* **Automated Compute Capacity**: Athena calculates the compute capacity needed to execute queries, eliminating the need for manual configuration and optimization.
+* **Scalable Quotas**: Quotas can be increased upon request, up to a limit. This is particularly relevant for ELT processes that can take longer to run and involve hundreds of tables. For example, we extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes and raised the limit on concurrent queries from 150 to 500.
+* **Cost-Effective**: Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective for transforming gigabyte-scale datasets. For instance, converting CSV files to Parquet using Athena was found to be 99% cheaper than using Glue PySpark in its default configuration.
+* **Provisioned Capacity**: Option to scale through [Athena provisioned capacity](https://aws.amazon.com/blogs/aws/introducing-athena-provisioned-capacity/), billed based on the number of DPUs provisioned and the duration.
 
-* Athena is interactive, serverless and SQL-based, which makes it easy and intuitive to use, particularly for new joiners.
-* Using a single tool for processing and querying makes it easier to share best practice between data engineers and analysts, for example on [performance tuning](https://docs.aws.amazon.com/athena/latest/ug/performance-tuning.html), as well as build shared utilities.
-* Athena calculates the compute capacity needed to execute queries, eliminating the necessity for manual configuration and optimisation.
-* Whilst Athena [enforces various quotas](https://docs.aws.amazon.com/athena/latest/ug/service-limits.html), it is possible to request increases, up to a limit. This is particularly relevant for ELT processes which can take longer to run and involve hundreds of tables. For example, we have extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes, and raised the limit on concurrent queries from 150 to 500.
-* Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective to transform gigabyte-scale datasets like ours.
-
-Despite its advantages, the Hive table format lacks support for numerous standard database features, resulting in a pipeline that is less robust and flexible and less suitable for standardising the data. Using the Iceberg table format helps address this gap.
+Despite its advantages, Athena with the native Hive table format lacks support for numerous standard database features, resulting in a pipeline that can be less robust and flexible. Using the Iceberg table format helps address this gap.
 
 ### Iceberg for reliability
 
@@ -100,6 +101,12 @@ Note that each segment is executed sequentially, rather than concurrently, due t
 
 * Incorporating a retry mechanism into our production workflows with custom logic. This feature identifies and automatically reattempts failed models and their children, which is particularly useful for resolving errors stemming from transient issues.
 
+### Enhancing observability (Added Nov 2024)
+
+As part of our ongoing efforts to enhance our technology stack, we are looking to improve [Athena and data usage observability](https://moj-analytical-services.github.io/dmet-cfe/athena_monitoring/). Currently, Athena query-related metrics are published to [Amazon CloudWatch](https://docs.aws.amazon.com/athena/latest/ug/query-metrics-viewing.html), enabling us to monitor metrics such as the volume of data processed and the number of failed queries at an aggregate level. This makes it possible to understand resource consumption and receive early warning signs that Athena usage is approaching resource limits, giving us more time to take corrective action.
+
+Unfortunately, this approach has limitations, especially when it comes to monitoring user-level activity as well as data and table usage. Therefore, we are considering the option to publish Athena and Glue [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) events to S3, derive custom metrics using dbt, and visualize them with [Amazon Managed Grafana](https://aws.amazon.com/grafana/). Amazon Managed Grafana provides a fully managed service for creating, sharing, and exploring dashboards, allowing us to gain deeper insights into our logs and correlate it with data from other services across the MoJ AWS estate.
+
 ### Bringing it all together
 
 We previously utilised Athena alongside Glue PySpark for our ELT pipelines. Migrating from Glue PySpark and Hive to Athena v3, Iceberg, and dbt has resulted in an impressive 99% reduction in individual query costs. This cost efficiency has enabled us to switch from weekly to more frequent daily refreshes while also onboarding new pipelines. Notably, we have still managed to achieve substantial savings, as shown in our monthly service cost graph:
@@ -108,7 +115,7 @@ We previously utilised Athena alongside Glue PySpark for our ELT pipelines. Migr
 
 In addition, the runtime for the longest jobs has decreased by 75%, and intermittent failures due to insufficient resources have become extremely rare. During the migration, we took the opportunity to enhance our dbt solution by integrating features that improve both maintainability and data quality. This includes dynamically generating models and implementing a Write-Audit-Publish (WAP) pattern. These improvements ensure that our analysts have more timely access to large datasets, and to work more efficiently on a reliable and maintainable platform.
 
-Furthermore, the unification of the data processing tools fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
+Furthermore, the unification of the data processing tools streamlines our technology stack and fosters a culture of collaboration within our data teams, making it easier to share enhancements and best practices. Looking ahead, we are excited about the potential to further innovate and refine our analytics capabilities, ensuring we continue to deliver greater value to the justice system.
 
 ### Acknowledgements
 
@@ -118,6 +125,7 @@ I would like to thank the following individuals for their invaluable contributio
 - David Bridgwood
 - Jacob Hamblin-Pyke
 - Tom Holt
+- Matt Laverty
 - Theodore Manassis
 - William Orr
 
