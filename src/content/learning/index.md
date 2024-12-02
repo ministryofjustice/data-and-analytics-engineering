@@ -16,7 +16,7 @@ At the Ministry of Justice (MoJ), we are committed to the continuous growth and 
 
 <div class="grid grid-cols-1 gap-1 pt-8">
   <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="data-engineer/" class="govuk-link">Analytics Engineering Pathway</a></h2>
+    <h2 class="govuk-heading-m"><a href="analytics-engineer/" class="govuk-link">Analytics Engineering Pathway</a></h2>
     <p class="govuk-body">Explore the materials and opportunities for learning on the Analytics Engineering Pathway</p>
   </div>
 <div class="grid grid-cols-1 gap-1 pt-8">

@@ -6,12 +6,15 @@ description: Learn about the data and analytics engineering professions at the M
 eleventyNavigation:
   key: Home
 ---
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>
-    This site is under development.
-  </strong>
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new learning resource. Help us improve it and <a class="govuk-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=KEeHxuZx_kGp4S6MNndq2CwHoPSb2ehGmP-rnk2wuOtUN0ROTTg3U0pMN1ozMUQyVEVOVVNSUjdYWC4u">leave your feedback via our form</a>.
+    </span>
+  </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
   <div class="grid-card">
@@ -23,7 +26,7 @@ eleventyNavigation:
     <p class="govuk-body">Explore the many ways we encourage and support continuous learning and development.</p>
   </div>
     <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="ways-of-working/" class="govuk-link">How we work</a></h2>
+    <h2 class="govuk-heading-m"><a href="how-we-work/" class="govuk-link">How we work</a></h2>
     <p class="govuk-body">Explore events and approaches we use to work together more effectively.</p>
   </div>
     <div class="grid-card">
