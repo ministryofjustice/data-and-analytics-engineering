@@ -41,7 +41,7 @@ You could use your 10% time to contribute to open-source projects or build tools
 
 ### Participate in Hackathons and Firebreaks
 
-You can also engage in activities like hackathons: recently, we developed a [python package](https://github.com/moj-analytical-services/mojap-metadata) that allows users to read and alter our metadata schemas. You can download the files [here](https://pypi.org/project/mojap-metadata/)
+You can also engage in activities like hackathons: recently, we developed a [python package](https://github.com/moj-analytical-services/mojap-metadata) released on [pypi](https://pypi.org/project/mojap-metadata/) that allows users to read and alter our metadata schemas.
 
 You can join our firebreaks, where teams come together to tackle a specific challenge over a short period. These events encourage creativity, problem-solving, and cross-functional collaboration, and 10% time can support your participation.
 
