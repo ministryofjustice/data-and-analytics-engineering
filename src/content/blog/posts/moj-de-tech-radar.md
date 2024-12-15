@@ -121,11 +121,15 @@ Integrating GitHub with our technology radar has delivered significant improveme
 
 <hr>
 
-## Notable Changes from Our Recent Tech Radar Review
+## From Enhancements to Insights: Our Recent Radar Refresh
 
-Our latest technology radar refresh brought together around **thirty Data and Analytics Engineers** for a collaborative review of the existing blips. To ensure a focused and efficient process, we divided into smaller groups, each led by an engineer, to review a specific quadrant.
+With our technology radar now integrated into GitHub, we’ve transformed it into a collaborative, dynamic tool that simplifies maintenance, fosters transparency, and supports asynchronous teamwork. These innovations have enabled us to keep the radar relevant and accessible, while maintaining a clear record of our technology decisions.
 
-This exercise not only updated the radar but also reflected the evolving nature of our work. The introduction of the **Analytical Engineering function** has broadened the diversity of tools and techniques we use, leading to an increase in the number of blips. Below are the most significant updates from our latest review:
+This improved agility came into play during our most recent radar refresh. We brought together around **thirty Data and Analytics Engineers** for a team-wide review of the existing blips. To streamline the process, we divided into focused groups, each led by an engineer, to assess a specific quadrant of the radar.
+
+The result was not just an updated radar but also a clearer reflection of our evolving work. The introduction of the **Analytical Engineering function** has broadened the diversity of tools and techniques we use, increasing the number of blips.
+
+Here are the most notable changes from our latest review:
 
 ---
 
