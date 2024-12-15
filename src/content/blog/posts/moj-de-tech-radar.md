@@ -170,17 +170,20 @@ These changes highlight our continued focus on balancing **stability** with **in
 
 ## Next Steps
 
-## Next steps
+Our second-generation technology radar provides a more functional, automated way to coordinate technology choices across our teams. However, there’s still room for improvement as we look to make the radar even more effective and sustainable.
 
-Our second-generation technology radar is both a more functional and automated solution to the challenge of coordinating technology choices across our teams.
+### Annual Updates and Team Engagement
+We plan to refresh the radar annually during a dedicated team day. This serves as both a valuable team-building exercise and an opportunity for everyone—including junior team members—to contribute to shaping our technology strategy.
 
-Looking ahead, we plan to update the radar annually as part of a larger team day. Not only does this serve as a valuable team-building opportunity, but it also gives everyone—including the most junior members—a chance to shape how we work.
+### Key Areas for Improvement
+While the radar has already delivered significant value, several challenges remain that we’re actively addressing:
+- **Automated CI for Blip Updates**: Although the radar integrates seamlessly with GitHub, we aim to further streamline the process with automated continuous integration workflows for updating blips.
+- **Improved Labelling and Filtering**: The introduction of an Analytical Engineering function has increased the number of blips. To maintain clarity and usability, we are exploring ways to filter and categorise blips more effectively, ensuring the radar remains accessible and relevant across professions.
+- **Maintaining Relevance**: As a revived tool, ensuring the radar actively supports decision-making processes is key. We will continue to evaluate its adoption and explore ways to integrate it further into our day-to-day workflows.
 
-Despite the radar’s success, there are still challenges to address. Beyond the administrative workload, several areas require further attention:
-- **Automated CI for blip updates**: As our technology radar is now fully built and deployed in GitHub, it would be good to automate the process of updating blips via continuous integration.
-- **Labelling and filtering blips**: With the introduction of an Analytics Engineering function to our Data Engineering team, we’ve experienced a surge in the number of blips. We are exploring ways to add more structure or filter, to help distinguish between different professions.
-- **Maintaining relevance**: Having only recently revived the radar, a challenge we have yet to address is making sure the radar is actively used in decision-making processes and remains relevant within the Data Engineering team. This is a conversation we will continue to have as we move forward.
+### Exploring Future Innovations
+We’re also considering enhancements inspired by other open-source solutions. In particular, we’re exploring features from the [AOE technology radar](https://www.aoe.com/techradar/) in collaboration with one of our Ministry of Justice software teams. The AOE radar offers capabilities such as integrated summaries, detailed histories for each blip, and a refreshed user interface. These improvements could bring further clarity, context, and usability to our radar, ensuring it continues to evolve alongside our team’s needs.
 
-We’re also keen to bring in fresh perspectives and suggestions we may not have considered. Currently, we’re exploring how to incorporate features from the [AOE technology radar](https://www.aoe.com/techradar/) (another open-source solution) in collaboration with one of our software teams at the Ministry of Justice. The AOE radar is a fully integrated solution, with a trail of all changes for each blip built directly into the radar.
+By addressing these areas, we aim to keep the radar as a living, adaptable tool that not only reflects our technology landscape but actively drives better decision-making and collaboration across our teams.
 
 ## Conclusions
