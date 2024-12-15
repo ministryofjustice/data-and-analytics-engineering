@@ -123,26 +123,52 @@ Integrating GitHub with our technology radar has delivered significant improveme
 
 ## Notable Changes from Our Recent Tech Radar Review
 
-Our latest refresh brought together around thirty Data and Analytics Engineers to review the existing blips on the radar. To facilitate this, we divided into groups, each led by an engineer, to focus on a specific quadrant.
+Our latest technology radar refresh brought together around **thirty Data and Analytics Engineers** for a collaborative review of the existing blips. To ensure a focused and efficient process, we divided into smaller groups, each led by an engineer, to review a specific quadrant.
 
-The introduction of our Analytical Engineering function has also led to an increase in the number of blips, reflecting the growing diversity of tools and techniques we use. Here are some core changes from our latest radar review:
+This exercise not only updated the radar but also reflected the evolving nature of our work. The introduction of the **Analytical Engineering function** has broadened the diversity of tools and techniques we use, leading to an increase in the number of blips. Below are the most significant updates from our latest review:
 
-### Climbers 🔼
+---
 
-- **dbt-core**: `dbt-core` has been a central part of our Data Engineering stack for some time. It has now moved from the Assess ring to the Adopt ring, reflecting its maturity and the team’s increased confidence in its capabilities. We currently have a dedicated team overseeing our internal `dbt-core` implementation, and its usage is expected to grow.
-- **ruff**: Since our initial review back in 2021, `ruff` has matured and gained widespread adoption within the Python community. Due to this, we’ve moved it from the Assess ring to the Adopt ring, highlighting its reliability and growing popularity.
+### 🔼 Climbers
+These tools have proven their value, gaining maturity and broader adoption, which has earned them a move to the **Adopt** ring.
 
-### Fallers 🔽
+- **dbt-core**
+  `dbt-core` has been a cornerstone of our Data Engineering stack for some time. Its recent move from the **Assess** ring to **Adopt** reflects its growing maturity and our increased confidence in its capabilities. We now have a dedicated team overseeing its internal implementation, and its usage continues to expand across projects.
 
-- **AWS Glue**: AWS Glue has fallen from the **Adopt** ring to the **Replace** ring. While it was previously an essential component of our Data Engineering stack, we’ve found it to be less reliable, more challenging to debug, and costlier than alternative solutions. We have transitioned to a combination of `dbt` and `Athena`, which has demonstrated greater cost efficiency and reliability.
-- **Jira/Confluence**: Previously essential to our project management, Jira and Confluence have dropped from **Adopt** to **Replace**. Though still used in parts of the organisation, we are exploring alternatives that better meet our needs and help consolidate our tools.
-- **Internal tools**: Several internal tools, such as `dataengineeringutils3` and `etl-manager`, which were developed many years ago but are no longer actively maintained or used, have been moved to the **Replace** ring. We are working to phase these tools out and replace them with more modern, open-source solutions to reduce technical debt and streamline our workflows.
+- **ruff**
+  Since our initial review in 2021, `ruff` has rapidly gained traction within the Python community. Its performance and simplicity have made it a reliable choice, leading us to move it from the **Assess** ring to **Adopt**.
 
-### New Entries ⭐
+---
 
-- **AWS Bedrock**: [To add]
-- **dbt-core and SQLMesh**: As part of our effort to improve tooling and processes around `dbt-core`, we’ve added several `dbt` packages, including `dbt-codegen` and `dbt-audit-helper`, alongside `SQLMesh`. These tools will enhance collaboration and project management within `dbt` workflows.​
+### 🔽 Fallers
+These tools have fallen out of favour due to limitations, inefficiencies, or the emergence of better alternatives.
 
+- **AWS Glue**
+  Previously an essential part of our Data Engineering stack, **AWS Glue** has moved from **Adopt** to **Replace**. We found it to be less reliable, harder to debug, and more costly than newer solutions. We have successfully transitioned to a combination of **dbt** and **Athena**, which offer greater cost efficiency and reliability.
+
+- **Jira/Confluence**
+  Once a mainstay of our project management processes, Jira and Confluence have moved from **Adopt** to **Replace**. While still used in parts of the organisation, we are exploring more streamlined alternatives that consolidate our tools and better meet our evolving needs.
+
+- **Internal tools**
+  Older tools like `dataengineeringutils3` and `etl-manager`, developed internally many years ago, are no longer actively maintained or widely used. These tools have now been moved to the **Replace** ring as we prioritise phasing them out in favour of modern, open-source solutions to reduce technical debt and simplify our workflows.
+
+---
+
+### ⭐ New Entries
+New technologies and tools have entered the radar as we expand our capabilities and refine our workflows.
+
+- **AWS Bedrock**
+  [Details to be added]
+
+- **dbt-core and SQLMesh**
+  As part of our commitment to improving our `dbt-core` workflows, we’ve added tools like `dbt-codegen` and `dbt-audit-helper` to enhance collaboration, automation, and project management. Additionally, we are exploring **SQLMesh** to improve versioning and testing capabilities for our SQL-based workflows.
+
+---
+
+These changes highlight our continued focus on balancing **stability** with **innovation**, ensuring our toolkit remains efficient, scalable, and fit for purpose. Each update reflects careful consideration of what works, what doesn’t, and where we can improve to meet the evolving demands of our team and organisation.
+
+
+## Next Steps
 
 ## Next steps
 
