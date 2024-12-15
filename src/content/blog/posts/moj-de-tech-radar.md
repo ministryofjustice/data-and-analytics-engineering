@@ -110,15 +110,16 @@ Following the voting process, discussions serve as open forums for team members 
         style="width: 50%; height: auto;">
 </div>
 
-### Benefits of GitHub Integration
-Integrating GitHub with our technology radar has brought significant improvements:
-- **Centralised Discussions**: GitHub Discussions provide a single, searchable space for all conversations and decisions about the radar. This makes it easy to revisit past choices and understand their rationale.
-- **Automated Updates**: Using [GitHub’s GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api), we automatically extract blip data from discussions to populate the radar, streamlining maintenance.
-- **Direct Links to Blips**: Each blip in the radar links directly to its discussion thread, offering transparency and a clear trail of decisions.
-- **Asynchronous Feedback**: Team members can contribute from anywhere, at any time, making it easier for remote staff to engage and have their say.
+### Benefits of GitHub Integrations
 
-By making GitHub a central part of our technology radar workflow, we’ve achieved a faster refresh loop, simplified updates, and improved team collaboration. The radar is now a living tool that reflects our current technology landscape while preserving the story of how we got there.
+Integrating GitHub with our technology radar has delivered significant improvements:
 
+- **Centralised Discussions**: GitHub Discussions provide a single, searchable space for all conversations and decisions about the radar. This makes it easy to revisit past choices, understand their rationale, and maintain a transparent decision history.
+- **Automated Updates**: By using [GitHub’s GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api), we’ve automated the process of extracting blip data to update the radar. This has drastically reduced manual effort, allowing us to refresh the radar regularly with minimal overhead. Previously, updating required hours of engineering time to organise whiteboarding sessions and implement changes.
+- **Streamlined Blip Management**: Each blip now links directly to its corresponding discussion thread, creating a clear audit trail of decisions. Additionally, we can track the number of blips across rings, a previously laborious task. Before integration, the radar had grown to **140 blips for Data Engineering alone**, making it unwieldy to manage. With better oversight, we now maintain a focused and manageable **110 blips** across both Data Engineering and Analytical Engineering, aligning more effectively with our 50-person team.
+- **Asynchronous Collaboration**: Team members can propose, discuss, and vote on blips at their convenience, enabling contributions from remote and hybrid staff. This flexibility ensures that everyone has a say, regardless of their location or working hours.
+
+<hr>
 
 ## Notable Changes from Our Recent Tech Radar Review
 
