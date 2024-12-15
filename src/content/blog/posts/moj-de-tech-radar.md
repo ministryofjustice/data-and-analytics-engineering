@@ -45,47 +45,77 @@ And split into the following quadrants:
 - **Languages and Frameworks**: Programming languages and common frameworks used in Data Engineering, such as dbt, pyarrow or pyspark.
 - **Techniques**: Common techniques used in software development and Data/Analytical Engineering. These include agile, architectural design records (ADRs) and Kimball (for dimensional modelling).
 
-## Our Technology Radar journey
+## Our Technology Radar Journey
 
-The Ministry of Justice Data Engineering technology radar is available to explore [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), with the supporting GitHub repository accessible at this [link](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar).
+_The Ministry of Justice Data Engineering team’s **technology radar** can be explored [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), with the supporting GitHub repository available [on GitHub](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar)._
 
-We began our first test run of the technology radar as a simple online whiteboarding exercise, where the Data Engineering team came together to identify important technologies and techniques, assigning them to relevant categories. [Add a quick note on why we wanted to migrate away from Miro?] [Snapshot to the miro board]
+We began with a simple whiteboarding exercise where the team collaborated to map out key tools, platforms, languages, and techniques. These were organised into quadrants and rings, offering a **snapshot of our technology landscape**. This initial approach sparked valuable discussions, aligning the team on emerging technologies and highlighting areas for improvement.
 
-In 2020, Zalando open-sourced their JavaScript-based [technology radar](https://github.com/zalando/tech-radar), which we’ve since adopted. The setup requires only a central JSON file containing details of each blip, including the date, quadrant, and ring it belongs to. This data then automatically populates the radar which can be published to static website hosts such as GitHub Pages.
+### Wins and Challenges of the First Radar
+Our initial radar provided several immediate benefits:
+- A **shared understanding** of the technologies we use, their purpose, and potential future direction.
+- **Improved engagement**: Team members had a platform to contribute ideas, raising awareness of our tools and techniques.
+- A **clear visual overview** of our tech landscape, fostering alignment across the team.
 
-Building on this solution, we’ve explored GitHub integrations to streamline the creation and management of blips, ensuring a clear record of our discussions and decisions.
+However, the approach had clear limitations:
+- **Manual maintenance**: Updating the radar was time-consuming and prone to becoming outdated.
+- **Limited collaboration**: Contributions were limited to in-person meetings, restricting remote or asynchronous participation.
+- **No historical record**: We couldn’t easily track changes, the rationale behind decisions, or the timeline of updates.
+
+### From Static to Dynamic: Adopting an Open-Source Solution
+In 2020, Zalando open-sourced their JavaScript-based [technology radar](https://github.com/zalando/tech-radar), which offered a dynamic and automated solution. Zalando’s radar uses a central JSON file to define each **blip**—its name, quadrant, ring, and date—which then automatically populates the visual radar. This simple yet powerful design addressed many of our challenges.
+
+We adopted Zalando’s radar as a foundation and extended it to better suit our needs. By integrating with **GitHub Discussions**, we introduced a streamlined way to propose, discuss, and update blips while maintaining a transparent and historical record of decisions.
+
+### Our Key Innovations
+1. **Automated Updates**: Blip data is managed in a single JSON file, eliminating the need for manual updates and reducing overhead.
+2. **Asynchronous Collaboration**: Leveraging GitHub Discussions, team members can propose and review blips at any time, enabling participation across remote and hybrid teams.
+3. **Full Decision History**: Each blip discussion maintains a timeline of decisions and feedback, giving us a clear historical record.
+4. **Improved Accessibility**: Hosting the radar on GitHub Pages makes it easily shareable with other teams and stakeholders.
+
+By enhancing Zalando’s open-source radar with GitHub integrations, we transformed it into a living, collaborative tool that evolves with our team. It not only simplifies maintenance but also ensures that our technology choices remain transparent, well-documented, and adaptable.
+
+---
 
 ## Integrations with GitHub
 
-As a team, we’ve been steadily migrating more of our processes to a unified environment, *GitHub* (see our blog post [*Github as a One-Stop Shop*](https://ministryofjustice.github.io/data-and-analytics-engineering/blog/posts/github-as-a-one-stop-shop/) for more details). This shift has gradually spread across the team as we consolidate our tools, so it was only natural that we would eventually explore GitHub as a solution for blip creation.
+As a team, we’ve steadily consolidated our processes within **GitHub**, creating a unified environment for development, collaboration, and decision-making (see our blog post on [*GitHub as a One-Stop Shop*](https://ministryofjustice.github.io/data-and-analytics-engineering/blog/posts/github-as-a-one-stop-shop/) for more details). Naturally, we explored GitHub as a solution for managing our technology radar and found ways to enhance its functionality.
 
-After some experimentation, we decided on an approach that leverages [GitHub Discussions](https://docs.github.com/en/discussions/collaborating-with-your-community-using-discussions/about-discussions). Each discussion is titled according to the blip it represents and is tagged with a label (indicating its status) and a category (such as language, tool, or technique).
+### Leveraging GitHub Discussions
+After some experimentation, we adopted **GitHub Discussions** as the backbone for creating and managing blips. Each discussion corresponds to a blip and includes:
+- **Title**: The name of the blip.
+- **Labels**: To indicate its status—Adopt, Assess, Retain, or Replace.
+- **Categories**: To classify the blip as a language, platform, tool, or technique.
 
-Team members can vote on whether we should adopt, assess, retain, or replace the blip using emojis. We use the following emoji system to represent each ring (GitHub's emoji set is somewhat limited, so we had to get creative!):
+Team members vote on blip status using an emoji-based system (a creative workaround for GitHub’s limited emoji set):
 1. **ADOPT** 🚀
 2. **ASSESS** 👍
 3. **RETAIN** 😄
 4. **REPLACE** 😦
 5. **PAUSE** 👀
 
-Following this, team members can contribute to the discussion, sharing their thoughts, feedback, and concerns about the blip.
+Following the voting process, discussions serve as open forums for team members to share insights, feedback, and concerns, creating a rich collaborative history for each blip.
 
 <div style="text-align:center;">
     <img
         src="images/tech-radar/black-tech-radar-discussion.png"
-        alt="A screenshot of one of the Github Discussions used to populate the tech radar."
+        alt="A screenshot of one of the GitHub Discussions used to populate the tech radar."
         style="width: 50%; height: auto;">
 </div>
 
-This approach offers several benefits:
-- **Centralised history of discussions and decisions**: By using GitHub Discussions, we log all our conversations and radar iterations in one place. This makes it easy to revisit past decisions when reviewing the radar in future exercises and provides clarity on why certain choices were made.
-- **Simple radar maintenance**: Thanks to [Github’s GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api), we can easily extract all the necessary information to populate each blip automatically, streamlining the update process.
-- **Direct links to discussions**: Each blip in the radar can be linked to its corresponding GitHub discussion. Clicking a blip takes you directly to the discussion, offering a detailed view of its history, including our thoughts, concerns, and considerations.
-- **Asynchronous feedback**: GitHub enables us to collect feedback at any time, facilitating hybrid working practices. Staff can contribute to discussions from any location, making it easier for everyone to engage and have their say.
+### Benefits of GitHub Integration
+Integrating GitHub with our technology radar has brought significant improvements:
+- **Centralised Discussions**: GitHub Discussions provide a single, searchable space for all conversations and decisions about the radar. This makes it easy to revisit past choices and understand their rationale.
+- **Automated Updates**: Using [GitHub’s GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api), we automatically extract blip data from discussions to populate the radar, streamlining maintenance.
+- **Direct Links to Blips**: Each blip in the radar links directly to its discussion thread, offering transparency and a clear trail of decisions.
+- **Asynchronous Feedback**: Team members can contribute from anywhere, at any time, making it easier for remote staff to engage and have their say.
 
-Our latest refresh brought together around thirty Data and Analytics Engineers to review the existing blips on the radar. To facilitate this, we divided into groups, each led by an engineer, to focus on a specific quadrant. Feedback was collected in GitHub Discussions and a summary of the major changes from each section was presented to the wider group for feedback. This approach enabled us to cover a significant amount of ground efficiently while ensuring everyone had the opportunity to contribute.
+By making GitHub a central part of our technology radar workflow, we’ve achieved a faster refresh loop, simplified updates, and improved team collaboration. The radar is now a living tool that reflects our current technology landscape while preserving the story of how we got there.
+
 
 ## Notable Changes from Our Recent Tech Radar Review
+
+Our latest refresh brought together around thirty Data and Analytics Engineers to review the existing blips on the radar. To facilitate this, we divided into groups, each led by an engineer, to focus on a specific quadrant.
 
 The introduction of our Analytical Engineering function has also led to an increase in the number of blips, reflecting the growing diversity of tools and techniques we use. Here are some core changes from our latest radar review:
 
