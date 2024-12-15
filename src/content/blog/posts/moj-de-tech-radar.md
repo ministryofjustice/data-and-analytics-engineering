@@ -172,7 +172,7 @@ New technologies and tools have entered the radar as we expand our capabilities 
 These changes highlight our continued focus on balancing **stability** with **innovation**, ensuring our toolkit remains efficient, scalable, and fit for purpose. Each update reflects careful consideration of what works, what doesn’t, and where we can improve to meet the evolving demands of our team and organisation.
 
 
-## Next Steps
+## Continuing the Journey: What’s Next for Our Radar?
 
 Our second-generation technology radar provides a more functional, automated way to coordinate technology choices across our teams. However, there’s still room for improvement as we look to make the radar even more effective and sustainable.
 
@@ -190,4 +190,8 @@ We’re also considering enhancements inspired by other open-source solutions. I
 
 By addressing these areas, we aim to keep the radar as a living, adaptable tool that not only reflects our technology landscape but actively drives better decision-making and collaboration across our teams.
 
-## Conclusions
+## Conclusion
+
+Our technology radar has transformed the way we evaluate, adopt, and manage tools and technologies within the Ministry of Justice Data Engineering team. What began as a simple whiteboarding exercise has evolved into a dynamic, automated solution integrated with GitHub, enabling transparent, collaborative, and asynchronous decision-making. By enhancing Zalando’s open-source radar with our own innovations, we’ve created a living tool that reflects both the stability we rely on and the innovation we strive for.
+
+As we look ahead, we remain committed to refining and scaling the radar. From automating updates via continuous integrations to improving blip organisation, we aim to ensure the radar stays relevant and actively supports our decision-making processes. With contributions from across the team, the radar will continue to adapt and grow, helping us strike the right balance between stability and innovation in an ever-evolving technology landscape.
