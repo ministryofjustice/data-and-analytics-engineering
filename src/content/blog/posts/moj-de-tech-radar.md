@@ -51,6 +51,13 @@ _The Ministry of Justice Data Engineering team’s **technology radar** can be e
 
 We began with a simple whiteboarding exercise where the team collaborated to map out key tools, platforms, languages, and techniques. These were organised into quadrants and rings, offering a **snapshot of our technology landscape**. This initial approach sparked valuable discussions, aligning the team on emerging technologies and highlighting areas for improvement.
 
+<div style="text-align:center;">
+    <img
+        src="images/tech-radar/whiteboard_radar.png"
+        alt="Original tech radar: A screenshot of the original whiteboard tech radar, focused on the 'ADOPT' quadrant."
+        style="width: 70%; height: auto;">
+</div>
+
 ### Wins and Challenges of the First Radar
 Our initial radar provided several immediate benefits:
 - A **shared understanding** of the technologies we use, their purpose, and potential future direction.
