@@ -11,13 +11,21 @@ tags:
   - Data Engineering
 ---
 
-## Why adopt a technology radar?
+## The Balancing Act: Stability vs Innovation
 
-Choosing which technologies, platforms, and techniques to adopt can be challenging in the fast-evolving tech landscape, with its constant influx of new software-as-a-service (SaaS) and open-source offerings. While the familiarity of popular tools can be appealing, relying on them too heavily risks stagnation and missed opportunities for innovation.
+As a data engineering team, we are constantly navigating an ever-evolving tech landscape. New tools, platforms, and techniques are constantly emerging, making it challenging to decide what to adopt, assess, or retire. While established technologies provide stability, relying on them too heavily risks stagnation and missed opportunities for innovation.
 
-Adapting existing infrastructure can be costly, often requiring cross-team coordination and significant time. However, clinging to outdated solutions simply to avoid these expenses can be equally inefficient, particularly for a smaller team. The technology radar helps us identify and prioritise emerging technologies that the wider team is eager to adopt, enabling continued innovation and growth.
+It’s easy to stick with what’s familiar – tried-and-tested tools offer stability and reliability. Yet clinging to old technologies can lead to stagnation, inefficiency, and missed opportunities for innovation. On the other hand, rushing to adopt shiny new tools can cause disruption, waste time, and create unnecessary complexity.
 
-Our decision to implement a technology radar reflects this balancing act. A technology radar serves as a shared framework, allowing teams to assess both established and emerging technologies and reach consensus on decisions. By giving everyone an opportunity to contribute, it ensures transparency and establishes a unified toolkit that simplifies onboarding and cross team collaboration.
+How do we decide what to adopt, assess, or retire? <br>
+How do we explore new technologies without losing focus or creating unnecessary overhead? <br>
+And how do we keep the team aligned and involved in these decisions? <br>
+
+Enter the **technology radar**: a tool that brings structure and clarity to this balancing act.
+
+A technology radar provides a shared framework for evaluating tools, platforms, and techniques. It helps teams identify emerging technologies worth exploring, recognise reliable tools that should remain part of the stack, and retire outdated solutions. More importantly, it fosters collaboration and transparency, ensuring that everyone has a say in shaping our technology choices.
+
+This blog post explores our journey with the technology radar – why we adopted it, how we use it to balance stability with innovation, the enhancements we’ve introduced to existing approaches, and the key lessons we’ve learned along the way.
 
 ## Ok, so what is a technology radar?
 
@@ -46,7 +54,6 @@ We began our first test run of the technology radar as a simple online whiteboar
 In 2020, Zalando open-sourced their JavaScript-based [technology radar](https://github.com/zalando/tech-radar), which we’ve since adopted. The setup requires only a central JSON file containing details of each blip, including the date, quadrant, and ring it belongs to. This data then automatically populates the radar which can be published to static website hosts such as GitHub Pages.
 
 Building on this solution, we’ve explored GitHub integrations to streamline the creation and management of blips, ensuring a clear record of our discussions and decisions.
-
 
 ## Integrations with GitHub
 
