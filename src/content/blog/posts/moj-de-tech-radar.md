@@ -69,20 +69,10 @@ However, the approach had clear limitations:
 - **Limited collaboration**: Contributions were limited to in-person meetings, restricting remote or asynchronous participation.
 - **No historical record**: We couldn’t easily track changes, the rationale behind decisions, or the timeline of updates.
 
-### From Static to Dynamic: Adopting an Open-Source Solution
-In 2020, Zalando open-sourced their JavaScript-based [technology radar](https://github.com/zalando/tech-radar), which offered a dynamic and automated solution. Zalando’s radar uses a central JSON file to define each **blip**—its name, quadrant, ring, and date—which then automatically populates the visual radar. This simple yet powerful design addressed many of our challenges.
+### From Whiteboard to Webpage: Adopting an Open-Source Solution
+In 2020, Zalando open-sourced their JavaScript-based [technology radar](https://github.com/zalando/tech-radar), providing a dynamic alternative. Their radar uses a central JSON file to define each **blip**—including its name, quadrant, ring, and date—which automatically populates the visual radar. This approach tackled the core challenges of manual updates and static visuals.
 
-We adopted Zalando’s radar as a foundation and extended it to better suit our needs. By integrating with **GitHub Discussions**, we introduced a streamlined way to propose, discuss, and update blips while maintaining a transparent and historical record of decisions.
-
-### Our Key Innovations
-1. **Automated Updates**: Blip data is managed in a single JSON file, eliminating the need for manual updates and reducing overhead.
-2. **Asynchronous Collaboration**: Leveraging GitHub Discussions, team members can propose and review blips at any time, enabling participation across remote and hybrid teams.
-3. **Full Decision History**: Each blip discussion maintains a timeline of decisions and feedback, giving us a clear historical record.
-4. **Improved Accessibility**: Hosting the radar on GitHub Pages makes it easily shareable with other teams and stakeholders.
-
-By enhancing Zalando’s open-source radar with GitHub integrations, we transformed it into a living, collaborative tool that evolves with our team. It not only simplifies maintenance but also ensures that our technology choices remain transparent, well-documented, and adaptable.
-
----
+We adopted Zalando’s radar as our foundation and built on it to better suit our needs. By integrating with **GitHub Discussions**, we introduced a streamlined way to propose, discuss, and update blips. This not only maintained a transparent historical record but also allowed for asynchronous collaboration—crucial for a remote-friendly, hybrid-working environment.
 
 ## Integrations with GitHub
 
@@ -114,10 +104,12 @@ Following the voting process, discussions serve as open forums for team members 
 
 Integrating GitHub with our technology radar has delivered significant improvements:
 
-- **Centralised Discussions**: GitHub Discussions provide a single, searchable space for all conversations and decisions about the radar. This makes it easy to revisit past choices, understand their rationale, and maintain a transparent decision history.
-- **Automated Updates**: By using [GitHub’s GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api), we’ve automated the process of extracting blip data to update the radar. This has drastically reduced manual effort, allowing us to refresh the radar regularly with minimal overhead. Previously, updating required hours of engineering time to organise whiteboarding sessions and implement changes.
-- **Streamlined Blip Management**: Each blip now links directly to its corresponding discussion thread, creating a clear audit trail of decisions. Additionally, we can track the number of blips across rings, a previously laborious task. Before integration, the radar had grown to **140 blips for Data Engineering alone**, making it unwieldy to manage. With better oversight, we now maintain a focused and manageable **110 blips** across both Data Engineering and Analytical Engineering, aligning more effectively with our 50-person team.
-- **Asynchronous Collaboration**: Team members can propose, discuss, and vote on blips at their convenience, enabling contributions from remote and hybrid staff. This flexibility ensures that everyone has a say, regardless of their location or working hours.
+- **Centralised discussions**: GitHub Discussions provide a single, searchable space for all conversations and decisions about the radar. This makes it easy to revisit past choices, understand their rationale, and maintain a transparent decision history.
+- **Automated updates**: By using [GitHub’s GraphQL API](https://docs.github.com/en/graphql/overview/about-the-graphql-api), we’ve automated the process of extracting blip data to update the radar. This has drastically reduced manual effort, allowing us to refresh the radar regularly with minimal overhead. Previously, updating required hours of engineering time to organise whiteboarding sessions and implement changes.
+- **Streamlined blip management**: Each blip now links directly to its corresponding discussion thread, creating a clear audit trail of decisions. Additionally, we can track the number of blips across rings, a previously laborious task. Before integration, the radar had grown to **140 blips for Data Engineering alone**, making it unwieldy to manage. With better oversight, we now maintain a focused and manageable **110 blips** across both Data Engineering and Analytical Engineering, aligning more effectively with our 50-person team.
+- **Asynchronous collaboration**: Team members can propose, discuss, and vote on blips at their convenience, enabling contributions from remote and hybrid staff. This flexibility ensures that everyone has a say, regardless of their location or working hours.
+
+By enhancing Zalando’s open-source radar with GitHub integrations, we transformed it into a living, collaborative tool that evolves with our team. It not only simplifies maintenance but also ensures that our technology choices remain transparent, well-documented, and adaptable.
 
 <hr>
 
@@ -181,9 +173,9 @@ We plan to refresh the radar annually during a dedicated team day. This serves a
 
 ### Key Areas for Improvement
 While the radar has already delivered significant value, several challenges remain that we’re actively addressing:
-- **Automated CI for Blip Updates**: Although the radar integrates seamlessly with GitHub, we aim to further streamline the process with automated continuous integration workflows for updating blips.
-- **Improved Labelling and Filtering**: The introduction of an Analytical Engineering function has increased the number of blips. To maintain clarity and usability, we are exploring ways to filter and categorise blips more effectively, ensuring the radar remains accessible and relevant across professions.
-- **Maintaining Relevance**: As a revived tool, ensuring the radar actively supports decision-making processes is key. We will continue to evaluate its adoption and explore ways to integrate it further into our day-to-day workflows.
+- **Automated CI for blip updates**: Although the radar integrates seamlessly with GitHub, we aim to further streamline the process with automated continuous integration workflows for updating blips.
+- **Improved labelling and filtering**: The introduction of an Analytical Engineering function has increased the number of blips. To maintain clarity and usability, we are exploring ways to filter and categorise blips more effectively, ensuring the radar remains accessible and relevant across professions.
+- **Maintaining relevance**: As a revived tool, ensuring the radar actively supports decision-making processes is key. We will continue to evaluate its adoption and explore ways to integrate it further into our day-to-day workflows.
 
 ### Exploring Future Innovations
 We’re also considering enhancements inspired by other open-source solutions. In particular, we’re exploring features from the [AOE technology radar](https://www.aoe.com/techradar/) in collaboration with one of our Ministry of Justice software teams. The AOE radar offers capabilities such as integrated summaries, detailed histories for each blip, and a refreshed user interface. These improvements could bring further clarity, context, and usability to our radar, ensuring it continues to evolve alongside our team’s needs.
