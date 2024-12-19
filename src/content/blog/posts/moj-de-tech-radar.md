@@ -164,11 +164,14 @@ These tools have fallen out of favour due to limitations, inefficiencies, or the
 ### ⭐ New Entries
 New technologies and tools have entered the radar as we expand our capabilities and refine our workflows.
 
-- **AWS Bedrock**
-  [Details to be added]
+- **DuckDB**
+  DuckDB has emerged as a powerful tool for in-memory analytics, delivering exceptional query performance and seamless integration with SQL-based workflows. We’ve added it to the **Assess** ring as we explore its potential. Notably, DuckDB is a key component of our internal data linkage tool, [Splink](https://github.com/moj-analytical-services/splink), and provides a lightweight solution for quickly spinning up and testing `dbt` models locally.
 
 - **dbt-core and SQLMesh**
   As part of our commitment to improving our `dbt-core` workflows, we’ve added tools like `dbt-codegen` and `dbt-audit-helper` to enhance collaboration, automation, and project management. Additionally, we are exploring **SQLMesh** to improve versioning and testing capabilities for our SQL-based workflows.
+
+- **GitHub Copilot**
+  GitHub Copilot has generated significant interest within our team, offering AI-powered code suggestions and completions to streamline development workflows. The Ministry of Justice is part of a wider UK Government trial to evaluate its effectiveness and potential to enhance productivity. We’ve placed it in the **Assess** ring as we explore its capabilities and measure its impact on our coding practices.
 
 ---
 
