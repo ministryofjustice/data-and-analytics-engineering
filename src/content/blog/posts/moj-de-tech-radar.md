@@ -1,14 +1,16 @@
 ---
 title: The Ministry of Justice Data Engineering Technology Radar
 description: Making better technology decisions with a shared technology radar.
-date: 2024-11-30
+date: 2024-12-19
 author:
   name: Tom Hepworth
 permalink: "/blog/posts/{{ title | slugify }}/"
 tags:
-  - Tech Radar
-  - Technology
+  - Technology Radar
+  - GitHub
   - Data Engineering
+  - Data Strategy
+  - Modernisations
 ---
 
 ## The Balancing Act: Stability vs Innovation
@@ -55,7 +57,7 @@ We began with a simple whiteboarding exercise where the team collaborated to map
     <img
         src="images/tech-radar/whiteboard_radar.png"
         alt="Original tech radar: A screenshot of the original whiteboard tech radar, focused on the 'ADOPT' quadrant."
-        style="width: 70%; height: auto;">
+        style="width: 40%; height: auto;">
 </div>
 
 ### Wins and Challenges of the First Radar
@@ -187,3 +189,13 @@ By addressing these areas, we aim to keep the radar as a living, adaptable tool 
 Our technology radar has transformed the way we evaluate, adopt, and manage tools and technologies within the Ministry of Justice Data Engineering team. What began as a simple whiteboarding exercise has evolved into a dynamic, automated solution integrated with GitHub, enabling transparent, collaborative, and asynchronous decision-making. By enhancing Zalando’s open-source radar with our own innovations, we’ve created a living tool that reflects both the stability we rely on and the innovation we strive for.
 
 As we look ahead, we remain committed to refining and scaling the radar. From automating updates via continuous integrations to improving blip organisation, we aim to ensure the radar stays relevant and actively supports our decision-making processes. With contributions from across the team, the radar will continue to adapt and grow, helping us strike the right balance between stability and innovation in an ever-evolving technology landscape.
+
+<hr>
+
+## Acknowledgements
+
+I would like to thank the following people and resources:
+
+- [Soumaya Mauthoor](https://github.com/SoumayaMauthoorMOJ) for both her invaluable feedback and her tireless work setting up our modernised radar.
+- [Damilola Oyebade](https://github.com/dami-moj) and [Murad Ali](https://github.com/murad-ali-MoJ) for all of their work updating the radar and running the refresh session.
+- [Francesca Von Braun-Bates](https://github.com/vonbraunbates) for her feedback and guidance on this blog post.
