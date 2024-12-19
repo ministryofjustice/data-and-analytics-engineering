@@ -29,7 +29,7 @@ A technology radar provides a shared framework for evaluating tools, platforms, 
 
 This blog post explores our journey with the technology radar – why we adopted it, how we use it to balance stability with innovation, the enhancements we’ve introduced to existing approaches, and the key lessons we’ve learned along the way.
 
-## Ok, so what is a technology radar?
+## Introducing the Technology Radar
 
 A technology radar is a tool that maps out the key technologies your team is using or considering, represented as "blips". These blips are arranged into concentric rings - **Adopt, Assess, Retain, and Replace** - which reflect the status of each technology, indicating whether we plan to adopt, phase out, or maintain it and split into quadrants, representing the different kinds of blips - languages, tools, etc.
 
@@ -175,7 +175,7 @@ New technologies and tools have entered the radar as we expand our capabilities 
 These changes highlight our continued focus on balancing **stability** with **innovation**, ensuring our toolkit remains efficient, scalable, and fit for purpose. Each update reflects careful consideration of what works, what doesn’t, and where we can improve to meet the evolving demands of our team and organisation.
 
 
-## Continuing the Journey: What’s Next for Our Radar?
+## Continuing the Journey: Next Steps for Our Radar
 
 Our second-generation technology radar provides a more functional, automated way to coordinate technology choices across our teams. However, there’s still room for improvement as we look to make the radar even more effective and sustainable.
 
