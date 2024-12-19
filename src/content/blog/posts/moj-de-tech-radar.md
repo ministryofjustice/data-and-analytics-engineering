@@ -29,7 +29,7 @@ A technology radar provides a shared framework for evaluating tools, platforms, 
 
 This blog post explores our journey with the technology radar – why we adopted it, how we use it to balance stability with innovation, the enhancements we’ve introduced to existing approaches, and the key lessons we’ve learned along the way.
 
-## Ok, so what is a technology radar?
+## Introducing the Technology Radar
 
 A technology radar is a tool that maps out the key technologies your team is using or considering, represented as "blips". These blips are arranged into concentric rings - **Adopt, Assess, Retain, and Replace** - which reflect the status of each technology, indicating whether we plan to adopt, phase out, or maintain it and split into quadrants, representing the different kinds of blips - languages, tools, etc.
 
@@ -47,9 +47,18 @@ And split into the following quadrants:
 - **Languages and Frameworks**: Programming languages and common frameworks used in Data Engineering, such as dbt, pyarrow or pyspark.
 - **Techniques**: Common techniques used in software development and Data/Analytical Engineering. These include agile, architectural design records (ADRs) and Kimball (for dimensional modelling).
 
-## Our Technology Radar Journey
+<div style="text-align:center;">
+    <img
+        src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/docs/add-de-tech-radar-image/src/content/blog/posts/images/tech-radar/de_tech_radar.png"
+        alt="Refreshed technology radar: A screenshot of our new technology radar, showing the radar's quadrants and rings."
+        style="width: 90%; height: auto;">
+</div>
 
-_The Ministry of Justice Data Engineering team’s **technology radar** can be explored [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), with the supporting GitHub repository available [on GitHub](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar)._
+<br>
+
+_Explore the Ministry of Justice Data Engineering team’s **technology radar** [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), or check out the supporting GitHub repository [on GitHub](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar)._
+
+## Our Technology Radar Journey
 
 We began with a simple whiteboarding exercise where the team collaborated to map out key tools, platforms, languages, and techniques. These were organised into quadrants and rings, offering a **snapshot of our technology landscape**. This initial approach sparked valuable discussions, aligning the team on emerging technologies and highlighting areas for improvement.
 
@@ -57,7 +66,7 @@ We began with a simple whiteboarding exercise where the team collaborated to map
     <img
         src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/main/src/content/blog/posts/images/tech-radar/whiteboard_radar.png"
         alt="Original tech radar: A screenshot of the original whiteboard tech radar, focused on the 'ADOPT' quadrant."
-        style="width: 70%; height: auto;">
+        style="width: 80%; height: auto;">
 </div>
 
 ### Wins and Challenges of the First Radar
@@ -155,18 +164,21 @@ These tools have fallen out of favour due to limitations, inefficiencies, or the
 ### ⭐ New Entries
 New technologies and tools have entered the radar as we expand our capabilities and refine our workflows.
 
-- **AWS Bedrock**
-  [Details to be added]
+- **DuckDB**
+  DuckDB has emerged as a powerful tool for in-memory analytics, delivering exceptional query performance and seamless integration with SQL-based workflows. We’ve added it to the **Assess** ring as we explore its potential. Notably, DuckDB is a key component of our internal data linkage tool, [Splink](https://github.com/moj-analytical-services/splink), and provides a lightweight solution for quickly spinning up and testing `dbt` models locally.
 
 - **dbt-core and SQLMesh**
   As part of our commitment to improving our `dbt-core` workflows, we’ve added tools like `dbt-codegen` and `dbt-audit-helper` to enhance collaboration, automation, and project management. Additionally, we are exploring **SQLMesh** to improve versioning and testing capabilities for our SQL-based workflows.
+
+- **GitHub Copilot**
+  GitHub Copilot has generated significant interest within our team, offering AI-powered code suggestions and completions to streamline development workflows. The Ministry of Justice is part of a wider UK Government trial to evaluate its effectiveness and potential to enhance productivity. We’ve placed it in the **Assess** ring as we explore its capabilities and measure its impact on our coding practices.
 
 ---
 
 These changes highlight our continued focus on balancing **stability** with **innovation**, ensuring our toolkit remains efficient, scalable, and fit for purpose. Each update reflects careful consideration of what works, what doesn’t, and where we can improve to meet the evolving demands of our team and organisation.
 
 
-## Continuing the Journey: What’s Next for Our Radar?
+## Continuing the Journey: Next Steps for Our Radar
 
 Our second-generation technology radar provides a more functional, automated way to coordinate technology choices across our teams. However, there’s still room for improvement as we look to make the radar even more effective and sustainable.
 
