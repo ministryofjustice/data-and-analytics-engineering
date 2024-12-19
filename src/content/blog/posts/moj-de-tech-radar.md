@@ -47,9 +47,18 @@ And split into the following quadrants:
 - **Languages and Frameworks**: Programming languages and common frameworks used in Data Engineering, such as dbt, pyarrow or pyspark.
 - **Techniques**: Common techniques used in software development and Data/Analytical Engineering. These include agile, architectural design records (ADRs) and Kimball (for dimensional modelling).
 
-## Our Technology Radar Journey
+<div style="text-align:center;">
+    <img
+        src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/docs/add-de-tech-radar-image/src/content/blog/posts/images/tech-radar/de_tech_radar.png"
+        alt="Refreshed technology radar: A screenshot of our new technology radar, showing the radar's quadrants and rings."
+        style="width: 90%; height: auto;">
+</div>
 
-_The Ministry of Justice Data Engineering team’s **technology radar** can be explored [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), with the supporting GitHub repository available [on GitHub](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar)._
+<br>
+
+_Explore the Ministry of Justice Data Engineering team’s **technology radar** [here](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/), or check out the supporting GitHub repository [on GitHub](https://github.com/moj-analytical-services/data-and-analytics-engineering-tech-radar)._
+
+## Our Technology Radar Journey
 
 We began with a simple whiteboarding exercise where the team collaborated to map out key tools, platforms, languages, and techniques. These were organised into quadrants and rings, offering a **snapshot of our technology landscape**. This initial approach sparked valuable discussions, aligning the team on emerging technologies and highlighting areas for improvement.
 
@@ -57,7 +66,7 @@ We began with a simple whiteboarding exercise where the team collaborated to map
     <img
         src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/main/src/content/blog/posts/images/tech-radar/whiteboard_radar.png"
         alt="Original tech radar: A screenshot of the original whiteboard tech radar, focused on the 'ADOPT' quadrant."
-        style="width: 70%; height: auto;">
+        style="width: 80%; height: auto;">
 </div>
 
 ### Wins and Challenges of the First Radar
