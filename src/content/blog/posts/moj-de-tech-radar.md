@@ -8,9 +8,7 @@ permalink: "/blog/posts/{{ title | slugify }}/"
 tags:
   - Technology Radar
   - GitHub
-  - Data Engineering
   - Data Strategy
-  - Modernisations
 ---
 
 [[toc]]
