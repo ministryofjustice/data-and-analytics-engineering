@@ -194,8 +194,8 @@ As we look ahead, we remain committed to refining and scaling the radar. From au
 
 ## Acknowledgements
 
-I would like to thank the following people and resources:
+I would like to thank the following people for their help with this blog post:
 
 - [Soumaya Mauthoor](https://github.com/SoumayaMauthoorMOJ) for both her invaluable feedback and her tireless work setting up our modernised radar.
 - [Damilola Oyebade](https://github.com/dami-moj) and [Murad Ali](https://github.com/murad-ali-MoJ) for all of their work updating the radar and running the refresh session.
-- [Francesca Von Braun-Bates](https://github.com/vonbraunbates) for her feedback and guidance on this blog post.
+- [Francesca Von Braun-Bates](https://github.com/vonbraunbates) for all of her feedback and guidance.
