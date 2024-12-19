@@ -13,6 +13,8 @@ tags:
   - Modernisations
 ---
 
+[[toc]]
+
 ## The Balancing Act: Stability vs Innovation
 
 As a data and analytics engineering team nearing fifty engineers, we are continually navigating an ever-evolving technological landscape. With new tools, platforms, and techniques emerging at a rapid pace, it can be challenging to decide what to adopt, assess, or retire. While established technologies offer stability, an over-reliance on them risks stagnation and missed opportunities for innovation.
@@ -55,9 +57,9 @@ We began with a simple whiteboarding exercise where the team collaborated to map
 
 <div style="text-align:center;">
     <img
-        src="images/tech-radar/whiteboard_radar.png"
+        src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/main/src/content/blog/posts/images/tech-radar/whiteboard_radar.png"
         alt="Original tech radar: A screenshot of the original whiteboard tech radar, focused on the 'ADOPT' quadrant."
-        style="width: 40%; height: auto;">
+        style="width: 70%; height: auto;">
 </div>
 
 ### Wins and Challenges of the First Radar
@@ -97,9 +99,9 @@ Following the voting process, discussions serve as open forums for team members 
 
 <div style="text-align:center;">
     <img
-        src="images/tech-radar/black-tech-radar-discussion.png"
+        src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/main/src/content/blog/posts/images/tech-radar/black-tech-radar-discussion.png"
         alt="A screenshot of one of the GitHub Discussions used to populate the tech radar."
-        style="width: 50%; height: auto;">
+        style="width: 70%; height: auto;">
 </div>
 
 ### Benefits of GitHub Integrations
