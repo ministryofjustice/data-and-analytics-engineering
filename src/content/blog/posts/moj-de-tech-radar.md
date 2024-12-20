@@ -49,7 +49,7 @@ And split into the following quadrants:
 
 <div style="text-align:center;">
     <img
-        src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/docs/add-de-tech-radar-image/src/content/blog/posts/images/tech-radar/de_tech_radar.png"
+        src="https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/refs/heads/main/src/content/blog/posts/images/tech-radar/de_tech_radar.png"
         alt="Refreshed technology radar: A screenshot of our new technology radar, showing the radar's quadrants and rings."
         style="width: 90%; height: auto;">
 </div>
