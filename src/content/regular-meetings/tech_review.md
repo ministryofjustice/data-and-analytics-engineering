@@ -3,8 +3,8 @@ layout: sub-navigation
 title: Tech Review
 eleventyNavigation:
   key: Tech Review
-  parent: How we work
-  order: 9
+  parent: Regular meetings
+  order: 2
 ---
 
 ## Purpose
