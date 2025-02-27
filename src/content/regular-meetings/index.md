@@ -1,8 +1,8 @@
 ---
 layout: sub-navigation
-title: Our regular meetings
+title: Regular meetings
 eleventyNavigation:
-  key: Our regular meetings
+  key: Regular meetings
   parent: Home
   order: 4
 ---
