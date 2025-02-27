@@ -30,6 +30,11 @@ eleventyNavigation:
     <p class="govuk-body">Explore events and approaches we use to work together more effectively.</p>
   </div>
     <div class="grid-card">
+    <h2 class="govuk-heading-m"><a href="regular-meetings/" class="govuk-link">Regular meetings</a></h2>
+    <p class="govuk-body">Find out about our regular meetings.</p>
+  </div>
+  </div>
+    <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="innovation/" class="govuk-link">Innovation</a></h2>
     <p class="govuk-body">Innovation is at the heart of what we do at the MoJ. Find out about how we encourage and support innovation.</p>
   </div>

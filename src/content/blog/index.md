@@ -11,5 +11,5 @@ pagination:
 eleventyNavigation:
   key: Blog
   parent: Home
-  order: 5
+  order: 6
 ---

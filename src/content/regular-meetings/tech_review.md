@@ -9,8 +9,7 @@ eleventyNavigation:
 
 ## Purpose
 
-A monthly meeting for all data and analytics engineers to present new technical approaches and provide feedback on solutions in an open, inclusive forum.
-The goal is to ensure a unified approach to solving data challenges across the team, with outcomes documented in Architecture Decision Records (ADRs) for future reference. 
+A monthly meeting for all data and analytics engineers to present new technical approaches and provide feedback on solutions in an open, inclusive forum. The goal is to ensure a unified approach to solving data challenges across the team, with outcomes documented in Architecture Decision Records (ADRs) for future reference. 
 
 Items that come to tech review include (but are not limited to):
 
@@ -21,14 +20,11 @@ Items that come to tech review include (but are not limited to):
 
 ## Bringing an item to Tech Review
 
-Once an item has been identified for proposing at Tech Review, the Presenter should contact the Tech Review chair to arrange a slot to present.
-The Presenter should also create an RFC (Request for Comments) Github discussion and circulate this on the #data-and-analytics-engineering slack channel at least one week prior to their presentation. 
+Once an item has been identified for proposing at Tech Review, the Presenter should contact the Tech Review chair to arrange a slot to present. The Presenter should also create an RFC (Request for Comments) Github discussion and circulate this on the #data-and-analytics-engineering slack channel at least one week prior to their presentation. 
 
-In the Tech Review presentation, the Presenter will present their proposal via whatever medium best suits (e.g. slide deck, live demo).
-Following this, the Chair will invite comments and questions from the audience and comments from the RFC discussion. 
+In the Tech Review presentation, the Presenter will present their proposal via whatever medium best suits (e.g. slide deck, live demo). Following this, the Chair will invite comments and questions from the audience and comments from the RFC discussion. 
 
-The Tech Review panel will have a follow up meeting for a final discussion on the proposals and provide their recommendation on whether to approve, approve with conditions, or decline the proposals.
-These will be added to the RFC. These will be announced on the #data-and-analytics-engineering slack channel no later than one week after the presentation.
+The Tech Review panel will have a follow up meeting for a final discussion on the proposals and provide their recommendation on whether to approve, approve with conditions, or decline the proposals. These will be added to the RFC. These will be announced on the #data-and-analytics-engineering slack channel no later than one week after the presentation.
 
 For approved proposals, the Presenter then needs to submit an ADR (Architecture Decision Record). 
 
