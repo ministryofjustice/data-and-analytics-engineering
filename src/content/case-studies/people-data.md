@@ -1,40 +1,38 @@
 ---
 eleventyNavigation:
   parent: Case Studies
-  title: "People Data"
+  title: People Data
 title: "People Data"
-description: "Enhancing the quality, accessibility and integration of workforce data to support better decisions across MoJ."
-tags: [corporate, people-data, workforce, analytics]
+description: "Improving the quality and accessibility of people data to support workforce planning, wellbeing, and strategic insight."
+tags: [people-data, workforce, analytics, data-platform]
 date: 2025-05-22
 layout: sub-navigation
 ---
 
-# Corporate: People Data
-
 ## Overview
-A project to ensure clean, standardised and integrated People data to support effective workforce planning, frontline resourcing, and wellbeing initiatives.
+
+The People Data Platform project was designed to improve how people data is accessed and used across the Ministry of Justice. It enables analysts to answer complex questions about recruitment, staff wellbeing, and workforce planning using clean, modelled data built on a modern technology stack.
 
 ## Challenge
-- Inconsistent and siloed data made it hard to assess workforce performance
-- Analysts struggled to access clean, documented datasets
-- Manual processes limited advanced analytics and automation
+
+Historically, people data was fragmented, inconsistently recorded, and difficult to use. Analysts spent significant time cleaning and interpreting data from multiple sources, and there was no central model that brought together information on staffing, organisational structure, recruitment, or wellbeing. These challenges made it harder to deliver insight, particularly when responding to strategic or cross-cutting workforce questions.
 
 ## Solution
-- Built robust data pipelines using a modern data stack
-- Developed a unified data model that supports cross-domain insights
-- Enabled the use of data for advanced analytics and AI
+
+We created a unified data model that combines a range of HR-related datasets—such as staff in post, recruitment pipelines, and organisational structure. This model was built using robust pipelines and best-in-class tooling to ensure data was clean, timely, and accessible.
+
+The platform supports both descriptive and predictive analysis, enabling teams to explore workforce trends, support strategic decision making, and unlock AI-powered use cases. By structuring data to serve multiple domains, the solution allows analysts across the MoJ to reuse core components without duplicating effort.
 
 ## Impact
-- Better workforce planning through timely and trusted data
-- Increased efficiency across analytical teams
-- New potential for AI and machine learning models
+
+The people data model has improved data access and reduced the time analysts spend preparing datasets. It provides a trusted foundation for workforce planning and reporting, helping ensure the MoJ is better equipped to manage staffing challenges, support employee wellbeing, and measure the impact of internal programmes.
+
+The model also enables new types of analysis that were previously out of reach due to inconsistent or inaccessible data.
 
 ## Tools & Technologies
-- Modern data stack
-- Modelled and joined datasets
-- Standardised pipelines
+
+We used modern data engineering tools and pipelines to model and join datasets into a unified structure. The platform is designed for flexibility and scalability and supports downstream tools for dashboards, reporting, and advanced analytics.
 
 ## Partners
-- People Analytics Team
-- Data Engineering
-- Cross-domain data pipeline project
+
+This work was delivered by the Data Engineering and People Analytics teams, in partnership with analysts and stakeholders across MoJ HR and Strategy functions.
