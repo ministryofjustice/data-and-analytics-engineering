@@ -3,7 +3,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@ministryofjustice/frontend": "^1.8.0",
     "@sindresorhus/slugify": "^2.2.1",
-    "@x-govuk/govuk-eleventy-plugin": "^5.0.3",
+    "@x-govuk/govuk-eleventy-plugin": "^5.0.7",
     "jquery": "^3.7.1",
     "nunjucks": "^3.2.4"
   },
@@ -16,5 +16,21 @@
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "tailwindcss": "^3.3.3"
-  }
+  },
+  "name": "data-and-analytics-engineering",
+  "version": "1.0.0",
+  "description": "This is a repository that holds the files for the  [Data and Analytics Engineering website](https://ministryofjustice.github.io/data-and-analytics-engineering/). It is developed using the [11ty](https://www.11ty.dev/docs/getting-started/) plug-in to meet GOV.UK style and standards. Information published on the site is done so by Analytics Engineers and  Data Engineers at the Ministry of Justice.",
+  "main": "eleventy.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ministryofjustice/data-and-analytics-engineering.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ministryofjustice/data-and-analytics-engineering/issues"
+  },
+  "homepage": "https://github.com/ministryofjustice/data-and-analytics-engineering#readme"
 }
