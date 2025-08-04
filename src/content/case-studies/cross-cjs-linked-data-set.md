@@ -19,7 +19,7 @@ Justice data was historically fragmented across organisational boundaries. Analy
 
 ## Solution
 
-We developed secure, de-identified pipelines to link person- and case-level data across the justice system. The resulting dataset was designed to support a wide range of analytical use cases—from operational dashboards to academic research—while maintaining rigorous data governance and privacy standards.
+We developed secure, de-identified pipelines to link person and case-level data across the justice system. The resulting dataset was designed to support a wide range of analytical use cases—from operational dashboards to academic research—while maintaining rigorous data governance and privacy standards.
 
 The dataset enables analysts to follow victims, defendants, and cases through the entire justice process. It also integrates with other tools, such as the Victim Attrition Dashboard, to provide deeper insights into user journeys and system performance.
 

@@ -38,7 +38,7 @@ eleventyNavigation:
     <p class="govuk-body">Innovation is at the heart of what we do at the MoJ. Find out about how we encourage and support innovation.</p>
   </div>
   <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="blog/" class="govuk-link">Case Studies</a></h2>
+    <h2 class="govuk-heading-m"><a href="case-studies/" class="govuk-link">Case Studies</a></h2>
     <p class="govuk-body">Explore how data and analytics engineering is transforming justice services across domains.</p>
   </div>
   <div class="grid-card">
