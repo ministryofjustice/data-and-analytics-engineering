@@ -20,7 +20,7 @@ For our last recruitment round we hosted a webinar to provide information on the
 
 ### Where are roles based?
 
-Our roles are national. We have a number of offices around the England and Wales. See this link to find your closest one 👉 [here](https://www.google.com/maps/d/u/0/viewer?mid=1CsJxWFinu4iFbA0Tnq-KrwUAkbvLOZwQ&ll=52.93989869394286%2C-3.20735400000002&z=7)
+Our roles are national. We have a number of offices around the England and Wales. See this link to find your closest one 👉 [here](https://www.civilservicejobs.service.gov.uk/csr/index.cgi?SID=Y29udGV4dGlkPTE0NTA1NjA0NCZvd25lcj01MDcwMDAwJm93bmVydHlwZT1mYWlyJnBhZ2VhY3Rpb249c2VhcmNoY29udGV4dCZwYWdlY2xhc3M9U2VhcmNoJnJlcXNpZz0xNzU0NDA3MjgzLWU3MDUzOGRjYzJlYzhiMmNmY2RjNjRlMGRiZjk3ZjNjZDIzZDFlM2U=)
 
 We're open to flexible and hybrid working arrangements that include regular home working, but you'll need to go to one of these offices from time to time. 
 
