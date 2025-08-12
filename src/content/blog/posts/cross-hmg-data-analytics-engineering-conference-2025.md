@@ -21,7 +21,7 @@ In July 2025, the Ministry of Justice, in partnership with Amazon Web Services (
 
 The conference opened with powerful keynote addresses in both locations. In **London**, **Hugh Stickland**, the Ministry of Justice’s Chief Data Officer and Chief Scientific Adviser, emphasised the strategic importance of data and the evolving role of data engineering in supporting better services and smarter policymaking. 
 
-In **Manchester**, **Anis Khan**, Head of Data Engineering at the Ministry of Justice, reflected on the exponential growth of the department’s data engineering capability. He described how data now drives strategic decisions, even as teams navigate the complexity of modernising legacy systems and embracing new technologies.
+In **Manchester**, **Anis Khan**, Head of Data Engineering at the Ministry of Justice, reflected on the exponential growth of the department’s analytics engineering and data engineering capability. He described how data now drives strategic decisions, even as teams navigate the complexity of modernising legacy systems and embracing new technologies.
 
 Across both talks, one clear message stood out:
 
@@ -70,11 +70,11 @@ Speakers from across government and industry presented real-world case studies a
 
 The sessions examined the evolving landscape of data engineering in government with a particular focus on real-world delivery, modern tooling, and collaboration.
 
-* **Ministry of Justice** - Anis Khan, reflected on the exponential growth of the Ministry of Justice’s Data Engineering practice, highlighting how data now drives strategy despite the challenges of embracing new technologies.
-* Supratik Chowdhury, Laurence Droy and Matt Heery – Explored how the Ministry of Justice is using DLT to reduce technical debt, streamline processes and simplify data workflows.
+* **Ministry of Justice** - Anis Khan, reflected on the exponential growth of the Ministry of Justice’s Data and Analytics Engineering practice, highlighting how data now drives strategy despite the challenges of embracing new technologies.
+* **Ministry of Justice** - Supratik Chowdhury, Laurence Droy and Matt Heery – Explored how the Ministry of Justice is using DLT to reduce technical debt, streamline processes and simplify data workflows.
 * **HMRC** - Martyn Lane, explained how HMRC is transforming user access to data through Denodo-powered data virtualisation. He emphasised the role of strong data quality and governance in unlocking value at scale.
 * **Companies House** - Myles Richardson, presented the work Companies House has undertaken to create a cloud-based analytics platform, aimed at improving data accessibility, self-serve reporting, and strategic insights.
-* **Made Tech / the Ministry of Justice** - Luke Williams (Made Tech) and Matt Heery (the Ministry of Justice), shared the ongoing efforts to modernise compliance systems like SARs and EARs, with a focus on the role of better data infrastructure in enabling meaningful compliance insights.
+* **Made Tech & Ministry of Justice** - Luke Williams (Made Tech) and Matt Heery (the Ministry of Justice), shared the ongoing efforts to modernise compliance systems like SARs and EARs, with a focus on the role of better data infrastructure in enabling meaningful compliance insights.
 * **Amazon Web Services** - Joy Andrews, led a technical session on evaluating Retrieval-Augmented Generation (RAG) pipelines using Bedrock, LangChain and Ragas, giving teams a practical approach to assessing AI-driven pipeline performance.
 
 
