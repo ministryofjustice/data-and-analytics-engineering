@@ -3,8 +3,7 @@ title: Inaugural data and analytics engineering conference
 description: Reflections from the very first cross-government conference for data and analytics engineering
 date: 2025-08-12
 modified: 
-author:
-  name: 
+author: 
 permalink: "/blog/posts/{{ title | slugify }}/"
 tags:
   - Events
