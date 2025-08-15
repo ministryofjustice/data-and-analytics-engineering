@@ -8,8 +8,10 @@
     "nunjucks": "^3.2.4"
   },
   "scripts": {
-    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --watch",
-    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --minify"
+    "watch:sass": "npx sass src/assets/sass:_site/assets --watch",
+    "build:sass": "npx sass src/assets/sass:_site/assets",
+    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --watch & npm run watch:sass",
+    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/assets/css/input.css -c ./tailwind.config.js -o _site/assets/output.css --minify && npm run build:sass"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
