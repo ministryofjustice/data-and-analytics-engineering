@@ -20,7 +20,7 @@ A twice monthly informal meeting for all data and analytics engineers to:
 
 ## When 
 
-3-4pm on the 1st and 3rd Thursday each month.
+3-4pm on the 1st and 3rd Wednesday each month.
 
 ## Core audience 
 
