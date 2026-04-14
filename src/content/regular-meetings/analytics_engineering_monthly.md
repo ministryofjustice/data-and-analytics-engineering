@@ -17,7 +17,7 @@ A monthly informal meeting for all analytics engineers to:
 
 ## When 
 
-11am-12:30pm on Thursday, every 4 weeks.
+11-12 on Thursday, every 4 weeks.
 
 ## Core audience 
 

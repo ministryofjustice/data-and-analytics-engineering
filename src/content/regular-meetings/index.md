@@ -24,3 +24,8 @@ Within the Data and Analytics Engineers we have several regular meetings, each w
     <h2 class="govuk-heading-m"><a href="portfolio_spotlight/" class="govuk-link">Portfolio Spotlight</a></h2>
     <p class="govuk-body">Find out about our monthly Portfolio Spotlight meetings where we review what is happening in each portfolio.</p>
   </div>
+<div class="grid grid-cols-1 gap-2 pt-8">
+  <div class="grid-card">
+    <h2 class="govuk-heading-m"><a href="analytics_engineering_monthly/" class="govuk-link">Analytics Engineering Monthly</a></h2>
+    <p class="govuk-body">Find out about our monthly Analytics Engineering meetings where we meet as a profession.</p>
+  </div>
