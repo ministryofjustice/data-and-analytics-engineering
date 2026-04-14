@@ -30,7 +30,7 @@ For approved proposals, the Presenter then needs to submit an ADR (Architecture 
 
 ## When
 
-3-4pm on the 2nd Thursday each month.
+2-3pm on the 2nd Wednesday of each month.
 
 ## Core audience
 
