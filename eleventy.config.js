@@ -1,4 +1,4 @@
-const govukEleventyPlugin = require('@x-govuk/govuk-eleventy-plugin');
+const { govukEleventyPlugin } = require('@x-govuk/govuk-eleventy-plugin');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
 module.exports = function (eleventyConfig) {
@@ -13,14 +13,25 @@ module.exports = function (eleventyConfig) {
                 sitemapPath: '/sitemap'
             }
         },
-        stylesheets: ["/assets/output.css"]
+        templates: {
+            sitemap: false,
+            searchIndex: {
+                permalink: '/search.json'
+            }
+        }
     })
     eleventyConfig.addCollection("posts", function (collectionApi) {
         return collectionApi.getFilteredByGlob("./src/content/blog/posts/*.md").reverse()
     })
-    eleventyConfig.addWatchTarget('./tailwind.config.js')
-    eleventyConfig.addWatchTarget('./src/assets/css/input.css')
-    eleventyConfig.addPassthroughCopy({ './_tmp/output.css': './assets/output.css' })
+    eleventyConfig.addPassthroughCopy({ './src/assets/css/input.css': 'assets/custom.css' })
+    eleventyConfig.addTransform('customStylesheetLink', function (content, outputPath) {
+        if (!outputPath || !outputPath.endsWith('.html')) {
+            return content
+        }
+
+        const customStylesheet = '<link rel="stylesheet" href="/data-and-analytics-engineering/assets/custom.css">\n'
+        return content.replace('</head>', `  ${customStylesheet}</head>`)
+    })
     eleventyConfig.addPassthroughCopy("./src/**/*.png")
     eleventyConfig.addShortcode('version', function () {
         return now
@@ -32,7 +43,6 @@ module.exports = function (eleventyConfig) {
         markdownTemplateEngine: 'njk',
         dir: {
             input: './src/content',
-            layouts: '../../node_modules/@x-govuk/govuk-eleventy-plugin/layouts',
         },
         pathPrefix: '/data-and-analytics-engineering/',
     }

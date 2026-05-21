@@ -16,7 +16,7 @@ Our work ensures the seamless flow of data, from its raw state to dashboards and
 When you join you’ll be given access to our [operational onboarding Trello  for Data and Analytics Engineers](https://trello.com/b/AxQfkv5D/onboarding-data-and-analytics-engineering). It’s a structured process that helps new hires transition smoothly into their roles during their first six months. 
 
 ### Articles
-<div class="grid grid-cols-1 gap-1 pt-8">
+<div class="card-grid">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://www.datacamp.com/blog/what-is-an-analytics-engineer-everything-you-need-to-know" class="govuk-link">What Is An Analytics Engineer? Everything You Need to Know</a></h2>
   </div>
@@ -27,21 +27,21 @@ When you join you’ll be given access to our [operational onboarding Trello  fo
 
 Here are links to free resources to get started in Analytics Engineering by [The Kimball Group](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/) and [DataCamp](https://app.datacamp.com/). DataCamp can help you upskill with a range of core technical skills listed below.
 
-<div class="grid grid-cols-1 gap-1 pt-8">
+<div class="card-grid">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/" class="govuk-link">Data Warehouse and Business Intelligence Resources by The Kimball Group</a></h2>
     <p class="govuk-body">
 Ralph Kimball's Dimensional Modeling: The Kimball methodology is a widely adopted approach that focuses on business processes and user experience. It emphasizes designing data models that are intuitive for end-users, using techniques like star schemas and snowflake schemas.</p>
   </div>
 
-<div class="grid grid-cols-1 gap-1 pt-8">
+<div class="card-grid">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://campus.datacamp.com/courses/introduction-to-dbt/welcome-to-dbt?ex=1" class="govuk-link">Introduction to dbt </a></h2>
  <p class="govuk-body">
     dbt, also known as the data build tool, is designed to simplify the management of data warehouses and transform the data within.</p> 
   </div>
 
-<div class="grid grid-cols-1 gap-1 pt-8">
+<div class="card-grid">
   <div class="grid-card">
     <h2 class="govuk-heading-m"><a href="https://app.datacamp.com/learn/skill-tracks/sql-fundamentals)" class="govuk-link">SQL Fundamentals</a></h2>
  <p class="govuk-body">

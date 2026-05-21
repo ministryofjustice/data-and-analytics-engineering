@@ -1,9 +1,19 @@
-@tailwind components;
-@tailwind utilities;
+.grid-card {
+    background-color: #f1f2f3;
+    border-left: 4px solid #1d70b8;
+    border-left-style: solid;
+    padding: 15px;
+}
 
-@layer components {
-    .grid-card {
-        @apply bg-govuk-light-grey border-l-4 border-l-govuk-blue p-4;
-        border-left-style: solid;
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+@media (min-width: 641px) {
+    .card-grid--three-col {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
