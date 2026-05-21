@@ -8,12 +8,8 @@ eleventyNavigation:
 ---
 Resources and blog posts for learning about Agile Techniques and how to apply them.
 
-<div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://agilemanifesto.org/" class="govuk-link">Manifesto for Agile Software Development</a></h2>
-  </div>
-  
-  <div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://www.gov.uk/service-manual" class="govuk-link">Service Manual</a></h2>
-  </div>
+{% set menuItems = [
+    { url: "https://agilemanifesto.org/", title: "Manifesto for Agile Software Development" },
+    { url: "https://www.gov.uk/service-manual", title: "Service Manual" }
+] %}
+{% cardGrid menuItems %}

@@ -1,7 +1,9 @@
 const { govukEleventyPlugin } = require('@x-govuk/govuk-eleventy-plugin');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const { addShortcodes } = require('./src/_transforms/shortcodes.js');
 
 module.exports = function (eleventyConfig) {
+    addShortcodes(eleventyConfig);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(govukEleventyPlugin, {
         header: {
