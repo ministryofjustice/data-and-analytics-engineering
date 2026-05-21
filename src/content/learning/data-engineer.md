@@ -23,21 +23,12 @@ Blog posts by Dr Soumaya Mauthoor, Lead Data Engineer:
 
 ### Recommended online courses via DataCamp 
 DataCamp can help you upskill with a range of core technical skills listed below.
-<div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://app.datacamp.com/learn/career-tracks/data-engineer-in-python" class="govuk-link">Data Engineer in Python</a></h2>
-    <p class="govuk-body">Gain in-demand skills to efficiently ingest, clean, manage data, and schedule and monitor pipelines, setting you apart in the data engineering field.</p>
-  </div>
-<div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://app.datacamp.com/learn/career-tracks/associate-data-engineer-in-sql" class="govuk-link">Data Engineer in SQL</a></h2>
-    <p class="govuk-body">Learn the fundamentals of data engineering: database design and data warehousing, working with technologies including PostgreSQL and Snowflake!</p>
-  </div>
-<div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://app.datacamp.com/learn/career-tracks/professional-data-engineer" class="govuk-link">Advanced Data Engineer in Python</a></h2>
-    <p class="govuk-body">Dive deep into advanced skills and state-of-the-art tools revolutionising data engineering roles today with our Professional Data Engineer track.</p>
-</div>
+{% set menuItems = [
+    { url: "https://app.datacamp.com/learn/career-tracks/data-engineer-in-python", title: "Data Engineer in Python", description: "Gain in-demand skills to efficiently ingest, clean, manage data, and schedule and monitor pipelines, setting you apart in the data engineering field." },
+    { url: "https://app.datacamp.com/learn/career-tracks/associate-data-engineer-in-sql", title: "Data Engineer in SQL", description: "Learn the fundamentals of data engineering: database design and data warehousing, working with technologies including PostgreSQL and Snowflake!" },
+    { url: "https://app.datacamp.com/learn/career-tracks/professional-data-engineer", title: "Advanced Data Engineer in Python", description: "Dive deep into advanced skills and state-of-the-art tools revolutionising data engineering roles today with our Professional Data Engineer track." }
+] %}
+{% cardGrid menuItems %}
 
 ---
 

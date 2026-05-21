@@ -8,19 +8,10 @@ eleventyNavigation:
 ---
 Resources and blog posts about how to become a more effective leader.
 
-  <div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2004/01/what-makes-a-leader" class="govuk-link">What Makes a Leader?</a></h2>
-  </div>
-    <div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2011/05/be-an-optimist-without-being-a" class="govuk-link">Be an Optimist Without Being a Fool</a></h2>
-  </div>
-    <div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2013/05/sleep-deprived-people-are-more-likely-to-cheat" class="govuk-link">Sleep-Deprived People Are More Likely to Cheat</a></h2>
-  </div>
-    <div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2013/12/the-focused-leader" class="govuk-link">The Focused Leader</a></h2>
-  </div>
+{% set menuItems = [
+    { url: "https://hbr.org/2004/01/what-makes-a-leader", title: "What Makes a Leader?" },
+    { url: "https://hbr.org/2011/05/be-an-optimist-without-being-a", title: "Be an Optimist Without Being a Fool" },
+    { url: "https://hbr.org/2013/05/sleep-deprived-people-are-more-likely-to-cheat", title: "Sleep-Deprived People Are More Likely to Cheat" },
+    { url: "https://hbr.org/2013/12/the-focused-leader", title: "The Focused Leader" }
+] %}
+{% cardGrid menuItems %}

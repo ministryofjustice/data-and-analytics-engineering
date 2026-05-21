@@ -14,18 +14,9 @@ eleventyNavigation:
 
 At the Ministry of Justice (MoJ), we are committed to the continuous growth and development of our team members. In the Data and Analytics Directorate, we provide a variety of Learning and Development (L&D) opportunities designed to help you advance your career, enhance your skills, and stay at the cutting edge of data and technology.
 
-<div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="analytics-engineer/" class="govuk-link">Analytics Engineering Pathway</a></h2>
-    <p class="govuk-body">Explore the materials and opportunities for learning on the Analytics Engineering Pathway</p>
-  </div>
-<div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="data-engineer/" class="govuk-link">Data Engineering Pathway</a></h2>
-    <p class="govuk-body">Explore the materials and opportunities for learning on the Data Engineering Pathway</p>
-  </div>
-  <div class="card-grid">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="LnD/" class="govuk-link">Free and Licensed Learning Resources</a></h2>
-    <p class="govuk-body">Explore additional free and licensed learning resources</p>
-  </div>
+{% set menuItems = [
+    { url: "analytics-engineer/", title: "Analytics Engineering Pathway", description: "Explore the materials and opportunities for learning on the Analytics Engineering Pathway" },
+    { url: "data-engineer/", title: "Data Engineering Pathway", description: "Explore the materials and opportunities for learning on the Data Engineering Pathway" },
+    { url: "LnD/", title: "Free and Licensed Learning Resources", description: "Explore additional free and licensed learning resources" }
+] %}
+{% cardGrid menuItems %}
