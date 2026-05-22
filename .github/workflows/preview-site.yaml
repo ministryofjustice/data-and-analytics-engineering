@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: preview-${{ github.ref }}
+  group: gh-pages
   cancel-in-progress: true
 
 permissions:
