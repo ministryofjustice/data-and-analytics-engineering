@@ -12,5 +12,4 @@ Resources and blog posts on building relationships with stakeholders, or custome
     { url: "https://www.local.gov.uk/our-support/transformation/transformation-capability-framework/change-stakeholders", title: "Local Government Association: Manage stakeholders" },
     { url: "https://analysisfunction.civilservice.gov.uk/policy-store/stakeholder-mapping/", title: "Government Analysis Function > Guidance Hub > Stakeholder mapping" }
 ] %}
-{% cardGrid menuItems %}  
-</div>
+{% cardGrid menuItems %}
