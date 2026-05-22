@@ -46,6 +46,6 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: './src/content',
         },
-        pathPrefix: '/data-and-analytics-engineering/',
+        pathPrefix: process.env.PATHPREFIX || '/data-and-analytics-engineering/',
     }
 };
