@@ -1,6 +1,6 @@
 // Import GOV.UK Frontend with global styles and design tokens
 @use "pkg:govuk-frontend/dist/govuk" with (
-  $govuk-assets-path: "/data-and-analytics-engineering/assets/",
+  $govuk-assets-path: "/assets/",
   $govuk-global-styles: true,
   $govuk-suppressed-warnings: ("govuk-text-colour", "pre-brand-colour")
 );
