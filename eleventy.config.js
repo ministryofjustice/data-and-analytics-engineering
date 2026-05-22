@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
     addShortcodes(eleventyConfig);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(govukEleventyPlugin, {
+        stylesheets: ['/styles.css'],
         header: {
             organisationName: 'Ministry of Justice',
             organisationLogo: 'royal-arms',
@@ -24,15 +25,6 @@ module.exports = function (eleventyConfig) {
     })
     eleventyConfig.addCollection("posts", function (collectionApi) {
         return collectionApi.getFilteredByGlob("./src/content/blog/posts/*.md").reverse()
-    })
-    eleventyConfig.addPassthroughCopy({ './src/assets/css/input.css': 'assets/custom.css' })
-    eleventyConfig.addTransform('customStylesheetLink', function (content, outputPath) {
-        if (!outputPath || !outputPath.endsWith('.html')) {
-            return content
-        }
-
-        const customStylesheet = '<link rel="stylesheet" href="/data-and-analytics-engineering/assets/custom.css">\n'
-        return content.replace('</head>', `  ${customStylesheet}</head>`)
     })
     eleventyConfig.addPassthroughCopy("./src/**/*.png")
     eleventyConfig.addShortcode('version', function () {

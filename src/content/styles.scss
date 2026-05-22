@@ -1,0 +1,103 @@
+// Import GOV.UK Frontend with global styles and design tokens
+@use "pkg:govuk-frontend/dist/govuk" with (
+  $govuk-assets-path: "/data-and-analytics-engineering/assets/",
+  $govuk-global-styles: true,
+  $govuk-suppressed-warnings: ("govuk-text-colour", "pre-brand-colour")
+);
+
+// Import GOV.UK Eleventy Plugin component styles
+@forward "pkg:@x-govuk/govuk-eleventy-plugin";
+
+// Access GOV.UK colour functions and variables
+@use "pkg:govuk-frontend" as *;
+
+// ============================================
+// Card
+// ============================================
+
+.govuk-card {
+  border: 1px solid $govuk-border-colour;
+  padding: 30px;
+  background: govuk-colour("white");
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 2px 0 $govuk-border-colour;
+  box-sizing: border-box;
+  color: inherit;
+  min-height: 150px;
+
+  &:hover {
+    background: govuk-colour("light-grey");
+    box-shadow: 0 4px 0 $govuk-link-colour;
+    top: -2px;
+  }
+
+  &:active {
+    top: 0;
+    box-shadow: 0 2px 0 $govuk-link-colour;
+  }
+
+  .govuk-heading-m {
+    margin-top: 0;
+    color: $govuk-link-colour;
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+      content: "→";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $govuk-link-colour;
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  &:hover .govuk-heading-m::after {
+    transform: translate(5px, -50%);
+  }
+
+  &:focus {
+    outline: 3px solid $govuk-focus-colour;
+    outline-offset: 0;
+    background: govuk-colour("white");
+  }
+
+  .govuk-body {
+    margin-bottom: 0;
+    flex-grow: 1;
+    color: $govuk-text-colour;
+  }
+}
+
+// ============================================
+// Card Grid
+// ============================================
+
+.govuk-card-grid {
+  display: grid;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.govuk-card-grid--one-half {
+  grid-template-columns: 1fr;
+}
+
+.govuk-card-grid--one-third {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 641px) {
+  .govuk-card-grid--one-half {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .govuk-card-grid--one-third {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
