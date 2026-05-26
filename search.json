@@ -297,7 +297,7 @@
 "section": "Learning",    "layout": "sub-navigation",
     "hasFrontmatterDate": false,
     "date": "26 May 2026",
-    "templateContent": "technology following .gov websites explain design standards conventions used within ministry justice digital across government: technical guidance this site documents some decisions that moj made products operate gov.uk service toolkit all need build run services meet government gthe gds way guides teams brilliant cost effective specific tools processes use",
+    "templateContent": "technology following .gov websites explain design standards conventions used within ministry justice digital across government: technical guidance this site documents some decisions that moj made products operate gov.uk service toolkit all need build run services meet government gds way guides teams brilliant cost effective specific tools processes use",
     "url": "/data-and-analytics-engineering/learning/standards/"
   },  {
     "title": "Analytics Engineering Monthly",
