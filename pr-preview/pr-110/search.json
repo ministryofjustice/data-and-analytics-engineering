@@ -1,0 +1,435 @@
+[  {
+    "title": "GitHub as a one-stop shop",
+"description": "Store all your project artefacts in a single, searchable location on GitHub","section": "Blog",    "layout": "post",
+    "hasFrontmatterDate": true,
+    "date": "19 February 2024",
+    "templateContent": "many people will familiar with development environment setup where they use github repositories store manage code rely plethora tools creating managing all other project outputs while each tool can very effective its own right this often leads scattered deliverables causing confusion increased risk inconsistency post outline how consolidate your artefacts by leveraging open source tools: actions automating software workflows projects planning tracking work discussions documenting discovery communicating users pages hosting static websites docs folder user guidance technical concepts markdown mermaid simple diagrams using like syntax excalidraw editable whiteboard sketches which saved images marp slide decks slides these suggestions are summarised below clicking diagram import into web editor access links examples from moj note that includes recommendations february 2024 more detailed date instructions please refer provided first why everything compared existing discussed may offer fewer features require steeper learning curve additionally clear migration paths lacking making challenging switch platforms however there several advantages feel make worthwhile especially starting scratch searchability having tickets documentation one place makes super easy search through find unfortunately used limited read history thankfully rolled out new engine browser 2023 possible relevant results reasonable speed knowing helps interoperability exclusively easier link automate across hence track review deploy changes well collaborate team standardisation treating means leverage same practices applied development: version control automation reusability maintainability improved quality enterprise cost lead savings reason less significant teams company unlikely ! actually everything: limits size files allowed moreover git great storing binary diffable instead should large dedicated file lfs although secrets securely credentials personal designed comprehensive secret management consider infrastructure based solution such aws manager microsoft azure key vault still leaves effectively incorporated automates allowing build test directly their since release 2019 become preferred ci popularity corroborates integrated approach advocated also yaml configuration friendly marketplace offers vibrant growing ecosystem wide range pre built due support complex industry adoption been gradual uptake accelerate capabilities added job summaries importer validation thoughtworks upgraded rating trial adopt classic launched 2016 infamous example releasing product too early consisted primarily kanban board lacked basic backlog view deterring most august 2022 released revamped intuitive flexible customisable interface now plan either table created organisation level them linkable independent incorporate issues organisations reciprocal issue various ways simplest automations update status when closed epics structure agile backlogs break down manageable three options 1 task lists have around 2014 currently working upgrade private beta stay tuned updates! pull requests within repository #number pattern: x #739 https: github.com octo org repo 740 add delight experience tasks complete :tada: cross linking need specify full url draft until ready convert leave smaller recommend assigning label parent identify display filter does yet relationships opening screen navigate back epic tracked section next child navigating straightforward workaround request discussion description format: epic: bullet list forces render title improving clarity 2 milestones associated additional column roadmap layout complicated nested hierarchy group explained ```mermaid flowchart > |task list|epic pr milestone supported record core even split amongst multiple disable non enforce rule 3 labels epics! seem obvious option unlike set dates completion close roadmaps displays items timeline prefer grouping quarter modify field public alternatively create separate quarters encourages owners delivery managers follow good practice : shorter than limiting number undertaken per giving precise accurate start requirement analysis moscow method prioritise requirements splitting must haves could done drafts later converted once fleshed acceptance testing uat typical scenario involves migrating sure functionality replicated way progress spreadsheet row columns recording different successfully those internal database external concept straightforward: template generate ticket artefact needs migrated replace can: assign accounts named individuals single communication take advantage about forms recorded managed differently depending audience case best reside outside scope article some pointers python architecture dependencies keep information alternative wikis achieved astro bookings would reasons uses variant called flavored liquid expand provide accessible tables chunks reusable content basics suffice whilst recommended go process sometimes onerous codeowners skip approval workflow useful long running tests few things structuring folder: monorepo folders root sub multi specific application combine made against via publishing website site generators host service instance blog hosted generated eleventy plugin publish our tech radar evaluating completing transient type kept avoid clutter members reflect current state just 2021 enabled default settings limit approvals simplifies mean swamp transferring sanitised luckily advanced formatting copy paste closing allow participate idea generation comments reactions polls everyone involved check notifications regularly cause already another slack thumb whether might want time discussion! javascript lets particularly handy adding places save found steep available only suggest natively diagramming whiteboarding native export svg png embed scene data preferable because text nicely stick then upload image nifty mode reviewing edit download vs extension locally passing raw see hyperlink lastly plus outcome collaborative sessions tend get lost exported formats including pdf html similar action exporting preview bit decided format iceberg readme.md better visibility commit fine exploratory production something generates part merge conclusion historically mainly valued recent enhancements coupled integrate platform circumstances beneficial leading efficiency consistency transparency any acknowledgements thank following resources: pipelines crew being experimenting! saturday coding club providing insightful richard baguley introducing julia lawrence encouraging give try calum barnett gds style guide chatgpt3.5 proofreading touch polish",
+    "url": "/data-and-analytics-engineering/blog/posts/github-as-a-one-stop-shop/"
+  },  {
+    "title": "Building a transaction data lake using Amazon Athena, Apache Iceberg and dbt",
+"description": "How we leveraged Amazon Athena, along with the Apache Iceberg table format and the dbt SQL management framework, to build robust, scalable and maintainable ELT (extract, load, transform) pipelines.","section": "Blog",    "layout": "post",
+    "hasFrontmatterDate": true,
+    "date": "18 October 2024",
+    "templateContent": "goal uk ministry justice moj make system simpler quicker while saving public money analytical platform supports this mission by facilitating data sharing analysis within aiding better decision making post summarises how leverages amazon athena along with apache iceberg table format dbt sql management framework build robust scalable maintainable elt extract load transform pipelines approach streamlines lake architecture employing same tools both querying processing moreover capitalises gigabyte scale our benefiting from pricing model significantly reduce costs note that cost advantage may diminish lakes operating petabyte contents transaction updated nov 2024 reliability maintainability enhancing observability added bringing all together acknowledgements combine best features warehouse: flexibility scalability effectiveness structured storage capabilities warehouse follows standard structure produce cleaner more reliable collected various formats wide range sources internal external uploaded s3 based parquet files datasets are big huge largest less than 200gb ~3 billion rows dataset 500gb layer transforms through series batch procedures before writing back first standardised slowly changing dimension type 2 scd2 applied track historical changes second denormalised modelled create conformed makes easier efficient users consume workflow can summarised using medallion which transitions bronze silver gold layers increasing quality each stage: previously utilised glue pyspark standardise employed modelling effective heavy duty requires specialised knowledge distributed systems use rising recurring out memory failures jobs prompted us reevaluate strategy release v3 made sense explore migrating standardisation step well unify technology stack built open source trino engine uses aws catalog hive metastore compatible catalogue manage metadata held allows interact queries serverless operates shared regional cluster meaning accounts region share pool resources asynchronous processes quotas ensure fair usage across although often used ad hoc also offering several advantages: : infrastructure interactive easy intuitive particularly new joiners unified facilitates practices between engineers analysts such performance tuning building utilities automated compute capacity calculates needed execute eliminating need manual configuration optimization increased upon request limit relevant take longer run involve hundreds tables example extended dml manipulation language query timeout 30 minutes 60 raised concurrent 150 500 set $5 per terabyte scanned highly transforming instance converting csv found 99% cheaper its default provisioned option billed number dpus duration despite advantages native lacks support numerous database resulting pipeline flexible helps address gap designed work engines spark optimises access leading faster responses consistency provides acid atomicity isolation durability transactions ctas insert into statement fails leave orphaned location accessible read subsequent contrast compliant ensuring only successful statements readable utilise rename operation functionality simplifies write audit publish wap pattern commonly engineering workflows involves staging environment where any errors addressed released interim easily renamed once validation checks have passed streamlining full refresh additionally time travel feature incremental allowing timestamp &lt timestamp&gt filter views top enables row level updates useful when applying updating previous records been replaced newer versions evaluated implementing versus box proved volumes encountered issues higher end volume convinced migrate whilst improves still lead challenges code maintenance proves valuable transformation tool extends associated programming languages enabling extensible composed multiple components following components: core command line written python maintained trusted adapter utils helper packages apply common functionalities validations assure transformations tests check whether columns contain null values storing much information becomes practically free concept threads parallelise models dependencies speeds runtime concurrency quota keep being cancelled running too long combines jinja templating macros analogous functions other like duplication unit test logic v1.8 introduced limited there community supported extensions testing opted method simplicity readability materializations enable different modes breaks down complex manageable steps reusability ensures undergoes scanning thereby minimising however must balanced minimised persisting intermediate outputs materialization speed maintain revealed recreating remained solution consequently chose initially adopt rely view part enhanced implementation additional further improve generation some consist deduplicating comprised achieved iterating list minimise redundancy one philosophy simple looping repeating redundant difficult because needs replicated locations discussions possible generate under development instead developed generates dynamically template .sql represent stage parameters either properties .yaml file then generated every combination integration against dummy templates function expected chunking sometimes demands exceed available employ divided smaller portions segment intensive transformed inserted final maintaining extensive boilerplate simplify custom insert_by_chunk insert_by_period after completing operations handled accurately executed sequentially rather concurrently due way manages limitation critical important since they typically overnight furthermore suitable operate independently without requiring entire finally incurs repeatedly unless partitioned column significant initial low orchestration github automate orchestrate builds co locating automation enhances transparency facilitate early error detection recovery: triggered pull selectively their children review prior deploying production integrating slack notifications promptly alert stakeholders event incorporating retry mechanism identifies automatically reattempts failed resolving stemming transient ongoing efforts enhance looking currently related metrics published cloudwatch monitor processed aggregate understand resource consumption receive warning signs approaching limits giving corrective action unfortunately limitations especially comes monitoring user activity therefore considering cloudtrail events derive visualize them managed grafana fully service creating exploring dashboards gain deeper insights logs correlate services estate alongside resulted impressive reduction individual efficiency enabled switch weekly frequent daily refreshes onboarding notably achieve substantial savings shown monthly graph: addition longest decreased 75% intermittent insufficient become extremely rare during migration took opportunity includes generating these improvements timely large efficiently unification fosters culture collaboration teams enhancements ahead excited about potential innovate refine analytics continue deliver greater value would thank individuals invaluable contributions technical solution: gwion aprhobat siva bathina david bridgwood jacob hamblin pyke tom holt matt laverty theodore manassis william orr insightful feedback editorial assistance: jeremy collins hepworth thomas hirsch",
+    "url": "/data-and-analytics-engineering/blog/posts/building-a-transaction-data-lake-using-amazon-athena-apache-iceberg-and-dbt/"
+  },  {
+    "title": "The Ministry of Justice Data Engineering Technology Radar",
+"description": "Making better technology decisions with a shared technology radar.","section": "Blog",    "layout": "post",
+    "hasFrontmatterDate": true,
+    "date": "19 December 2024",
+    "templateContent": "contents balancing act: stability vs innovation introducing technology radar our journey wins challenges first from whiteboard webpage: adopting open source solution integrations with github leveraging discussions benefits enhancements insights: recent refresh 🔼 climbers 🔽 fallers ⭐ new entries continuing journey: next steps annual updates team engagement key areas improvement exploring future innovations conclusion acknowledgements data analytics engineering nearing fifty engineers are continually navigating ever evolving technological landscape tools platforms techniques emerging rapid pace can challenging decide what adopt assess retire while established technologies offer over reliance them risks stagnation missed opportunities easy stick familiar tried tested reliability yet clinging old lead inefficiency other hand rushing shiny cause disruption waste time create unnecessary complexity how explore without losing focus creating overhead keep aligned involved these decisions enter : tool that brings structure clarity this act provides shared framework evaluating helps teams identify worth recognise reliable should remain part stack outdated solutions more importantly fosters collaboration transparency ensuring everyone say shaping choices blog post explores why adopted use balance introduced existing approaches lessons learned along way maps out your using considering represented blips arranged into concentric rings retain replace which reflect status each indicating whether plan phase maintain split quadrants representing different kinds languages etc originally pioneered by thoughtworks radars visual akin archery target mapping align across guides informed about continue discontinue divided four rings: proven trust meet needs scale widely used production low risk recommended broad adoption promising clear potential researching prototyping though they carry higher untested organisation some may already experimenting currently satisfied projects have been superseded will stop ones following quadrants: centred software operations encompassing infrastructure services support deployment management quadrant includes mix comprehensive industrial smaller custom built internal examples range docker ruff bespoke developed house frameworks programming common such dbt pyarrow pyspark development analytical include agile architectural design records adrs kimball dimensional modelling <img src=\"https: raw.githubusercontent.com ministryofjustice refs heads main src content posts images tech de_tech_radar.png\" alt=\"refreshed radar: screenshot showing radar's rings.\" style=\"width: 90% height: auto \"> ministry justice here check supporting repository began simple whiteboarding exercise where collaborated map were organised offering snapshot initial approach sparked valuable aligning highlighting whiteboard_radar.png\" alt=\"original original focused 'adopt' quadrant.\" 80% provided several immediate benefits: understanding their purpose direction improved members had platform contribute ideas raising awareness overview fostering alignment however limitations: manual maintenance updating consuming prone becoming limited contributions person meetings restricting remote asynchronous participation historical record easily track changes rationale behind timeline 2020 zalando sourced javascript based providing dynamic alternative uses central json file define blip —including its name ring date—which automatically populates tackled core static visuals foundation better suit integrating streamlined propose discuss update only maintained transparent also allowed collaboration—crucial friendly hybrid working environment steadily consolidated processes within unified decision making see one shop details naturally explored managing found ways enhance functionality after experimentation backbone discussion corresponds includes: title labels indicate status—adopt categories classify language technique vote emoji system creative workaround set 🚀 👍 😄 😦 pause 👀 voting process serve forums share insights feedback concerns rich collaborative history black discussion.png\" alt=\" populate radar.\" 70% delivered significant improvements: centralised provide single searchable space all conversations makes revisit past understand automated graphql api extracting drastically reduced effort allowing us regularly minimal previously required hours organise sessions implement now links directly corresponding thread audit trail additionally number laborious task before integration grown 140 alone unwieldy manage oversight manageable 110 both effectively 50 convenience enabling staff flexibility ensures regardless location enhancing transformed living evolves simplifies well documented adaptable integrated supports teamwork enabled relevant accessible maintaining agility came play during most brought together around thirty wide review streamline groups led engineer specific result just updated clearer reflection work introduction function broadened diversity increasing notable latest review: value gaining maturity broader earned move cornerstone reflects growing increased confidence capabilities dedicated overseeing implementation usage continues expand since 2021 rapidly gained traction python community performance simplicity made choice leading fallen favour due limitations inefficiencies emergence alternatives aws glue essential moved less harder debug costly than newer successfully transitioned combination athena greater cost efficiency jira confluence once mainstay project still parts consolidate older like dataengineeringutils3 etl manager internally many years ago longer actively prioritise phasing modern reduce technical debt simplify workflows entered refine duckdb emerged powerful memory delivering exceptional query seamless sql added notably component linkage splink lightweight quickly spinning testing models locally sqlmesh commitment improving codegen helper automation improve versioning copilot generated interest ai powered code suggestions completions wider uk government trial evaluate effectiveness productivity placed measure impact coding practices highlight continued toolkit remains efficient scalable fit careful consideration works demands second generation functional coordinate room look make even effective sustainable annually day serves building opportunity everyone—including junior members— strategy addressing: ci although integrates seamlessly aim further continuous labelling filtering usability filter categorise professions relevance revived integrate inspired particular features aoe offers summaries detailed histories refreshed user interface improvements could bring context evolve alongside addressing drives evolved own created rely strive ahead committed refining scaling automating via ensure stays adapt grow helping strike right between would thank people help post: soumaya mauthoor her invaluable tireless setting modernised damilola oyebade murad ali running session francesca von braun bates guidance",
+    "url": "/data-and-analytics-engineering/blog/posts/the-ministry-of-justice-data-engineering-technology-radar/"
+  },  {
+    "title": "Inaugural data and analytics engineering conference",
+"description": "Reflections from the very first cross-government conference for data and analytics engineering","section": "Blog",    "layout": "post",
+    "hasFrontmatterDate": true,
+    "date": "12 August 2025",
+    "templateContent": "ministry justice hosts first person cross government data engineering conference july 2025 partnership with amazon web services made tech brought together uk community its hosted office london manchester event welcomed 115 engineers from departments including department work pensions education driver vehicle licensing agency nuclear decommissioning authority companies house many more day collaboration technical insight building opening impact: keynotes both cities opened powerful keynote addresses locations hugh stickland chief officer scientific adviser emphasised strategic importance evolving role supporting better smarter policymaking anis khan head reflected exponential growth analytics capability he described how now drives decisions even teams navigate complexity modernising legacy systems embracing new technologies across talks one clear message stood out: backbone modern governance back function. this sentiment set tone that recognised profession central public service transformation exploring future: panel discussion sites after venues engaging discussions themed around: changed over last five years where headed next curated by engagement squad priya basker supratik chowdhury lalitha nagarur panels featured senior leaders heads who shared insights into evolution challenges opportunities future members: calum barnett soumaya mauthoor business trade deepak shukla leadership ai francesca bryden transport dft martyn lane hmrc peter mylward principal consultant covered: managing complex toolsets transitioning etl elt improving quality testing practices scale creating models empower rather than hinder attracting talent embedding earlier delivery there strong consensus: are longer behind scenes — they foundations trusted intelligent sharing ideas inspiration highlights speakers industry presented real world case studies insights: david nelson chris brown stuart baillie platforms using medallion architecture azure reusable tools granular access greg knowles showcased zero pipelines powered generative time efficiency gains will wilson secure container based deployment pipeline compliance speed carl dalby delivered = showing unlocking structured enables advanced sessions examined landscape particular focus tooling practice highlighting strategy despite laurence droy matt heery explored dlt reduce debt streamline processes simplify workflows explained transforming user through denodo virtualisation value myles richardson undertaken create cloud platform aimed accessibility self serve reporting luke williams ongoing efforts modernise like sars ears infrastructure enabling meaningful joy andrews led session evaluating retrieval augmented generation rag bedrock langchain ragas giving practical approach assessing driven performance just informative energising attendees commented sense openness: wanted say massive thank … love us them future. sam taylor competition markets each talk thoroughly thought provoking huge thanks hosting hannah goode engineer national statistics incredibly useful valuable hear hand going government… lead enjoyed participating such event. rhea mirchandani scientist bank england helped reveal purpose about mesh automation felt collaborative—more individual departmental beginning energy ambition showed proud have milestone looks forward connect share build interested joining x‑gov network open members contact organising team find out get involved events big delivering successful",
+    "url": "/data-and-analytics-engineering/blog/posts/inaugural-data-and-analytics-engineering-conference/"
+  },  {
+    "title": "Architecture",
+"description": "Find out about the data and analytics engineering architecture, key tools and services","section": "About",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "context explained about page our data analytics engineers develop analytical pipelines self service tools acquire transform making available platform implement lake centric approach manage using cloud based object store storage follow standard process extract load producing cleaner more standardized format that downstream analysts expect ensuring reliability are responsible extracting standardising loading source into then apply modelling techniques further refine conformed accessible users can consume this transformed processing machine learning tasks disseminate their findings through reports dashboards summarise workflow medallion architecture which transitions bronze silver gold layers increasing structure quality each stage: key services use various depending volume frequency other characteristics support infrastructure rely different open aws ensure scalability resilience security cost effectiveness engineering container diagram summarises some these services: metadata collected from multiple sources across moj external including amazon s3 file shares relational databases apis azure blob ingested approaches example database migration dms sftp api gateway imported directly consists glue catalog repository apache hive iceberg table formats provide sql like interface iam secure access athena along with dbt transformations pre processed python scheduled managed workflows airflow also make transformation run own saved back details technology stack please visit radar",
+    "url": "/data-and-analytics-engineering/about/architecture/"
+  },  {
+    "title": "About",
+"section": "Home",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "data analytics engineers enable driven decision making personalisation services across department by delivering innovative solutions promoting technical excellence bridge gap between producers users developing analytical pipelines self service tools acquire transform available platform this diagram helps summarise some these different roles: engineering what work with digital teams help them make from their validate deduplicate standardise extracted produce curated sets where possible provide historical support reproducible longitudinal analysis building running ourselves supporting use infrastructure also collaborate contributing development other foundational including uploader airflow create derived table register internal only extractor value access way that more reliable secure auditable timely than ever previously analysts scientists can complete range sources single location standardised format reducing preparation time now received daily instead weekly monthly quarterly generating insight relevant current start provided usually statisticians understand how they design build tables meet needs clean join produced using dimensional modelling implementing tests documentation ensure output understandable accelerate production statistics management information mi science products need spend less transforming understanding complex messy deriving insights faster better skills solve new problems trusted consistent cases meaning get same answers questions matter ask domain aligned source facilitating simpler transition heritage systems",
+    "url": "/data-and-analytics-engineering/about/"
+  },  {
+    "title": "Join Us",
+"description": "Information about open roles in the team","section": "About",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "how apply data analytics engineering role ministry justice our last recruitment round hosted webinar provide information team roles hiring process well answering candidate questions recording can accessed 👉 here frequently asked where are based national have number offices around england wales see civil service jobs board find your closest one open flexible hybrid working arrangements that include regular home need work from 40 60% week what kind people looking really keen break away archetypal views engineer encourage anyone with relevant skills willingness learn will support may yet had opportunity show eagerness sounds good still some ask them setup mailbox dmet dataplatform recruitment@digital.justice.gov.uk any",
+    "url": "/data-and-analytics-engineering/about/join-us/"
+  },  {
+    "title": "Management",
+"section": "About",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "operate matrix management within data analytics engineering professions under report multiple people will have one manager more work managers depending structure team working your normally different may same some circumstances this likely engineers due smaller size profession stay move roles projects teams whereas change provides several benefits: can seek advice from than person get perspectives problem take longer term perspective career planning progression development because advocate make sure getting what need role learn about happening other identify opportunities collaboration responsibilities balanced evenly across despite any differences responsible learning performance wellbeing they manage directing day",
+    "url": "/data-and-analytics-engineering/about/management/"
+  },  {
+    "title": "People Management",
+"section": "Management",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "people manager responsible learning development performance wellbeing they manage generally will able choose your though have preference try take into account assigned when join one professions change roles within same profession remain only exception this new work case can decide would like get responsibilities expected : with agree monitor goals objectives collaboration their identify needs opportunities support access right training including apprenticeships certifications act primary contact all queries issues pay expenses leave conduct behaviour absence management hold regular conversations help government digital data assessments ensure that are getting meet criteria loans secondments managed moves health resources disability workplace adjustments staff networks mental provide technical advice coaching needed find mentors coaches lead onboarding process starters managing offboarding who leaving probation civil service point any regarding bullying harassment detailed guidance handbook meetings should make sure having least every eight weeks may want more often person how frequently concerns about extra short term goal such completing ddat assessment less ad hoc basis better suits general approach reflect guide also quarterly these used review role supporting share feedback",
+    "url": "/data-and-analytics-engineering/about/management/people-management/"
+  },  {
+    "title": "Work Management",
+"section": "Management",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "work manager responsible directing day people they manage responsibilities would expected : assign tickets support them where required complete with agree monitor goals objectives collaboration their meetings will meet are managing several times week every this typically team ceremonies such stand ups may need have one should led by",
+    "url": "/data-and-analytics-engineering/about/management/work-management/"
+  },  {
+    "title": "Tech Radar - Platforms, Tools, Languages, Frameworks and Techniques",
+"section": "About",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "data analytics engineering tech radar moj community maintains public that refreshed annually august help align tools techniques platforms languages frameworks technology choices within our teams inspired by pioneering work thoughtworks aim bringing together collective expertise engineers : ensure are same page regarding keep with emerging trends assess their potential impact encourage knowledge sharing across reflect input github discussions accurate annual refresh how works blips configured blips.json while rings quadrants set radar_config.json additional context provided which queried using graphql api populate see manage_discussions this viewing output locally vs code install live server extension open visual studio code: launch your computer access extensions: click extensions icon activity bar side window search server: view type button start project: folder containing project files including index.html right file select from menu",
+    "url": "/data-and-analytics-engineering/about/radar/"
+  },  {
+    "title": "Team Structure",
+"description": "How we structure our teams","section": "About",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "team structure data analytics engineers moj work across various teams: analytical platform which maintains catalogue modelling engineering dmet delivers solutions internal stakeholder needs belong same directorate summarised this diagram: modeling divided into multiple portfolio teams each with specific focus domain led closely providers consumers from domains understand their requirements ensure are met meanwhile cross functional collaborate boundaries promote best practices maintain alignment manage databases tools enable effective impactful analysis our includes following areas: hm prison probation service hmpps responsible providing users access covering prisons purposes only link show tell posters courts tribunals hmcts similarly scientists analysts statisticians court civil family magistrates crown corporate programmes finance people commercial well bold first centre excellence cfe mission drive innovation through continuous improvement collaboration knowledge sharing set technical direction prioritising addressing immediate challenges faced by partners can read more about us these summary slides",
+    "url": "/data-and-analytics-engineering/about/structure/"
+  },  {
+    "title": "Blog",
+"description": "We use this blog to share what we're working on across the data engineering and analytics engineering professions. You'll find a range of posts on technical and non-technical topics.","section": "Home",    "layout": "collection",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/blog/"
+  },  {
+    "title": "Buddy System",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "our buddy system structured approach where new less experienced team member paired with colleague help them transition into understand work culture get speed technical operational practices people settled can even members staff moving from other professions e.g data science engineering who may require some advice getting set technology key aspects onboarding support helps hire workflow coding standards tools development this includes explaining processes like code reviews deployments etc. giving guidance day tasks knowledge transfer buddies share about projects ongoing challenges architecture ensuring contribute effectively broader scope social integration also integrate socially introducing colleagues rituals communication dynamics feel welcome comfortable environment problem solving serve first point contact queries roadblocks helping engineer troubleshoot problems navigate resources more efficiently building by pairing reinforce collaborative promote sharing strengthen bonds benefits system: faster ramp : engineers become productive quickly hands real time their retention: strong lead better retention rates providing part distribute project across reducing impact siloed expertise cohesion: promotes stronger interpersonal relationships within fosters sense camaraderie",
+    "url": "/data-and-analytics-engineering/how-we-work/buddy-system/"
+  },  {
+    "title": "Code Review",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "our code reviews ensure quality while promoting learning knowledge sharing amongst team collaborative process where examine each correctness adherence coding standards before becomes part main codebase this practice integral modern software development used identify bugs improve facilitate among members",
+    "url": "/data-and-analytics-engineering/how-we-work/code/"
+  },  {
+    "title": "Collaboration and Engagement Squad",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "our collaboration engagement squad made data analytics engineering team members who organise coordinate: learning development l d sessions: workshops away days conferences collation promotion outside events that may interesting hackathons partnerships such with alan turing institute well academia activities across government relationships ministry justice teams science platform analytical cloud modernisation show tell please keep date latest offerings by joining slack channel #dmet",
+    "url": "/data-and-analytics-engineering/how-we-work/collaboration/"
+  },  {
+    "title": "How we work",
+"section": "Home",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "effective ways working both group one settings are key fostering collaboration learning innovation workplace ministry justice emphasise variety practices that promote teamwork knowledge sharing professional development engagement squad our aims coordinate enable interaction between teams within department with external groups buddy system structured approach designed integration existing enhance new processes mentoring scheme enahnces personal growth by pairing colleagues varied experience levels pair programming enhances transfer collaborative activities code review reviews quality maintainability codebase constructive critical additions before they become part main show & tells tell events allow highlight their recent work share progress reading create environment skills",
+    "url": "/data-and-analytics-engineering/how-we-work/"
+  },  {
+    "title": "Mentoring Scheme",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "take advantage structured personal growth development through our mentoring scheme data analysis directorate those who have yet signed are interested being paired with mentor mentee introduced new registration method via microsoft forms sign here this streamlined process will ensure collect all relevant information continue match mentors mentees effectively now excellent time currently high demand especially grades seo level above please note that already enrolled there need re register using form unless wish matched previously email awaiting rest assured waiting list pair suitable soon one becomes available",
+    "url": "/data-and-analytics-engineering/how-we-work/mentoring/"
+  },  {
+    "title": "Pair Programming",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "pair programming collaborative software development technique where two programmers work together one workstation with writing code driver other reviewing each line written navigator can often help both knowledge transfer someone more senior driving exposing participants different coding styles ways thinking what",
+    "url": "/data-and-analytics-engineering/how-we-work/pair/"
+  },  {
+    "title": "Reading Groups",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "starting your own reading group joining data analytic engineering team can significantly enhance learning experience by combining intellectual stimulation with social benefits interaction whether goal deepen understanding subject improve communication skills simply enjoy company fellow readers offers supportive enriching environment achieve these objectives our groups progress: this meets fridays 10am currently book apache iceberg: definitive guide more information find us #dmet de slack modelling covers warehouse toolkit: dimensional modeling kimball although progress like run next one please contact lead analytics engineer details design patterns aims teach understand wide variety software aid discussion during projects out join #design",
+    "url": "/data-and-analytics-engineering/how-we-work/reading/"
+  },  {
+    "title": "Show and Tells",
+"section": "How we work",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "our show tells are group team building sessions opportunities showcase work share progress tell session activity like workshop idea that participants bring something significance then about",
+    "url": "/data-and-analytics-engineering/how-we-work/show/"
+  },  {
+    "title": "Data and Analytics Engineering",
+"description": "Learn about the data and analytics engineering professions at the Ministry of Justice.",    "layout": "product",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "beta this new learning resource help us improve leave your feedback via our form about find out more what data analytics engineering are where fit organisation explore many ways encourage support continuous development how work events approaches use together effectively regular meetings innovation heart moj blog 're working across professions",
+    "url": "/data-and-analytics-engineering/"
+  },  {
+    "title": "Firebreaks",
+"section": "Innovation",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "firebreaks data analytics engineering firebreak sessions are sprints designated times where our teams pause business usual projects focus tackling specific problems exploring new technologies ideas within directorate propose boards ask team members join end sprint collectively review what produced learned allow take step back from day tasks dedicate focused time resolve issues implement improvements experiment with innovative solutions without pressures regular deadlines ongoing about sessions: provide structured opportunity address long standing challenges inefficiencies foster creativity innovation by giving freedom test tools methods help high priority that may have been sidelined due constraints encourage collaboration across departments solve shared these similar concept hackathons they more problem solving improvement rather than pure project development also serve refresh period reset refocus can result tangible outcomes such improved processes enhanced systems implementation practices benefit wider ministry justice please keep eye out internal notice comming",
+    "url": "/data-and-analytics-engineering/innovation/firebreaks/"
+  },  {
+    "title": "Hackathons",
+"section": "Innovation",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "hackathons data analytics engineering team are focused internal external collaborative events where teams developers analysts engineers other stakeholders come together solve specific challenges short intensive timeframe usually take place site our moj offices offsite guest locations provide opportunity innovation experimentation cross functional teamwork often tackling issues related justice reform service delivery improving processes using technology key features hackathons: problem solving focus: designed address problems explore new opportunities such developing digital services user experience optimising workflows disciplinary collaboration: participants from various departments roles fostering collaboration between technical experts policy makers designers ensuring diverse perspectives contribute solutions creativity: encouraged think creatively experiment with ideas cutting edge technologies like machine learning automation advanced build prototypes innovative term intense typically time limited lasting day two work intensively produce prototype proof concept by end session outcome driven: many result actionable outcomes including development that may further refined implemented live systems lead ways working within department overall integral part culture encouraging rapid enabling implement technological have real impact public system keep any eye out communications channels join contribue comming",
+    "url": "/data-and-analytics-engineering/innovation/hackathons/"
+  },  {
+    "title": "Innovation",
+"section": "Home",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "innovation heart our culture with initiatives like 10% time firebreaks have opportunity dedicate innovative side projects skill building activities exploring new technologies all which contribute your personal growth goals hackathons",
+    "url": "/data-and-analytics-engineering/innovation/"
+  },  {
+    "title": "10% Time",
+"section": "Innovation",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "10% time equivalent 0.5 day per week are employed full their working hours— allows explore new ideas pursue personal development work projects outside responsibilities this concept part fostering innovation creativity continuous improvement within directorate what can your scope with quite broad allowing focus activities that align both interests strategic goals some common uses include: learning use build skills deepen existing ones whether programming language understanding data literacy better enhancing expertise cloud technologies provides space self study growth emerging tools stay ahead curve by experimenting usual workflow example could delve into machine visualisation platforms innovative ways manage analyse large datasets side might fit have positive impact ministry justice developing prototype automating routine process brainstorming methods improving analytics engineering contributing open source internal communities contribute benefit broader community involve code libraries pipelines creating resources others collaborate across teams also opportunity colleagues other areas even shared problem develop cross functional exchange knowledge best practices participate hackathons firebreaks engage like hackathons: recently developed python package released pypi users read alter our metadata schemas join where come together tackle specific challenge over short period these events encourage solving collaboration support participation flexibility ensures used individual career aspirations",
+    "url": "/data-and-analytics-engineering/innovation/time/"
+  },  {
+    "title": "Free and Licensed Learning Resources",
+"section": "Learning",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "data analysis directorate within moj offers range subscription based paid self learning resources including free courses with trial access help get started keep mind that comprehensive subscriptions are one benefits working us below can serve solid foundation list from datacamp skillsoft linkedin new analytics engineers explore: interactive science engineering focus programming languages like python sql platform provides introductory deeper areas manipulation modeling machine modules covering wide technical skills cloud platforms project management their also include leadership soft development which essential career growth roles o'reilly books tutorials videos topics covers everything architecture computing r visualization gives these materials build your knowledge base across various fields software explore git technologies more critical success role additional aws training: available part government value agreement ogva attend offered first come served basis staff only places shared pulumi: vms serverless containers pulumi open source infrastructure code tool creating deploying managing dataquest : training program beginner concepts advanced visualisation includes path coffee coding sessions justice analysts pathway this resource aims technically minded people start experimenting accelerator capability building programme public sector opportunity develop skills: will work proposed by over 3 months day week mylearning all service connected limited sscl should create account apprenticeship zone civil analytical services dasd wellbeing instructions how book internal external please email: dasdlearningandwellbeing@justice.gov.uk 10% time focussed l d activities equivalent 0.5 per employed full",
+    "url": "/data-and-analytics-engineering/learning/LnD/"
+  },  {
+    "title": "Analytics Engineering",
+"section": "Learning",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "analytics engineer engineering moj bridges gap between data engineers analysts by ensuring that high quality well structured available analysis reporting focus transforming raw into organised usable formats through modelling testing automation enabling decision makers derive actionable insights efficiently our work ensures seamless flow from its state dashboards reports inform policy making across department when join given access operational onboarding trello process helps new hires transition smoothly their roles during first six months articles what everything need know recommended online learning via kimball group resources datacamp here are links free get started can help upskill with range core technical skills listed below warehouse business intelligence ralph kimball's dimensional modeling: methodology widely adopted approach focuses processes user experience emphasizes designing models intuitive end users using techniques like star schemas snowflake introduction dbt also known build tool designed simplify management warehouses transform within sql fundamentals master needed learn how write queries start analyzing your this powerful language languages sql: essential querying used extensively create clean datasets python r: r manipulation automating workflows running more advanced tasks particularly studio creating model brief blueprint : proficiency concepts design robust scalable database relationship diagrams: ability use tools visually map out relationships different tables databases ensure clear structure dbdiagram.io diagrams.net draw.io derived table: expertise building meaningful ready hands modular reusable transformations environment deployment studio: familiarity git github: version control managing code collaboration traceability proper changes athena analytical platform knowledge amazon key large often macros: understanding usage macros automate repetitive processing aws console tables: working services accuracy performance code: writing expected commands: commands test validate outputs github actions: actions tested verified before lint implementing linting maintainable error production assurance editor: editor moving them terminal: terminal execute manage continuous integration linting: power bi dashboards: maintaining they reliable date mastering these efficient supports strategic objectives",
+    "url": "/data-and-analytics-engineering/learning/analytics-engineer/"
+  },  {
+    "title": "Analytics Engineer 18-Month Apprenticeship Program",
+"section": "Learning",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "ministry justice analytics engineer 18 week apprenticeship designed provide apprentices with solid foundation key data engineering skills before they transition job training part analyst level 4 program which includes comprehensive essential tools technologies used field topics covered during apprenticeship: sql databases: learn how create query manage databases using one most critical analysis programming analysis: languages such python r both are widely manipulation warehousing modelling: this covers design population star schemas well working warehouses preparation visualisation: like power bi tableau other business intelligence platforms developed help visualise effectively machine learning science: introduction integrates cloud azure aws version control: git managing projects collaboration 10 boot camp ten bootcamp eighteen month front loaded meaning first weeks focused intensively theoretical practical provides participants hands experience that can apply once join their teams benefits bootcamp: learning: work real world scenarios making them ready upon completion mentorship support: learners supported by mentor digital consultant dlc who track progress ensure course complete successfully blended uses combination remote online courses flexibility while maintaining engagement through interactive applications following continue remaining duration months continuous double check ian formal assessments solidify will use powerbi server integration services ssis : gcp",
+    "url": "/data-and-analytics-engineering/learning/apprenticeship/"
+  },  {
+    "title": "Data Engineering",
+"section": "Learning",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "data engineer ministry justice plays vital role building maintaining infrastructure systems that support driven decision making across organisation when join given access our operational onboarding trello analytics engineers structured process helps new hires transition smoothly into their roles during first six months excel this should also develop range technical analytical soft skills align with needs articles blog posts by dr soumaya mauthoor lead engineer: using github one stop shop transaction lake amazon athena apache iceberg dbt recommended online courses via datacamp can help upskill core listed below python gain demand efficiently ingest clean manage schedule monitor pipelines setting apart engineering field sql learn fundamentals engineering: database design warehousing working technologies including postgresql snowflake! advanced dive deep state art tools revolutionising today professional track focus : languages fundamental language processing automating workflows widely used scripting etl processes big frameworks essential querying managing relational databases especially dealing performing transformations bash shell useful task automation system management unix linux environment scala java beneficial like spark hadoop cloud web services aws familiarity critical key include: s3 scalable storage redshift large scale rds lambda serverless computing glue jobs azure google platform gcp knowledge other platforms moj may leverage multi strategies continuous integration delivery deployment ci cd actions jenkins experience these automate testing ensuring changes are rolled out without breaking existing terraform cloudformation code iac provisioning resources crucial repeatable unit correctness integral part reliable validation automated checks ensure quality handling missing schema integrity processed accurate meets organizational standards test development tdd best practice robust error free writing tests before actual extract transform load airflow proficiency from various sources meet warehouses custom particularly complex cleaning tasks wrangling expertise transforming raw usable formats analysis reporting orchestration tool scheduling monitoring run time step functions executed correct sequence multiple environments architecture understanding warehouse store query datasets lakes unstructured semi designing increasing volumes demands microservices how based work allowing modular solutions models llms transformer e.g. gpt applications analyzing text which projects involving natural nlp within fine tuning pre trained domain specific such classification entity recognition legal document ai ethics governance ethical implications public sector compliance areas will well equipped efficient secure mission delivering insights improvements",
+    "url": "/data-and-analytics-engineering/learning/data-engineer/"
+  },  {
+    "title": "Learning",
+"section": "Home",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "learning development opportunities ministry justice moj are committed continuous growth our team members data analytics directorate provide variety l d designed help advance your career enhance skills stay cutting edge technology engineering pathway explore materials free licensed resources additional",
+    "url": "/data-and-analytics-engineering/learning/"
+  },  {
+    "title": "Agile Delivery",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts learning about agile techniques how apply them manifesto software development service manual",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/agile/"
+  },  {
+    "title": "Change Management",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about managing change ten reasons people resist",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/change/"
+  },  {
+    "title": "Coaching",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about effective techniques coaching mindtools tgrow model questioning examples learn clean language with learning",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/coaching/"
+  },  {
+    "title": "Emotional Intelligence",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about ways improve your interactions with others primal leadership: hidden driver great performance 5 become more self aware how leaders neurochemistry positive conversations emotional agility really listen employees three can empathy put yourself colleague's shoes receiving feedback well: get better world work project",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/emotional/"
+  },  {
+    "title": "Soft Skills",
+"section": "Learning",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "soft skills are personal attributes interpersonal abilities that enable individuals work effectively with others professional environment unlike technical which job specific universally valuable across roles industries they include communication teamwork problem solving leadership adaptability emotional intelligence resources blog posts about ways improve your interactions how become more effective leader stakeholder management building relationships stakeholders customers align expectations ensure successful project outcomes requirements gathering identifying documenting needs guide development meeting facilitation get most out meetings agile delivery learning techniques apply them scrum coaching productivity change managing",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/"
+  },  {
+    "title": "Leadership",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about how become more effective leader what makes optimist without being fool sleep deprived people are likely cheat focused",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/leadership/"
+  },  {
+    "title": "Meeting Facilitation",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about how get most out your meetings atlassian team playbook build strong teams with plays management 3.0 leadership training managers liberating structures introduction iaf library retromat inspiration & plans agile retrospectives welcome open space! lean coffee lives here",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/meeting/"
+  },  {
+    "title": "Productivity",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about how improve productivity positive intelligence marshmallow test grownups pronouns matter when psyching yourself",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/productivity/"
+  },  {
+    "title": "Requirements Gathering",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts identifying documenting stakeholder needs guide project development government digital service: writing your requirements outcomes specialists services transformation hub: what gathering process user research",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/requirements/"
+  },  {
+    "title": "Scrum Guide",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts about scrum techniques guides",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/scrum/"
+  },  {
+    "title": "Stakeholder Management",
+"section": "Soft Skills",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "resources blog posts building relationships with stakeholders customers align expectations ensure successful project outcomes local government association: manage analysis function > guidance hub stakeholder mapping",
+    "url": "/data-and-analytics-engineering/learning/soft-skills/stakeholder/"
+  },  {
+    "title": "Standards and Conventions",
+"section": "Learning",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "technology following .gov websites explain design standards conventions used within ministry justice digital across government: technical guidance this site documents some decisions that moj made products operate gov.uk service toolkit all need build run services meet government gds way guides teams brilliant cost effective specific tools processes use",
+    "url": "/data-and-analytics-engineering/learning/standards/"
+  },  {
+    "title": "Analytics Engineering Monthly",
+"section": "Regular meetings",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "purpose monthly informal meeting all analytics engineers : share updates successes challenges across domain teams cross squads seek support from professional community discuss profession specific topics which may have relevance wider data engineering team when 11 12 thursday every 4 weeks core audience including embedded order business roundtable domains projects with enough detail understand priorities work progress initiatives our practice leads g7s technical discussion troubleshooting best practices outcomes connected supported working varied g6 awareness milestones agree ways clear direction",
+    "url": "/data-and-analytics-engineering/regular-meetings/analytics_engineering_monthly/"
+  },  {
+    "title": "Community Forum",
+"section": "Regular meetings",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "purpose twice monthly informal meeting all data analytics engineers : recognise good work team spread knowledge about new tools processes share lessons learned from projects learn colleagues other areas moj e.g talks platform infrastructure downstream uses give members opportunity gain experience presenting talking their introduce when 2 3pm 1st 3rd wednesday each month core audience analysis engineering tracking via community forum github project board proposing topics submit kudos here order business intro chair shout outs presentations updates g6s dd responsibilities look out source present collaborates with chairs portfolio leads agree minimise duplication outcomes shared across ideas are discussed potentially identified going tech review meet get wider news",
+    "url": "/data-and-analytics-engineering/regular-meetings/community_forum/"
+  },  {
+    "title": "Regular meetings",
+"section": "Home",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "within data analytics engineers have several regular meetings each with dedicated purpose enable us collaborate work effectively community forum find out about our fortnightly where cover wide range topics tech review monthly feedback discussions technology tools use portfolio spotlight what happening engineering meet profession",
+    "url": "/data-and-analytics-engineering/regular-meetings/"
+  },  {
+    "title": "Portfolio Spotlight",
+"section": "Regular meetings",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "purpose monthly meeting rotating between corporate hmcts hmpps allow deep dives into what happening each portfolio these meetings serve way talk through their current roadmap highlighting key milestones coming well forum review production systems ensure they still align wider team tech recommendations when 2 3pm 4th wednesday month core audience dedsai senior management data analysis engineering tracking via spotlight github project board order business intro from cfe lead talking how quality being met within existing pipelines mot pipeline documentation date set 12 time aob responsibilities chair coordinate with leads ahead quarterly slot shares recordings action points after presentation encourages attendance add any relevant identify developments areas note over last quarter that should shared domain organise structure discussions during place undergo this outcomes knowledge are across rest analytics teams enabling more unified approach ways working captured centrally annual evaluations meet dmet standards needing update going potential would benefit presented",
+    "url": "/data-and-analytics-engineering/regular-meetings/portfolio_spotlight/"
+  },  {
+    "title": "Tech Review",
+"section": "Regular meetings",    "layout": "sub-navigation",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "purpose monthly meeting all data analytics engineers present new technical approaches provide feedback solutions open inclusive forum goal ensure unified approach solving challenges across team with outcomes documented architecture decision records adrs future reference items that come tech review include are limited : any proposed sources their methods ingestion looking use languages outside those adopt retain radar building system from ground proposing internally built packages bringing item once been identified presenter should contact chair arrange slot also create rfc request comments github discussion circulate this #data engineering slack channel least one week prior presentation will proposal via whatever medium best suits e.g slide deck live demo following invite questions audience panel have follow final proposals recommendation whether approve conditions decline these added announced later than after approved then needs submit adr record when 2 3pm 2nd wednesday each month core made representative portfolio ap wider digital analysis tracking project board raise rfcs here order business intro highlight previous session finalised sessions presentations max allow discussions enquire upcoming aob responsibilities stays informed about interesting reaches out potential presenters shares recordings action points encourages attendance collaborates chairs community leads agree topics minimise duplication coordinate outline recommendations required changes before can considered agreed communicate completed provides agenda links relevant material highlights what advice sought either accepted declined submitted by based closed reasons closing",
+    "url": "/data-and-analytics-engineering/regular-meetings/tech_review/"
+  },  {
+    "title": "Posts tagged ‘Athena’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/athena/"
+  },  {
+    "title": "Posts tagged ‘Cross-HMG engagement’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/cross-hmg-engagement/"
+  },  {
+    "title": "Posts tagged ‘Data Strategy’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/data-strategy/"
+  },  {
+    "title": "Posts tagged ‘dbt’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/dbt/"
+  },  {
+    "title": "Posts tagged ‘Documentation’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/documentation/"
+  },  {
+    "title": "Posts tagged ‘Events’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/events/"
+  },  {
+    "title": "Posts tagged ‘GDD analytics engineering profession’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/gdd-analytics-engineering-profession/"
+  },  {
+    "title": "Posts tagged ‘GDD data engineering profession’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/gdd-data-engineering-profession/"
+  },  {
+    "title": "Posts tagged ‘GitHub’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/github/"
+  },  {
+    "title": "Posts tagged ‘Good Practice’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/good-practice/"
+  },  {
+    "title": "Posts tagged ‘Iceberg’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/iceberg/"
+  },  {
+    "title": "Posts tagged ‘Project Management’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/project-management/"
+  },  {
+    "title": "Posts tagged ‘Technology Radar’",
+"section": "Tags",    "layout": "tag",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/technology-radar/"
+  },  {
+    "title": "Tags",
+"section": "Home",    "layout": "tags",
+    "hasFrontmatterDate": false,
+    "date": "21 June 2026",
+    "templateContent": "",
+    "url": "/data-and-analytics-engineering/tags/"
+  }]
