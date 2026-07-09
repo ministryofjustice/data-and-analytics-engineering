@@ -6,51 +6,28 @@ eleventyNavigation:
   key: About
   parent: Home
 ---
+On this page you will learn about what Data Engineers and Analytics Engineers do at the Ministry of Justice. On the left hand side, there are additional pages for how to contact us, and join us.
 
-Data and analytics engineers enable data-driven decision making and the personalisation of services across the department by delivering innovative solutions and promoting technical excellence.
+# Data Engineers and Analytics Engineers
 
-We bridge the gap between data producers and data users, developing analytical pipelines and self-service tools to acquire and transform data, making it available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk).
+Data engineering and analytics engineering are two distinct but closely related fields. *Data engineers* primarily deal with collection, transformation, and storage of raw data. They design and maintain data pipelines that enables data processing, ensuring data quality, scalability, and reliability. Lots of people like to use the term ETL (Extract, Transform, Load) when speaking about what data engineers do.
 
-This diagram helps to summarise some of these different roles:
+Analytics engineering is about utilising data to extract valuable insights. *Analytics engineers* work on building data models and developing code-based solutions to answer specific business questions. They bridge the gap between data engineering and data analysis, enabling data scientists and analysts to effectively interpret and visualise data. 
 
-![roles](./images/roles.excalidraw.png)
+To oversimplify the difference between the two, data engineers set the foundations of data pipelines, while analytics engineers add the layer of analysis and interpretation that helps decision-making.
 
-## Data Engineering
+# The Ministry of Justice
 
-### What do we do?
+The Ministry of Justice is a major government department, at the heart of the justice system. We work to protect and advance the principles of justice. Our vision is to deliver a world-class justice system that works for everyone in society. You can find out more about the Ministry of Justice, our responsibilities and priorities [on our website](https://www.gov.uk/government/organisations/ministry-of-justice/about).
 
-We work with digital teams to help them make data from their services available on the [Analytical Platform](https://user-guidance.analytical-platform.service.justice.gov.uk/index.html).
+# About Data Engineers and Analytics Engineers and the Ministry of Justice
 
-We validate, deduplicate and standardise the extracted data to produce curated data sets. Where possible, we provide historical data to support reproducible and longitudinal analysis. 
+## Our beginnings
 
-We do this by building and running data pipelines ourselves, and by supporting digital teams to use self-service tools and infrastructure on the Analytical Platform. 
+Leave for Calum to write.
 
-We also collaborate with platform teams, contributing to the development of the Analytical Platform and other foundational data infrastructure, including the [data uploader](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/data-uploader/index.html), [Airflow](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/airflow/index.html), [Create a Derived Table](https://user-guidance.analytical-platform.service.justice.gov.uk/tools/create-a-derived-table/index.html), [Register my Data](https://github.com/ministryofjustice/register-my-data) (internal only) and the [data extractor](https://github.com/ministryofjustice/data-engineering-data-extractor) (internal only).
+## Here and now
 
-### What value do we provide?
+Data engineers and analytics engineers are a core part of the digital future at the Ministry of Justice. With over forty staff, they are primarily found within the Data Science and Data Engineering division; however, many data engineers and analytics engineers also work in other parts of the Ministry of Justice and its arms-length bodies. 
 
-We enable access to data in a way that is more reliable, secure, auditable and timely than was ever previously possible. 
-
-Analysts and data scientists can access complete data from a range of sources in a single location and in a standardised format, reducing preparation time.
-
-Data can now be received daily, instead of weekly, monthly or quarterly, generating insight that is more relevant and current.
-
-## Analytics Engineering
-
-### What do we do?
-
-Analytics engineers start with the curated data provided by data engineers.
-
-We work with analytical users (usually analysts, data scientists and statisticians) to understand how they use data, so that we can design and build derived tables to meet their needs.
-
-To build derived tables we clean, join and transform the curated tables produced by data engineers, using dimensional modelling and implementing tests and documentation to ensure that the output is reliable and understandable.
-
-### What value do we provide?
-
-The derived tables that we produce accelerate the production of statistics, management information (MI), analysis, and data science products.
-
-Analysts and data scientists need to spend less time transforming and understanding complex and messy data sets, so they can start deriving insights faster and make better use of their technical skills to solve new problems.
-
-Derived data is trusted and consistent across use cases, meaning we get the same answers to the same questions no matter where we ask them.
-
-Data is domain-aligned, not source-aligned, facilitating a simpler transition from heritage systems to new services.
+We are responsible for maintaining many of the data pipelines we have already established at the Ministry of Justice for courts, prison and probation datasets. As well as emerging areas of data, such as [electronic monitoring](https://www.gov.uk/government/publications/electronic-monitoring-in-the-criminal-justice-system/electronic-monitoring-in-the-criminal-justice-system).
