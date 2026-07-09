@@ -15,7 +15,7 @@ These meetings serve as a way for each portfolio to talk through their current r
 
 ## When
 
-3-4pm on the 4th Thursday of the month.
+2-3pm on the 4th Wednesday of the month.
 
 ## Core audience
 
