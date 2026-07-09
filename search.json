@@ -24,6 +24,190 @@
     "tokens": "contents balancing act stability vs innovation introducing technology radar our journey wins challenges first from whiteboard webpage adopting open source solution integrations with github leveraging discussions benefits enhancements insights recent refresh climbers fallers new entries continuing next steps annual updates team engagement key areas improvement exploring future innovations conclusion acknowledgements data analytics engineering nearing fifty engineers are continually navigating ever evolving technological landscape tools platforms techniques emerging rapid pace can challenging decide what adopt assess retire while established technologies offer over reliance them risks stagnation missed opportunities s easy stick familiar tried tested reliability yet clinging old lead inefficiency other hand rushing shiny cause disruption waste time create unnecessary complexity how explore without losing focus creating overhead keep aligned involved these decisions enter tool that brings structure clarity this provides shared framework evaluating helps teams identify worth recognise reliable should remain part stack outdated solutions more importantly fosters collaboration transparency ensuring everyone say shaping choices blog post explores why adopted use balance ve introduced existing approaches lessons learned along way maps out your using considering represented blips arranged into concentric rings retain replace which reflect status each indicating whether plan phase maintain split quadrants representing different kinds languages etc originally pioneered by thoughtworks radars visual akin archery target mapping align across guides informed about continue discontinue divided four proven trust meet needs scale widely used production low risk recommended broad adoption promising clear potential researching prototyping though they carry higher untested organisation some may already experimenting currently satisfied projects have been superseded will stop ones following centred software operations encompassing infrastructure services support deployment management quadrant includes mix comprehensive industrial smaller custom built internal examples range docker ruff bespoke developed house frameworks programming common such dbt pyarrow pyspark development analytical include agile architectural design records adrs kimball dimensional modelling img src https raw githubusercontent com ministryofjustice refs heads main content posts images tech de png alt refreshed screenshot showing style width 90 height auto ministry justice here check supporting repository began simple whiteboarding exercise where collaborated map were organised offering snapshot initial approach sparked valuable aligning highlighting original focused 80 provided several immediate understanding their purpose direction improved members had platform contribute ideas raising awareness overview fostering alignment however limitations manual maintenance updating consuming prone becoming limited contributions person meetings restricting remote asynchronous participation historical record couldn t easily track changes rationale behind timeline 2020 zalando sourced javascript based providing dynamic alternative uses central json file define blip including its name ring date automatically populates tackled core static visuals foundation better suit integrating streamlined propose discuss update only maintained transparent also allowed crucial friendly hybrid working environment steadily consolidated processes within unified decision making see one shop details naturally explored managing found ways enhance functionality after experimentation backbone discussion corresponds title labels indicate categories classify language technique vote emoji system creative workaround set pause voting process serve forums share feedback concerns rich collaborative history black populate 70 delivered significant improvements centralised provide single searchable space all conversations makes revisit past understand automated graphql api extracting drastically reduced effort allowing us regularly minimal previously required hours organise sessions implement now links directly corresponding thread audit trail additionally number laborious task before integration grown 140 alone unwieldy manage oversight manageable 110 both effectively 50 convenience enabling staff flexibility ensures regardless location enhancing transformed living evolves simplifies well documented adaptable integrated supports teamwork enabled relevant accessible maintaining agility came play during most brought together around thirty wide review streamline groups led engineer specific result just updated clearer reflection work introduction function broadened diversity increasing notable latest value gaining maturity broader earned move cornerstone reflects growing increased confidence capabilities dedicated overseeing implementation usage continues expand since 2021 rapidly gained traction python community performance simplicity made choice leading fallen favour due inefficiencies emergence alternatives aws glue essential moved less harder debug costly than newer successfully transitioned combination athena greater cost efficiency jira confluence once mainstay project still parts consolidate older like dataengineeringutils3 etl manager internally many years ago longer actively prioritise phasing modern reduce technical debt simplify workflows entered refine duckdb emerged powerful memory delivering exceptional query seamless sql added notably component linkage splink lightweight quickly spinning testing models locally sqlmesh commitment improving codegen helper automation improve versioning copilot generated interest ai powered code suggestions completions wider uk government trial evaluate effectiveness productivity placed measure impact coding practices highlight continued toolkit remains efficient scalable fit careful consideration works doesn demands second generation functional coordinate there room look make even effective sustainable annually day serves building opportunity junior strategy re addressing ci although integrates seamlessly aim further continuous labelling filtering usability filter categorise professions relevance revived integrate inspired particular features aoe offers summaries detailed histories user interface could bring context evolve alongside drives evolved own created rely strive ahead committed refining scaling automating via ensure stays adapt grow helping strike right between would thank people help soumaya mauthoor her invaluable tireless setting modernised damilola oyebade murad ali running session francesca von braun bates guidance"
   },
   {
+    "title": "Analytics Enablement",
+    "description": "Embedding Analytics Engineers, training, and tools to support adoption of modelled data pipelines across MoJ.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/analytics-enablement/",
+    "tokens": "overview analytics enablement initiative created help analysts across ministry justice moj adopt modern modelled data pipelines focused bridging gap between engineering analysis by embedding capability providing training introducing tools support working with structured challenge while had invested building high quality automated many continued rely ad hoc extracts manual processes this limited value new infrastructure inefficiencies reporting needed clearer transition take full advantage underlying architecture solution established dedicated function adoption included engineers key analytical teams act hands guides also delivered programmes developed make model navigation querying documentation easier parallel resourcing models scale including innovative apprenticeship programme that placed trainees directly into capacity fostering common approach best practices reusability domains impact improved consistency increasing reported greater confidence sources fewer hours spent preparing inputs their work embedded strengthened collaboration professions helped knowledge organisation laid foundation future improvements literacy product reuse creating more efficient aligned community technologies tailored content query builders pattern libraries worked alongside using shared version control codebases partners communities partnership domain specific analyst services"
+  },
+  {
+    "title": "Better Outcomes through Linked Data (BOLD)",
+    "description": "How cross-government data sharing improves justice outcomes and delivers value for money.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/better-outcomes-through-linked-data-bold/",
+    "tokens": "overview better outcomes through linked data bold programme improves across criminal justice system by linking from multiple government departments this secure cross sharing initiative enables richer analysis more coordinated decision making support vulnerable groups deliver public services challenge about people events previously siloed agencies such police hm prison probation service hmpps department education dfe without difficult understand full case journeys evaluate design effective interventions lack integration also limited ability analysts policymakers identify systemic issues measure impact departmental boundaries solution developed governed framework datasets enabled new flows between including essex levelling housing communities dluhc specific use cases included learning records with connecting homelessness developing dashboards track victim team tested cost benefit approach two pilots one focused policy other operational improvement these helped quantify benefits investing work won year british awards recognising its sector demonstrated that every 1 invested 20 could returned break even expected within three years novel insights into reoffending effectiveness while provided teams date information inform casework strategy tools technologies used sftp transfers de identified modelling cloud based dynamic visualisations sankey diagrams exploration pathways partners delivered collaboratively office national statistics ons research sail databank adr uk"
+  },
+  {
+    "title": "Civil, Family and Tribunal Reporting Improvements",
+    "description": "Improving access to timely and consistent data across civil, family, and tribunal jurisdictions.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/cft-reporting-improvements/",
+    "tokens": "overview this workstream focused improving quality consistency usability data across civil family tribunal services by building responsive integrated dashboards reporting pipelines project helped deliver faster access critical insights support driven decision making justice system challenge jurisdictions historically inconsistent difficult changes collection systems evolving policy priorities made hard track performance understand service outcomes operational teams needed clear reliable monitor trends front line staff meet obligations solution worked with identify common requirements built unified tools that draw standardised included such sds supporting safe early release safety diagnostic tool providing prison timely indicators implemented flexible models adapt shifting contexts enabled drill down views both strategic use design approach emphasised user experience transparency allowing non specialist users explore confidently impact improved analytical example ensure key risk metrics were available real time inform decisions provided into incidents ability respond risks improvements reduced duplication trust more informed every level technologies used modern dashboarding frameworks reusable hosted securely via moj cloud platform supported filtering trend analysis tailored partners work delivered partnership cft tribunals team leads analysts stakeholders hmcts"
+  },
+  {
+    "title": "CICA Dashboard Modernisation",
+    "description": "Transforming CICA’s management information system with an automated, user-friendly dashboard.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/cica-dashboard-modernisation/",
+    "tokens": "overview criminal injuries compensation authority cica modernised its management information systems by introducing automated interactive dashboard this transformation reduced dependency legacy manual reporting while improving user experience access key data insights challenge s processes relied heavily excel based workflows external supplier managed system limited small number users creating bottleneck insight generation decision making lacked flexibility were unable explore performance indicators kpis independently solution developed new deployed moj cloud platform includes intuitive navigation drill down capability clear visualisations metrics refreshed automatically provided pre processed format enabling self service analysis without impacting source consolidating providing simple secure interface empowers across make informed decisions real time operational impact delivered savings replacing significantly improved organisation removed single gatekeeper are now able directly identify inefficiencies track claims throughout their lifecycle also laid groundwork stronger culture with clearer visibility increased confidence tools technologies used pipelines dashboarding create supports filtering downs controls ensure integrity autonomy partners work engineering collaboration operations commercial analysts"
+  },
+  {
+    "title": "Corporate Finance Insight",
+    "description": "Standardising and automating financial reporting to improve transparency and reduce resource burden.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/corporate-finance-insight/",
+    "tokens": "overview corporate finance insight initiative focused automating standardising financial reporting across ministry justice goal reduce manual effort required generate reports increase consistency outputs enable analysts deliver more valuable insights challenge teams moj were spending significant time producing using inconsistent processes team 12 5 full equivalents fte supported around 57 users with single source truth data this made difficult scale introduced risks human error limited opportunities modernise practices solution developed deployed centralised model replacing bespoke solutions standard templates automated pipelines provided authoritative which could reused multiple business units tools aligned departments including hmpps hmcts laa others ensuring consistent experience shared understanding key metrics designed scalable auditable efficient making easier support ongoing strategy development impact new approach freed 3 ftes projected save 1 million over five years improved productivity controllers by 35 gave leadership faster reliable access they needed now transparent maintain better s areas technologies used modern engineering create pipeline orchestration partners work delivered collaboration colleagues opg cica digital"
+  },
+  {
+    "title": "Cross-CJS Linked Data Set",
+    "description": "Linking data across the justice system to enable new insights, better policy, and improved support for victims and offenders.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/cross-cjs-linked-data-set/",
+    "tokens": "overview cross cjs data linking initiative enables end analysis case journeys offender pathways victim outcomes by integrating from police crown prosecution service cps ministry justice provides shared evidence base support better decisions services across criminal system challenge historically fragmented organisational boundaries analysts policy teams lacked ability track person arrest final outcome this made difficult assess where people disengage how different interventions affect improve vulnerable groups solution developed secure de identified pipelines link level resulting dataset designed wide range analytical use cases operational dashboards academic research while maintaining rigorous governance privacy standards follow victims defendants through entire process also integrates with other tools such attrition dashboard provide deeper insights into user performance impact linked allows policymakers explore critical questions what are repeat offenders effective already informed supported consultation prisoners act enabled novel collaborations work improves just insight generation quality transparency usability moj technologies used cloud based tooling enable agency structured repeatable scalable partners delivered collaboration engineers researchers adr uk office national statistics"
+  },
+  {
+    "title": "Data First Programme",
+    "description": "Enabling cross-justice and academic research through de-identified, high-quality linked data.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/data-first-programme/",
+    "tokens": "overview data first programme enables secure access linked de identified justice datasets research policy analysis by improving quality consistency usability supports evidence based decision making across system academic sector challenge often fragmented organisations easily accessible researchers formatting inconsistencies made difficult link while limited infrastructure governance frameworks constrained sharing reuse analysts needed scalable way well documented high that could support robust statistical social solution created analytics ready products securely these were through trusted environments such ons service sail databank team also worked with turing institute partners develop synthetic tools improve pipeline simplify structures key focus modernising underlying architecture introducing features embedded splink identifiers linkage mechanisms clearer documentation this allowed greater transparency easier integration other moj assets impact enabled over 50 projects supporting both house external collaboration received 2024 award government awards its contributions public value outputs have informed publications improved services supported interdisciplinary learning technologies delivered structured modelled integrated linking generators into rigorous processes s teams adr uk platform providers including"
+  },
+  {
+    "title": "Digital Prisons Reporting Integration",
+    "description": "Improving transparency and consistency in prison data through integration and automation.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/digital-prisons-reporting-integration/",
+    "tokens": "overview digital prisons reporting integration project enhanced transparency consistency accessibility data used monitor prison system by modernising how collected shared enabled better operational planning public analysis policy impacts challenge historically managed through monolithic fragmented systems which limited made hard access interpret rapid changes increasing pressures placed greater demand analysts end users who needed timely reliable information capacity service delivery solution developed unified layer collaboration with team this integrated multiple sources into single automated pipeline replacing manual processes streamlined responsive also introduced pioneering cross account model ensure secure scalable approach supported real time insight particularly areas such early release scheme sds population modelling where updates are critical impact improved reliability usability across moj ongoing support safety monitoring tools dashboards can now consistent date datasets reducing duplicated effort improving decision making speed confidence technologies cloud based pipelines controls enable partners work delivered jointly analytics engineering hmpps functions audiences"
+  },
+  {
+    "title": "Electronic Monitoring Data Store",
+    "description": "Improving data quality and access to support the monitoring and analysis of electronic monitoring use.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/electronic-monitoring-data-store/",
+    "tokens": "overview electronic monitoring em data store project delivered new centralised platform improving its quality coverage accessibility this enabled deeper analysis how used supported better service performance improved evidence base reducing reoffending challenge existing feeds were fragmented manually managed limiting their usefulness operational decision making available lacked depth consistency difficult end users generate meaningful insights understand effectiveness interventions solution designed implemented based modern architecture principles aggregates richer more comprehensive datasets provides reliable auditable route accessing both raw transformed work parallel with prisons probation models enabling cross providing continuity underlying systems evolve also supports automation ensuring timely access information impact significantly usability insight into practice teams can now that accurate breach notifications targeted decisions enhanced structure innovation including integration ai tools drive further improvement technologies uses automated pipelines standardised design support curation transformation partners collaboration hmpps moj engineering analytics"
+  },
+  {
+    "title": "Gold Scorecard Dashboard",
+    "description": "Automating procurement data pipelines to improve contract performance insights and reduce risk.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/gold-scorecard-dashboard/",
+    "tokens": "overview gold scorecard dashboard ministry justice s primary mechanism monitoring performance high value contracts by automating integration procurement data from multiple systems project improved visibility reduced duplication strengthened evidence base commercial decisions challenge teams were spending significant time manually collecting reconciling contract management including jaggaer rio this introduced inefficiencies increased risk human error limited frequency accuracy reporting particularly department most valuable solution built automated pipelines that extract transform load into central model resulting dataset powers which provides unified view across moj portfolio allows users explore supplier sbo contractor includes features such summary statistics downloadable source historic trend views enabling understand intervene early where needed impact manual burden staff eliminated inconsistent entry transparency enabled more frequent reliable enhanced ability manage its improve outcomes 20 billion spend under tools technologies used modern engineering practices integrate other using cloud based support interactivity user defined filters partners work delivered analytics collaboration with professionals"
+  },
+  {
+    "title": "Integration of Drug Treatment and Health Data",
+    "description": "Linking justice and health datasets to support better outcomes in substance misuse and rehabilitation services.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/integration-of-drug-treatment-and-health-data/",
+    "tokens": "overview this initiative enabled integration justice system data with health drug treatment datasets creating joined evidence base support rehabilitation services policy development provides insight into how substance misuse interventions intersect outcomes helps target where s most needed challenge people involved criminal often experience complex overlapping challenges including mental issues housing insecurity however understand these factors spread across departments limited mechanisms linking securely effectively without between policymakers service providers lacked clear picture what work when whom solution building bold programme infrastructure linked moj from department social care dhsc ministry communities local government now dluhc analysis pathways through community sentences custodial based orders linkage allowed teams track whether individuals received related access improved over time structured both operational academic research impact supported improvement areas such sentence requirements cstrs prison transitions informed multi agency planning reoffending by quantifying enabling better targeting project helped lay groundwork integrated strategies also demonstrated sharing can improve vulnerable groups compromising privacy trust tools technologies used de identified pipelines secure cross agreements robust logic outputs were designed trusted environments partners delivered collaboration leads"
+  },
+  {
+    "title": "Legal Aid Data Stabilisation",
+    "description": "Creating a unified Legal Aid data model to reduce duplication, improve governance, and support transformation.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/legal-aid-data-stabilisation/",
+    "tokens": "overview legal aid data stabilisation initiative supports transition from legacy systems modern reliable foundation agency laa introduces unified governed model that serves both analytical operational needs enabling better insight lower cost service path digital transformation challenge s existing landscape relied multiple bespoke solutions with duplicated logic inconsistent outputs little documentation products were built top services hard maintain integrate this fragmentation limited performance increased risk made difficult provide timely accurate reporting solution designed implemented new layer integrates such ccms cwa civil apply transformed using dimensional aligned business processes optimised exploration also introduced reverse etl pipelines ensure could fed back into upstream enhancing feedback loops quality approach supported scalable secure cloud native tooling impact reduces maintenance burden enables alignment between analysts teams delivery partners consistent source statutory financial insights monitoring future are developed provides bridge platforms ensuring continuity reliability tools technologies used moj platform build models key included modelling storage query work delivered collaboration management team statistics finance leads within"
+  },
+  {
+    "title": "Lasting Power of Attorney Dashboard",
+    "description": "Delivering timely and trusted reporting for OPG’s Lasting Power of Attorney service through a modern data warehouse.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/lpa-dashboard/",
+    "tokens": "overview lasting power attorney lpa dashboard provides near real time access key operational performance data office public guardian opg powered by centralised warehouse that consolidates business logic enables consistent reporting across wider moj challenge prior s launch relied dispersed sources manual processing duplicated reports were inconsistent infrequent limiting ability monitor respond emerging trends there unified system tracking applications services stages solution developed conformed integrates related from organisation with embedded reviewed agreed analysts stakeholders draws directly this ensuring all outputs are aligned trustworthy includes metrics application volumes timeliness decision points service allows users drill into channel region period also supports comparisons between legacy modernised helping track transformation progress impact improved frequency reduced spend preparing enabled faster clearer insights increased confidence both internal external understand continuous improvement helps ensure remain accountable user focused underlying foundation additional products including statutory kpis tools technologies uses cloud based infrastructure models dashboarding integrated central governed documented consistency compliance partners work delivered engineering collaboration teams programme"
+  },
+  {
+    "title": "NOMIS Pipeline Modernisation",
+    "description": "Improving performance and scalability by modernising one of MoJ’s largest data pipelines.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/nomis-pipeline-modernisation/",
+    "tokens": "overview nomis one ministry justice s largest most complex data pipelines supporting critical analysis reporting prison operations this modernisation project dramatically improved its performance reliability unlocking new efficiencies strengthening delivery across organisation challenge original pipeline slow difficult maintain increasingly unsuited growing scale frequency usage processing took 12 hours each day causing delays analysts limiting ability respond operational needs any failure delay had knock effect multiple dependent services solution rebuilt using modern modular architecture that more scalable resilient key transformations were redesigned efficient introduced robust monitoring identify resolve issues quickly time reduced from just 3 per supports automatic retries alerting case failures also streamlined logic reduce technical debt ensure future adaptability impact saves around 2 160 annually equivalent 288 working days with over 000 users relying powered by improvement translates estimated 5 4 million annual value through saved quality strengthened confidence daily enabling timely decisions policy teams tools technologies used cloud native orchestration frameworks solutions modernise risk partners work delivered moj engineers collaboration consumers system"
+  },
+  {
+    "title": "Offender Risk Assessment Data Sharing",
+    "description": "Enabling secure data sharing and modelling to improve risk assessment and public protection.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/offender-risk-assessment-data-sharing/",
+    "tokens": "overview offender risk assessment data sharing initiative enabled secure integration modelling improve public protection supported both internal moj users external researchers with high quality analytics ready that informs decisions around managing offending behaviour reducing harm challenge information relevant distributed across multiple systems standard process combining analysing models needed more comprehensive inputs linking sensitive raised privacy governance infrastructure challenges analysts required well documented suitable statistical solution produced modelled dataset combines key indicators system interactions this complemented by research product shared through trusted environments such ons service embedded these outputs framework provided summaries structure support interpretation reuse development new publication profile repeat children young people england wales which used generate novel insight into youth patterns impact project accredited explore greater detail inform evidence based policy delivery improved collaboration between engineering academic engagement teams demonstrated scalable model value justice context tools technologies create derived table cadet decouple production from core improving modularity enabling linked identifiers synthetic tooling preserving analysis proposal partners work delivered engineers communications resulting products were"
+  },
+  {
+    "title": "OneCrown Data Model",
+    "description": "Building a single, trusted dataset to support performance insight and decision making in criminal courts.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/onecrown-data-model/",
+    "tokens": "overview one crown project aligned multiple data sources across criminal courts into single consistent dataset this trusted supports seamless access analysis forecasting modelling helping ministry justice moj hm tribunals service hmcts make better faster decisions challenge system spread disparate systems with inconsistent definitions update frequencies these issues caused delays reporting misalignment departments limited ability analysts generate reliable insights absence unified model hindered performance monitoring policy evaluation solution designed modern scalable onecrown that integrates key court from wide range analytical operational use cases built using shared agreed between team adopted collaborative approach working users understand business needs technical teams ensure implementation forms part broader vision create models all jurisdictions impact new enables more confident decision making improves consistency dashboards published statistics internal reports also reduce case backlogs enabling resource planning tools technologies used architecture delivery framework based standards design cloud infrastructure partners delivered jointly by stakeholders civil family cft engineering"
+  },
+  {
+    "title": "OPG Data Warehouse",
+    "description": "Creating a centralised data warehouse for OPG to improve consistency, access, and decision-making.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/opg-data-warehouse/",
+    "tokens": "overview office public guardian opg developed centralised data warehouse bring together scattered sources embed consistent logic into reporting performance monitoring this work helping improve efficiency transparency insight generation challenge s distributed across different systems formats teams with framework combining reusing analysts had interpret apply business individually often duplicating arriving slightly outputs there single trusted source support both local central moj solution reviewed wide range existing written r python sql collaborated stakeholders agree common definitions then implemented conformed model that underpins allows pull from shared clear governance around updates structure supports such national statistics lasting power attorney lpa dashboard key indicators kpis also provides greater flexibility integrating new including those modernised system impact project significantly improved consistency frequency can now produce insights more efficiently using clearer provenance have confidence their functions receive standardised align other corporate improves auditability supporting better decision making all levels tools technologies used dimensional modelling approach built secure cloud based pipelines accessible raw transformed structured multiple partners delivered by engineering team collaboration science operational colleagues"
+  },
+  {
+    "title": "People Data",
+    "description": "Improving the quality and accessibility of people data to support workforce planning, wellbeing, and strategic insight.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/people-data/",
+    "tokens": "overview people data platform project designed improve how accessed used across ministry justice enables analysts answer complex questions about recruitment staff wellbeing workforce planning using clean modelled built modern technology stack challenge historically fragmented inconsistently recorded difficult use spent significant time cleaning interpreting from multiple sources there central model that brought together information staffing organisational structure these challenges made harder deliver insight particularly when responding strategic cross cutting solution created unified combines range hr related datasets such post pipelines this robust best class tooling ensure timely accessible supports both descriptive predictive analysis enabling teams explore trends support decision making unlock ai powered cases by structuring serve domains allows moj reuse core components without duplicating effort impact improved access reduced spend preparing provides trusted foundation reporting helping better equipped manage employee measure internal programmes also new types were previously out reach due inconsistent inaccessible tools technologies engineering join into flexibility scalability downstream dashboards advanced analytics partners work delivered partnership with stakeholders strategy functions"
+  },
+  {
+    "title": "Property Data Environment",
+    "description": "Automating data flows and improving reporting for real-time management of MoJ’s property portfolio.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/property-data-environment/",
+    "tokens": "overview property data environment project provides single source truth moj s extensive portfolio which includes over 1 200 buildings with combined value more than 35 billion by automating extraction creating structured reporting initiative improves transparency reduces risk supports operational strategic decisions challenge fragmented across internal systems third party suppliers often requiring manual updates reconciliation this made difficult track running costs utilisation compliance estate delays lack consistency posed risks financial oversight planning solution developed scalable common cde that integrates from sharepoint apis other cloud based sources system automates transformation validation ensuring reports are accurate timely easy interpret both use cases enabling better spend asset performance designed reusable flexible supporting future directorate beyond impact automated avoids overspend giving teams access real time trusted enables forecasting helps identify underutilised assets decision making around rationalisation investment already helping avoid unnecessary improve cross team coordination tools technologies used api integrations automation pipelines deliver governed partners work delivered collaboration engineering estates operations"
+  },
+  {
+    "title": "Synergy Programme Data Integration",
+    "description": "Enabling shared data infrastructure for HR, Finance, and Commercial systems across departments.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/synergy-programme-data-integration/",
+    "tokens": "overview synergy programme supports delivery shared services across government by integrating new hr finance commercial systems departments including moj dwp defra home office part this data analytics engineering team enabled core pipelines support reconciliation reporting transformation challenge involved operate complex legacy with varied formats logic these into model required consistent scalable layer capable handling ingestion feedback loops between there also need both business usual future automation departmental boundaries which meant ensuring clean reconciled ready operational analytical use solution built bring from s platform supported efforts enabling analysts compare outputs old reducing errors building trust transition go live are developing production grade applying validation implemented reverse etl write transformed back oracle cloud fusion environment accurate updates impact work creation unified high quality infrastructure improves ability reconcile audit during migration reduces duplication enables standardised over time integrated expected deliver significant efficiency savings all participating while supporting long term digital tools technologies used secure based layers ensure seamless movement platforms partners project being delivered collaboration stakeholders counterparts"
+  },
+  {
+    "title": "User-Centric Design of Services (Tribunals)",
+    "description": "Designing data services around user needs to improve access to justice and operational efficiency.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/user-centric-design-of-services-tribunals/",
+    "tokens": "overview this project focused designing scalable intuitive data services tribunals with user needs centre every design decision by working closely consumers across moj hmcts team ensured that new tools supported real world tasks improved access enhanced justice outcomes challenge tribunal systems had evolved from heritage platforms fragmented structures limited flexibility users often struggled consistent timely analytical processes were inefficient difficult trace how requests translated into product development operational improvement solution civil family cft co designed roadmap understand their prioritise delivery accordingly they simplified stabilised pipelines significantly reducing memory usage improving reliability applying clear modelling standards engaging regularly end meaningful usable single framework used develop models serve multiple jurisdictions duplication supporting long term sustainability impact redesigned consistency availability technical dramatically reduced 10 50 times stakeholders gained better visibility helping them make more informed decisions track work also laid groundwork expanded modernisation strengthening technologies standardised techniques architecture deliver reliable aligned products partners delivered engineering partnership analysts leads"
+  },
+  {
+    "title": "Value Engineering and Impact Model",
+    "description": "Measuring and maximising the impact of data initiatives across MoJ using a structured value model.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/value-engineering-and-impact-model/",
+    "tokens": "overview value engineering impact model enables ministry justice moj measure return investment roi data initiatives prioritise projects based expected benefits by quantifying using consistent methodology supports better planning stronger business cases more strategic use digital capability challenge while teams were delivering valuable products services there formal way consistently estimate compare their without this difficult assess full benefit work justify choose between competing priorities lack visibility also made harder engage senior stakeholders track long term progress solution developed structured that estimates financial non calculates metrics such number queries time saved per query average staff cost driven approach allows us payback period opportunity integrated into are scoped reviewed forward helping identify areas where infrastructure could deliver greatest become core component s strategy helps demonstrate case change communicate decision makers high public been applied across domains from policy dashboards operational automation tools technologies logs user tracking estimation templates alongside standard modelling logic calculate visualise maintained office partners led chief officer collaboration with engineers product managers analysts domain leads department"
+  },
+  {
+    "title": "Victim Attrition Dashboard",
+    "description": "Using linked data to understand victim journeys and reduce attrition in the Criminal Justice System.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/data-and-analytics-engineering/case-studies/victim-attrition-dashboard/",
+    "tokens": "overview victim attrition dashboard developed provide end visibility experiences within criminal justice system cjs by linking data from police crown prosecution service cps moj helps policy teams operational users identify key points where victims disengage enabling more targeted interventions challenge relating previously disconnected hard access without joined view across court stages difficult understand occurred how engagement could improved analysts lacked tools explore trends assess effectiveness different services solution created secure linked dataset that follows cases through process reporting charging trial resolution this surfaced interactive includes breakdowns offence type region characteristics dynamic sankey diagram illustrates flow highlights occurs with governance mind ensuring remained protected shared appropriately agencies impact empowered home office colleagues better outcomes directly supported consultation prisoners act 2024 informing development also enables earlier tailored surfacing gaps support common disengagement patterns technologies used pipelines visualisation libraries frameworks supports filtering drill downs allow tailor their analysis partners work delivered collaboratively engineering"
+  },
+  {
     "title": "Inaugural data and analytics engineering conference",
     "description": "Reflections from the very first cross-government conference for data and analytics engineering",
     "section": "Blog",
@@ -41,7 +225,7 @@
   {
     "title": "About",
     "url": "/data-and-analytics-engineering/about/",
-    "tokens": "data analytics engineers enable driven decision making personalisation services across department by delivering innovative solutions promoting technical excellence bridge gap between producers users developing analytical pipelines self service tools acquire transform available platform this diagram helps summarise some these different roles engineering what work with digital teams help them make from their validate deduplicate standardise extracted produce curated sets where possible provide historical support reproducible longitudinal analysis building running ourselves supporting use infrastructure also collaborate contributing development other foundational including uploader airflow create derived table register internal only extractor value access way that more reliable secure auditable timely than ever previously analysts scientists can complete range sources single location standardised format reducing preparation time now received daily instead weekly monthly quarterly generating insight relevant current start provided usually statisticians understand how they design build tables meet needs clean join produced using dimensional modelling implementing tests documentation ensure output understandable accelerate production statistics management information mi science products need spend less transforming understanding complex messy deriving insights faster better skills solve new problems trusted consistent cases meaning get same answers questions matter ask domain aligned source facilitating simpler transition heritage systems"
+    "tokens": "this page will learn about what data engineers analytics ministry justice left hand side there are additional pages how contact us join engineering two distinct closely related fields primarily deal with collection transformation storage raw they design maintain pipelines that enables processing ensuring quality scalability reliability lots people like use term etl extract transform load when speaking utilising valuable insights work building models developing code based solutions answer specific business questions bridge gap between analysis enabling scientists analysts effectively interpret visualise oversimplify difference set foundations while add layer interpretation helps decision making major government department heart system protect advance principles our vision deliver world class works everyone society can find out more responsibilities priorities website beginnings leave calum write here now core part digital future over forty staff found within science division however many also other parts its arms length bodies responsible maintaining have already established courts prison probation datasets well emerging areas such electronic monitoring"
   },
   {
     "title": "Join Us",
@@ -85,6 +269,12 @@
     "title": "Blog",
     "description": "We use this blog to share what we're working on across the data engineering and analytics engineering professions. You'll find a range of posts on technical and non-technical topics.",
     "url": "/data-and-analytics-engineering/blog/"
+  },
+  {
+    "title": "Case Studies",
+    "description": "Explore how data and analytics engineering is transforming justice services across domains.",
+    "url": "/data-and-analytics-engineering/case-studies/",
+    "tokens": "cross system better outcomes through linked data bold linking justice social support vulnerable groups improve public services first programme enabling secure academic policy research using de identified datasets cjs set following victims defendants cases across victim attrition dashboard providing end visibility journeys inform prisons probation electronic monitoring digital reporting integration improving prison consistency transparency decision makers store richer insight into em usage reducing reoffending risk nomis pipeline modernisation daily processing time reliability drug treatment health supporting rehabilitation with joined offender assessment sharing analysis repeat offending courts tribunals onecrown model creating single trusted dataset criminal court performance user centric design co designing scalable intuitive hmcts users civil family tribunal improvements dashboards corporate people delivering clean workforce planning strategic hr finance standardising financial reduce resource burden gold scorecard automating contract pipelines insights property environment real decisions moj estates common synergy integrating commercial systems departments legal aid stabilisation unified transformation injuries compensation cica self service access kpis guardian opg warehouse unifying business logic frequency lasting power attorney lpa application other analytics enablement analysts adopting modelled training tools embedded engineers value engineering impact estimating return investment prioritise high work"
   },
   {
     "title": "Buddy System",
@@ -137,7 +327,7 @@
     "title": "Data and Analytics Engineering",
     "description": "Learn about the data and analytics engineering professions at the Ministry of Justice.",
     "url": "/data-and-analytics-engineering/",
-    "tokens": "beta this new learning resource help us improve leave your feedback via our form about find out more what data analytics engineering are where fit organisation explore many ways encourage support continuous development how work events approaches use together effectively regular meetings innovation heart moj blog re working across professions"
+    "tokens": "beta this new service help us improve leave your feedback via our form about find out more what data analytics engineering are where fit organisation learning explore many ways encourage support continuous development how work events approaches use together effectively regular meetings innovation heart moj blog re working across professions"
   },
   {
     "title": "Firebreaks",
@@ -293,9 +483,74 @@
     "tokens": "purpose monthly meeting all data analytics engineers present new technical approaches provide feedback solutions open inclusive forum goal ensure unified approach solving challenges across team with outcomes documented architecture decision records adrs future reference items that come tech review include are limited any proposed sources their methods ingestion looking use languages outside those adopt retain radar building system from ground proposing internally built packages bringing item once been identified presenter should contact chair arrange slot also create rfc request comments github discussion circulate this engineering slack channel least one week prior presentation will proposal via whatever medium best suits e g slide deck live demo following invite questions audience panel have follow final proposals recommendation whether approve conditions decline these added announced later than after approved then needs submit adr record when 2 3pm 2nd wednesday each month core made representative portfolio ap wider digital ta s analysis tracking project board raise rfcs here order business intro highlight previous session finalised sessions presentations max allow discussions enquire upcoming aob responsibilities stays informed about interesting reaches out potential presenters shares recordings action points encourages attendance collaborates chairs community leads agree topics minimise duplication coordinate outline recommendations required changes before can considered agreed communicate completed provides agenda links relevant material highlights what advice sought either accepted declined submitted by based closed reasons closing"
   },
   {
+    "title": "Posts tagged ‘access-to-justice’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/access-to-justice/"
+  },
+  {
+    "title": "Posts tagged ‘adoption’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/adoption/"
+  },
+  {
+    "title": "Posts tagged ‘analytics’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/analytics/"
+  },
+  {
     "title": "Posts tagged ‘Athena’",
     "section": "Tags",
     "url": "/data-and-analytics-engineering/tags/athena/"
+  },
+  {
+    "title": "Posts tagged ‘automation’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/automation/"
+  },
+  {
+    "title": "Posts tagged ‘BOLD’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/bold/"
+  },
+  {
+    "title": "Posts tagged ‘CICA’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/cica/"
+  },
+  {
+    "title": "Posts tagged ‘civil’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/civil/"
+  },
+  {
+    "title": "Posts tagged ‘commercial’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/commercial/"
+  },
+  {
+    "title": "Posts tagged ‘contracts’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/contracts/"
+  },
+  {
+    "title": "Posts tagged ‘courts’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/courts/"
+  },
+  {
+    "title": "Posts tagged ‘criminal-justice’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/criminal-justice/"
+  },
+  {
+    "title": "Posts tagged ‘cross-agency’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/cross-agency/"
+  },
+  {
+    "title": "Posts tagged ‘cross-government’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/cross-government/"
   },
   {
     "title": "Posts tagged ‘Cross-HMG engagement’",
@@ -303,9 +558,74 @@
     "url": "/data-and-analytics-engineering/tags/cross-hmg-engagement/"
   },
   {
+    "title": "Posts tagged ‘dashboard’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/dashboard/"
+  },
+  {
+    "title": "Posts tagged ‘dashboards’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/dashboards/"
+  },
+  {
     "title": "Posts tagged ‘Data Strategy’",
     "section": "Tags",
     "url": "/data-and-analytics-engineering/tags/data-strategy/"
+  },
+  {
+    "title": "Posts tagged ‘data-access’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-access/"
+  },
+  {
+    "title": "Posts tagged ‘data-design’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-design/"
+  },
+  {
+    "title": "Posts tagged ‘data-first’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-first/"
+  },
+  {
+    "title": "Posts tagged ‘data-integration’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-integration/"
+  },
+  {
+    "title": "Posts tagged ‘data-linking’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-linking/"
+  },
+  {
+    "title": "Posts tagged ‘data-model’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-model/"
+  },
+  {
+    "title": "Posts tagged ‘data-modelling’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-modelling/"
+  },
+  {
+    "title": "Posts tagged ‘data-platform’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-platform/"
+  },
+  {
+    "title": "Posts tagged ‘data-quality’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-quality/"
+  },
+  {
+    "title": "Posts tagged ‘data-sharing’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-sharing/"
+  },
+  {
+    "title": "Posts tagged ‘data-warehouse’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/data-warehouse/"
   },
   {
     "title": "Posts tagged ‘dbt’",
@@ -318,9 +638,44 @@
     "url": "/data-and-analytics-engineering/tags/documentation/"
   },
   {
+    "title": "Posts tagged ‘drug-treatment’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/drug-treatment/"
+  },
+  {
+    "title": "Posts tagged ‘electronic-monitoring’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/electronic-monitoring/"
+  },
+  {
+    "title": "Posts tagged ‘enablement’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/enablement/"
+  },
+  {
+    "title": "Posts tagged ‘engineering’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/engineering/"
+  },
+  {
+    "title": "Posts tagged ‘estates’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/estates/"
+  },
+  {
     "title": "Posts tagged ‘Events’",
     "section": "Tags",
     "url": "/data-and-analytics-engineering/tags/events/"
+  },
+  {
+    "title": "Posts tagged ‘family’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/family/"
+  },
+  {
+    "title": "Posts tagged ‘finance’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/finance/"
   },
   {
     "title": "Posts tagged ‘GDD analytics engineering profession’",
@@ -343,9 +698,114 @@
     "url": "/data-and-analytics-engineering/tags/good-practice/"
   },
   {
+    "title": "Posts tagged ‘governance’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/governance/"
+  },
+  {
+    "title": "Posts tagged ‘health’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/health/"
+  },
+  {
+    "title": "Posts tagged ‘HR’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/hr/"
+  },
+  {
     "title": "Posts tagged ‘Iceberg’",
     "section": "Tags",
     "url": "/data-and-analytics-engineering/tags/iceberg/"
+  },
+  {
+    "title": "Posts tagged ‘impact’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/impact/"
+  },
+  {
+    "title": "Posts tagged ‘integration’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/integration/"
+  },
+  {
+    "title": "Posts tagged ‘justice’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/justice/"
+  },
+  {
+    "title": "Posts tagged ‘justice-data’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/justice-data/"
+  },
+  {
+    "title": "Posts tagged ‘justice-system’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/justice-system/"
+  },
+  {
+    "title": "Posts tagged ‘legal-aid’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/legal-aid/"
+  },
+  {
+    "title": "Posts tagged ‘linked-data’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/linked-data/"
+  },
+  {
+    "title": "Posts tagged ‘LPA’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/lpa/"
+  },
+  {
+    "title": "Posts tagged ‘NOMIS’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/nomis/"
+  },
+  {
+    "title": "Posts tagged ‘offenders’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/offenders/"
+  },
+  {
+    "title": "Posts tagged ‘OPG’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/opg/"
+  },
+  {
+    "title": "Posts tagged ‘optimisation’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/optimisation/"
+  },
+  {
+    "title": "Posts tagged ‘people-data’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/people-data/"
+  },
+  {
+    "title": "Posts tagged ‘performance’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/performance/"
+  },
+  {
+    "title": "Posts tagged ‘prioritisation’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/prioritisation/"
+  },
+  {
+    "title": "Posts tagged ‘prisons’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/prisons/"
+  },
+  {
+    "title": "Posts tagged ‘probation’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/probation/"
+  },
+  {
+    "title": "Posts tagged ‘procurement’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/procurement/"
   },
   {
     "title": "Posts tagged ‘Project Management’",
@@ -353,9 +813,94 @@
     "url": "/data-and-analytics-engineering/tags/project-management/"
   },
   {
+    "title": "Posts tagged ‘property’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/property/"
+  },
+  {
+    "title": "Posts tagged ‘public-safety’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/public-safety/"
+  },
+  {
+    "title": "Posts tagged ‘reporting’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/reporting/"
+  },
+  {
+    "title": "Posts tagged ‘research’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/research/"
+  },
+  {
+    "title": "Posts tagged ‘risk-assessment’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/risk-assessment/"
+  },
+  {
+    "title": "Posts tagged ‘ROI’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/roi/"
+  },
+  {
+    "title": "Posts tagged ‘shared-services’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/shared-services/"
+  },
+  {
+    "title": "Posts tagged ‘substance-misuse’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/substance-misuse/"
+  },
+  {
+    "title": "Posts tagged ‘synergy’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/synergy/"
+  },
+  {
     "title": "Posts tagged ‘Technology Radar’",
     "section": "Tags",
     "url": "/data-and-analytics-engineering/tags/technology-radar/"
+  },
+  {
+    "title": "Posts tagged ‘training’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/training/"
+  },
+  {
+    "title": "Posts tagged ‘transformation’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/transformation/"
+  },
+  {
+    "title": "Posts tagged ‘transparency’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/transparency/"
+  },
+  {
+    "title": "Posts tagged ‘tribunals’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/tribunals/"
+  },
+  {
+    "title": "Posts tagged ‘user-needs’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/user-needs/"
+  },
+  {
+    "title": "Posts tagged ‘value’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/value/"
+  },
+  {
+    "title": "Posts tagged ‘victims’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/victims/"
+  },
+  {
+    "title": "Posts tagged ‘workforce’",
+    "section": "Tags",
+    "url": "/data-and-analytics-engineering/tags/workforce/"
   },
   {
     "title": "Tags",
