@@ -8,30 +8,13 @@ eleventyNavigation:
 ---
 Resources and blog posts about how to get the most out of your meetings.
 
-<div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://www.atlassian.com/team-playbook" class="govuk-link">Atlassian Team Playbook - Build strong teams with Plays</a></h2>
-  </div>
-  <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://management30.com/" class="govuk-link">Management 3.0 Leadership Training for Managers</a></h2>
-  </div>
-  <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://www.liberatingstructures.com/" class="govuk-link">Liberating Structures - Introduction</a></h2>
-  </div>
-<div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://www.sessionlab.com/team/iaf/library" class="govuk-link">IAF Library</a></h2>
-  </div>
-  <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://retromat.org/" class="govuk-link">Retromat - Inspiration & Plans for (agile) retrospectives</a></h2>
-  </div>
-  <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://openspaceworld.org/" class="govuk-link">Welcome to Open Space!</a></h2>
-  </div><div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="http://leancoffee.org/" class="govuk-link">Lean Coffee Lives Here</a></h2>
-  </div>
+{% set menuItems = [
+    { url: "https://www.atlassian.com/team-playbook", title: "Atlassian Team Playbook - Build strong teams with Plays" },
+    { url: "https://management30.com/", title: "Management 3.0 Leadership Training for Managers" },
+    { url: "https://www.liberatingstructures.com/", title: "Liberating Structures - Introduction" },
+    { url: "https://www.sessionlab.com/team/iaf/library", title: "IAF Library" },
+    { url: "https://retromat.org/", title: "Retromat - Inspiration & Plans for (agile) retrospectives" },
+    { url: "https://openspaceworld.org/", title: "Welcome to Open Space!" },
+    { url: "http://leancoffee.org/", title: "Lean Coffee Lives Here" }
+] %}
+{% cardGrid menuItems %}

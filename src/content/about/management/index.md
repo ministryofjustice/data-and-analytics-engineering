@@ -21,13 +21,8 @@ Matrix management provides several benefits:
 - you can learn more about what is happening in other teams and identify opportunities for collaboration
 - people management responsibilities can be balanced more evenly across the professions, despite any differences in team size
 
-<div class="grid grid-cols-1 gap-4 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="people-management/" class="govuk-link">People Management</a></h2>
-    <p class="govuk-body">A people manager is responsible for the learning and development, performance, and wellbeing of the people they manage.</p>
-  </div>
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="work-management/" class="govuk-link">Work Management</a></h2>
-    <p class="govuk-body">A work manager is responsible for directing the day-to-day work of the people they manage.</p>
-  </div>
-</div>
+{% set menuItems = [
+    { url: "people-management/", title: "People Management", description: "A people manager is responsible for the learning and development, performance, and wellbeing of the people they manage." },
+    { url: "work-management/", title: "Work Management", description: "A work manager is responsible for directing the day-to-day work of the people they manage." }
+] %}
+{% cardGrid menuItems %}

@@ -8,15 +8,9 @@ eleventyNavigation:
 ---
 Resources and blog posts about how to improve productivity.
 
-    <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2012/01/positive-intelligence" class="govuk-link">Positive Intelligence</a></h2>
-  </div>
-      <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2014/09/the-marshmallow-test-for-grownups" class="govuk-link">The Marshmallow Test for Grownups</a></h2>
-  </div>
-      <div class="grid grid-cols-1 gap-1 pt-8">
-  <div class="grid-card">
-    <h2 class="govuk-heading-m"><a href="https://hbr.org/2015/02/pronouns-matter-when-psyching-yourself-up" class="govuk-link">Pronouns Matter when Psyching Yourself Up</a></h2>
-  </div>
+{% set menuItems = [
+    { url: "https://hbr.org/2012/01/positive-intelligence", title: "Positive Intelligence" },
+    { url: "https://hbr.org/2014/09/the-marshmallow-test-for-grownups", title: "The Marshmallow Test for Grownups" },
+    { url: "https://hbr.org/2015/02/pronouns-matter-when-psyching-yourself-up", title: "Pronouns Matter when Psyching Yourself Up" }
+] %}
+{% cardGrid menuItems %}

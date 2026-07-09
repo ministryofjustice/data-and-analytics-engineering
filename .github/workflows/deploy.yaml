@@ -2,14 +2,15 @@ name: Deploy Site to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: gh-pages
+  group: deploy-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
