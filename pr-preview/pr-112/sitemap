@@ -124,6 +124,35 @@
       </div>
       <div class="govuk-!-margin-bottom-4">
         <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
+          <a class="govuk-link" href="/case-studies/">Case Studies</a>
+        </h2>
+          <p class="govuk-body">Explore how data and analytics engineering is transforming justice services across domains.</p>
+        <ul class="app-contents-list govuk-!-margin-left-4"><li><a href="/case-studies/analytics-enablement/">Analytics Enablement</a></li>
+<li><a href="/case-studies/better-outcomes-through-linked-data-bold/">Better Outcomes through Linked Data (BOLD)</a></li>
+<li><a href="/case-studies/cft-reporting-improvements/">Civil, Family and Tribunal Reporting Improvements</a></li>
+<li><a href="/case-studies/cica-dashboard-modernisation/">CICA Dashboard Modernisation</a></li>
+<li><a href="/case-studies/corporate-finance-insight/">Corporate Finance Insight</a></li>
+<li><a href="/case-studies/cross-cjs-linked-data-set/">Cross-CJS Linked Data Set</a></li>
+<li><a href="/case-studies/data-first-programme/">Data First Programme</a></li>
+<li><a href="/case-studies/digital-prisons-reporting-integration/">Digital Prisons Reporting Integration</a></li>
+<li><a href="/case-studies/electronic-monitoring-data-store/">Electronic Monitoring Data Store</a></li>
+<li><a href="/case-studies/gold-scorecard-dashboard/">Gold Scorecard Dashboard</a></li>
+<li><a href="/case-studies/integration-of-drug-treatment-and-health-data/">Integration of Drug Treatment and Health Data</a></li>
+<li><a href="/case-studies/legal-aid-data-stabilisation/">Legal Aid Data Stabilisation</a></li>
+<li><a href="/case-studies/lpa-dashboard/">Lasting Power of Attorney Dashboard</a></li>
+<li><a href="/case-studies/nomis-pipeline-modernisation/">NOMIS Pipeline Modernisation</a></li>
+<li><a href="/case-studies/offender-risk-assessment-data-sharing/">Offender Risk Assessment Data Sharing</a></li>
+<li><a href="/case-studies/onecrown-data-model/">OneCrown Data Model</a></li>
+<li><a href="/case-studies/opg-data-warehouse/">OPG Data Warehouse</a></li>
+<li><a href="/case-studies/people-data/">People Data</a></li>
+<li><a href="/case-studies/property-data-environment/">Property Data Environment</a></li>
+<li><a href="/case-studies/synergy-programme-data-integration/">Synergy Programme Data Integration</a></li>
+<li><a href="/case-studies/user-centric-design-of-services-tribunals/">User-Centric Design of Services (Tribunals)</a></li>
+<li><a href="/case-studies/value-engineering-and-impact-model/">Value Engineering and Impact Model</a></li>
+<li><a href="/case-studies/victim-attrition-dashboard/">Victim Attrition Dashboard</a></li></ul>
+      </div>
+      <div class="govuk-!-margin-bottom-4">
+        <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
           <a class="govuk-link" href="/blog/">Blog</a>
         </h2>
           <p class="govuk-body">We use this blog to share what we’re working on across the data engineering and analytics engineering professions. You’ll find a range of posts on technical and non-technical topics.</p>
@@ -147,19 +176,90 @@
         <h2 class="govuk-heading-s govuk-!-margin-bottom-1">
           <a class="govuk-link" href="/tags/">Tags</a>
         </h2>
-        <ul class="app-contents-list govuk-!-margin-left-4"><li><a href="/tags/athena/">{{ tag }}</a></li>
+        <ul class="app-contents-list govuk-!-margin-left-4"><li><a href="/tags/access-to-justice/">{{ tag }}</a></li>
+<li><a href="/tags/adoption/">{{ tag }}</a></li>
+<li><a href="/tags/analytics/">{{ tag }}</a></li>
+<li><a href="/tags/athena/">{{ tag }}</a></li>
+<li><a href="/tags/automation/">{{ tag }}</a></li>
+<li><a href="/tags/bold/">{{ tag }}</a></li>
+<li><a href="/tags/cica/">{{ tag }}</a></li>
+<li><a href="/tags/civil/">{{ tag }}</a></li>
+<li><a href="/tags/commercial/">{{ tag }}</a></li>
+<li><a href="/tags/contracts/">{{ tag }}</a></li>
+<li><a href="/tags/courts/">{{ tag }}</a></li>
+<li><a href="/tags/criminal-justice/">{{ tag }}</a></li>
+<li><a href="/tags/cross-agency/">{{ tag }}</a></li>
+<li><a href="/tags/cross-government/">{{ tag }}</a></li>
 <li><a href="/tags/cross-hmg-engagement/">{{ tag }}</a></li>
+<li><a href="/tags/dashboard/">{{ tag }}</a></li>
+<li><a href="/tags/dashboards/">{{ tag }}</a></li>
 <li><a href="/tags/data-strategy/">{{ tag }}</a></li>
+<li><a href="/tags/data-access/">{{ tag }}</a></li>
+<li><a href="/tags/data-design/">{{ tag }}</a></li>
+<li><a href="/tags/data-first/">{{ tag }}</a></li>
+<li><a href="/tags/data-integration/">{{ tag }}</a></li>
+<li><a href="/tags/data-linking/">{{ tag }}</a></li>
+<li><a href="/tags/data-model/">{{ tag }}</a></li>
+<li><a href="/tags/data-modelling/">{{ tag }}</a></li>
+<li><a href="/tags/data-platform/">{{ tag }}</a></li>
+<li><a href="/tags/data-quality/">{{ tag }}</a></li>
+<li><a href="/tags/data-sharing/">{{ tag }}</a></li>
+<li><a href="/tags/data-warehouse/">{{ tag }}</a></li>
 <li><a href="/tags/dbt/">{{ tag }}</a></li>
 <li><a href="/tags/documentation/">{{ tag }}</a></li>
+<li><a href="/tags/drug-treatment/">{{ tag }}</a></li>
+<li><a href="/tags/electronic-monitoring/">{{ tag }}</a></li>
+<li><a href="/tags/enablement/">{{ tag }}</a></li>
+<li><a href="/tags/engineering/">{{ tag }}</a></li>
+<li><a href="/tags/estates/">{{ tag }}</a></li>
 <li><a href="/tags/events/">{{ tag }}</a></li>
+<li><a href="/tags/family/">{{ tag }}</a></li>
+<li><a href="/tags/finance/">{{ tag }}</a></li>
 <li><a href="/tags/gdd-analytics-engineering-profession/">{{ tag }}</a></li>
 <li><a href="/tags/gdd-data-engineering-profession/">{{ tag }}</a></li>
 <li><a href="/tags/github/">{{ tag }}</a></li>
 <li><a href="/tags/good-practice/">{{ tag }}</a></li>
+<li><a href="/tags/governance/">{{ tag }}</a></li>
+<li><a href="/tags/health/">{{ tag }}</a></li>
+<li><a href="/tags/hr/">{{ tag }}</a></li>
 <li><a href="/tags/iceberg/">{{ tag }}</a></li>
+<li><a href="/tags/impact/">{{ tag }}</a></li>
+<li><a href="/tags/integration/">{{ tag }}</a></li>
+<li><a href="/tags/justice/">{{ tag }}</a></li>
+<li><a href="/tags/justice-data/">{{ tag }}</a></li>
+<li><a href="/tags/justice-system/">{{ tag }}</a></li>
+<li><a href="/tags/legal-aid/">{{ tag }}</a></li>
+<li><a href="/tags/linked-data/">{{ tag }}</a></li>
+<li><a href="/tags/lpa/">{{ tag }}</a></li>
+<li><a href="/tags/nomis/">{{ tag }}</a></li>
+<li><a href="/tags/offenders/">{{ tag }}</a></li>
+<li><a href="/tags/opg/">{{ tag }}</a></li>
+<li><a href="/tags/optimisation/">{{ tag }}</a></li>
+<li><a href="/tags/people-data/">{{ tag }}</a></li>
+<li><a href="/tags/performance/">{{ tag }}</a></li>
+<li><a href="/tags/prioritisation/">{{ tag }}</a></li>
+<li><a href="/tags/prisons/">{{ tag }}</a></li>
+<li><a href="/tags/probation/">{{ tag }}</a></li>
+<li><a href="/tags/procurement/">{{ tag }}</a></li>
 <li><a href="/tags/project-management/">{{ tag }}</a></li>
-<li><a href="/tags/technology-radar/">{{ tag }}</a></li></ul>
+<li><a href="/tags/property/">{{ tag }}</a></li>
+<li><a href="/tags/public-safety/">{{ tag }}</a></li>
+<li><a href="/tags/reporting/">{{ tag }}</a></li>
+<li><a href="/tags/research/">{{ tag }}</a></li>
+<li><a href="/tags/risk-assessment/">{{ tag }}</a></li>
+<li><a href="/tags/roi/">{{ tag }}</a></li>
+<li><a href="/tags/shared-services/">{{ tag }}</a></li>
+<li><a href="/tags/substance-misuse/">{{ tag }}</a></li>
+<li><a href="/tags/synergy/">{{ tag }}</a></li>
+<li><a href="/tags/technology-radar/">{{ tag }}</a></li>
+<li><a href="/tags/training/">{{ tag }}</a></li>
+<li><a href="/tags/transformation/">{{ tag }}</a></li>
+<li><a href="/tags/transparency/">{{ tag }}</a></li>
+<li><a href="/tags/tribunals/">{{ tag }}</a></li>
+<li><a href="/tags/user-needs/">{{ tag }}</a></li>
+<li><a href="/tags/value/">{{ tag }}</a></li>
+<li><a href="/tags/victims/">{{ tag }}</a></li>
+<li><a href="/tags/workforce/">{{ tag }}</a></li></ul>
       </div>
   </div>
 </div>
