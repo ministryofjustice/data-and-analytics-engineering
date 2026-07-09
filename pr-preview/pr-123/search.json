@@ -1,0 +1,909 @@
+[
+  {
+    "title": "GitHub as a one-stop shop",
+    "description": "Store all your project artefacts in a single, searchable location on GitHub",
+    "section": "Blog",
+    "date": "19 February 2024",
+    "url": "/pr-preview/pr-123/blog/posts/github-as-a-one-stop-shop/",
+    "tokens": "many people will familiar with development environment setup where they use github repositories store manage code rely plethora tools creating managing all other project outputs while each tool can very effective its own right this often leads scattered deliverables causing confusion increased risk inconsistency post outline how consolidate your artefacts by leveraging open source actions automating software workflows projects planning tracking work discussions documenting discovery communicating users pages hosting static websites docs folder user guidance technical concepts markdown mermaid simple diagrams using like syntax excalidraw editable whiteboard sketches which saved images marp slide decks slides these suggestions are summarised below clicking diagram import into web editor access links examples from moj note that includes recommendations february 2024 more detailed date instructions please refer provided first why everything compared existing discussed may offer fewer features require steeper learning curve additionally clear migration paths lacking making challenging switch platforms however there several advantages feel make worthwhile especially re starting scratch searchability having tickets documentation one place makes super easy search through find unfortunately used limited read history thankfully rolled out new engine browser 2023 possible relevant results reasonable speed knowing helps interoperability exclusively easier link automate across hence track review deploy changes well collaborate team standardisation treating means leverage same practices applied version control automation reusability maintainability improved quality enterprise cost lead savings reason less significant teams company unlikely actually limits size files allowed moreover git isn t great storing binary diffable instead should large dedicated file lfs although secrets securely credentials personal s designed comprehensive secret management consider infrastructure based solution such aws manager microsoft azure key vault still leaves effectively incorporated automates allowing build test directly their since release 2019 become preferred ci popularity corroborates integrated approach advocated also yaml configuration friendly marketplace offers vibrant growing ecosystem wide range pre built due support complex industry adoption been gradual uptake accelerate capabilities added job summaries importer validation thoughtworks upgraded rating trial adopt classic launched 2016 infamous example releasing product too early consisted primarily kanban board lacked basic backlog view deterring most august 2022 released revamped intuitive flexible customisable interface now plan either table created organisation level them linkable independent incorporate issues organisations won reciprocal issue various ways simplest automations update status done when closed epics structure agile backlogs break down manageable three options 1 task lists have around 2014 currently working upgrade private beta stay tuned updates pull requests within repository number pattern x 739 https com octo org repo 740 add delight experience tasks complete tada cross linking ll need specify full url draft until ready convert leave smaller recommend assigning epic label parent identify display filter does yet relationships opening screen navigate back tracked section next child navigating straightforward workaround request discussion description format bullet list forces render title improving clarity 2 milestones associated additional column roadmap layout complicated nested hierarchy group explained flowchart pr milestone supported record core even split amongst multiple disable non enforce rule 3 labels don seem obvious option unlike set dates completion close roadmaps displays items timeline prefer grouping quarter modify field public alternatively create separate quarters encourages owners delivery managers follow good practice shorter than limiting undertaken per giving precise accurate start requirement analysis moscow method prioritise requirements splitting must haves could priority drafts later converted once fleshed acceptance testing uat typical scenario involves migrating sure functionality replicated way progress spreadsheet row columns recording different successfully those internal database external concept template generate ticket artefact needs migrated replace assign accounts named individuals single communication take advantage about forms recorded managed differently depending audience case best reside outside scope article some pointers python architecture dependencies keep information alternative wikis achieved astro bookings would reasons uses variant called flavored liquid expand provide accessible tables chunks reusable content basics suffice whilst recommended go process sometimes onerous codeowners skip approval workflow useful long running tests few things structuring monorepo folders root sub multi specific application combine made against via publishing website site generators host service instance blog hosted generated eleventy plugin publish our tech radar evaluating completing transient type kept avoid clutter members reflect current state just 2021 enabled default settings limit approvals simplifies mean swamp transferring sanitised luckily advanced formatting copy paste closing allow participate idea generation comments reactions polls everyone involved check notifications regularly cause already another slack thumb whether might want year time javascript lets particularly handy adding places save found steep available only suggest natively diagramming whiteboarding doesn native export svg png embed scene data preferable because text nicely stick then upload image nifty mode reviewing edit download vs extension locally passing raw see hyperlink lastly plus outcome collaborative sessions tend get lost exported formats including pdf html similar action exporting preview bit ve decided iceberg readme md better visibility shouldn commit fine exploratory production something generates part merge conclusion historically mainly valued recent enhancements coupled integrate platform circumstances beneficial leading efficiency consistency transparency any acknowledgements thank following resources pipelines crew being experimenting saturday coding club providing insightful richard baguley introducing julia lawrence encouraging give try calum barnett gds style guide chatgpt3 5 proofreading touch polish"
+  },
+  {
+    "title": "Building a transaction data lake using Amazon Athena, Apache Iceberg and dbt",
+    "description": "How we leveraged Amazon Athena, along with the Apache Iceberg table format and the dbt SQL management framework, to build robust, scalable and maintainable ELT (extract, load, transform) pipelines.",
+    "section": "Blog",
+    "date": "18 October 2024",
+    "url": "/pr-preview/pr-123/blog/posts/building-a-transaction-data-lake-using-amazon-athena-apache-iceberg-and-dbt/",
+    "tokens": "goal uk ministry justice moj make system simpler quicker while saving public money analytical platform supports this mission by facilitating data sharing analysis within aiding better decision making post summarises how leverages amazon athena along with apache iceberg table format dbt sql management framework build robust scalable maintainable elt extract load transform pipelines approach streamlines lake architecture employing same tools both querying processing moreover capitalises gigabyte scale our benefiting from s pricing model significantly reduce costs note that cost advantage may diminish lakes operating petabyte contents transaction updated nov 2024 reliability maintainability enhancing observability added bringing all together acknowledgements combine best features warehouse flexibility scalability effectiveness structured storage capabilities follows standard structure produce cleaner more reliable collected various formats wide range sources internal external uploaded s3 based parquet files datasets are big huge largest less than 200gb 3 billion rows dataset 500gb layer transforms through series batch procedures before writing back first standardised slowly changing dimension type 2 scd2 applied track historical changes second denormalised modelled create conformed makes easier efficient users consume workflow can summarised using medallion which transitions bronze silver gold layers increasing quality each stage previously utilised glue pyspark standardise employed modelling effective heavy duty requires specialised knowledge distributed systems use rising recurring out memory failures jobs prompted us reevaluate strategy release v3 made sense explore migrating standardisation step well unify technology stack built open source trino engine uses aws catalog hive metastore compatible catalogue manage metadata held allows interact queries serverless operates shared regional cluster meaning accounts region share pool resources asynchronous processes quotas ensure fair usage across although often used ad hoc also offering several advantages infrastructure interactive easy intuitive particularly new joiners unified facilitates practices between engineers analysts such performance tuning building utilities automated compute capacity calculates needed execute eliminating need manual configuration optimization increased upon request limit relevant take longer run involve hundreds tables example extended dml manipulation language query timeout 30 minutes 60 raised concurrent 150 500 set 5 per terabyte scanned highly transforming instance converting csv found 99 cheaper its default provisioned option billed number dpus duration despite native lacks support numerous database resulting pipeline flexible helps address gap designed work engines spark optimises access leading faster responses consistency provides acid atomicity isolation durability transactions ctas insert into statement fails leave orphaned location accessible read subsequent contrast compliant ensuring only successful statements readable utilise rename operation functionality simplifies write audit publish wap pattern commonly engineering workflows involves staging environment where any errors addressed released interim easily renamed once validation checks have passed streamlining full refresh additionally time travel feature incremental allowing timestamp filter views top enables row level updates useful when applying updating previous records been replaced newer versions evaluated implementing versus box proved volumes encountered issues higher end volume convinced migrate whilst improves still lead challenges code maintenance proves valuable transformation tool extends associated programming languages enabling extensible composed multiple components following core command line written python maintained trusted adapter utils helper packages apply common functionalities validations assure transformations tests check whether columns contain null values storing much information becomes practically free concept threads parallelise models dependencies speeds runtime concurrency quota keep being cancelled running too long combines jinja templating macros analogous functions other like duplication unit test logic v1 8 introduced limited there community supported extensions testing opted method simplicity readability materializations enable different modes breaks down complex manageable steps reusability ensures undergoes scanning thereby minimising however must balanced minimised persisting intermediate outputs materialization speed maintain revealed recreating remained solution consequently chose initially adopt rely view part enhanced implementation additional further improve generation some consist deduplicating comprised achieved iterating list minimise redundancy one philosophy simple doesn t looping repeating redundant difficult because needs replicated locations discussions possible generate under development instead developed generates dynamically template represent parameters either properties yaml file then generated every combination integration against dummy templates function expected chunking sometimes demands exceed available employ divided smaller portions segment intensive transformed inserted final maintaining extensive boilerplate simplify custom chunk period after completing operations handled accurately executed sequentially rather concurrently due way manages limitation critical important since they typically overnight furthermore suitable operate independently without requiring entire finally incurs repeatedly unless partitioned column significant initial low orchestration github automate orchestrate builds co locating automation enhances transparency facilitate early error detection recovery triggered pull selectively their children review prior deploying production integrating slack notifications promptly alert stakeholders event incorporating retry mechanism identifies automatically reattempts failed resolving stemming transient ongoing efforts enhance looking currently related metrics published cloudwatch monitor processed aggregate understand resource consumption receive warning signs approaching limits giving corrective action unfortunately limitations especially comes monitoring user activity therefore considering cloudtrail events derive visualize them managed grafana fully service creating exploring dashboards gain deeper insights logs correlate services estate alongside resulted impressive reduction individual efficiency enabled switch weekly frequent daily refreshes onboarding notably achieve substantial savings shown monthly graph addition longest decreased 75 intermittent insufficient become extremely rare during migration took opportunity includes generating these improvements timely large efficiently unification fosters culture collaboration teams enhancements ahead excited about potential innovate refine analytics continue deliver greater value would thank individuals invaluable contributions technical gwion aprhobat siva bathina david bridgwood jacob hamblin pyke tom holt matt laverty theodore manassis william orr insightful feedback editorial assistance jeremy collins hepworth thomas hirsch"
+  },
+  {
+    "title": "The Ministry of Justice Data Engineering Technology Radar",
+    "description": "Making better technology decisions with a shared technology radar.",
+    "section": "Blog",
+    "date": "19 December 2024",
+    "url": "/pr-preview/pr-123/blog/posts/the-ministry-of-justice-data-engineering-technology-radar/",
+    "tokens": "contents balancing act stability vs innovation introducing technology radar our journey wins challenges first from whiteboard webpage adopting open source solution integrations with github leveraging discussions benefits enhancements insights recent refresh climbers fallers new entries continuing next steps annual updates team engagement key areas improvement exploring future innovations conclusion acknowledgements data analytics engineering nearing fifty engineers are continually navigating ever evolving technological landscape tools platforms techniques emerging rapid pace can challenging decide what adopt assess retire while established technologies offer over reliance them risks stagnation missed opportunities s easy stick familiar tried tested reliability yet clinging old lead inefficiency other hand rushing shiny cause disruption waste time create unnecessary complexity how explore without losing focus creating overhead keep aligned involved these decisions enter tool that brings structure clarity this provides shared framework evaluating helps teams identify worth recognise reliable should remain part stack outdated solutions more importantly fosters collaboration transparency ensuring everyone say shaping choices blog post explores why adopted use balance ve introduced existing approaches lessons learned along way maps out your using considering represented blips arranged into concentric rings retain replace which reflect status each indicating whether plan phase maintain split quadrants representing different kinds languages etc originally pioneered by thoughtworks radars visual akin archery target mapping align across guides informed about continue discontinue divided four proven trust meet needs scale widely used production low risk recommended broad adoption promising clear potential researching prototyping though they carry higher untested organisation some may already experimenting currently satisfied projects have been superseded will stop ones following centred software operations encompassing infrastructure services support deployment management quadrant includes mix comprehensive industrial smaller custom built internal examples range docker ruff bespoke developed house frameworks programming common such dbt pyarrow pyspark development analytical include agile architectural design records adrs kimball dimensional modelling img src https raw githubusercontent com ministryofjustice refs heads main content posts images tech de png alt refreshed screenshot showing style width 90 height auto ministry justice here check supporting repository began simple whiteboarding exercise where collaborated map were organised offering snapshot initial approach sparked valuable aligning highlighting original focused 80 provided several immediate understanding their purpose direction improved members had platform contribute ideas raising awareness overview fostering alignment however limitations manual maintenance updating consuming prone becoming limited contributions person meetings restricting remote asynchronous participation historical record couldn t easily track changes rationale behind timeline 2020 zalando sourced javascript based providing dynamic alternative uses central json file define blip including its name ring date automatically populates tackled core static visuals foundation better suit integrating streamlined propose discuss update only maintained transparent also allowed crucial friendly hybrid working environment steadily consolidated processes within unified decision making see one shop details naturally explored managing found ways enhance functionality after experimentation backbone discussion corresponds title labels indicate categories classify language technique vote emoji system creative workaround set pause voting process serve forums share feedback concerns rich collaborative history black populate 70 delivered significant improvements centralised provide single searchable space all conversations makes revisit past understand automated graphql api extracting drastically reduced effort allowing us regularly minimal previously required hours organise sessions implement now links directly corresponding thread audit trail additionally number laborious task before integration grown 140 alone unwieldy manage oversight manageable 110 both effectively 50 convenience enabling staff flexibility ensures regardless location enhancing transformed living evolves simplifies well documented adaptable integrated supports teamwork enabled relevant accessible maintaining agility came play during most brought together around thirty wide review streamline groups led engineer specific result just updated clearer reflection work introduction function broadened diversity increasing notable latest value gaining maturity broader earned move cornerstone reflects growing increased confidence capabilities dedicated overseeing implementation usage continues expand since 2021 rapidly gained traction python community performance simplicity made choice leading fallen favour due inefficiencies emergence alternatives aws glue essential moved less harder debug costly than newer successfully transitioned combination athena greater cost efficiency jira confluence once mainstay project still parts consolidate older like dataengineeringutils3 etl manager internally many years ago longer actively prioritise phasing modern reduce technical debt simplify workflows entered refine duckdb emerged powerful memory delivering exceptional query seamless sql added notably component linkage splink lightweight quickly spinning testing models locally sqlmesh commitment improving codegen helper automation improve versioning copilot generated interest ai powered code suggestions completions wider uk government trial evaluate effectiveness productivity placed measure impact coding practices highlight continued toolkit remains efficient scalable fit careful consideration works doesn demands second generation functional coordinate there room look make even effective sustainable annually day serves building opportunity junior strategy re addressing ci although integrates seamlessly aim further continuous labelling filtering usability filter categorise professions relevance revived integrate inspired particular features aoe offers summaries detailed histories user interface could bring context evolve alongside drives evolved own created rely strive ahead committed refining scaling automating via ensure stays adapt grow helping strike right between would thank people help soumaya mauthoor her invaluable tireless setting modernised damilola oyebade murad ali running session francesca von braun bates guidance"
+  },
+  {
+    "title": "Analytics Enablement",
+    "description": "Embedding Analytics Engineers, training, and tools to support adoption of modelled data pipelines across MoJ.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/analytics-enablement/",
+    "tokens": "overview analytics enablement initiative created help analysts across ministry justice moj adopt modern modelled data pipelines focused bridging gap between engineering analysis by embedding capability providing training introducing tools support working with structured challenge while had invested building high quality automated many continued rely ad hoc extracts manual processes this limited value new infrastructure inefficiencies reporting needed clearer transition take full advantage underlying architecture solution established dedicated function adoption included engineers key analytical teams act hands guides also delivered programmes developed make model navigation querying documentation easier parallel resourcing models scale including innovative apprenticeship programme that placed trainees directly into capacity fostering common approach best practices reusability domains impact improved consistency increasing reported greater confidence sources fewer hours spent preparing inputs their work embedded strengthened collaboration professions helped knowledge organisation laid foundation future improvements literacy product reuse creating more efficient aligned community technologies tailored content query builders pattern libraries worked alongside using shared version control codebases partners communities partnership domain specific analyst services"
+  },
+  {
+    "title": "Better Outcomes through Linked Data (BOLD)",
+    "description": "How cross-government data sharing improves justice outcomes and delivers value for money.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/better-outcomes-through-linked-data-bold/",
+    "tokens": "overview better outcomes through linked data bold programme improves across criminal justice system by linking from multiple government departments this secure cross sharing initiative enables richer analysis more coordinated decision making support vulnerable groups deliver public services challenge about people events previously siloed agencies such police hm prison probation service hmpps department education dfe without difficult understand full case journeys evaluate design effective interventions lack integration also limited ability analysts policymakers identify systemic issues measure impact departmental boundaries solution developed governed framework datasets enabled new flows between including essex levelling housing communities dluhc specific use cases included learning records with connecting homelessness developing dashboards track victim team tested cost benefit approach two pilots one focused policy other operational improvement these helped quantify benefits investing work won year british awards recognising its sector demonstrated that every 1 invested 20 could returned break even expected within three years novel insights into reoffending effectiveness while provided teams date information inform casework strategy tools technologies used sftp transfers de identified modelling cloud based dynamic visualisations sankey diagrams exploration pathways partners delivered collaboratively office national statistics ons research sail databank adr uk"
+  },
+  {
+    "title": "Civil, Family and Tribunal Reporting Improvements",
+    "description": "Improving access to timely and consistent data across civil, family, and tribunal jurisdictions.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/cft-reporting-improvements/",
+    "tokens": "overview this workstream focused improving quality consistency usability data across civil family tribunal services by building responsive integrated dashboards reporting pipelines project helped deliver faster access critical insights support driven decision making justice system challenge jurisdictions historically inconsistent difficult changes collection systems evolving policy priorities made hard track performance understand service outcomes operational teams needed clear reliable monitor trends front line staff meet obligations solution worked with identify common requirements built unified tools that draw standardised included such sds supporting safe early release safety diagnostic tool providing prison timely indicators implemented flexible models adapt shifting contexts enabled drill down views both strategic use design approach emphasised user experience transparency allowing non specialist users explore confidently impact improved analytical example ensure key risk metrics were available real time inform decisions provided into incidents ability respond risks improvements reduced duplication trust more informed every level technologies used modern dashboarding frameworks reusable hosted securely via moj cloud platform supported filtering trend analysis tailored partners work delivered partnership cft tribunals team leads analysts stakeholders hmcts"
+  },
+  {
+    "title": "CICA Dashboard Modernisation",
+    "description": "Transforming CICA’s management information system with an automated, user-friendly dashboard.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/cica-dashboard-modernisation/",
+    "tokens": "overview criminal injuries compensation authority cica modernised its management information systems by introducing automated interactive dashboard this transformation reduced dependency legacy manual reporting while improving user experience access key data insights challenge s processes relied heavily excel based workflows external supplier managed system limited small number users creating bottleneck insight generation decision making lacked flexibility were unable explore performance indicators kpis independently solution developed new deployed moj cloud platform includes intuitive navigation drill down capability clear visualisations metrics refreshed automatically provided pre processed format enabling self service analysis without impacting source consolidating providing simple secure interface empowers across make informed decisions real time operational impact delivered savings replacing significantly improved organisation removed single gatekeeper are now able directly identify inefficiencies track claims throughout their lifecycle also laid groundwork stronger culture with clearer visibility increased confidence tools technologies used pipelines dashboarding create supports filtering downs controls ensure integrity autonomy partners work engineering collaboration operations commercial analysts"
+  },
+  {
+    "title": "Corporate Finance Insight",
+    "description": "Standardising and automating financial reporting to improve transparency and reduce resource burden.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/corporate-finance-insight/",
+    "tokens": "overview corporate finance insight initiative focused automating standardising financial reporting across ministry justice goal reduce manual effort required generate reports increase consistency outputs enable analysts deliver more valuable insights challenge teams moj were spending significant time producing using inconsistent processes team 12 5 full equivalents fte supported around 57 users with single source truth data this made difficult scale introduced risks human error limited opportunities modernise practices solution developed deployed centralised model replacing bespoke solutions standard templates automated pipelines provided authoritative which could reused multiple business units tools aligned departments including hmpps hmcts laa others ensuring consistent experience shared understanding key metrics designed scalable auditable efficient making easier support ongoing strategy development impact new approach freed 3 ftes projected save 1 million over five years improved productivity controllers by 35 gave leadership faster reliable access they needed now transparent maintain better s areas technologies used modern engineering create pipeline orchestration partners work delivered collaboration colleagues opg cica digital"
+  },
+  {
+    "title": "Cross-CJS Linked Data Set",
+    "description": "Linking data across the justice system to enable new insights, better policy, and improved support for victims and offenders.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/cross-cjs-linked-data-set/",
+    "tokens": "overview cross cjs data linking initiative enables end analysis case journeys offender pathways victim outcomes by integrating from police crown prosecution service cps ministry justice provides shared evidence base support better decisions services across criminal system challenge historically fragmented organisational boundaries analysts policy teams lacked ability track person arrest final outcome this made difficult assess where people disengage how different interventions affect improve vulnerable groups solution developed secure de identified pipelines link level resulting dataset designed wide range analytical use cases operational dashboards academic research while maintaining rigorous governance privacy standards follow victims defendants through entire process also integrates with other tools such attrition dashboard provide deeper insights into user performance impact linked allows policymakers explore critical questions what are repeat offenders effective already informed supported consultation prisoners act enabled novel collaborations work improves just insight generation quality transparency usability moj technologies used cloud based tooling enable agency structured repeatable scalable partners delivered collaboration engineers researchers adr uk office national statistics"
+  },
+  {
+    "title": "Data First Programme",
+    "description": "Enabling cross-justice and academic research through de-identified, high-quality linked data.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/data-first-programme/",
+    "tokens": "overview data first programme enables secure access linked de identified justice datasets research policy analysis by improving quality consistency usability supports evidence based decision making across system academic sector challenge often fragmented organisations easily accessible researchers formatting inconsistencies made difficult link while limited infrastructure governance frameworks constrained sharing reuse analysts needed scalable way well documented high that could support robust statistical social solution created analytics ready products securely these were through trusted environments such ons service sail databank team also worked with turing institute partners develop synthetic tools improve pipeline simplify structures key focus modernising underlying architecture introducing features embedded splink identifiers linkage mechanisms clearer documentation this allowed greater transparency easier integration other moj assets impact enabled over 50 projects supporting both house external collaboration received 2024 award government awards its contributions public value outputs have informed publications improved services supported interdisciplinary learning technologies delivered structured modelled integrated linking generators into rigorous processes s teams adr uk platform providers including"
+  },
+  {
+    "title": "Digital Prisons Reporting Integration",
+    "description": "Improving transparency and consistency in prison data through integration and automation.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/digital-prisons-reporting-integration/",
+    "tokens": "overview digital prisons reporting integration project enhanced transparency consistency accessibility data used monitor prison system by modernising how collected shared enabled better operational planning public analysis policy impacts challenge historically managed through monolithic fragmented systems which limited made hard access interpret rapid changes increasing pressures placed greater demand analysts end users who needed timely reliable information capacity service delivery solution developed unified layer collaboration with team this integrated multiple sources into single automated pipeline replacing manual processes streamlined responsive also introduced pioneering cross account model ensure secure scalable approach supported real time insight particularly areas such early release scheme sds population modelling where updates are critical impact improved reliability usability across moj ongoing support safety monitoring tools dashboards can now consistent date datasets reducing duplicated effort improving decision making speed confidence technologies cloud based pipelines controls enable partners work delivered jointly analytics engineering hmpps functions audiences"
+  },
+  {
+    "title": "Electronic Monitoring Data Store",
+    "description": "Improving data quality and access to support the monitoring and analysis of electronic monitoring use.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/electronic-monitoring-data-store/",
+    "tokens": "overview electronic monitoring em data store project delivered new centralised platform improving its quality coverage accessibility this enabled deeper analysis how used supported better service performance improved evidence base reducing reoffending challenge existing feeds were fragmented manually managed limiting their usefulness operational decision making available lacked depth consistency difficult end users generate meaningful insights understand effectiveness interventions solution designed implemented based modern architecture principles aggregates richer more comprehensive datasets provides reliable auditable route accessing both raw transformed work parallel with prisons probation models enabling cross providing continuity underlying systems evolve also supports automation ensuring timely access information impact significantly usability insight into practice teams can now that accurate breach notifications targeted decisions enhanced structure innovation including integration ai tools drive further improvement technologies uses automated pipelines standardised design support curation transformation partners collaboration hmpps moj engineering analytics"
+  },
+  {
+    "title": "Gold Scorecard Dashboard",
+    "description": "Automating procurement data pipelines to improve contract performance insights and reduce risk.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/gold-scorecard-dashboard/",
+    "tokens": "overview gold scorecard dashboard ministry justice s primary mechanism monitoring performance high value contracts by automating integration procurement data from multiple systems project improved visibility reduced duplication strengthened evidence base commercial decisions challenge teams were spending significant time manually collecting reconciling contract management including jaggaer rio this introduced inefficiencies increased risk human error limited frequency accuracy reporting particularly department most valuable solution built automated pipelines that extract transform load into central model resulting dataset powers which provides unified view across moj portfolio allows users explore supplier sbo contractor includes features such summary statistics downloadable source historic trend views enabling understand intervene early where needed impact manual burden staff eliminated inconsistent entry transparency enabled more frequent reliable enhanced ability manage its improve outcomes 20 billion spend under tools technologies used modern engineering practices integrate other using cloud based support interactivity user defined filters partners work delivered analytics collaboration with professionals"
+  },
+  {
+    "title": "Integration of Drug Treatment and Health Data",
+    "description": "Linking justice and health datasets to support better outcomes in substance misuse and rehabilitation services.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/integration-of-drug-treatment-and-health-data/",
+    "tokens": "overview this initiative enabled integration justice system data with health drug treatment datasets creating joined evidence base support rehabilitation services policy development provides insight into how substance misuse interventions intersect outcomes helps target where s most needed challenge people involved criminal often experience complex overlapping challenges including mental issues housing insecurity however understand these factors spread across departments limited mechanisms linking securely effectively without between policymakers service providers lacked clear picture what work when whom solution building bold programme infrastructure linked moj from department social care dhsc ministry communities local government now dluhc analysis pathways through community sentences custodial based orders linkage allowed teams track whether individuals received related access improved over time structured both operational academic research impact supported improvement areas such sentence requirements cstrs prison transitions informed multi agency planning reoffending by quantifying enabling better targeting project helped lay groundwork integrated strategies also demonstrated sharing can improve vulnerable groups compromising privacy trust tools technologies used de identified pipelines secure cross agreements robust logic outputs were designed trusted environments partners delivered collaboration leads"
+  },
+  {
+    "title": "Legal Aid Data Stabilisation",
+    "description": "Creating a unified Legal Aid data model to reduce duplication, improve governance, and support transformation.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/legal-aid-data-stabilisation/",
+    "tokens": "overview legal aid data stabilisation initiative supports transition from legacy systems modern reliable foundation agency laa introduces unified governed model that serves both analytical operational needs enabling better insight lower cost service path digital transformation challenge s existing landscape relied multiple bespoke solutions with duplicated logic inconsistent outputs little documentation products were built top services hard maintain integrate this fragmentation limited performance increased risk made difficult provide timely accurate reporting solution designed implemented new layer integrates such ccms cwa civil apply transformed using dimensional aligned business processes optimised exploration also introduced reverse etl pipelines ensure could fed back into upstream enhancing feedback loops quality approach supported scalable secure cloud native tooling impact reduces maintenance burden enables alignment between analysts teams delivery partners consistent source statutory financial insights monitoring future are developed provides bridge platforms ensuring continuity reliability tools technologies used moj platform build models key included modelling storage query work delivered collaboration management team statistics finance leads within"
+  },
+  {
+    "title": "Lasting Power of Attorney Dashboard",
+    "description": "Delivering timely and trusted reporting for OPG’s Lasting Power of Attorney service through a modern data warehouse.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/lpa-dashboard/",
+    "tokens": "overview lasting power attorney lpa dashboard provides near real time access key operational performance data office public guardian opg powered by centralised warehouse that consolidates business logic enables consistent reporting across wider moj challenge prior s launch relied dispersed sources manual processing duplicated reports were inconsistent infrequent limiting ability monitor respond emerging trends there unified system tracking applications services stages solution developed conformed integrates related from organisation with embedded reviewed agreed analysts stakeholders draws directly this ensuring all outputs are aligned trustworthy includes metrics application volumes timeliness decision points service allows users drill into channel region period also supports comparisons between legacy modernised helping track transformation progress impact improved frequency reduced spend preparing enabled faster clearer insights increased confidence both internal external understand continuous improvement helps ensure remain accountable user focused underlying foundation additional products including statutory kpis tools technologies uses cloud based infrastructure models dashboarding integrated central governed documented consistency compliance partners work delivered engineering collaboration teams programme"
+  },
+  {
+    "title": "NOMIS Pipeline Modernisation",
+    "description": "Improving performance and scalability by modernising one of MoJ’s largest data pipelines.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/nomis-pipeline-modernisation/",
+    "tokens": "overview nomis one ministry justice s largest most complex data pipelines supporting critical analysis reporting prison operations this modernisation project dramatically improved its performance reliability unlocking new efficiencies strengthening delivery across organisation challenge original pipeline slow difficult maintain increasingly unsuited growing scale frequency usage processing took 12 hours each day causing delays analysts limiting ability respond operational needs any failure delay had knock effect multiple dependent services solution rebuilt using modern modular architecture that more scalable resilient key transformations were redesigned efficient introduced robust monitoring identify resolve issues quickly time reduced from just 3 per supports automatic retries alerting case failures also streamlined logic reduce technical debt ensure future adaptability impact saves around 2 160 annually equivalent 288 working days with over 000 users relying powered by improvement translates estimated 5 4 million annual value through saved quality strengthened confidence daily enabling timely decisions policy teams tools technologies used cloud native orchestration frameworks solutions modernise risk partners work delivered moj engineers collaboration consumers system"
+  },
+  {
+    "title": "Offender Risk Assessment Data Sharing",
+    "description": "Enabling secure data sharing and modelling to improve risk assessment and public protection.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/offender-risk-assessment-data-sharing/",
+    "tokens": "overview offender risk assessment data sharing initiative enabled secure integration modelling improve public protection supported both internal moj users external researchers with high quality analytics ready that informs decisions around managing offending behaviour reducing harm challenge information relevant distributed across multiple systems standard process combining analysing models needed more comprehensive inputs linking sensitive raised privacy governance infrastructure challenges analysts required well documented suitable statistical solution produced modelled dataset combines key indicators system interactions this complemented by research product shared through trusted environments such ons service embedded these outputs framework provided summaries structure support interpretation reuse development new publication profile repeat children young people england wales which used generate novel insight into youth patterns impact project accredited explore greater detail inform evidence based policy delivery improved collaboration between engineering academic engagement teams demonstrated scalable model value justice context tools technologies create derived table cadet decouple production from core improving modularity enabling linked identifiers synthetic tooling preserving analysis proposal partners work delivered engineers communications resulting products were"
+  },
+  {
+    "title": "OneCrown Data Model",
+    "description": "Building a single, trusted dataset to support performance insight and decision making in criminal courts.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/onecrown-data-model/",
+    "tokens": "overview one crown project aligned multiple data sources across criminal courts into single consistent dataset this trusted supports seamless access analysis forecasting modelling helping ministry justice moj hm tribunals service hmcts make better faster decisions challenge system spread disparate systems with inconsistent definitions update frequencies these issues caused delays reporting misalignment departments limited ability analysts generate reliable insights absence unified model hindered performance monitoring policy evaluation solution designed modern scalable onecrown that integrates key court from wide range analytical operational use cases built using shared agreed between team adopted collaborative approach working users understand business needs technical teams ensure implementation forms part broader vision create models all jurisdictions impact new enables more confident decision making improves consistency dashboards published statistics internal reports also reduce case backlogs enabling resource planning tools technologies used architecture delivery framework based standards design cloud infrastructure partners delivered jointly by stakeholders civil family cft engineering"
+  },
+  {
+    "title": "OPG Data Warehouse",
+    "description": "Creating a centralised data warehouse for OPG to improve consistency, access, and decision-making.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/opg-data-warehouse/",
+    "tokens": "overview office public guardian opg developed centralised data warehouse bring together scattered sources embed consistent logic into reporting performance monitoring this work helping improve efficiency transparency insight generation challenge s distributed across different systems formats teams with framework combining reusing analysts had interpret apply business individually often duplicating arriving slightly outputs there single trusted source support both local central moj solution reviewed wide range existing written r python sql collaborated stakeholders agree common definitions then implemented conformed model that underpins allows pull from shared clear governance around updates structure supports such national statistics lasting power attorney lpa dashboard key indicators kpis also provides greater flexibility integrating new including those modernised system impact project significantly improved consistency frequency can now produce insights more efficiently using clearer provenance have confidence their functions receive standardised align other corporate improves auditability supporting better decision making all levels tools technologies used dimensional modelling approach built secure cloud based pipelines accessible raw transformed structured multiple partners delivered by engineering team collaboration science operational colleagues"
+  },
+  {
+    "title": "People Data",
+    "description": "Improving the quality and accessibility of people data to support workforce planning, wellbeing, and strategic insight.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/people-data/",
+    "tokens": "overview people data platform project designed improve how accessed used across ministry justice enables analysts answer complex questions about recruitment staff wellbeing workforce planning using clean modelled built modern technology stack challenge historically fragmented inconsistently recorded difficult use spent significant time cleaning interpreting from multiple sources there central model that brought together information staffing organisational structure these challenges made harder deliver insight particularly when responding strategic cross cutting solution created unified combines range hr related datasets such post pipelines this robust best class tooling ensure timely accessible supports both descriptive predictive analysis enabling teams explore trends support decision making unlock ai powered cases by structuring serve domains allows moj reuse core components without duplicating effort impact improved access reduced spend preparing provides trusted foundation reporting helping better equipped manage employee measure internal programmes also new types were previously out reach due inconsistent inaccessible tools technologies engineering join into flexibility scalability downstream dashboards advanced analytics partners work delivered partnership with stakeholders strategy functions"
+  },
+  {
+    "title": "Property Data Environment",
+    "description": "Automating data flows and improving reporting for real-time management of MoJ’s property portfolio.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/property-data-environment/",
+    "tokens": "overview property data environment project provides single source truth moj s extensive portfolio which includes over 1 200 buildings with combined value more than 35 billion by automating extraction creating structured reporting initiative improves transparency reduces risk supports operational strategic decisions challenge fragmented across internal systems third party suppliers often requiring manual updates reconciliation this made difficult track running costs utilisation compliance estate delays lack consistency posed risks financial oversight planning solution developed scalable common cde that integrates from sharepoint apis other cloud based sources system automates transformation validation ensuring reports are accurate timely easy interpret both use cases enabling better spend asset performance designed reusable flexible supporting future directorate beyond impact automated avoids overspend giving teams access real time trusted enables forecasting helps identify underutilised assets decision making around rationalisation investment already helping avoid unnecessary improve cross team coordination tools technologies used api integrations automation pipelines deliver governed partners work delivered collaboration engineering estates operations"
+  },
+  {
+    "title": "Synergy Programme Data Integration",
+    "description": "Enabling shared data infrastructure for HR, Finance, and Commercial systems across departments.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/synergy-programme-data-integration/",
+    "tokens": "overview synergy programme supports delivery shared services across government by integrating new hr finance commercial systems departments including moj dwp defra home office part this data analytics engineering team enabled core pipelines support reconciliation reporting transformation challenge involved operate complex legacy with varied formats logic these into model required consistent scalable layer capable handling ingestion feedback loops between there also need both business usual future automation departmental boundaries which meant ensuring clean reconciled ready operational analytical use solution built bring from s platform supported efforts enabling analysts compare outputs old reducing errors building trust transition go live are developing production grade applying validation implemented reverse etl write transformed back oracle cloud fusion environment accurate updates impact work creation unified high quality infrastructure improves ability reconcile audit during migration reduces duplication enables standardised over time integrated expected deliver significant efficiency savings all participating while supporting long term digital tools technologies used secure based layers ensure seamless movement platforms partners project being delivered collaboration stakeholders counterparts"
+  },
+  {
+    "title": "User-Centric Design of Services (Tribunals)",
+    "description": "Designing data services around user needs to improve access to justice and operational efficiency.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/user-centric-design-of-services-tribunals/",
+    "tokens": "overview this project focused designing scalable intuitive data services tribunals with user needs centre every design decision by working closely consumers across moj hmcts team ensured that new tools supported real world tasks improved access enhanced justice outcomes challenge tribunal systems had evolved from heritage platforms fragmented structures limited flexibility users often struggled consistent timely analytical processes were inefficient difficult trace how requests translated into product development operational improvement solution civil family cft co designed roadmap understand their prioritise delivery accordingly they simplified stabilised pipelines significantly reducing memory usage improving reliability applying clear modelling standards engaging regularly end meaningful usable single framework used develop models serve multiple jurisdictions duplication supporting long term sustainability impact redesigned consistency availability technical dramatically reduced 10 50 times stakeholders gained better visibility helping them make more informed decisions track work also laid groundwork expanded modernisation strengthening technologies standardised techniques architecture deliver reliable aligned products partners delivered engineering partnership analysts leads"
+  },
+  {
+    "title": "Value Engineering and Impact Model",
+    "description": "Measuring and maximising the impact of data initiatives across MoJ using a structured value model.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/value-engineering-and-impact-model/",
+    "tokens": "overview value engineering impact model enables ministry justice moj measure return investment roi data initiatives prioritise projects based expected benefits by quantifying using consistent methodology supports better planning stronger business cases more strategic use digital capability challenge while teams were delivering valuable products services there formal way consistently estimate compare their without this difficult assess full benefit work justify choose between competing priorities lack visibility also made harder engage senior stakeholders track long term progress solution developed structured that estimates financial non calculates metrics such number queries time saved per query average staff cost driven approach allows us payback period opportunity integrated into are scoped reviewed forward helping identify areas where infrastructure could deliver greatest become core component s strategy helps demonstrate case change communicate decision makers high public been applied across domains from policy dashboards operational automation tools technologies logs user tracking estimation templates alongside standard modelling logic calculate visualise maintained office partners led chief officer collaboration with engineers product managers analysts domain leads department"
+  },
+  {
+    "title": "Victim Attrition Dashboard",
+    "description": "Using linked data to understand victim journeys and reduce attrition in the Criminal Justice System.",
+    "section": "Case Studies",
+    "date": "22 May 2025",
+    "url": "/pr-preview/pr-123/case-studies/victim-attrition-dashboard/",
+    "tokens": "overview victim attrition dashboard developed provide end visibility experiences within criminal justice system cjs by linking data from police crown prosecution service cps moj helps policy teams operational users identify key points where victims disengage enabling more targeted interventions challenge relating previously disconnected hard access without joined view across court stages difficult understand occurred how engagement could improved analysts lacked tools explore trends assess effectiveness different services solution created secure linked dataset that follows cases through process reporting charging trial resolution this surfaced interactive includes breakdowns offence type region characteristics dynamic sankey diagram illustrates flow highlights occurs with governance mind ensuring remained protected shared appropriately agencies impact empowered home office colleagues better outcomes directly supported consultation prisoners act 2024 informing development also enables earlier tailored surfacing gaps support common disengagement patterns technologies used pipelines visualisation libraries frameworks supports filtering drill downs allow tailor their analysis partners work delivered collaboratively engineering"
+  },
+  {
+    "title": "Inaugural data and analytics engineering conference",
+    "description": "Reflections from the very first cross-government conference for data and analytics engineering",
+    "section": "Blog",
+    "date": "12 August 2025",
+    "url": "/pr-preview/pr-123/blog/posts/inaugural-data-and-analytics-engineering-conference/",
+    "tokens": "ministry justice hosts first person cross government data engineering conference july 2025 partnership with amazon web services made tech brought together uk s community its hosted office london manchester event welcomed 115 engineers from departments including department work pensions education driver vehicle licensing agency nuclear decommissioning authority companies house many more day collaboration technical insight building opening impact keynotes both cities opened powerful keynote addresses locations hugh stickland chief officer scientific adviser emphasised strategic importance evolving role supporting better smarter policymaking anis khan head reflected exponential growth analytics capability he described how now drives decisions even teams navigate complexity modernising legacy systems embracing new technologies across talks one clear message stood out backbone modern governance back function this sentiment set tone that recognised profession central public service transformation exploring future panel discussion sites after venues engaging discussions themed around changed over last five years where headed next curated by engagement squad priya basker supratik chowdhury lalitha nagarur panels featured senior leaders heads who shared insights into evolution challenges opportunities members calum barnett soumaya mauthoor business trade deepak shukla leadership ai francesca bryden transport dft martyn lane hmrc peter mylward principal consultant covered managing complex toolsets transitioning etl elt improving quality testing practices scale creating models empower rather than hinder attracting talent embedding earlier delivery there strong consensus are longer behind scenes they foundations trusted intelligent sharing ideas inspiration highlights speakers industry presented real world case studies david nelson chris brown stuart baillie platforms using databricks medallion architecture azure reusable tools granular access greg knowles showcased zero pipelines powered generative time efficiency gains will wilson secure container based deployment pipeline compliance speed carl dalby delivered showing unlocking structured enables advanced sessions examined landscape particular focus tooling practice highlighting strategy despite laurence droy matt heery explored dlt reduce debt streamline processes simplify workflows explained transforming user through denodo virtualisation value myles richardson undertaken create cloud platform aimed accessibility self serve reporting luke williams ongoing efforts modernise like sars ears infrastructure enabling meaningful joy andrews led session evaluating retrieval augmented generation rag bedrock langchain ragas giving practical approach assessing driven performance wasn t just informative energising attendees commented sense openness wanted say massive thank d love us them sam taylor competition markets each talk thoroughly thought provoking huge thanks hosting hannah goode engineer national statistics incredibly useful valuable hear hand going lead enjoyed participating such rhea mirchandani scientist bank england helped reveal purpose about mesh automation felt collaborative individual departmental what beginning energy ambition showed proud have milestone looks forward connect share build interested joining x gov network open contact organising team find get involved events big delivering successful"
+  },
+  {
+    "title": "Architecture",
+    "description": "Find out about the data and analytics engineering architecture, key tools and services",
+    "section": "About",
+    "url": "/pr-preview/pr-123/about/architecture/",
+    "tokens": "context explained about page our data analytics engineers develop analytical pipelines self service tools acquire transform making available platform implement lake centric approach manage using cloud based object store storage follow standard elt process extract load producing cleaner more standardized format that downstream analysts expect ensuring reliability are responsible extracting standardising loading source into then apply modelling techniques further refine conformed accessible users can consume this transformed processing machine learning tasks disseminate their findings through reports dashboards summarise workflow medallion architecture which transitions bronze silver gold layers increasing structure quality each stage key services use various depending volume frequency other characteristics support infrastructure rely different open aws ensure scalability resilience security cost effectiveness engineering container diagram summarises some these metadata collected from multiple sources across moj external including amazon s3 file shares relational databases apis azure blob ingested approaches example database migration dms sftp api gateway imported directly consists glue catalog repository apache hive iceberg table formats provide sql like interface iam secure access athena along with dbt transformations pre processed python scheduled managed workflows airflow also make transformation run own saved back details technology stack please visit radar"
+  },
+  {
+    "title": "About",
+    "url": "/pr-preview/pr-123/about/",
+    "tokens": "this page will learn about what data engineers analytics ministry justice left hand side there are additional pages how contact us join engineering two distinct closely related fields primarily deal with collection transformation storage raw they design maintain pipelines that enables processing ensuring quality scalability reliability lots people like use term etl extract transform load when speaking utilising valuable insights work building models developing code based solutions answer specific business questions bridge gap between analysis enabling scientists analysts effectively interpret visualise oversimplify difference set foundations while add layer interpretation helps decision making major government department heart system protect advance principles our vision deliver world class works everyone society can find out more responsibilities priorities website beginnings leave calum write here now core part digital future over forty staff found within science division however many also other parts its arms length bodies responsible maintaining have already established courts prison probation datasets well emerging areas such electronic monitoring"
+  },
+  {
+    "title": "Join Us",
+    "description": "Information about open roles in the team",
+    "section": "About",
+    "url": "/pr-preview/pr-123/about/join-us/",
+    "tokens": "how apply data analytics engineering role ministry justice our last recruitment round hosted webinar provide information team roles hiring process well answering candidate questions recording can accessed here frequently asked where are based national have number offices around england wales see civil service jobs board find your closest one re open flexible hybrid working arrangements that include regular home ll need work from 40 60 week what kind people looking really keen break away archetypal views engineer encourage anyone with relevant skills willingness learn will support may yet had opportunity show eagerness sounds good still some ask them ve setup mailbox dmet dataplatform digital gov uk any"
+  },
+  {
+    "title": "Management",
+    "section": "About",
+    "url": "/pr-preview/pr-123/about/management/",
+    "tokens": "operate matrix management within data analytics engineering professions under report multiple people will have one manager more work managers depending structure team re working your normally different may same some circumstances this likely engineers due smaller size profession stay move roles projects teams whereas change provides several benefits can seek advice from than person get perspectives problem take longer term perspective career planning progression development because advocate make sure getting what need role learn about happening other identify opportunities collaboration responsibilities balanced evenly across despite any differences responsible learning performance wellbeing they manage directing day"
+  },
+  {
+    "title": "People Management",
+    "section": "Management",
+    "url": "/pr-preview/pr-123/about/management/people-management/",
+    "tokens": "people manager responsible learning development performance wellbeing they manage generally will able choose your though have preference try take into account assigned when join one professions change roles within same profession remain only exception this new work case can decide would like get responsibilities expected with agree monitor goals objectives collaboration their identify needs opportunities support access right training including apprenticeships certifications act primary contact all queries issues pay expenses leave conduct behaviour absence management hold regular conversations help government digital data assessments ensure that are getting meet criteria loans secondments managed moves health resources disability workplace adjustments staff networks mental provide technical advice coaching needed find mentors coaches lead onboarding process starters managing offboarding who leaving probation civil service point any regarding bullying harassment detailed guidance handbook meetings should make sure re having least every eight weeks may want more often person how frequently concerns about extra short term goal such completing ddat assessment less ad hoc basis better suits general approach reflect guide also quarterly triad these used review individual s role supporting share feedback"
+  },
+  {
+    "title": "Work Management",
+    "section": "Management",
+    "url": "/pr-preview/pr-123/about/management/work-management/",
+    "tokens": "work manager responsible directing day people they manage responsibilities would expected assign tickets support them where required complete with agree monitor goals objectives collaboration their meetings will meet are managing several times week every this typically team ceremonies such stand ups may need have one should led by"
+  },
+  {
+    "title": "Tech Radar - Platforms, Tools, Languages, Frameworks and Techniques",
+    "section": "About",
+    "url": "/pr-preview/pr-123/about/radar/",
+    "tokens": "data analytics engineering tech radar moj community maintains public that refreshed annually august help align tools techniques platforms languages frameworks technology choices within our teams inspired by pioneering work thoughtworks aim bringing together collective expertise engineers ensure are same page regarding keep with emerging trends assess their potential impact encourage knowledge sharing across reflect input github discussions accurate annual refresh how works blips configured json while rings quadrants set config additional context provided which queried using graphql api populate see manage this viewing output locally vs code install live server extension open visual studio launch your computer access extensions click icon activity bar side window search view type button start project folder containing files including index html right file select from menu"
+  },
+  {
+    "title": "Team Structure",
+    "description": "How we structure our teams",
+    "section": "About",
+    "url": "/pr-preview/pr-123/about/structure/",
+    "tokens": "team structure data analytics engineers moj work across various teams analytical platform which maintains catalogue modelling engineering dmet delivers solutions internal stakeholder needs belong same directorate summarised this diagram modeling divided into multiple portfolio each with specific focus domain led closely providers consumers from domains understand their requirements ensure are met meanwhile cross functional collaborate boundaries promote best practices maintain alignment manage databases tools enable effective impactful analysis our includes following areas hm prison probation service hmpps responsible providing users access covering prisons purposes only link show tell posters courts tribunals hmcts similarly scientists analysts statisticians court civil family magistrates crown corporate programmes finance people commercial well bold first centre excellence cfe mission drive innovation through continuous improvement collaboration knowledge sharing set technical direction prioritising addressing immediate challenges faced by partners can read more about us these summary slides"
+  },
+  {
+    "title": "Blog",
+    "description": "We use this blog to share what we're working on across the data engineering and analytics engineering professions. You'll find a range of posts on technical and non-technical topics.",
+    "url": "/pr-preview/pr-123/blog/"
+  },
+  {
+    "title": "Case Studies",
+    "description": "Explore how data and analytics engineering is transforming justice services across domains.",
+    "url": "/pr-preview/pr-123/case-studies/",
+    "tokens": "cross system better outcomes through linked data bold linking justice social support vulnerable groups improve public services first programme enabling secure academic policy research using de identified datasets cjs set following victims defendants cases across victim attrition dashboard providing end visibility journeys inform prisons probation electronic monitoring digital reporting integration improving prison consistency transparency decision makers store richer insight into em usage reducing reoffending risk nomis pipeline modernisation daily processing time reliability drug treatment health supporting rehabilitation with joined offender assessment sharing analysis repeat offending courts tribunals onecrown model creating single trusted dataset criminal court performance user centric design co designing scalable intuitive hmcts users civil family tribunal improvements dashboards corporate people delivering clean workforce planning strategic hr finance standardising financial reduce resource burden gold scorecard automating contract pipelines insights property environment real decisions moj estates common synergy integrating commercial systems departments legal aid stabilisation unified transformation injuries compensation cica self service access kpis guardian opg warehouse unifying business logic frequency lasting power attorney lpa application other analytics enablement analysts adopting modelled training tools embedded engineers value engineering impact estimating return investment prioritise high work"
+  },
+  {
+    "title": "Buddy System",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/buddy-system/",
+    "tokens": "our buddy system structured approach where new less experienced team member paired with colleague help them transition into understand work culture get speed technical operational practices people settled can even members staff moving from other professions e g data science engineering who may require some advice getting set technology key aspects onboarding support helps hire s workflow coding standards tools development this includes explaining processes like code reviews deployments etc giving guidance day tasks knowledge transfer buddies share about projects ongoing challenges architecture ensuring contribute effectively broader scope social integration also integrate socially introducing colleagues rituals communication dynamics feel welcome comfortable environment problem solving serve first point contact queries roadblocks helping engineer troubleshoot problems navigate resources more efficiently building by pairing reinforce collaborative promote sharing strengthen bonds benefits faster ramp engineers become productive quickly hands real time their retention strong lead better rates providing part distribute project across reducing impact siloed expertise cohesion promotes stronger interpersonal relationships within fosters sense camaraderie"
+  },
+  {
+    "title": "Code Review",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/code/",
+    "tokens": "our code reviews ensure quality while promoting learning knowledge sharing amongst team s collaborative process where examine each other correctness adherence coding standards before becomes part main codebase this practice integral modern software development used identify bugs improve facilitate among members"
+  },
+  {
+    "title": "Collaboration and Engagement Squad",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/collaboration/",
+    "tokens": "our collaboration engagement squad made data analytics engineering team members who organise coordinate learning development l d sessions workshops away days conferences collation promotion outside events that may interesting hackathons partnerships such with alan turing institute well academia activities across government relationships ministry justice teams science platform analytical cloud modernisation show tell please keep date latest offerings by joining slack channel dmet"
+  },
+  {
+    "title": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/",
+    "tokens": "effective ways working both group one settings are key fostering collaboration learning innovation workplace ministry justice emphasise variety practices that promote teamwork knowledge sharing professional development engagement squad our aims coordinate enable interaction between teams within department with external groups buddy system structured approach designed integrate existing enhance new processes mentoring scheme enhances personal growth by pairing colleagues varied experience levels pair programming transfer collaborative activities code review reviews quality maintainability codebase constructive critical additions before they become part main show tells tell events allow highlight their recent work share progress reading create environment skills"
+  },
+  {
+    "title": "Mentoring Scheme",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/mentoring/",
+    "tokens": "take advantage structured personal growth development through our mentoring scheme data analysis directorate those who have yet signed are interested being paired with mentor mentee introduced new registration method via microsoft forms sign here this streamlined process will ensure collect all relevant information continue match mentors mentees effectively now excellent time currently high demand especially grades seo level above please note that already enrolled there need re register using form unless wish matched previously email awaiting rest assured waiting list pair suitable soon one becomes available"
+  },
+  {
+    "title": "Pair Programming",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/pair/",
+    "tokens": "pair programming collaborative software development technique where two programmers work together one workstation with writing code driver other reviewing each line s written navigator can often help both knowledge transfer someone more senior driving exposing participants different coding styles ways thinking what"
+  },
+  {
+    "title": "Reading Groups",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/reading/",
+    "tokens": "starting your own reading group joining data analytic engineering team can significantly enhance learning experience by combining intellectual stimulation with social benefits interaction whether goal deepen understanding subject improve communication skills simply enjoy company fellow readers offers supportive enriching environment achieve these objectives our groups progress this meets fridays 10am currently book apache iceberg definitive guide more information find us dmet de slack modelling covers warehouse toolkit dimensional modeling kimball although d like run next one please contact lead analytics engineer details design patterns aims teach understand wide variety software aid discussion during projects out join"
+  },
+  {
+    "title": "Show and Tells",
+    "section": "How we work",
+    "url": "/pr-preview/pr-123/how-we-work/show/",
+    "tokens": "our show tells are group team building sessions opportunities showcase work share progress tell session activity like workshop idea that participants bring something significance then about"
+  },
+  {
+    "title": "Data and Analytics Engineering",
+    "description": "Learn about the data and analytics engineering professions at the Ministry of Justice.",
+    "url": "/pr-preview/pr-123/",
+    "tokens": "beta this new service help us improve leave your feedback via our form about find out more what data analytics engineering are where fit organisation learning explore many ways encourage support continuous development how work events approaches use together effectively regular meetings innovation heart moj blog re working across professions"
+  },
+  {
+    "title": "Firebreaks",
+    "section": "Innovation",
+    "url": "/pr-preview/pr-123/innovation/firebreaks/",
+    "tokens": "firebreaks data analytics engineering firebreak sessions are sprints designated times where our teams pause business usual projects focus tackling specific problems exploring new technologies ideas within directorate propose boards ask team members join end sprint collectively review what produced learned allow take step back from day tasks dedicate focused time resolve issues implement improvements experiment with innovative solutions without pressures regular deadlines ongoing about provide structured opportunity address long standing challenges inefficiencies foster creativity innovation by giving freedom test tools methods help high priority that may have been sidelined due constraints encourage collaboration across departments solve shared these similar concept hackathons they more problem solving improvement rather than pure project development also serve refresh period reset refocus can result tangible outcomes such improved processes enhanced systems implementation practices benefit wider ministry justice please keep eye out internal notice comming"
+  },
+  {
+    "title": "Hackathons",
+    "section": "Innovation",
+    "url": "/pr-preview/pr-123/innovation/hackathons/",
+    "tokens": "hackathons data analytics engineering team are focused internal external collaborative events where teams developers analysts engineers other stakeholders come together solve specific challenges short intensive timeframe usually take place site our moj offices offsite guest locations provide opportunity innovation experimentation cross functional teamwork often tackling issues related justice reform service delivery improving processes using technology key features problem solving focus designed address problems explore new opportunities such developing digital services user experience optimising workflows disciplinary collaboration participants from various departments roles fostering between technical experts policy makers designers ensuring diverse perspectives contribute solutions creativity encouraged think creatively experiment with ideas cutting edge technologies like machine learning automation advanced build prototypes innovative term intense typically time limited lasting day two work intensively produce prototype proof concept by end session outcome driven many result actionable outcomes including development that may further refined implemented live systems lead ways working within department overall integral part culture encouraging rapid enabling implement technological have real impact public system keep any eye out communications channels join contribue comming"
+  },
+  {
+    "title": "Innovation",
+    "url": "/pr-preview/pr-123/innovation/",
+    "tokens": "innovation heart our culture with initiatives like 10 time firebreaks ll have opportunity dedicate innovative side projects skill building activities exploring new technologies all which contribute your personal growth directorate s goals hackathons"
+  },
+  {
+    "title": "10% Time",
+    "section": "Innovation",
+    "url": "/pr-preview/pr-123/innovation/time/",
+    "tokens": "10 time equivalent 0 5 day per week are employed full their working hours allows explore new ideas pursue personal development work projects outside responsibilities this concept part fostering innovation creativity continuous improvement within directorate what can your scope with quite broad allowing focus activities that align both interests s strategic goals some common uses include learning use build skills deepen existing ones whether programming language understanding data literacy better enhancing expertise cloud technologies provides space self study growth emerging tools stay ahead curve by experimenting aren t usual workflow example could delve into machine visualisation platforms innovative ways manage analyse large datasets side might fit have positive impact ministry justice developing prototype automating routine process brainstorming methods improving analytics engineering contributing open source internal communities contribute benefit broader community involve code libraries pipelines creating resources others collaborate across teams also opportunity colleagues other areas even shared problem develop cross functional exchange knowledge best practices participate hackathons firebreaks engage like recently developed python package released pypi users read alter our metadata schemas join where come together tackle specific challenge over short period these events encourage solving collaboration support participation flexibility ensures used individual career aspirations"
+  },
+  {
+    "title": "Free and Licensed Learning Resources",
+    "section": "Learning",
+    "url": "/pr-preview/pr-123/learning/LnD/",
+    "tokens": "data analysis directorate within moj offers range subscription based paid self learning resources including free courses with trial access help get started keep mind that comprehensive subscriptions are one benefits working us below can serve solid foundation list from datacamp skillsoft o reilly linkedin new analytics engineers explore interactive science engineering focus programming languages like python sql platform provides introductory deeper areas manipulation modeling machine modules covering wide technical skills cloud platforms project management their also include leadership soft development which essential career growth roles books tutorials videos topics covers everything architecture computing r visualization gives these materials build your knowledge base across various fields software git technologies more critical success role additional aws training available part s government value agreement ogva attend offered first come served basis staff only places shared pulumi vms serverless containers open source infrastructure code tool creating deploying managing dataquest program beginner concepts advanced visualisation includes path coffee coding sessions justice analysts pathway this resource aims technically minded people start experimenting accelerator capability building programme public sector opportunity develop will work proposed by over 3 months day week mylearning all service connected limited sscl should create account apprenticeship zone civil analytical services dasd wellbeing instructions how book internal external please email dasdlearningandwellbeing gov uk 10 time focussed l d activities equivalent 0 5 per employed full"
+  },
+  {
+    "title": "Analytics Engineering",
+    "section": "Learning",
+    "url": "/pr-preview/pr-123/learning/analytics-engineer/",
+    "tokens": "analytics engineer engineering moj bridges gap between data engineers analysts by ensuring that high quality well structured available analysis reporting focus transforming raw into organised usable formats through modelling testing automation enabling decision makers derive actionable insights efficiently our work ensures seamless flow from its state dashboards reports inform policy making across department when join ll given access operational onboarding trello s process helps new hires transition smoothly their roles during first six months articles what everything need know recommended online learning via kimball group resources datacamp here are links free get started can help upskill with range core technical skills listed below warehouse business intelligence ralph dimensional modeling methodology widely adopted approach focuses processes user experience emphasizes designing models intuitive end users using techniques like star schemas snowflake introduction dbt also known build tool designed simplify management warehouses transform within sql fundamentals master needed learn how write queries start analyzing your this powerful language languages essential querying used extensively create clean datasets python r manipulation automating workflows running more advanced tasks particularly studio creating model brief blueprint proficiency concepts design robust scalable database relationship diagrams ability use tools visually map out relationships different tables databases ensure clear structure dbdiagram io net draw derived table expertise building meaningful ready hands modular reusable transformations environment deployment familiarity git github version control managing code collaboration traceability proper changes athena analytical platform knowledge amazon key large often macros understanding usage automate repetitive processing aws console working services accuracy performance writing expected commands test validate outputs actions tested verified before lint implementing linting maintainable error production assurance editor moving them terminal execute manage continuous integration power bi maintaining they reliable date mastering these efficient supports ministry strategic objectives"
+  },
+  {
+    "title": "Analytics Engineer 18-Month Apprenticeship Program",
+    "section": "Learning",
+    "url": "/pr-preview/pr-123/learning/apprenticeship/",
+    "tokens": "ministry justice analytics engineer 18 week apprenticeship designed provide apprentices with solid foundation key data engineering skills before they transition job training part analyst level 4 program which includes comprehensive essential tools technologies used field topics covered during sql databases learn how create query manage using one most critical analysis programming languages such python r both are widely manipulation warehousing modelling this covers design population star schemas well working warehouses preparation visualisation like power bi tableau other business intelligence platforms developed help visualise effectively machine learning science introduction integrates cloud azure aws version control git managing projects collaboration 10 boot camp ten bootcamp eighteen month front loaded meaning first weeks focused intensively theoretical practical provides participants hands experience that can apply once join their teams benefits work real world scenarios making them ready upon completion mentorship support learners supported by mentor digital consultant dlc who track progress ensure course complete successfully blended uses combination remote online courses flexibility while maintaining engagement through interactive applications following continue remaining duration months continuous double check ian formal assessments solidify will use powerbi server integration services ssis gcp"
+  },
+  {
+    "title": "Data Engineering",
+    "section": "Learning",
+    "url": "/pr-preview/pr-123/learning/data-engineer/",
+    "tokens": "data engineer ministry justice plays vital role building maintaining infrastructure systems that support driven decision making across organisation when join ll given access our operational onboarding trello analytics engineers s structured process helps new hires transition smoothly into their roles during first six months excel this should also develop range technical analytical soft skills align with moj needs articles blog posts by dr soumaya mauthoor lead using github one stop shop transaction lake amazon athena apache iceberg dbt recommended online courses via datacamp can help upskill core listed below python gain demand efficiently ingest clean manage schedule monitor pipelines setting apart engineering field sql learn fundamentals database design warehousing working technologies including postgresql snowflake advanced dive deep state art tools revolutionising today professional track focus languages fundamental language processing automating workflows widely used scripting etl processes big frameworks essential querying managing relational databases especially dealing performing transformations bash shell useful task automation system management unix linux environment scala java beneficial like spark hadoop cloud web services aws familiarity critical key include s3 scalable storage redshift large scale rds lambda serverless computing glue jobs azure google platform gcp knowledge other platforms may leverage multi strategies continuous integration delivery deployment ci cd actions jenkins experience these automate testing ensuring changes are rolled out without breaking existing terraform cloudformation code iac provisioning resources crucial repeatable unit correctness integral part reliable validation automated checks ensure quality handling missing schema integrity processed accurate meets organizational standards test development tdd best practice robust error free writing tests before actual extract transform load airflow proficiency from various sources meet organization warehouses custom particularly complex cleaning tasks wrangling expertise transforming raw usable formats analysis reporting orchestration tool scheduling monitoring run time step functions executed correct sequence multiple environments architecture understanding warehouse store query datasets lakes unstructured semi designing increasing volumes demands microservices how based work allowing modular solutions models llms transformer e g gpt applications analyzing text which projects involving natural nlp within fine tuning pre trained domain specific such classification entity recognition legal document ai ethics governance ethical implications public sector compliance areas will well equipped efficient secure mission delivering insights improvements"
+  },
+  {
+    "title": "Learning",
+    "url": "/pr-preview/pr-123/learning/",
+    "tokens": "learning development opportunities ministry justice moj are committed continuous growth our team members data analytics directorate provide variety l d designed help advance your career enhance skills stay cutting edge technology engineering pathway explore materials free licensed resources additional"
+  },
+  {
+    "title": "Agile Delivery",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/agile/",
+    "tokens": "resources blog posts learning about agile techniques how apply them manifesto software development service manual"
+  },
+  {
+    "title": "Change Management",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/change/",
+    "tokens": "resources blog posts about managing change ten reasons people resist"
+  },
+  {
+    "title": "Coaching",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/coaching/",
+    "tokens": "resources blog posts about effective techniques coaching mindtools tgrow model questioning examples learn clean language with learning"
+  },
+  {
+    "title": "Emotional Intelligence",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/emotional/",
+    "tokens": "resources blog posts about ways improve your interactions with others primal leadership hidden driver great performance 5 become more self aware how leaders neurochemistry positive conversations emotional agility really listen employees three can empathy put yourself colleague s shoes receiving feedback well get better world work project"
+  },
+  {
+    "title": "Soft Skills",
+    "section": "Learning",
+    "url": "/pr-preview/pr-123/learning/soft-skills/",
+    "tokens": "soft skills are personal attributes interpersonal abilities that enable individuals work effectively with others professional environment unlike technical which job specific universally valuable across roles industries they include communication teamwork problem solving leadership adaptability emotional intelligence resources blog posts about ways improve your interactions how become more effective leader stakeholder management building relationships stakeholders customers align expectations ensure successful project outcomes requirements gathering identifying documenting needs guide development meeting facilitation get most out meetings agile delivery learning techniques apply them scrum coaching productivity change managing"
+  },
+  {
+    "title": "Leadership",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/leadership/",
+    "tokens": "resources blog posts about how become more effective leader what makes optimist without being fool sleep deprived people are likely cheat focused"
+  },
+  {
+    "title": "Meeting Facilitation",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/meeting/",
+    "tokens": "resources blog posts about how get most out your meetings atlassian team playbook build strong teams with plays management 3 0 leadership training managers liberating structures introduction iaf library retromat inspiration plans agile retrospectives welcome open space lean coffee lives here"
+  },
+  {
+    "title": "Productivity",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/productivity/",
+    "tokens": "resources blog posts about how improve productivity positive intelligence marshmallow test grownups pronouns matter when psyching yourself"
+  },
+  {
+    "title": "Requirements Gathering",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/requirements/",
+    "tokens": "resources blog posts identifying documenting stakeholder needs guide project development government digital service writing your requirements outcomes specialists services transformation hub what gathering process user research"
+  },
+  {
+    "title": "Scrum Guide",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/scrum/",
+    "tokens": "resources blog posts about scrum techniques guides"
+  },
+  {
+    "title": "Stakeholder Management",
+    "section": "Soft Skills",
+    "url": "/pr-preview/pr-123/learning/soft-skills/stakeholder/",
+    "tokens": "resources blog posts building relationships with stakeholders customers align expectations ensure successful project outcomes local government association manage analysis function guidance hub stakeholder mapping"
+  },
+  {
+    "title": "Standards and Conventions",
+    "section": "Learning",
+    "url": "/pr-preview/pr-123/learning/standards/",
+    "tokens": "technology following gov websites explain design standards conventions used within ministry justice digital across government technical guidance this site documents some decisions that moj made products operate uk service toolkit all need build run services meet gds way guides teams brilliant cost effective specific tools processes use"
+  },
+  {
+    "title": "Analytics Engineering Monthly",
+    "section": "Regular meetings",
+    "url": "/pr-preview/pr-123/regular-meetings/analytics_engineering_monthly/",
+    "tokens": "purpose monthly informal meeting all analytics engineers share updates successes challenges across domain teams cross squads seek support from professional community discuss profession specific topics which may have relevance wider data engineering team when 11 12 thursday every 4 weeks core audience including embedded order business roundtable domains projects with enough detail understand priorities work progress initiatives our practice leads g7s technical discussion troubleshooting best practices outcomes re connected supported working varied g6 awareness milestones agree ways clear direction"
+  },
+  {
+    "title": "Community Forum",
+    "section": "Regular meetings",
+    "url": "/pr-preview/pr-123/regular-meetings/community_forum/",
+    "tokens": "purpose twice monthly informal meeting all data analytics engineers recognise good work team spread knowledge about new tools processes share lessons learned from projects learn colleagues other areas moj e g talks platform infrastructure downstream uses give members opportunity gain experience presenting talking their introduce when 2 3pm 1st 3rd wednesday each month core audience analysis engineering tracking via community forum github project board proposing topics submit kudos here order business intro chair shout outs presentations updates g6s dd responsibilities look out source present collaborates with chairs portfolio leads agree minimise duplication outcomes shared across ideas are discussed potentially identified going tech review meet get wider news"
+  },
+  {
+    "title": "Regular meetings",
+    "url": "/pr-preview/pr-123/regular-meetings/",
+    "tokens": "within data analytics engineers have several regular meetings each with dedicated purpose enable us collaborate work effectively community forum find out about our fortnightly where cover wide range topics tech review monthly feedback discussions technology tools use portfolio spotlight what happening engineering meet profession"
+  },
+  {
+    "title": "Portfolio Spotlight",
+    "section": "Regular meetings",
+    "url": "/pr-preview/pr-123/regular-meetings/portfolio_spotlight/",
+    "tokens": "purpose monthly meeting rotating between corporate hmcts hmpps allow deep dives into what happening each portfolio these meetings serve way talk through their current roadmap highlighting key milestones coming well forum review production systems ensure they still align wider team tech recommendations when 2 3pm 4th wednesday month core audience dedsai senior management data analysis engineering tracking via spotlight github project board order business intro from cfe lead talking how quality being met within existing pipelines mot pipeline documentation date set 12 s time aob responsibilities chair coordinate with leads ahead quarterly slot shares recordings action points after presentation encourages attendance add any relevant identify developments areas note over last quarter that should shared domain organise structure discussions during place undergo this outcomes knowledge are across rest analytics teams enabling more unified approach ways working captured centrally annual evaluations meet dmet standards needing update going potential would benefit presented"
+  },
+  {
+    "title": "Tech Review",
+    "section": "Regular meetings",
+    "url": "/pr-preview/pr-123/regular-meetings/tech_review/",
+    "tokens": "purpose monthly meeting all data analytics engineers present new technical approaches provide feedback solutions open inclusive forum goal ensure unified approach solving challenges across team with outcomes documented architecture decision records adrs future reference items that come tech review include are limited any proposed sources their methods ingestion looking use languages outside those adopt retain radar building system from ground proposing internally built packages bringing item once been identified presenter should contact chair arrange slot also create rfc request comments github discussion circulate this engineering slack channel least one week prior presentation will proposal via whatever medium best suits e g slide deck live demo following invite questions audience panel have follow final proposals recommendation whether approve conditions decline these added announced later than after approved then needs submit adr record when 2 3pm 2nd wednesday each month core made representative portfolio ap wider digital ta s analysis tracking project board raise rfcs here order business intro highlight previous session finalised sessions presentations max allow discussions enquire upcoming aob responsibilities stays informed about interesting reaches out potential presenters shares recordings action points encourages attendance collaborates chairs community leads agree topics minimise duplication coordinate outline recommendations required changes before can considered agreed communicate completed provides agenda links relevant material highlights what advice sought either accepted declined submitted by based closed reasons closing"
+  },
+  {
+    "title": "Posts tagged ‘access-to-justice’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/access-to-justice/"
+  },
+  {
+    "title": "Posts tagged ‘adoption’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/adoption/"
+  },
+  {
+    "title": "Posts tagged ‘analytics’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/analytics/"
+  },
+  {
+    "title": "Posts tagged ‘Athena’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/athena/"
+  },
+  {
+    "title": "Posts tagged ‘automation’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/automation/"
+  },
+  {
+    "title": "Posts tagged ‘BOLD’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/bold/"
+  },
+  {
+    "title": "Posts tagged ‘CICA’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/cica/"
+  },
+  {
+    "title": "Posts tagged ‘civil’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/civil/"
+  },
+  {
+    "title": "Posts tagged ‘commercial’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/commercial/"
+  },
+  {
+    "title": "Posts tagged ‘contracts’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/contracts/"
+  },
+  {
+    "title": "Posts tagged ‘courts’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/courts/"
+  },
+  {
+    "title": "Posts tagged ‘criminal-justice’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/criminal-justice/"
+  },
+  {
+    "title": "Posts tagged ‘cross-agency’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/cross-agency/"
+  },
+  {
+    "title": "Posts tagged ‘cross-government’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/cross-government/"
+  },
+  {
+    "title": "Posts tagged ‘Cross-HMG engagement’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/cross-hmg-engagement/"
+  },
+  {
+    "title": "Posts tagged ‘dashboard’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/dashboard/"
+  },
+  {
+    "title": "Posts tagged ‘dashboards’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/dashboards/"
+  },
+  {
+    "title": "Posts tagged ‘Data Strategy’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-strategy/"
+  },
+  {
+    "title": "Posts tagged ‘data-access’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-access/"
+  },
+  {
+    "title": "Posts tagged ‘data-design’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-design/"
+  },
+  {
+    "title": "Posts tagged ‘data-first’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-first/"
+  },
+  {
+    "title": "Posts tagged ‘data-integration’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-integration/"
+  },
+  {
+    "title": "Posts tagged ‘data-linking’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-linking/"
+  },
+  {
+    "title": "Posts tagged ‘data-model’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-model/"
+  },
+  {
+    "title": "Posts tagged ‘data-modelling’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-modelling/"
+  },
+  {
+    "title": "Posts tagged ‘data-platform’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-platform/"
+  },
+  {
+    "title": "Posts tagged ‘data-quality’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-quality/"
+  },
+  {
+    "title": "Posts tagged ‘data-sharing’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-sharing/"
+  },
+  {
+    "title": "Posts tagged ‘data-warehouse’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/data-warehouse/"
+  },
+  {
+    "title": "Posts tagged ‘dbt’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/dbt/"
+  },
+  {
+    "title": "Posts tagged ‘Documentation’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/documentation/"
+  },
+  {
+    "title": "Posts tagged ‘drug-treatment’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/drug-treatment/"
+  },
+  {
+    "title": "Posts tagged ‘electronic-monitoring’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/electronic-monitoring/"
+  },
+  {
+    "title": "Posts tagged ‘enablement’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/enablement/"
+  },
+  {
+    "title": "Posts tagged ‘engineering’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/engineering/"
+  },
+  {
+    "title": "Posts tagged ‘estates’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/estates/"
+  },
+  {
+    "title": "Posts tagged ‘Events’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/events/"
+  },
+  {
+    "title": "Posts tagged ‘family’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/family/"
+  },
+  {
+    "title": "Posts tagged ‘finance’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/finance/"
+  },
+  {
+    "title": "Posts tagged ‘GDD analytics engineering profession’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/gdd-analytics-engineering-profession/"
+  },
+  {
+    "title": "Posts tagged ‘GDD data engineering profession’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/gdd-data-engineering-profession/"
+  },
+  {
+    "title": "Posts tagged ‘GitHub’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/github/"
+  },
+  {
+    "title": "Posts tagged ‘Good Practice’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/good-practice/"
+  },
+  {
+    "title": "Posts tagged ‘governance’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/governance/"
+  },
+  {
+    "title": "Posts tagged ‘health’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/health/"
+  },
+  {
+    "title": "Posts tagged ‘HR’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/hr/"
+  },
+  {
+    "title": "Posts tagged ‘Iceberg’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/iceberg/"
+  },
+  {
+    "title": "Posts tagged ‘impact’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/impact/"
+  },
+  {
+    "title": "Posts tagged ‘integration’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/integration/"
+  },
+  {
+    "title": "Posts tagged ‘justice’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/justice/"
+  },
+  {
+    "title": "Posts tagged ‘justice-data’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/justice-data/"
+  },
+  {
+    "title": "Posts tagged ‘justice-system’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/justice-system/"
+  },
+  {
+    "title": "Posts tagged ‘legal-aid’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/legal-aid/"
+  },
+  {
+    "title": "Posts tagged ‘linked-data’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/linked-data/"
+  },
+  {
+    "title": "Posts tagged ‘LPA’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/lpa/"
+  },
+  {
+    "title": "Posts tagged ‘NOMIS’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/nomis/"
+  },
+  {
+    "title": "Posts tagged ‘offenders’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/offenders/"
+  },
+  {
+    "title": "Posts tagged ‘OPG’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/opg/"
+  },
+  {
+    "title": "Posts tagged ‘optimisation’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/optimisation/"
+  },
+  {
+    "title": "Posts tagged ‘people-data’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/people-data/"
+  },
+  {
+    "title": "Posts tagged ‘performance’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/performance/"
+  },
+  {
+    "title": "Posts tagged ‘prioritisation’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/prioritisation/"
+  },
+  {
+    "title": "Posts tagged ‘prisons’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/prisons/"
+  },
+  {
+    "title": "Posts tagged ‘probation’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/probation/"
+  },
+  {
+    "title": "Posts tagged ‘procurement’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/procurement/"
+  },
+  {
+    "title": "Posts tagged ‘Project Management’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/project-management/"
+  },
+  {
+    "title": "Posts tagged ‘property’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/property/"
+  },
+  {
+    "title": "Posts tagged ‘public-safety’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/public-safety/"
+  },
+  {
+    "title": "Posts tagged ‘reporting’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/reporting/"
+  },
+  {
+    "title": "Posts tagged ‘research’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/research/"
+  },
+  {
+    "title": "Posts tagged ‘risk-assessment’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/risk-assessment/"
+  },
+  {
+    "title": "Posts tagged ‘ROI’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/roi/"
+  },
+  {
+    "title": "Posts tagged ‘shared-services’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/shared-services/"
+  },
+  {
+    "title": "Posts tagged ‘substance-misuse’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/substance-misuse/"
+  },
+  {
+    "title": "Posts tagged ‘synergy’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/synergy/"
+  },
+  {
+    "title": "Posts tagged ‘Technology Radar’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/technology-radar/"
+  },
+  {
+    "title": "Posts tagged ‘training’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/training/"
+  },
+  {
+    "title": "Posts tagged ‘transformation’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/transformation/"
+  },
+  {
+    "title": "Posts tagged ‘transparency’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/transparency/"
+  },
+  {
+    "title": "Posts tagged ‘tribunals’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/tribunals/"
+  },
+  {
+    "title": "Posts tagged ‘user-needs’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/user-needs/"
+  },
+  {
+    "title": "Posts tagged ‘value’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/value/"
+  },
+  {
+    "title": "Posts tagged ‘victims’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/victims/"
+  },
+  {
+    "title": "Posts tagged ‘workforce’",
+    "section": "Tags",
+    "url": "/pr-preview/pr-123/tags/workforce/"
+  },
+  {
+    "title": "Tags",
+    "url": "/pr-preview/pr-123/tags/"
+  }
+]
