@@ -37,6 +37,8 @@ module.exports = function (eleventyConfig) {
         markdownTemplateEngine: 'njk',
         dir: {
             input: './src/content',
+            output: '_site',
+            includes: '_includes',
         },
         pathPrefix: process.env.PATHPREFIX || '/data-and-analytics-engineering/',
     }
