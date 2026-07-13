@@ -1,9 +1,9 @@
-const { govukEleventyPlugin } = require('@x-govuk/govuk-eleventy-plugin');
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const { addShortcodes } = require('./src/_transforms/shortcodes.js');
-const { addTransforms } = require('./src/_transforms/transforms.js');
+import { govukEleventyPlugin } from '@x-govuk/govuk-eleventy-plugin';
+import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
+import { addShortcodes } from './src/_transforms/shortcodes.js';
+import { addTransforms } from './src/_transforms/transforms.js';
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
     addShortcodes(eleventyConfig);
     addTransforms(eleventyConfig);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);

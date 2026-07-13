@@ -1,11 +1,14 @@
-const sass = require('sass');
-const fs = require('fs');
-const path = require('path');
+import * as sass from 'sass';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const pathPrefix = process.env.PATHPREFIX || '/data-and-analytics-engineering/';
 const assetPath = pathPrefix.replace(/\/$/, '') + '/assets/';
 
-module.exports = class {
+export default class {
     data() {
         return {
             permalink: 'styles.css',
