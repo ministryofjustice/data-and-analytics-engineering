@@ -1,7 +1,6 @@
 ---
-layout: sub-navigation
+layout: article
 title: About
-order: 1
 eleventyNavigation:
   key: About
   parent: Home
