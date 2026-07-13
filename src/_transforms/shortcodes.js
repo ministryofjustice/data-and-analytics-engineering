@@ -12,20 +12,19 @@ export function addShortcodes(eleventyConfig) {
 }
 
 // Card Grid shortcode - Classes defined in /assets/styles.css
-const cardGrid = function (items) {
+const cardGrid = function (items, columns = "one-half") {
+  const gridClass = columns === "one-third" ? "one-third" : "one-half";
   const cards = items
     .map((item) => {
       return `
-      <div class="govuk-grid-column-one-half">
-        <a href="${item.url}" class="govuk-card">
-          <h2 class="govuk-heading-m">${item.title}</h2>
-          <p class="govuk-body">${item.description || ""}</p>
-        </a>
-      </div>`;
+      <a href="${item.url}" class="govuk-card">
+        <h2 class="govuk-heading-m">${item.title}</h2>
+        <p class="govuk-body">${item.description || ""}</p>
+      </a>`;
     })
     .join("");
 
-  return `<div class="govuk-grid-row">${cards}</div>\n`;
+  return `<div class="govuk-card-grid govuk-card-grid--${gridClass}">${cards}</div>\n`;
 };
 
 // Mermaid diagram shortcode

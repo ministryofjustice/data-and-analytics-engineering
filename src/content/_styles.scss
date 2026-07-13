@@ -101,3 +101,243 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+// ============================================
+// Directory Tree
+// ============================================
+
+.dirtree {
+  padding: 20px;
+  margin: 20px 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-x: auto;
+}
+
+.dirtree-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 2px 0;
+}
+
+.dirtree-connectors {
+  white-space: pre;
+  color: govuk-colour("mid-grey");
+  user-select: text;
+}
+
+.dirtree-icon {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  color: $govuk-text-colour;
+}
+
+.dirtree-name {
+  color: $govuk-text-colour;
+  font-weight: 500;
+}
+
+.dirtree-folder-name {
+  color: $govuk-link-colour;
+  font-weight: 600;
+}
+
+// ============================================
+// Table of Contents
+// ============================================
+
+.app-toc {
+  padding: 0;
+  background: transparent;
+  border-left: none;
+
+  &--fixed {
+    position: fixed;
+    top: 100px;
+    left: calc(50% - 480px - 320px - 20px);
+    width: 300px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 20px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "GDS Transport", arial, sans-serif;
+    color: $govuk-link-colour;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &--nested {
+      list-style: none;
+      margin: 0;
+      padding: 0 0 0 16px;
+      border-left: none;
+    }
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+
+    &--active > .app-toc__link {
+      color: $govuk-link-colour;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+
+      &:hover {
+        color: $govuk-link-hover-colour;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 6px 0;
+    color: $govuk-secondary-text-colour;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    &:hover {
+      color: $govuk-link-colour;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    &:focus {
+      outline: 3px solid $govuk-focus-colour;
+      outline-offset: 0;
+      color: $govuk-text-colour;
+      text-decoration: none;
+    }
+  }
+
+  &__list > &__item > &__link {
+    font-size: 16px;
+    font-weight: 600;
+    color: $govuk-link-colour;
+    padding: 8px 0;
+  }
+
+  &__list > &__item#{&}__item--active > &__link {
+    font-weight: 700;
+  }
+
+  &__empty {
+    padding: 0;
+    color: $govuk-secondary-text-colour;
+    font-style: italic;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.app-toc--fixed::-webkit-scrollbar {
+  width: 3px;
+}
+
+.app-toc--fixed::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.app-toc--fixed::-webkit-scrollbar-thumb {
+  background: #b1b4b6;
+  border-radius: 2px;
+}
+
+.app-toc--fixed::-webkit-scrollbar-thumb:hover {
+  background: #505a5f;
+}
+
+@media (max-width: 1340px) {
+  .app-toc--fixed {
+    display: none;
+  }
+}
+
+@media print {
+  .app-toc--fixed {
+    display: none;
+  }
+}
+
+// ============================================
+// Copy Code Button
+// ============================================
+
+.code-block-wrapper {
+  position: relative;
+  border: 1px solid $govuk-border-colour;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: govuk-spacing(4);
+  background: govuk-colour("white");
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: govuk-colour("white");
+  padding: govuk-spacing(6) govuk-spacing(3) govuk-spacing(3);
+}
+
+.code-copy-button {
+  position: absolute;
+  top: govuk-spacing(2);
+  right: govuk-spacing(2);
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid $govuk-border-colour;
+  border-radius: 4px;
+  background: govuk-colour("white");
+  color: $govuk-text-colour;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(11, 12, 12, 0.1);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.code-copy-button:hover {
+  background: govuk-colour("light-grey");
+  border-color: $govuk-text-colour;
+}
+
+.code-copy-button:focus {
+  outline: 3px solid $govuk-focus-colour;
+  outline-offset: 0;
+}
+
+.code-copy-button .icon-check {
+  display: none;
+  color: govuk-colour("green");
+}
+
+.code-copy-button[data-copied="true"] .icon-copy {
+  display: none;
+}
+
+.code-copy-button[data-copied="true"] .icon-check {
+  display: inline;
+}

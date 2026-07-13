@@ -1,9 +1,11 @@
 const { govukEleventyPlugin } = require('@x-govuk/govuk-eleventy-plugin');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const { addShortcodes } = require('./src/_transforms/shortcodes.js');
+const { addTransforms } = require('./src/_transforms/transforms.js');
 
 module.exports = function (eleventyConfig) {
     addShortcodes(eleventyConfig);
+    addTransforms(eleventyConfig);
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(govukEleventyPlugin, {
         stylesheets: ['/styles.css'],
@@ -26,7 +28,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection("posts", function (collectionApi) {
         return collectionApi.getFilteredByGlob("./src/content/blog/posts/*.md").reverse()
     })
-    eleventyConfig.addPassthroughCopy("./src/**/*.png")
+    eleventyConfig.addPassthroughCopy({ "./src/assets": "assets" })
+    eleventyConfig.addPassthroughCopy("./src/content/**/*.{png,jpg,jpeg,gif,svg,webp,ico}")
     eleventyConfig.addShortcode('version', function () {
         return now
     })
