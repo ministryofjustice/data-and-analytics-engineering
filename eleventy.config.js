@@ -3,6 +3,9 @@ import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import { addShortcodes } from './src/_transforms/shortcodes.js';
 import { addTransforms } from './src/_transforms/transforms.js';
 
+const pathPrefix = process.env.PATHPREFIX || '/data-and-analytics-engineering/';
+const prefixedSearchIndexPath = `${pathPrefix.replace(/\/$/, '')}/search.json`;
+
 export default function (eleventyConfig) {
     addShortcodes(eleventyConfig);
     addTransforms(eleventyConfig);
@@ -14,7 +17,7 @@ export default function (eleventyConfig) {
             organisationLogo: 'royal-arms',
             productName: 'Data and Analytics Engineering',
             search: {
-                indexPath: '/search.json',
+                indexPath: prefixedSearchIndexPath,
                 sitemapPath: '/sitemap'
             }
         },
@@ -43,6 +46,6 @@ export default function (eleventyConfig) {
             output: '_site',
             includes: '_includes',
         },
-        pathPrefix: process.env.PATHPREFIX || '/data-and-analytics-engineering/',
+        pathPrefix,
     }
 };
