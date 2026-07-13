@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Free and Licensed Learning Resources
 eleventyNavigation:
   key: Free and Licensed Learning Resources
   parent: Learning
-  order: 10
 ---
 
 The Data & Analysis Directorate within the MoJ offers a range of subscription based paid for self learning resources including free courses with trial access to help you get started.

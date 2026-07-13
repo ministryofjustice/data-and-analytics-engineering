@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Analytics Engineering Monthly
 eleventyNavigation:
   key: Analytics Engineering Monthly
   parent: Regular meetings
-  order: 4
 ---
 
 ## Purpose 

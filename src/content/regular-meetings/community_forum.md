@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Community Forum
 eleventyNavigation:
   key: Community Forum
   parent: Regular meetings
-  order: 1
 ---
 
 ## Purpose 

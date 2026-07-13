@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Scrum Guide
 eleventyNavigation:
   key: Scrum Guide
   parent: Soft Skills
-  order: 7
 ---
 Resources and blog posts about Scrum techniques.
 

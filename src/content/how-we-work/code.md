@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Code Review
 eleventyNavigation:
   key: Code Review
   parent: How we work
-  order: 5
 ---
 
 Our [code reviews](https://gds-way.digital.cabinet-office.gov.uk/manuals/code-review-guidelines.html) ensure code quality while promoting learning and knowledge sharing amongst the team.

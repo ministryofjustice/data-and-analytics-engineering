@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Tech Radar - Platforms, Tools, Languages, Frameworks and Techniques
 eleventyNavigation:
   key: Tech Radar
   parent: About
-  order: 3
 ---
 
 ## Data and Analytics Engineering Tech Radar

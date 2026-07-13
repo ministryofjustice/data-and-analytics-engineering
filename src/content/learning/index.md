@@ -1,11 +1,10 @@
 ---
-layout: sub-navigation
+layout: article
 title: Learning
 order: 2
 eleventyNavigation:
   key: Learning
   parent: Home
-  order: 2
 ---
 
 ## Learning & Development Opportunities

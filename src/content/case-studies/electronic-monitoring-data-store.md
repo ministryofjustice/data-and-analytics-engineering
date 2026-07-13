@@ -6,7 +6,7 @@ title: "Electronic Monitoring Data Store"
 description: "Improving data quality and access to support the monitoring and analysis of electronic monitoring use."
 tags: [electronic-monitoring, probation, data-quality, integration]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

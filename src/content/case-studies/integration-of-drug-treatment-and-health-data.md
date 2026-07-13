@@ -6,7 +6,7 @@ title: "Integration of Drug Treatment and Health Data"
 description: "Linking justice and health datasets to support better outcomes in substance misuse and rehabilitation services."
 tags: [health, substance-misuse, drug-treatment, data-linking, justice]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

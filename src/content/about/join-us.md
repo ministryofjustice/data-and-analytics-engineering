@@ -1,11 +1,10 @@
 ---
-layout: sub-navigation
+layout: article
 title: Join Us
 description: Information about open roles in the team
 eleventyNavigation:
   key: Join Us
   parent: About
-  order: 4
 ---
 ### How to apply for a Data and Analytics Engineering role at the Ministry of Justice
 

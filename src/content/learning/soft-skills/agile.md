@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Agile Delivery
 eleventyNavigation:
   key: Agile Delivery
   parent: Soft Skills
-  order: 6
 ---
 Resources and blog posts for learning about Agile Techniques and how to apply them.
 

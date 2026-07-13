@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Analytics Engineer 18-Month Apprenticeship Program
 eleventyNavigation:
   key: Analytics Engineer Apprenticeship
   parent: Learning
-  order: 3
 ---
 
 The Ministry of Justice Analytics Engineer 18-Week Apprenticeship is designed to provide apprentices with a solid foundation in key data engineering and analytics skills before they transition to on-the-job training. It is part of the Data Analyst Level 4 Apprenticeship program, which includes comprehensive training on essential tools and technologies used in the field.

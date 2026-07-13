@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Firebreaks
 eleventyNavigation:
   key: Firebreaks
   parent: Innovation
-  order: 2
 ---
 ## Firebreaks
 

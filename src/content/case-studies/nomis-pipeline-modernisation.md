@@ -6,7 +6,7 @@ title: "NOMIS Pipeline Modernisation"
 description: "Improving performance and scalability by modernising one of MoJ’s largest data pipelines."
 tags: [NOMIS, prisons, performance, optimisation, automation]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

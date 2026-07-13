@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Leadership
 eleventyNavigation:
   key: Leadership
   parent: Soft Skills
-  order: 2
 ---
 Resources and blog posts about how to become a more effective leader.
 

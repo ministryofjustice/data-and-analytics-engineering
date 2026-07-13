@@ -6,7 +6,7 @@ title: "Better Outcomes through Linked Data (BOLD)"
 description: "How cross-government data sharing improves justice outcomes and delivers value for money."
 tags: [data-linking, cross-government, impact, BOLD, analytics]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

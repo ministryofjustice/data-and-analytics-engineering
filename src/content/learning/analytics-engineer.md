@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Analytics Engineering
 eleventyNavigation:
   key: Analytics Engineering
   parent: Learning
-  order: 2
 ---
 ## Analytics Engineer
 

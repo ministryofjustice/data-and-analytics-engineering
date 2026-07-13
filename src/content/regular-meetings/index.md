@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Regular meetings
 eleventyNavigation:
   key: Regular meetings
   parent: Home
-  order: 4
 ---
 
 Within the Data and Analytics Engineers we have several regular meetings, each with a dedicated purpose to enable us to collaborate and work effectively.

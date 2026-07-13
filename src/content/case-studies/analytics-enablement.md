@@ -6,7 +6,7 @@ title: "Analytics Enablement"
 description: "Embedding Analytics Engineers, training, and tools to support adoption of modelled data pipelines across MoJ."
 tags: [analytics, enablement, data-modelling, adoption, training]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

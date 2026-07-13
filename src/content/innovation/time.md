@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: 10% Time
 eleventyNavigation:
   key: 10% Time
   parent: Innovation
-  order: 1
 ---
 
 10% time is the equivalent to 0.5 day per week if you are employed full time. of their working hours— and allows you to explore new ideas, pursue personal development, or work on projects outside their day-to-day responsibilities. This concept is part of fostering innovation, creativity, and continuous improvement within the directorate.

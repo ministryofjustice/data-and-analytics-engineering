@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Portfolio Spotlight
 eleventyNavigation:
   key: Portfolio Spotlight
   parent: Regular meetings
-  order: 3
 ---
 
 ## Purpose

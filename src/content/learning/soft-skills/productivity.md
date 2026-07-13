@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Productivity
 eleventyNavigation:
   key: Productivity
   parent: Soft Skills
-  order: 9
 ---
 Resources and blog posts about how to improve productivity.
 

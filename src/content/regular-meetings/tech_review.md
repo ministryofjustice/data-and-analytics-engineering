@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Tech Review
 eleventyNavigation:
   key: Tech Review
   parent: Regular meetings
-  order: 2
 ---
 
 ## Purpose

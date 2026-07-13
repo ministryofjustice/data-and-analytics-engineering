@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Collaboration and Engagement Squad
 eleventyNavigation:
   key: Collaboration and Engagement Squad
   parent: How we work
-  order: 1
 ---
 
 Our Collaboration and Engagement Squad is made of Data Analytics and Engineering team members who organise and coordinate: 

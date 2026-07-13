@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Show and Tells
 eleventyNavigation:
   key: Show and Tell
   parent: How we work
-  order: 6
 ---
 
 Our Show and Tells are group team building sessions and opportunities to showcase work and share progress.

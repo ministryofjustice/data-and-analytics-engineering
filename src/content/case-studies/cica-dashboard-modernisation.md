@@ -6,7 +6,7 @@ title: "CICA Dashboard Modernisation"
 description: "Transforming CICA’s management information system with an automated, user-friendly dashboard."
 tags: [CICA, dashboard, automation, data-access]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

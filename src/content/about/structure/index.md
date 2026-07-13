@@ -1,11 +1,10 @@
 ---
-layout: sub-navigation
+layout: article
 title: Team Structure
 description: How we structure our teams
 eleventyNavigation:
   key: Team Structure
   parent: About
-  order: 3
 ---
 # Team Structure
 

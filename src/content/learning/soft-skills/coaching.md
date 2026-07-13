@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Coaching
 eleventyNavigation:
   key: Coaching
   parent: Soft Skills
-  order: 8
 ---
 Resources and blog posts about effective techniques for coaching.
 

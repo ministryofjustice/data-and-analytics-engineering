@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Soft Skills
 eleventyNavigation:
   key: Soft Skills
   parent: Learning
-  order: 6
 ---
 
 Soft skills are personal attributes and interpersonal abilities that enable individuals to work effectively with others in a professional environment. Unlike technical skills, which are job-specific, soft skills are universally valuable across roles and industries. They include communication, teamwork, problem-solving, leadership, adaptability, and emotional intelligence.

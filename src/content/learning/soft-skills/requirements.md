@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Requirements Gathering
 eleventyNavigation:
   key: Requirements Gathering
   parent: Soft Skills
-  order: 4
 ---
 Resources and blog posts on identifying and documenting stakeholder needs to guide project development.
 

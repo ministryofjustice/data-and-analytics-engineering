@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Hackathons
 eleventyNavigation:
   key: Hackathons
   parent: Innovation
-  order: 3
 ---
 
 ## Hackathons

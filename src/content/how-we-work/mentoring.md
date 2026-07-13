@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Mentoring Scheme
 eleventyNavigation:
   key: Mentoring Scheme
   parent: How we work
-  order: 2
 ---
 
 Take advantage of structured personal growth and development through our mentoring scheme.

@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Buddy System
 eleventyNavigation:
   key: Buddy System
   parent: How we work
-  order: 4
 ---
 
 Our buddy system is a structured approach where a new or less experienced team member is paired with an experienced colleague (the "buddy") to help them transition into the team, understand the work culture, and get up to speed on technical and operational practices to help people get settled in. 

@@ -6,7 +6,7 @@ title: "Corporate Finance Insight"
 description: "Standardising and automating financial reporting to improve transparency and reduce resource burden."
 tags: [finance, reporting, automation, transformation]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

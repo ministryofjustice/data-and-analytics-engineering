@@ -6,7 +6,7 @@ title: "Victim Attrition Dashboard"
 description: "Using linked data to understand victim journeys and reduce attrition in the Criminal Justice System."
 tags: [victims, dashboards, justice-data, cross-agency]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview
