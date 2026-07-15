@@ -6,7 +6,7 @@
     "@x-govuk/govuk-eleventy-plugin": "^9.0.1",
     "govuk-frontend": "^6.1.0",
     "jquery": "^3.7.1",
-    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-attrs": "^5.0.0",
     "nunjucks": "^3.2.4"
   },
   "scripts": {
