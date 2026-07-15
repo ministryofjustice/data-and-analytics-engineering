@@ -2,11 +2,11 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@ministryofjustice/frontend": "^1.8.0",
-    "@sindresorhus/slugify": "^2.2.1",
+    "@sindresorhus/slugify": "^3.0.0",
     "@x-govuk/govuk-eleventy-plugin": "^9.0.1",
-    "govuk-frontend": "^6.1.0",
+    "govuk-frontend": "^6.3.0",
     "jquery": "^3.7.1",
-    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-attrs": "^5.0.0",
     "nunjucks": "^3.2.4"
   },
   "scripts": {
@@ -16,6 +16,6 @@
   "devDependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
   }
 }
