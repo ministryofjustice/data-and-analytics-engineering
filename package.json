@@ -18,6 +18,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
   }
 }
