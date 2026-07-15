@@ -1,12 +1,10 @@
 ---
-layout: sub-navigation
+layout: article
 title: Standards and Conventions
 eleventyNavigation:
   key: Standards and Conventions
   parent: Learning
-  order: 1
 ---
-
 
 ## Technology
 

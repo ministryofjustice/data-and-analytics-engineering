@@ -1,11 +1,11 @@
 ---
-layout: sub-navigation
+layout: article
 title: Meeting Facilitation
 eleventyNavigation:
   key: Meeting Facilitation
   parent: Soft Skills
-  order: 5
 ---
+
 Resources and blog posts about how to get the most out of your meetings.
 
 {% set menuItems = [

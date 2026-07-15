@@ -6,7 +6,7 @@ title: "OneCrown Data Model"
 description: "Building a single, trusted dataset to support performance insight and decision making in criminal courts."
 tags: [courts, criminal-justice, data-integration, performance]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

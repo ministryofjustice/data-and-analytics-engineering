@@ -6,7 +6,7 @@ title: "Property Data Environment"
 description: "Automating data flows and improving reporting for real-time management of MoJ’s property portfolio."
 tags: [property, estates, data-integration, automation, reporting]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

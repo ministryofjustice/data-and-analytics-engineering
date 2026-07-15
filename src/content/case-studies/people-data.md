@@ -6,7 +6,7 @@ title: "People Data"
 description: "Improving the quality and accessibility of people data to support workforce planning, wellbeing, and strategic insight."
 tags: [people-data, workforce, analytics, data-platform]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

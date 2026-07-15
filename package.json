@@ -1,20 +1,22 @@
 {
+  "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.5",
-    "@ministryofjustice/frontend": "^1.8.0",
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@ministryofjustice/frontend": "^9.0.0",
     "@sindresorhus/slugify": "^3.0.0",
-    "@x-govuk/govuk-eleventy-plugin": "^9.0.1",
+    "@x-govuk/govuk-eleventy-plugin": "^9.0.2",
+    "cheerio": "^1.2.0",
     "govuk-frontend": "^6.3.0",
-    "jquery": "^3.7.1",
-    "markdown-it-attrs": "^5.0.0",
-    "nunjucks": "^3.2.4"
+    "jquery": "^4.0.0",
+    "nunjucks": "^3.2.4",
+    "serialize-javascript": "^7.0.3"
   },
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "build": "rm -rf _site && npx @11ty/eleventy",
+    "serve": "rm -rf _site && npx @11ty/eleventy --serve --quiet --incremental"
   },
   "devDependencies": {
-    "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
   }

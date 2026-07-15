@@ -6,7 +6,7 @@ title: "Synergy Programme Data Integration"
 description: "Enabling shared data infrastructure for HR, Finance, and Commercial systems across departments."
 tags: [synergy, data-integration, shared-services, HR, finance, commercial]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

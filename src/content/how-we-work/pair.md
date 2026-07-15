@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Pair Programming
 eleventyNavigation:
   key: Pair Programming
   parent: How we work
-  order: 3
 ---
 
 [Pair programming](https://gds-way.digital.cabinet-office.gov.uk/standards/pair-programming.html#pair-programming) is a collaborative software development technique where two programmers work together at one workstation, with one writing code (the driver) and the other reviewing each line of code as it's written (the navigator).

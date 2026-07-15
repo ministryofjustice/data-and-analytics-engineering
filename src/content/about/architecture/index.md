@@ -1,11 +1,10 @@
 ---
-layout: sub-navigation
+layout: article
 title: Architecture
 description: Find out about the data and analytics engineering architecture, key tools and services
 eleventyNavigation:
   key: Architecture
   parent: About
-  order: 1
 ---
 
 ## Context

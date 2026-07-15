@@ -6,7 +6,7 @@ title: "User-Centric Design of Services (Tribunals)"
 description: "Designing data services around user needs to improve access to justice and operational efficiency."
 tags: [tribunals, user-needs, data-design, access-to-justice]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

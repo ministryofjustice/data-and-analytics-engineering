@@ -6,7 +6,7 @@ title: "Gold Scorecard Dashboard"
 description: "Automating procurement data pipelines to improve contract performance insights and reduce risk."
 tags: [commercial, procurement, dashboards, automation, contracts]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

@@ -6,7 +6,7 @@ title: "Offender Risk Assessment Data Sharing"
 description: "Enabling secure data sharing and modelling to improve risk assessment and public protection."
 tags: [risk-assessment, data-sharing, offenders, public-safety]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

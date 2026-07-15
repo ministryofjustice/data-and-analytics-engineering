@@ -1,36 +1,39 @@
-const sass = require('sass');
-const fs = require('fs');
-const path = require('path');
+import * as sass from "sass";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const pathPrefix = process.env.PATHPREFIX || '/data-and-analytics-engineering/';
-const assetPath = pathPrefix.replace(/\/$/, '') + '/assets/';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-module.exports = class {
-    data() {
-        return {
-            permalink: 'styles.css',
-            eleventyExcludeFromCollections: true
-        };
-    }
+const pathPrefix = process.env.PATHPREFIX || "/data-and-analytics-engineering/";
+const assetPath = pathPrefix.replace(/\/$/, "") + "/assets/";
 
-    render() {
-        const scssPath = path.resolve(__dirname, '_styles.scss');
-        let scssContent = fs.readFileSync(scssPath, 'utf8');
+export default class {
+  data() {
+    return {
+      permalink: "styles.css",
+      eleventyExcludeFromCollections: true,
+    };
+  }
 
-        // Inject the correct asset path for GOV.UK Frontend fonts and images,
-        // so previews deployed under a different path prefix also work.
-        scssContent = scssContent.replace(
-            /\$govuk-assets-path:\s*"[^"]*"/,
-            `$govuk-assets-path: "${assetPath}"`
-        );
+  render() {
+    const scssPath = path.resolve(__dirname, "_styles.scss");
+    let scssContent = fs.readFileSync(scssPath, "utf8");
 
-        const result = sass.compileString(scssContent, {
-            importers: [new sass.NodePackageImporter()],
-            loadPaths: [path.dirname(scssPath), './node_modules', '.'],
-            quietDeps: true,
-            style: 'compressed'
-        });
+    // Inject the correct asset path for GOV.UK Frontend fonts and images,
+    // so previews deployed under a different path prefix also work.
+    scssContent = scssContent.replace(
+      /\$govuk-assets-path:\s*"[^"]*"/,
+      `$govuk-assets-path: "${assetPath}"`,
+    );
 
-        return result.css;
-    }
-};
+    const result = sass.compileString(scssContent, {
+      importers: [new sass.NodePackageImporter()],
+      loadPaths: [path.dirname(scssPath), "./node_modules", "."],
+      quietDeps: true,
+      style: "compressed",
+    });
+
+    return result.css;
+  }
+}

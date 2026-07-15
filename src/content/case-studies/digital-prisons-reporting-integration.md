@@ -6,7 +6,7 @@ title: "Digital Prisons Reporting Integration"
 description: "Improving transparency and consistency in prison data through integration and automation."
 tags: [prisons, reporting, integration, automation]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

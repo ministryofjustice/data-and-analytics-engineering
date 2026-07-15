@@ -1,11 +1,11 @@
 ---
-layout: sub-navigation
+layout: article
 title: Stakeholder Management
 eleventyNavigation:
   key: Stakeholder Management
   parent: Soft Skills
-  order: 3
 ---
+
 Resources and blog posts on building relationships with stakeholders, or customers, to align expectations and ensure successful project outcomes.
 
 {% set menuItems = [

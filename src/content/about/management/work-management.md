@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Work Management
 eleventyNavigation:
   key: Work Management
   parent: Management
-  order: 2
 ---
 
 A work manager is responsible for directing the day-to-day work of the people they manage.

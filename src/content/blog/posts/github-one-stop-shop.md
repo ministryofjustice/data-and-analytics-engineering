@@ -38,7 +38,7 @@ However, there are several advantages which I feel make it worthwhile, especiall
 
 ### Searchability
 
-Having all your code, tickets, documentation, and slides in one place makes it super easy to search through everything, *if you can find it*. Unfortunately, GitHub search used to be [very limited](https://github.com/isaacs/github/issues/908) (you can read why in the [history of code search at GitHub](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/)). Thankfully, GitHub rolled out a new search engine and browser in [May 2023](https://github.blog/2023-05-08-github-code-search-is-generally-available/), making it possible to find relevant results at reasonable speed. Knowing the [GitHub search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) helps.
+Having all your code, tickets, documentation, and slides in one place makes it super easy to search through everything, _if you can find it_. Unfortunately, GitHub search used to be [very limited](https://github.com/isaacs/github/issues/908) (you can read why in the [history of code search at GitHub](https://github.blog/2021-12-15-a-brief-history-of-code-search-at-github/)). Thankfully, GitHub rolled out a new search engine and browser in [May 2023](https://github.blog/2023-05-08-github-code-search-is-generally-available/), making it possible to find relevant results at reasonable speed. Knowing the [GitHub search syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax) helps.
 
 ### Interoperability
 
@@ -69,7 +69,7 @@ Due to limited support for complex workflows, industry adoption has been more gr
 
 ## Project management
 
-The classic version of GitHub Projects, launched in [2016](https://github.blog/2016-09-14-a-whole-new-github-universe-announcing-new-tools-forums-and-features/), is an infamous example of releasing a product too early. It consisted primarily of a Kanban board and lacked basic features such as a [backlog view](https://medium.com/momenton/jira-vs-github-issue-tracking-4cdf3bdd1437), deterring most enterprise users. In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/), GitHub released a revamped version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects), which offers a more intuitive, flexible, and customisable user interface. 
+The classic version of GitHub Projects, launched in [2016](https://github.blog/2016-09-14-a-whole-new-github-universe-announcing-new-tools-forums-and-features/), is an infamous example of releasing a product too early. It consisted primarily of a Kanban board and lacked basic features such as a [backlog view](https://medium.com/momenton/jira-vs-github-issue-tracking-4cdf3bdd1437), deterring most enterprise users. In [August 2022](https://github.blog/2022-07-27-planning-next-to-your-code-github-projects-is-now-generally-available/), GitHub released a revamped version of [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects), which offers a more intuitive, flexible, and customisable user interface.
 
 Users can now plan and track work using either a [table or board view](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view). Projects are created at the GitHub organisation level, making them linkable to repositories but independent from them. Additionally, you can incorporate issues from [other GitHub organisations](https://github.blog/changelog/2023-02-23-github-issues-projects-february-23rd-update/#add-cross-organization-issues-and-pull-requests-to-projects), although there won't be a reciprocal link from the issue to the project. There are various ways to [automate](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project) projects. The simplest are the [built-in automations](https://docs.github.com/en/issues/planning-and-tracking-with-projects/automating-your-project/using-the-built-in-automations), which, for example, can update the status of an issue to 'Done' when it is closed.
 
@@ -81,7 +81,7 @@ Users can now plan and track work using either a [table or board view](https://d
 
 [Task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) have been around since [2014](https://github.blog/2013-01-09-task-lists-in-gfm-issues-pulls-comments/). GitHub is currently working on [a significant upgrade](https://docs.github.com/en/issues/managing-your-tasks-with-tasklists), which is still in private beta, so stay tuned for updates!
 
-You can link to issues, pull requests and discussions within the same repository using the simple `#number` pattern: 
+You can link to issues, pull requests and discussions within the same repository using the simple `#number` pattern:
 
 ```
 - [x] #739
@@ -107,15 +107,15 @@ Navigating back to the epic from discussions and pull requests isn't as straight
 
 [Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) can be associated with issues and pull requests, but not discussions. You can display milestones on GitHub Projects as an additional column, and add them to the GitHub Project [roadmap layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/changing-the-layout-of-a-view#about-the-roadmap-layout.). For more complicated projects that require a more nested hierarchy, you can group issue epics into milestones, as explained in this mermaid diagram.
 
-```
+````
 ```mermaid
-flowchart 
+flowchart
     Epic[Issue with Epic label]
     Issue --> |Task list|Epic
     PR[Pull Request] --> |Task list|Epic
-    Discussion --> |Task list|Epic 
+    Discussion --> |Task list|Epic
     Epic --> Milestone
-```
+````
 
 ![Nested epics](https://raw.githubusercontent.com/ministryofjustice/data-and-analytics-engineering/main/src/content/blog/posts/images/github-one-stop-shop/mermaid.png)
 
@@ -162,13 +162,13 @@ Documentation about your project can take many forms, which needs to be recorded
 
 The best place for documentation about your code to reside is in your code. Good code documentation practice is outside the scope of this post. You can refer to [this article](https://swimm.io/learn/code-documentation/documentation-in-python-methods-and-best-practices) for some great pointers on documenting Python code.
 
-### Documentation about your project  
+### Documentation about your project
 
-This includes architecture, dependencies, setup instructions and user guidance. You can keep this information in GitHub as Markdown files in your GitHub repository's `/docs` folder. An alternative is to use [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved by [Astro Bookings](https://github.com/AstroBookings/.github/wiki). However, I would not recommend them for reasons that are best summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/). 
+This includes architecture, dependencies, setup instructions and user guidance. You can keep this information in GitHub as Markdown files in your GitHub repository's `/docs` folder. An alternative is to use [GitHub wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis), as has been successfully achieved by [Astro Bookings](https://github.com/AstroBookings/.github/wiki). However, I would not recommend them for reasons that are best summarised in this [article](https://michaelheap.com/github-wiki-is-an-antipattern/).
 
-GitHub uses a variant of Markdown called [GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). It also uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) syntax to expand the functionality, for example, to provide accessible tables and chunks of reusable content. However, the [basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) should suffice for most needs. 
+GitHub uses a variant of Markdown called [GitHub Flavored Markdown](https://docs.github.com/en/contributing/writing-for-github-docs/using-markdown-and-liquid-in-github-docs). It also uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) syntax to expand the functionality, for example, to provide accessible tables and chunks of reusable content. However, the [basics](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) should suffice for most needs.
 
-Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long-running tests.  
+Whilst it's recommended for documentation to go through the same review process as code, it can sometimes feel onerous. You can modify the [codeowners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) to skip the approval process for changes to the `/docs` folder. You can also modify [GitHub workflows](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onpull_requestpull_request_targetbranchesbranches-ignore) to skip the workflow, which is useful in the case of long-running tests.
 
 A few things to note about structuring the `/docs` folder:
 
@@ -177,7 +177,7 @@ A few things to note about structuring the `/docs` folder:
 
 ### Publishing your documentation
 
-You can convert your documentation into a website using [static site generators](https://en.wikipedia.org/wiki/Static_site_generator) and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. For instance, this blog is hosted on GitHub Pages and generated using an [Eleventy plugin](https://x-govuk.github.io/govuk-eleventy-plugin/).  GitHub Pages isn't limited to hosting documentation; we also use it to publish our [tech radar](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/).
+You can convert your documentation into a website using [static site generators](https://en.wikipedia.org/wiki/Static_site_generator) and host it on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages), GitHub's static site hosting service. For instance, this blog is hosted on GitHub Pages and generated using an [Eleventy plugin](https://x-govuk.github.io/govuk-eleventy-plugin/). GitHub Pages isn't limited to hosting documentation; we also use it to publish our [tech radar](https://moj-analytical-services.github.io/data-and-analytics-engineering-tech-radar/).
 
 ### Documentation about your approach
 
@@ -212,7 +212,7 @@ If you have any comments or suggestions please post on the [discussion](https://
 I would like to thank the following people and resources:
 
 - The managed pipelines crew for being so open to experimenting!
-- The Saturday Coding Club for providing insightful suggestions 
+- The Saturday Coding Club for providing insightful suggestions
 - [Richard Baguley](https://github.com/bagg3rs) for introducing me to Excalidraw
 - [Julia Lawrence](https://github.com/julialawrence) for encouraging me to give GitHub Projects another try
 - [Calum Barnett](https://github.com/calumabarnett) for making sure I follow the [GDS style guide](https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style)

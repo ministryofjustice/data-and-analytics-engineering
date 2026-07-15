@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: People Management
 eleventyNavigation:
   key: People Management
   parent: Management
-  order: 1
 ---
 
 A people manager is responsible for the learning and development, performance, and wellbeing of the people they manage.

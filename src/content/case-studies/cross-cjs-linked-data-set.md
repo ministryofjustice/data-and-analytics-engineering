@@ -6,7 +6,7 @@ title: "Cross-CJS Linked Data Set"
 description: "Linking data across the justice system to enable new insights, better policy, and improved support for victims and offenders."
 tags: [justice-system, data-linking, analytics, victims, offenders]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

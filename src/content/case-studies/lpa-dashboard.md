@@ -6,7 +6,7 @@ title: "Lasting Power of Attorney Dashboard"
 description: "Delivering timely and trusted reporting for OPG’s Lasting Power of Attorney service through a modern data warehouse."
 tags: [LPA, OPG, dashboards, reporting, data-warehouse]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

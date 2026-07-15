@@ -1,11 +1,11 @@
 ---
-layout: sub-navigation
+layout: article
 title: Emotional Intelligence
 eleventyNavigation:
   key: Emotional Intelligence
   parent: Soft Skills
-  order: 1
 ---
+
 Resources and blog posts about ways to improve your interactions with others.
 
 {% set menuItems = [

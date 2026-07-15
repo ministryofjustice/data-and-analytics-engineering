@@ -6,7 +6,7 @@ title: "Legal Aid Data Stabilisation"
 description: "Creating a unified Legal Aid data model to reduce duplication, improve governance, and support transformation."
 tags: [legal-aid, data-model, governance, analytics]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

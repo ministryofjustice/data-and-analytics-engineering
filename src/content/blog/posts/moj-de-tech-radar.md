@@ -36,12 +36,14 @@ A technology radar is a tool that maps out the key technologies your team is usi
 Originally pioneered by [ThoughtWorks](https://www.thoughtworks.com/radar), technology radars provides a visual framework, akin to an archery target, for mapping out our technology landscape. It helps align technology choices across teams and guides informed decisions about which technologies to continue using or discontinue.
 
 The radar is divided into four rings:
+
 - **ADOPT**: Proven tools and techniques we trust to meet our needs at scale. These are widely used in production, low-risk, and recommended for broad adoption.
 - **ASSESS**: Promising tools with clear potential. These are worth researching and prototyping, though they carry higher risks as they are new and untested in our organisation. Some engineers may already be experimenting with them.
 - **RETAIN**: Technologies we currently use and are satisfied with but do not plan to adopt in new projects.
 - **REPLACE**: Outdated tools or techniques that have been superseded. We will stop using them for new projects and plan to phase them out of existing ones.
 
 And split into the following quadrants:
+
 - **Platforms**: Technologies centred on software operations, encompassing platforms, infrastructure, and services that support deployment and management.
 - **Tools**: This quadrant includes a mix of comprehensive industrial software solutions and smaller, custom-built internal tools. Examples range from Docker and ruff to bespoke tools developed in-house.
 - **Languages and Frameworks**: Programming languages and common frameworks used in Data Engineering, such as dbt, pyarrow or pyspark.
@@ -70,32 +72,39 @@ We began with a simple whiteboarding exercise where the team collaborated to map
 </div>
 
 ### Wins and Challenges of the First Radar
+
 Our initial radar provided several immediate benefits:
+
 - A **shared understanding** of the technologies we use, their purpose, and potential future direction.
 - **Improved engagement**: Team members had a platform to contribute ideas, raising awareness of our tools and techniques.
 - A **clear visual overview** of our tech landscape, fostering alignment across the team.
 
 However, the approach had clear limitations:
+
 - **Manual maintenance**: Updating the radar was time-consuming and prone to becoming outdated.
 - **Limited collaboration**: Contributions were limited to in-person meetings, restricting remote or asynchronous participation.
 - **No historical record**: We couldn’t easily track changes, the rationale behind decisions, or the timeline of updates.
 
 ### From Whiteboard to Webpage: Adopting an Open-Source Solution
+
 In 2020, Zalando open-sourced their JavaScript-based [technology radar](https://github.com/zalando/tech-radar), providing a dynamic alternative. Their radar uses a central JSON file to define each **blip**—including its name, quadrant, ring, and date—which automatically populates the visual radar. This approach tackled the core challenges of manual updates and static visuals.
 
 We adopted Zalando’s radar as our foundation and built on it to better suit our needs. By integrating with **GitHub Discussions**, we introduced a streamlined way to propose, discuss, and update blips. This not only maintained a transparent historical record but also allowed for asynchronous collaboration—crucial for a remote-friendly, hybrid-working environment.
 
 ## Integrations with GitHub
 
-As a team, we’ve steadily consolidated our processes within **GitHub**, creating a unified environment for development, collaboration, and decision-making (see our blog post on [*GitHub as a One-Stop Shop*](https://ministryofjustice.github.io/data-and-analytics-engineering/blog/posts/github-as-a-one-stop-shop/) for more details). Naturally, we explored GitHub as a solution for managing our technology radar and found ways to enhance its functionality.
+As a team, we’ve steadily consolidated our processes within **GitHub**, creating a unified environment for development, collaboration, and decision-making (see our blog post on [_GitHub as a One-Stop Shop_](https://ministryofjustice.github.io/data-and-analytics-engineering/blog/posts/github-as-a-one-stop-shop/) for more details). Naturally, we explored GitHub as a solution for managing our technology radar and found ways to enhance its functionality.
 
 ### Leveraging GitHub Discussions
+
 After some experimentation, we adopted **GitHub Discussions** as the backbone for creating and managing blips. Each discussion corresponds to a blip and includes:
+
 - **Title**: The name of the blip.
 - **Labels**: To indicate its status—Adopt, Assess, Retain, or Replace.
 - **Categories**: To classify the blip as a language, platform, tool, or technique.
 
 Team members vote on blip status using an emoji-based system (a creative workaround for GitHub’s limited emoji set):
+
 1. **ADOPT** 🚀
 2. **ASSESS** 👍
 3. **RETAIN** 😄
@@ -137,6 +146,7 @@ Here are the most notable changes from our latest review:
 ---
 
 ### 🔼 Climbers
+
 These tools have proven their value, gaining maturity and broader adoption, which has earned them a move to the **Adopt** ring.
 
 - **dbt-core**
@@ -148,6 +158,7 @@ These tools have proven their value, gaining maturity and broader adoption, whic
 ---
 
 ### 🔽 Fallers
+
 These tools have fallen out of favour due to limitations, inefficiencies, or the emergence of better alternatives.
 
 - **AWS Glue**
@@ -162,6 +173,7 @@ These tools have fallen out of favour due to limitations, inefficiencies, or the
 ---
 
 ### ⭐ New Entries
+
 New technologies and tools have entered the radar as we expand our capabilities and refine our workflows.
 
 - **DuckDB**
@@ -177,21 +189,24 @@ New technologies and tools have entered the radar as we expand our capabilities 
 
 These changes highlight our continued focus on balancing **stability** with **innovation**, ensuring our toolkit remains efficient, scalable, and fit for purpose. Each update reflects careful consideration of what works, what doesn’t, and where we can improve to meet the evolving demands of our team and organisation.
 
-
 ## Continuing the Journey: Next Steps for Our Radar
 
 Our second-generation technology radar provides a more functional, automated way to coordinate technology choices across our teams. However, there’s still room for improvement as we look to make the radar even more effective and sustainable.
 
 ### Annual Updates and Team Engagement
+
 We plan to refresh the radar annually during a dedicated team day. This serves as both a valuable team-building exercise and an opportunity for everyone—including junior team members—to contribute to shaping our technology strategy.
 
 ### Key Areas for Improvement
+
 While the radar has already delivered significant value, several challenges remain that we’re actively addressing:
+
 - **Automated CI for blip updates**: Although the radar integrates seamlessly with GitHub, we aim to further streamline the process with automated continuous integration workflows for updating blips.
 - **Improved labelling and filtering**: The introduction of an Analytical Engineering function has increased the number of blips. To maintain clarity and usability, we are exploring ways to filter and categorise blips more effectively, ensuring the radar remains accessible and relevant across professions.
 - **Maintaining relevance**: As a revived tool, ensuring the radar actively supports decision-making processes is key. We will continue to evaluate its adoption and explore ways to integrate it further into our day-to-day workflows.
 
 ### Exploring Future Innovations
+
 We’re also considering enhancements inspired by other open-source solutions. In particular, we’re exploring features from the [AOE technology radar](https://www.aoe.com/techradar/) in collaboration with one of our Ministry of Justice software teams. The AOE radar offers capabilities such as integrated summaries, detailed histories for each blip, and a refreshed user interface. These improvements could bring further clarity, context, and usability to our radar, ensuring it continues to evolve alongside our team’s needs.
 
 By addressing these areas, we aim to keep the radar as a living, adaptable tool that not only reflects our technology landscape but actively drives better decision-making and collaboration across our teams.

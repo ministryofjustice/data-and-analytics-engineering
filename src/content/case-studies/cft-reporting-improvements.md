@@ -6,7 +6,7 @@ title: "Civil, Family and Tribunal Reporting Improvements"
 description: "Improving access to timely and consistent data across civil, family, and tribunal jurisdictions."
 tags: [tribunals, civil, family, reporting, access-to-justice, dashboards]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

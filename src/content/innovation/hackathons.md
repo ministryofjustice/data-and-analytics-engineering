@@ -1,10 +1,9 @@
 ---
-layout: sub-navigation
+layout: article
 title: Hackathons
 eleventyNavigation:
   key: Hackathons
   parent: Innovation
-  order: 3
 ---
 
 ## Hackathons
@@ -15,16 +14,16 @@ Our hackathons provide an opportunity for innovation, experimentation, and cross
 
 **Key Features of our Hackathons:**
 
-+ **Problem-Solving Focus:** Hackathons are designed to address specific problems or explore new opportunities, such as developing new digital services, improving user experience, or optimising data workflows.
+- **Problem-Solving Focus:** Hackathons are designed to address specific problems or explore new opportunities, such as developing new digital services, improving user experience, or optimising data workflows.
 
-+ **Cross-Disciplinary Collaboration:** Participants come from various departments and roles, fostering collaboration between technical experts, policy-makers, and service designers, ensuring diverse perspectives contribute to the solutions.
+- **Cross-Disciplinary Collaboration:** Participants come from various departments and roles, fostering collaboration between technical experts, policy-makers, and service designers, ensuring diverse perspectives contribute to the solutions.
 
-+ **Innovation and Creativity:** Teams are encouraged to think creatively and experiment with new ideas, often using cutting-edge technologies like machine learning, automation, or advanced analytics to build prototypes or innovative solutions.
+- **Innovation and Creativity:** Teams are encouraged to think creatively and experiment with new ideas, often using cutting-edge technologies like machine learning, automation, or advanced analytics to build prototypes or innovative solutions.
 
-+ **Short-Term, Intense Focus:** Hackathons are typically time-limited events, often lasting a day or two, where teams work intensively to produce a prototype or proof of concept by the end of the session.
+- **Short-Term, Intense Focus:** Hackathons are typically time-limited events, often lasting a day or two, where teams work intensively to produce a prototype or proof of concept by the end of the session.
 
-+ **Outcome-Driven:** Many hackathons at MoJ result in actionable outcomes, including the development of prototypes that may be further refined and implemented in live systems, or solutions that lead to new ways of working within the department.
+- **Outcome-Driven:** Many hackathons at MoJ result in actionable outcomes, including the development of prototypes that may be further refined and implemented in live systems, or solutions that lead to new ways of working within the department.
 
-Overall, hackathons are an integral part of fostering a culture of innovation, encouraging rapid problem-solving, and enabling teams to explore and implement technological solutions that have a real impact on public service delivery within the justice system. 
+Overall, hackathons are an integral part of fostering a culture of innovation, encouraging rapid problem-solving, and enabling teams to explore and implement technological solutions that have a real impact on public service delivery within the justice system.
 
 Do keep any eye out on our internal communications channels to join and contribue to our up and comming hackathons.

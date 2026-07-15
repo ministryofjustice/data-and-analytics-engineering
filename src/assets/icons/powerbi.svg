@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="342" viewBox="0 0 256 342">
+  <defs>
+    <linearGradient id="pbiGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9E589"/>
+      <stop offset="100%" stop-color="#F6D751"/>
+    </linearGradient>
+    <linearGradient id="pbiGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F6D751"/>
+      <stop offset="100%" stop-color="#E6AD10"/>
+    </linearGradient>
+    <linearGradient id="pbiGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E6AD10"/>
+      <stop offset="100%" stop-color="#C87E0E"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="170.667" width="99.556" height="156.666" rx="14" fill="url(#pbiGrad1)"/>
+  <rect x="71.111" y="85.333" width="99.556" height="241.999" rx="14" fill="url(#pbiGrad2)"/>
+  <rect x="142.222" y="0" width="99.556" height="327.333" rx="14" fill="url(#pbiGrad3)"/>
+</svg>

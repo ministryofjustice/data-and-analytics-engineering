@@ -6,7 +6,7 @@ title: "Value Engineering and Impact Model"
 description: "Measuring and maximising the impact of data initiatives across MoJ using a structured value model."
 tags: [value, impact, ROI, engineering, prioritisation]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

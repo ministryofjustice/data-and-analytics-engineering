@@ -1,11 +1,11 @@
 ---
-layout: sub-navigation
+layout: article
 title: Change Management
 eleventyNavigation:
   key: Change Management
   parent: Soft Skills
-  order: 10
 ---
+
 Resources and blog posts about Managing change.
 
 {% set menuItems = [

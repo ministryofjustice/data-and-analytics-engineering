@@ -6,7 +6,7 @@ title: "OPG Data Warehouse"
 description: "Creating a centralised data warehouse for OPG to improve consistency, access, and decision-making."
 tags: [OPG, data-warehouse, reporting, integration]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

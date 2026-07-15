@@ -6,7 +6,7 @@ title: "Data First Programme"
 description: "Enabling cross-justice and academic research through de-identified, high-quality linked data."
 tags: [data-first, research, justice-data, linked-data, transparency]
 date: 2025-05-22
-layout: sub-navigation
+layout: article
 ---
 
 ## Overview

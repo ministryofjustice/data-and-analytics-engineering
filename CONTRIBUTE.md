@@ -1,4 +1,3 @@
-
 # Contributing to the Data and Analytics Engineering Documentation
 
 Thank you for your interest in contributing to the Ministry of Justice’s Data and Analytics Engineering Handbook ! We welcome contributions that improve clarity, add resources, or enhance the content’s accuracy and utility.
@@ -47,23 +46,22 @@ If you encounter issues in the documentation or have suggestions:
    git remote add upstream https://github.com/ministryofjustice/data-and-analytics-engineering.git
    ```
 4. **Install 11ty**: Install `11ty` if you don’t have it already:
-    ```bash
-    npm install @11ty/eleventy
-    ```
+   ```bash
+   npm install @11ty/eleventy
+   ```
 5. **Edit Content**: Make your edits to any files as needed.
 
 6. **Preview Changes locally**:
-    ```bash
-    npm start
-    ```
-    The site should now be served at http://localhost:8080/data-and-analytics-engineering/.
+   ```bash
+   npm start
+   ```
+   The site should now be served at http://localhost:8080/data-and-analytics-engineering/.
 
 ## Contribution Process
 
 ### Discussing Changes
 
 Comment on the issue to express your interest. Wait for acknowledgment or feedback before proceeding to avoid duplicate work.
-
 
 ### Creating Pull Requests
 
@@ -83,4 +81,3 @@ Comment on the issue to express your interest. Wait for acknowledgment or feedba
 ## License
 
 This project is licensed under the [MIT License](LICENSE). By contributing, you agree that your contributions will be licensed under the same license.
-

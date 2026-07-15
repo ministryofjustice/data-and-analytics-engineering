@@ -1,11 +1,10 @@
 ---
 title: "Case Studies"
 description: "Explore how data and analytics engineering is transforming justice services across domains."
-layout: sub-navigation
+layout: article
 eleventyNavigation:
   key: Case Studies
   title: Case Studies
-  order: 6
 ---
 
 ## Cross-System
