@@ -297,7 +297,6 @@ The icon discovery is handled by two modules:
 
 To see all available custom icons, browse `src/assets/icons/`.
 
-
 ## How Mermaid Diagrams Work
 
 The site uses two mechanisms to enable Mermaid diagrams:

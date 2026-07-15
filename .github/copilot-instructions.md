@@ -32,19 +32,19 @@ Every `.md` file needs YAML frontmatter with at minimum:
 ```yaml
 ---
 title: Page Title
-layout: page          # page | article | product | sub-navigation
+layout: page # page | article | product | sub-navigation
 eleventyNavigation:
   key: Unique Key
-  parent: Parent Key  # omit for top-level pages
-  order: 1            # optional sort order
+  parent: Parent Key # omit for top-level pages
+  order: 1 # optional sort order
 ---
 ```
 
 ### Layouts
 
-| Layout | When to Use |
-|--------|-------------|
-| `product` | Homepages, portfolio overview pages |
+| Layout    | When to Use                                                      |
+| --------- | ---------------------------------------------------------------- |
+| `product` | Homepages, portfolio overview pages                              |
 | `article` | Long docs with sections — auto-generates TOC from h2/h3 headings |
 
 ### File structure
@@ -90,12 +90,12 @@ Refer to the files in `src/content/site/` for detailed documentation of the Elev
 
 ## Key Files
 
-| File | Purpose |
-|------|---------|
-| `eleventy.config.js` | Eleventy config — plugins, shortcodes, transforms, passthrough copy |
-| `src/_transforms/shortcodes.js` | `cardGrid`, `mermaid`, `dirtree` shortcode definitions |
-| `src/_transforms/transforms.js` | HTML transforms (Mermaid script injection, TOC injection) |
-| `src/_transforms/toc-generator.js` | Extracts h2/h3 headings and builds TOC HTML |
-| `src/_transforms/mermaid-init.js` | Mermaid initialisation with icon packs |
-| `src/_transforms/svg-icon-loader.js` | Auto-discovers SVGs in `assets/icons/` |
-| `src/content/_includes/article.njk` | Article layout with TOC sidebar container |
+| File                                 | Purpose                                                             |
+| ------------------------------------ | ------------------------------------------------------------------- |
+| `eleventy.config.js`                 | Eleventy config — plugins, shortcodes, transforms, passthrough copy |
+| `src/_transforms/shortcodes.js`      | `cardGrid`, `mermaid`, `dirtree` shortcode definitions              |
+| `src/_transforms/transforms.js`      | HTML transforms (Mermaid script injection, TOC injection)           |
+| `src/_transforms/toc-generator.js`   | Extracts h2/h3 headings and builds TOC HTML                         |
+| `src/_transforms/mermaid-init.js`    | Mermaid initialisation with icon packs                              |
+| `src/_transforms/svg-icon-loader.js` | Auto-discovers SVGs in `assets/icons/`                              |
+| `src/content/_includes/article.njk`  | Article layout with TOC sidebar container                           |

@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Leadership
   parent: Soft Skills
 ---
+
 Resources and blog posts about how to become a more effective leader.
 
 {% set menuItems = [

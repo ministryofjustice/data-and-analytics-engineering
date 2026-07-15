@@ -63,7 +63,7 @@ function buildTocHTML(headings) {
 
         html += "</ul>\n";
         // Don't increment i here - we've already processed all h3s
-        html += `  </li>\n`;  // Close the h2's li
+        html += `  </li>\n`; // Close the h2's li
         continue;
       }
 
@@ -105,8 +105,4 @@ function escapeHtml(text) {
   return text.replace(/[&<>"']/g, (char) => htmlEscapes[char]);
 }
 
-export {
-  extractHeadings,
-  buildTocHTML,
-  shouldShowTOC,
-};
+export { extractHeadings, buildTocHTML, shouldShowTOC };

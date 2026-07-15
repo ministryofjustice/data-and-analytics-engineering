@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Emotional Intelligence
   parent: Soft Skills
 ---
+
 Resources and blog posts about ways to improve your interactions with others.
 
 {% set menuItems = [

@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Meeting Facilitation
   parent: Soft Skills
 ---
+
 Resources and blog posts about how to get the most out of your meetings.
 
 {% set menuItems = [

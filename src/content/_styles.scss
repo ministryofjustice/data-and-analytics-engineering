@@ -2,7 +2,10 @@
 @use "pkg:govuk-frontend/dist/govuk" with (
   $govuk-assets-path: "/assets/",
   $govuk-global-styles: true,
-  $govuk-suppressed-warnings: ("govuk-text-colour", "pre-brand-colour")
+  $govuk-suppressed-warnings: (
+    "govuk-text-colour",
+    "pre-brand-colour",
+  )
 );
 
 // Import GOV.UK Eleventy Plugin component styles
@@ -30,7 +33,7 @@
   min-height: 150px;
 
   &:hover {
-    background: govuk-colour("light-grey");
+    background: govuk-colour("black", $variant: "tint-95");
     box-shadow: 0 4px 0 $govuk-link-colour;
     top: -2px;
   }
@@ -124,7 +127,7 @@
 
 .dirtree-connectors {
   white-space: pre;
-  color: govuk-colour("mid-grey");
+  color: govuk-colour("black", $variant: "tint-80");
   user-select: text;
 }
 
@@ -316,11 +319,13 @@
   color: $govuk-text-colour;
   cursor: pointer;
   box-shadow: 0 1px 0 rgba(11, 12, 12, 0.1);
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .code-copy-button:hover {
-  background: govuk-colour("light-grey");
+  background: govuk-colour("black", $variant: "tint-95");
   border-color: $govuk-text-colour;
 }
 

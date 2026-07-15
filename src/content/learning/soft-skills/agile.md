@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Agile Delivery
   parent: Soft Skills
 ---
+
 Resources and blog posts for learning about Agile Techniques and how to apply them.
 
 {% set menuItems = [

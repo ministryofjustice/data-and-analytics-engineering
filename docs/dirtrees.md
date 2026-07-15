@@ -3,10 +3,12 @@
 Create clean, professional directory trees in your documentation, using GovUK Style.
 
 ## How to create directory trees
+
 You can draw directory trees of files and folders in published Markdown files under `src/content/` using the `dirtree` paired shortcode.
 The below text:
 
 {% raw %}
+
 ```
 {% dirtree %}
 root/
@@ -15,15 +17,16 @@ root/
         subfolder-file.csv
 {% enddirtree %}
 ```
+
 {% endraw %}
 
 will render as:
 
 {% dirtree %}
 root/
-    file.parquet
-    subfolder/
-        subfolder-file.csv
+file.parquet
+subfolder/
+subfolder-file.csv
 {% enddirtree %}
 
 ### Usage Tips
@@ -37,16 +40,15 @@ Tree connector lines (`├──`, `└──`, `│`) are automatically drawn t
 
 {% dirtree %}
 pipelines/
-    commercial/
-    finance/
-    hr/
-        ctm/
-        fieldglass/
-        splashbi/
-            workforce/
-                hr_wf_59_leavers.yml
+commercial/
+finance/
+hr/
+ctm/
+fieldglass/
+splashbi/
+workforce/
+hr_wf_59_leavers.yml
 {% enddirtree %}
-
 
 ## How it works
 
@@ -66,8 +68,3 @@ The directory tree rendering is handled by:
 - **`src/content/_styles.scss`**: Styling for the tree structure, indentation, and colors
 
 The shortcode embeds SVG icons directly in the HTML output, using `currentColor` for the stroke, allowing CSS to control the icon color through the text color property.
-
-
-
-
-

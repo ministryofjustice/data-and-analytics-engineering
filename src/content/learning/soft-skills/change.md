@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Change Management
   parent: Soft Skills
 ---
+
 Resources and blog posts about Managing change.
 
 {% set menuItems = [

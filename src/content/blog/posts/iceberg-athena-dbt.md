@@ -22,8 +22,8 @@ This post summarises how the Analytical Platform leverages [Amazon Athena](https
 
 [Transaction data lakes](https://aws.amazon.com/blogs/big-data/choosing-an-open-table-format-for-your-transactional-data-lake-on-aws/) combine the best features of a data lake and a data warehouse:
 
-* The flexibility, scalability and cost-effectiveness of a data lake  
-* The structured data storage and processing capabilities of a data warehouse
+- The flexibility, scalability and cost-effectiveness of a data lake
+- The structured data storage and processing capabilities of a data warehouse
 
 The Analytical Platform transaction data lake architecture follows a standard ELT structure to produce cleaner, more reliable data. Data is collected in various formats from a wide range of sources, both internal and external to the MoJ, and uploaded to an [S3](https://aws.amazon.com/pm/serv-s3)-based data lake as [Parquet files](https://en.wikipedia.org/wiki/Apache_Parquet). Datasets are big but not huge, with the largest table less than 200GB (~3 billion rows) and the largest dataset less than 500GB.
 
@@ -39,13 +39,13 @@ Amazon Athena is built on the open-source [Trino SQL Engine](https://trino.io/) 
 
 Although Athena is often used as an ad-hoc querying engine, it can also be used for [ELT](https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.html), offering several advantages:
 
-* **Serverless**: No infrastructure to manage.
-* **Interactive and SQL-based**: Easy and intuitive to use, particularly for new joiners.
-* **Unified Processing and Querying**: Facilitates sharing best practices between data engineers and analysts, such as performance tuning, and building shared utilities.
-* **Automated Compute Capacity**: Athena calculates the compute capacity needed to execute queries, eliminating the need for manual configuration and optimization.
-* **Scalable Quotas**: Quotas can be increased upon request, up to a limit. This is particularly relevant for ELT processes that can take longer to run and involve hundreds of tables. For example, we extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes and raised the limit on concurrent queries from 150 to 500.
-* **Cost-Effective**: Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective for transforming gigabyte-scale datasets. For instance, converting CSV files to Parquet using Athena was found to be 99% cheaper than using Glue PySpark in its default configuration.
-* **Provisioned Capacity**: Option to scale through [Athena provisioned capacity](https://aws.amazon.com/blogs/aws/introducing-athena-provisioned-capacity/), billed based on the number of DPUs provisioned and the duration.
+- **Serverless**: No infrastructure to manage.
+- **Interactive and SQL-based**: Easy and intuitive to use, particularly for new joiners.
+- **Unified Processing and Querying**: Facilitates sharing best practices between data engineers and analysts, such as performance tuning, and building shared utilities.
+- **Automated Compute Capacity**: Athena calculates the compute capacity needed to execute queries, eliminating the need for manual configuration and optimization.
+- **Scalable Quotas**: Quotas can be increased upon request, up to a limit. This is particularly relevant for ELT processes that can take longer to run and involve hundreds of tables. For example, we extended the DML (Data Manipulation Language) query timeout from 30 minutes to 60 minutes and raised the limit on concurrent queries from 150 to 500.
+- **Cost-Effective**: Athena's pricing model, set at $5 per terabyte scanned, makes it highly cost-effective for transforming gigabyte-scale datasets. For instance, converting CSV files to Parquet using Athena was found to be 99% cheaper than using Glue PySpark in its default configuration.
+- **Provisioned Capacity**: Option to scale through [Athena provisioned capacity](https://aws.amazon.com/blogs/aws/introducing-athena-provisioned-capacity/), billed based on the number of DPUs provisioned and the duration.
 
 Despite its advantages, Athena with the native Hive table format lacks support for numerous standard database features, resulting in a pipeline that can be less robust and flexible. Using the Iceberg table format helps address this gap.
 
@@ -65,9 +65,9 @@ Whilst Iceberg improves the reliability of Athena-based ELT pipelines, Athena qu
 
 [dbt](https://docs.getdbt.com/docs/introduction) is a transformation tool that extends SQL with features commonly associated with programming languages, enabling more flexible and maintainable data transformation workflows. dbt is an extensible framework composed of multiple components. The Analytical Platform uses the following components:
 
-* [dbt-core](https://github.com/dbt-labs/dbt-core), an open-source command line tool written in python  
-* [dbt-athena](https://github.com/dbt-labs/dbt-athena), a dbt-maintained trusted adapter which enables dbt to work with Athena  
-* [dbt-utils](https://github.com/dbt-labs/dbt-utils) and [dbt-audit-helper](https://github.com/dbt-labs/dbt-audit-helper), dbt-maintained packages which make it easier to apply common SQL-based functionalities and validations
+- [dbt-core](https://github.com/dbt-labs/dbt-core), an open-source command line tool written in python
+- [dbt-athena](https://github.com/dbt-labs/dbt-athena), a dbt-maintained trusted adapter which enables dbt to work with Athena
+- [dbt-utils](https://github.com/dbt-labs/dbt-utils) and [dbt-audit-helper](https://github.com/dbt-labs/dbt-audit-helper), dbt-maintained packages which make it easier to apply common SQL-based functionalities and validations
 
 dbt can assure the quality of transformations through [data tests](https://docs.getdbt.com/docs/build/data-tests), for example to check whether columns contain null values. Note that with Iceberg storing much of this information as metadata, querying it through Athena becomes practically cost-free. dbt uses the concept of [threads](https://docs.getdbt.com/docs/running-a-dbt-project/using-threads) to parallelise models that have no dependencies, which speeds up runtime. This makes it easier to take advantage of Athena’s capacity, run more queries within the concurrency quota and keep queries from being cancelled for running too long.
 
@@ -79,9 +79,9 @@ As part of migrating our standardisation step to Athena, we enhanced the Analyti
 
 #### Model Generation
 
-Some transformations consist of applying the same logic across multiple tables, for example when deduplicating a dataset comprised of several tables. This is often achieved by iterating through a list of tables and applying the same transformation to minimise code redundancy. 
+Some transformations consist of applying the same logic across multiple tables, for example when deduplicating a dataset comprised of several tables. This is often achieved by iterating through a list of tables and applying the same transformation to minimise code redundancy.
 
-dbt follows a one-model-per-table philosophy, making it simple and intuitive. However, this approach doesn’t support looping, leading to multiple models repeating the same logic. Such redundant code is difficult to maintain because any changes to the logic needs to be replicated in multiple locations. While there has been [discussions](https://github.com/dbt-labs/dbt-core/discussions/5101) to make it possible for dbt to generate models using Jinja, this feature is still under development. 
+dbt follows a one-model-per-table philosophy, making it simple and intuitive. However, this approach doesn’t support looping, leading to multiple models repeating the same logic. Such redundant code is difficult to maintain because any changes to the logic needs to be replicated in multiple locations. While there has been [discussions](https://github.com/dbt-labs/dbt-core/discussions/5101) to make it possible for dbt to generate models using Jinja, this feature is still under development.
 
 Instead, we developed a solution that generates models dynamically using Python at run time. Template `.sql` files are used to represent each stage of a pipeline. Table parameters are passed from either the Glue table properties or a `.yaml` configuration file. Models are then generated for every combination of table and template. Integration tests generate and run the models against dummy data, ensuring the templates function as expected.
 
@@ -95,11 +95,11 @@ Note that each segment is executed sequentially, rather than concurrently, due t
 
 [GitHub workflows](https://github.com/features/actions) are used to automate and orchestrate the dbt [builds](https://docs.getdbt.com/reference/commands/build). Co-locating the SQL and automation code enhances transparency and simplifies maintenance. We also added several features to facilitate early error detection and automated recovery:
 
-* A development GitHub workflow which is triggered when a pull request is raised. This workflow selectively builds new or updated models and their children in a development environment, making it easier for users to review the transformation prior to deploying to production.
+- A development GitHub workflow which is triggered when a pull request is raised. This workflow selectively builds new or updated models and their children in a development environment, making it easier for users to review the transformation prior to deploying to production.
 
-* Integrating Slack notifications into our production workflows to promptly alert stakeholders in the event of model or validation failures.
+- Integrating Slack notifications into our production workflows to promptly alert stakeholders in the event of model or validation failures.
 
-* Incorporating a retry mechanism into our production workflows with custom logic. This feature identifies and automatically reattempts failed models and their children, which is particularly useful for resolving errors stemming from transient issues.
+- Incorporating a retry mechanism into our production workflows with custom logic. This feature identifies and automatically reattempts failed models and their children, which is particularly useful for resolving errors stemming from transient issues.
 
 ### Enhancing observability (Added Nov 2024)
 
@@ -120,6 +120,7 @@ Furthermore, the unification of the data processing tools streamlines our techno
 ### Acknowledgements
 
 I would like to thank the following individuals for their invaluable contributions to the technical solution:
+
 - Gwion Aprhobat
 - Siva Bathina
 - David Bridgwood
@@ -130,6 +131,7 @@ I would like to thank the following individuals for their invaluable contributio
 - William Orr
 
 I would also like to thank the following individuals for their insightful feedback and editorial assistance:
+
 - Jeremy Collins
 - Tom Hepworth
 - Thomas Hirsch

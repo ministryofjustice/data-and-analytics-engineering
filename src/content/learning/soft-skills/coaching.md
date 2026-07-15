@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Coaching
   parent: Soft Skills
 ---
+
 Resources and blog posts about effective techniques for coaching.
 
 {% set menuItems = [

@@ -6,6 +6,7 @@ eleventyNavigation:
   key: Team Structure
   parent: About
 ---
+
 # Team Structure
 
 Data and analytics engineers in the MoJ work across various teams:
@@ -51,4 +52,3 @@ Our mission is to drive excellence and innovation in data and analytics engineer
 We set the technical direction, prioritising addressing immediate challenges faced by domain teams and their partners.
 
 You can read more about us in [these summary slides](https://moj-analytical-services.github.io/dmet-cfe/).
-

@@ -67,7 +67,9 @@ export function dirtree(content) {
       const nameClass = item.isFolder
         ? "dirtree-name dirtree-folder-name"
         : "dirtree-name";
-      const displayName = item.isFolder ? item.name.slice(0, -1) + "/" : item.name;
+      const displayName = item.isFolder
+        ? item.name.slice(0, -1) + "/"
+        : item.name;
 
       const prefixHtml = prefix
         ? `<span class="dirtree-connectors">${prefix}</span>`

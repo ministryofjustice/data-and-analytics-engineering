@@ -3,12 +3,12 @@
 import { dirtree } from "./dirtree.js";
 
 export function addShortcodes(eleventyConfig) {
-    eleventyConfig.addShortcode("cardGrid", cardGrid);
-    eleventyConfig.addPairedShortcode("mermaid", mermaid);
-    eleventyConfig.addPairedShortcode("dirtree", dirtree);
+  eleventyConfig.addShortcode("cardGrid", cardGrid);
+  eleventyConfig.addPairedShortcode("mermaid", mermaid);
+  eleventyConfig.addPairedShortcode("dirtree", dirtree);
 
-    // Add any future shortcodes here
-    // eleventyConfig.addShortcode("newShortcode", newShortcodeFunction);
+  // Add any future shortcodes here
+  // eleventyConfig.addShortcode("newShortcode", newShortcodeFunction);
 }
 
 // Card Grid shortcode - Classes defined in /assets/styles.css

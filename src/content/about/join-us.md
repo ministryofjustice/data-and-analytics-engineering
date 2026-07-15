@@ -6,11 +6,12 @@ eleventyNavigation:
   key: Join Us
   parent: About
 ---
+
 ### How to apply for a Data and Analytics Engineering role at the Ministry of Justice
 
 For our last recruitment round we hosted a webinar to provide information on the team, roles, and hiring process, as well as answering candidate questions. The recording can be accessed 👉 [here](https://www.youtube.com/watch?v=UJ-ICxrgJ6g).
 
----------
+---
 
 ## Frequently asked questions
 
@@ -22,8 +23,8 @@ We're open to flexible and hybrid working arrangements that include regular home
 
 ### What kind of people are you looking for?
 
-We are really keen to break away from the archetypal views of a data engineer and analytics engineer. We really encourage anyone with the relevant skills and willingness to learn to apply. We will support you to learn skills you may not yet had the opportunity to learn, but show an eagerness to. 
+We are really keen to break away from the archetypal views of a data engineer and analytics engineer. We really encourage anyone with the relevant skills and willingness to learn to apply. We will support you to learn skills you may not yet had the opportunity to learn, but show an eagerness to.
 
 ### Sounds good, but I still have some questions. Where can I ask them?
 
-We’ve setup a mailbox at 👉 dmet-dataplatform-recruitment@digital.justice.gov.uk for any questions. 
+We’ve setup a mailbox at 👉 dmet-dataplatform-recruitment@digital.justice.gov.uk for any questions.

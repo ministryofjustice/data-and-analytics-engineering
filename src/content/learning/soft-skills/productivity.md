@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Productivity
   parent: Soft Skills
 ---
+
 Resources and blog posts about how to improve productivity.
 
 {% set menuItems = [

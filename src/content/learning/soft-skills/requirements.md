@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Requirements Gathering
   parent: Soft Skills
 ---
+
 Resources and blog posts on identifying and documenting stakeholder needs to guide project development.
 
 {% set menuItems = [
@@ -14,5 +15,3 @@ Resources and blog posts on identifying and documenting stakeholder needs to gui
     { url: "https://userresearch.blog.gov.uk/", title: "User Research in Government" }
 ] %}
 {% cardGrid menuItems %}
-
-

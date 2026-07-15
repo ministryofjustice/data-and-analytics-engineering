@@ -5,6 +5,7 @@ eleventyNavigation:
   key: Scrum Guide
   parent: Soft Skills
 ---
+
 Resources and blog posts about Scrum techniques.
 
 {% set menuItems = [

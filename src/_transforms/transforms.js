@@ -9,12 +9,12 @@ import { injectTOC } from "./toc-transform.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export function addTransforms(eleventyConfig) {
-    eleventyConfig.addTransform("mermaid-script", mermaidScript);
-    eleventyConfig.addTransform("inject-toc", injectTOC);
+  eleventyConfig.addTransform("mermaid-script", mermaidScript);
+  eleventyConfig.addTransform("inject-toc", injectTOC);
   eleventyConfig.addTransform("copy-code-script", copyCodeScript);
 
-    // Add any future transforms here
-    // eleventyConfig.addTransform("newTransform", newTransformFunction);
+  // Add any future transforms here
+  // eleventyConfig.addTransform("newTransform", newTransformFunction);
 }
 
 const copyCodeScript = function (content, outputPath) {

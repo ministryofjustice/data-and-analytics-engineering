@@ -10,7 +10,6 @@ eleventyNavigation:
 
 ## What can you do in your 10% time?
 
-
 The scope of what you can do with your 10% time is quite broad, allowing you to focus on activities that align with both your personal interests and the directorate’s strategic goals.
 
 Some common uses of 10% include:
@@ -23,7 +22,6 @@ You can use this time to build new skills or deepen existing ones. Whether it's 
 
 Stay ahead of the curve by experimenting with emerging technologies or tools that aren't part of your usual workflow. For example, you could delve into [machine learning](https://www.datacamp.com/courses/understanding-machine-learning), new data visualisation platforms, or explore innovative ways to manage and analyse large datasets.
 
-
 ### Innovative Side Projects
 
 10% time allows you to work on projects that might not fit into your usual responsibilities but could have a positive impact on the Ministry of Justice. This could be developing a prototype, automating a routine process, or brainstorming new methods for improving Data Analytics and Engineering.
@@ -32,11 +30,9 @@ Stay ahead of the curve by experimenting with emerging technologies or tools tha
 
 You could use your 10% time to contribute to open-source projects or build tools that benefit the broader Data and Analytics community at the Ministry of Justice. This could involve developing code libraries, improving existing data pipelines, or creating resources for others.
 
-
 ### Collaborate Across Teams
 
-   It’s also an opportunity to collaborate with colleagues in other areas of the directorate or even across the Ministry. You might work with others on a shared problem, develop cross-functional tools, or exchange knowledge and best practices.
-
+It’s also an opportunity to collaborate with colleagues in other areas of the directorate or even across the Ministry. You might work with others on a shared problem, develop cross-functional tools, or exchange knowledge and best practices.
 
 ### Participate in Hackathons and Firebreaks
 
