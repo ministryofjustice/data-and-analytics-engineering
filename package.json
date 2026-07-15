@@ -2,7 +2,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@ministryofjustice/frontend": "^1.8.0",
-    "@sindresorhus/slugify": "^2.2.1",
+    "@sindresorhus/slugify": "^3.0.0",
     "@x-govuk/govuk-eleventy-plugin": "^9.0.1",
     "govuk-frontend": "^6.1.0",
     "jquery": "^3.7.1",
