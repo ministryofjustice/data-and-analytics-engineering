@@ -7,7 +7,7 @@
     "@sindresorhus/slugify": "^3.0.0",
     "@x-govuk/govuk-eleventy-plugin": "^9.0.2",
     "cheerio": "^1.2.0",
-    "govuk-frontend": "^6.3.0",
+    "govuk-frontend": "^6.4.0",
     "jquery": "^4.0.0",
     "nunjucks": "^3.2.4",
     "serialize-javascript": "^7.0.3"
