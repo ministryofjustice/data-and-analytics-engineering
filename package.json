@@ -10,7 +10,7 @@
     "govuk-frontend": "^6.3.0",
     "jquery": "^4.0.0",
     "nunjucks": "^3.2.4",
-    "serialize-javascript": "^7.0.3"
+    "serialize-javascript": "^7.1.0"
   },
   "scripts": {
     "build": "rm -rf _site && npx @11ty/eleventy",
