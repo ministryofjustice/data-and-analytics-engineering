@@ -14,7 +14,6 @@ Effective ways of working in both group and one-to-one settings are key to foste
     { url: "mentoring/", title: "Mentoring Scheme", description: "Our mentoring scheme enhances personal growth and development by pairing colleagues of varied experience levels." },
     { url: "pair/", title: "Pair Programming", description: "Pair Programming enhances knowledge transfer by collaborative development activities." },
     { url: "code/", title: "Code Review", description: "Code reviews enhance quality and maintainability of our codebase by constructive critical review of new code additions before they become part of the main codebase." },
-    { url: "show/", title: "Show & Tells", description: "Our Show and Tell events allow colleagues to highlight their recent work and share progress." },
     { url: "reading/", title: "Reading Groups", description: "Our reading groups create a collaborative learning environment for the development of new skills." }
 ] %}
 {% cardGrid menuItems %}

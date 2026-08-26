@@ -24,7 +24,10 @@ The Ministry of Justice is a major government department, at the heart of the ju
 
 ## Our beginnings
 
-Leave for Calum to write.
+In 2017, MoJ Digital began developing the Analytical Platform as part of a move to modernise how data was accessed and used for analysis, providing analysts with modern tooling and cloud infrastructure. Recognising the changing skills needed to support this approach, MoJ established Data Engineering as a profession, initially through internal transfers. Data Engineers brought data from operational source systems into curated tables on the Analytical Platform, making it readily available for analysis. The Analytical Platform started became operational in mid 2018; by early 2019, the first daily pipelines went live.
+
+In 2022, MoJ established Analytics Engineering as a distinct profession. While Data Engineers and analysts were already creating derived tables, Analytics Engineers formalised and developed this capability, taking responsibility for transforming source data into reusable, analysis-ready datasets.
+
 
 ## Here and now
 
