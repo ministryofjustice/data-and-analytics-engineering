@@ -36,7 +36,7 @@ jobs:
           cache-dependency-path: package-lock.json
 
       - name: SLSA action
-        uses: ministryofjustice/devsecops-actions/sca/slsa@b68f06598355021511df55a612610e7deda935df
+        uses: ministryofjustice/devsecops-actions/sca/slsa@9ec6779d39e07ca69ecf17baf5208a4b0095c10b
 
       - name: Install deps
         run: npm ci
