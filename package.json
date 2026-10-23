@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy": "^3.1.7",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@ministryofjustice/frontend": "^9.0.0",
     "@sindresorhus/slugify": "^3.0.0",
